@@ -7,7 +7,6 @@
 <p align="center">
   An all-in-one exam preparation platform designed to make competitive exam preparation smarter, more structured, and more effective.
 </p>
----
 
 ## 🌟 Overview
 
@@ -507,7 +506,7 @@ By bringing these capabilities together, it aims to help students prepare with g
 
 **GitHub:** [@chinnikavya123](https://github.com/chinnikavya123)
 
-**Repository:** [Examverse](https://github.com/chinnikavya123/Examverse)
+**Repository:** [Examverse](https://github.com/chinnikavya123/Exam_verse)
 
 ---
 

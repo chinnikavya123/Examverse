@@ -7,16 +7,6 @@
 <p align="center">
   An all-in-one exam preparation platform designed to make competitive exam preparation smarter, more structured, and more effective.
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-API-000000?logo=express&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?logo=mysql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black" />
-</p>
-
 ---
 
 ## 🌟 Overview
@@ -517,7 +507,7 @@ By bringing these capabilities together, it aims to help students prepare with g
 
 **GitHub:** [@chinnikavya123](https://github.com/chinnikavya123)
 
-**Repository:** [Exam_verse](https://github.com/chinnikavya123/Exam_verse)
+**Repository:** [Examverse](https://github.com/chinnikavya123/Examverse)
 
 ---
 
@@ -527,4 +517,12 @@ By bringing these capabilities together, it aims to help students prepare with g
 
 <p align="center">
   <strong>🚀 Learn. Practice. Improve. Succeed with ExamVerse!</strong>
+</p>
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/chinnikavya123"><strong>Chinni Kavya Sri</strong></a>
+  <br/>
+  👩‍💻 Owner & Developer of ExamVerse
 </p>

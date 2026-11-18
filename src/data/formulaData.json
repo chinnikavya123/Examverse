@@ -1,0 +1,2132 @@
+[
+  {
+    "id": "FORM-P-01",
+    "subject": "Physics",
+    "chapter": "Kinematics & Dynamics",
+    "title": "Projectile Motion Equations",
+    "formula": "T = \\frac{2u \\sin\\theta}{g}, \\quad H_{\\max} = \\frac{u^2 \\sin^2\\theta}{2g}, \\quad R = \\frac{u^2 \\sin 2\\theta}{g}",
+    "description": "Trajectory equation: $y = x \\tan\\theta - \\frac{g x^2}{2 u^2 \\cos^2\\theta}$. Angle for maximum range $R_{\\max} = \\frac{u^2}{g}$ is $\\theta = 45^\\circ$.",
+    "variables": "$u$: initial velocity, $\\theta$: projection angle with horizontal, $g$: acceleration due to gravity",
+    "examTip": "Two angles $\\theta$ and $90^\\circ - \\theta$ give the exact same range $R$, but different maximum heights $H_1, H_2$ where $R = 4\\sqrt{H_1 H_2}$."
+  },
+  {
+    "id": "FORM-P-02",
+    "subject": "Physics",
+    "chapter": "Rotational Motion",
+    "title": "Parallel & Perpendicular Axis Theorems",
+    "formula": "I = I_{\\text{cm}} + M d^2, \\qquad I_z = I_x + I_y",
+    "description": "Parallel axis theorem applies to any rigid 3D body. Perpendicular axis theorem ($I_z = I_x + I_y$) ONLY applies to planar 2D laminar objects.",
+    "variables": "$I_{\\text{cm}}$: moment of inertia about CM axis, $d$: distance between parallel axes",
+    "examTip": "For a ring: $I_{\\text{cm}} = MR^2$. For a disc: $I_{\\text{cm}} = \\frac{1}{2}MR^2$. For a solid sphere: $I_{\\text{cm}} = \\frac{2}{5}MR^2$."
+  },
+  {
+    "id": "FORM-P-03",
+    "subject": "Physics",
+    "chapter": "Electromagnetism",
+    "title": "Gauss's Law & Electric Potential",
+    "formula": "\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{\\text{encl}}}{\\varepsilon_0}, \\qquad V = -\\int \\vec{E} \\cdot d\\vec{r}",
+    "description": "Electric field due to point charge $E = \\frac{k Q}{r^2}$. Potential due to point charge $V = \\frac{k Q}{r}$. Electric dipole potential $V = \\frac{k p \\cos\\theta}{r^2}$.",
+    "variables": "$Q_{\\text{encl}}$: enclosed charge, $\\varepsilon_0$: permittivity of free space",
+    "examTip": "Inside a uniformly charged solid non-conducting sphere, field increases linearly $E \\propto r$, while outside it drops off $E \\propto 1/r^2$."
+  },
+  {
+    "id": "FORM-C-01",
+    "subject": "Chemistry",
+    "chapter": "Physical Chemistry",
+    "title": "Nernst Equation for Cell EMF",
+    "formula": "E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\frac{2.303 RT}{n F} \\log_{10} Q = E^\\circ_{\\text{cell}} - \\frac{0.0591}{n} \\log_{10} \\frac{[\\text{Products}]}{[\\text{Reactants}]}",
+    "description": "Used to calculate non-standard reduction potential or cell EMF under arbitrary concentrations at $298\\text{ K}$. At equilibrium, $E_{\\text{cell}} = 0 \\implies E^\\circ = \\frac{0.0591}{n} \\log K_{eq}$.",
+    "variables": "$n$: electrons transferred, $Q$: reaction quotient, $E^\\circ$: standard cell potential",
+    "examTip": "Always balance the overall redox equation first to get the correct exponent powers for concentrations in $Q$."
+  },
+  {
+    "id": "FORM-C-02",
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry",
+    "title": "Reimer-Tiemann & Kolbe's Reaction",
+    "formula": "\\text{Phenol} + \\text{CHCl}_3 + \\text{KOH} \\xrightarrow{\\Delta} \\text{Salicylaldehyde (Electrophile: }: \\text{CCl}_2)",
+    "description": "Reimer-Tiemann converts phenol to salicylaldehyde via dichlorocarbene intermediate $: \\text{CCl}_2$. Kolbe's reaction converts phenol with $\\text{NaOH} + \\text{CO}_2 \\xrightarrow{\\text{H}^+} \\text{Salicylic acid}$.",
+    "variables": "Phenol derivative electrophilic substitution",
+    "examTip": "Remember that the active electrophile in Reimer-Tiemann is neutral dichlorocarbene ($:\\text{CCl}_2$), NOT a carbocation!"
+  },
+  {
+    "id": "FORM-C-03",
+    "subject": "Chemistry",
+    "chapter": "Inorganic Chemistry",
+    "title": "Crystal Field Splitting Energy (CFSE)",
+    "formula": "\\text{CFSE}_{\\text{oct}} = \\left(-0.4 n_{t_{2g}} + 0.6 n_{e_g}\\right) \\Delta_o + P",
+    "description": "Octahedral splitting $\\Delta_o$. Strong field ligands (e.g. $\\text{CN}^-, \\text{CO}, \\text{en}$) cause pairing ($P < \\Delta_o$), resulting in low spin complexes.",
+    "variables": "$n_{t_{2g}}$: electrons in $t_{2g}$ orbitals, $n_{e_g}$: electrons in $e_g$ orbitals",
+    "examTip": "Spectrochemical series: $\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^- < \\text{OH}^- < \\text{H}_2\\text{O} < \\text{NH}_3 < \\text{en} < \\text{CN}^- < \\text{CO}$."
+  },
+  {
+    "id": "FORM-M-01",
+    "subject": "Mathematics",
+    "chapter": "Calculus",
+    "title": "Integration by Parts & Special Standard Forms",
+    "formula": "\\int u \\, dv = u v - \\int v \\, du, \\qquad \\int e^x \\left[f(x) + f'(x)\\right] dx = e^x f(x) + C",
+    "description": "Choose $u$ using the ILATE rule (Inverse trig, Logarithmic, Algebraic, Trigonometric, Exponential).",
+    "variables": "$u, v$: differentiable functions of $x$",
+    "examTip": "Whenever you see $\\int e^x (...)$, immediately check if the integrand can be written in the form $f(x) + f'(x)$ to solve in 5 seconds!"
+  },
+  {
+    "id": "FORM-M-02",
+    "subject": "Mathematics",
+    "chapter": "Algebra & Complex Numbers",
+    "title": "De Moivre's Theorem & Cube Roots of Unity",
+    "formula": "(\\cos \\theta + i \\sin \\theta)^n = \\cos(n\\theta) + i \\sin(n\\theta), \\qquad 1 + \\omega + \\omega^2 = 0, \\quad \\omega^3 = 1",
+    "description": "Euler's formula: $e^{i\\theta} = \\cos \\theta + i \\sin \\theta$. Cube roots of unity $\\omega = e^{i 2\\pi/3} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$.",
+    "variables": "$\\omega, \\omega^2$: complex cube roots of unity",
+    "examTip": "$1 + \\omega^k + \\omega^{2k} = 3$ if $k$ is a multiple of 3, and $0$ otherwise."
+  },
+  {
+    "id": "FORM-M-03",
+    "subject": "Mathematics",
+    "chapter": "Vectors & 3D Geometry",
+    "title": "Shortest Distance Between Skew Lines",
+    "formula": "d = \\frac{\\left|(\\vec{a}_2 - \\vec{a}_1) \\cdot (\\vec{b}_1 \\times \\vec{b}_2)\\right|}{|\\vec{b}_1 \\times \\vec{b}_2|}",
+    "description": "For lines $\\vec{r} = \\vec{a}_1 + \\lambda \\vec{b}_1$ and $\\vec{r} = \\vec{a}_2 + \\mu \\vec{b}_2$. If lines intersect, shortest distance $d = 0$.",
+    "variables": "\\vec{a}_1, \\vec{a}_2: position vectors, \\vec{b}_1, \\vec{b}_2: direction vectors",
+    "examTip": "If lines are parallel (\\vec{b}_1 = \\vec{b}_2 = \\vec{b}), the distance formula simplifies to $d = \\frac{|(\\vec{a}_2 - \\vec{a}_1) \\times \\vec{b}|}{|\\vec{b}|}$."
+  },
+  {
+    "id": "FORM-C-REAG-1",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Potassium Permanganate (\\text{KMnO}_4)",
+    "formula": "R\\text{-}CH_2OH + 2[O] \\xrightarrow{\\text{KMnO}_4 / \\text{H}^+} R\\text{-}COOH + H_2O",
+    "description": "Function: Strong Oxidizing Agent. Transformations: 1^\\circ \\text{ Alcohols} \\to \\text{Carboxylic Acids} \\quad | \\quad 2^\\circ \\text{ Alcohols} \\to \\text{Ketones} \\quad | \\quad \\text{Alkylbenzenes} \\to \\text{Benzoic Acid}. Conditions: Acidic (\\text{H}^+), Basic (\\text{OH}^-), or Neutral. Cold dilute alkaline \\text{KMnO}_4 for syn-hydroxylation..",
+    "variables": "Reagent: \\text{KMnO}_4",
+    "examTip": "Selectivity / Pro Tip: Decolorizes purple \\text{KMnO}_4 solution (Baeyer's test for unsaturation)."
+  },
+  {
+    "id": "FORM-C-REAG-2",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Potassium Dichromate (\\text{K}_2\\text{Cr}_2\\text{O}_7 / \\text{H}_2\\text{SO}_4)",
+    "formula": "3 R\\text{-}CH_2OH + 2 K_2Cr_2O_7 + 8 H_2SO_4 \\to 3 R\\text{-}COOH + 2 Cr_2(SO_4)_3 \\text{ (Green)} + 2 K_2SO_4 + 11 H_2O",
+    "description": "Function: Strong Oxidizing Agent. Transformations: 1^\\circ \\text{ Alcohols} \\to \\text{Carboxylic Acids} \\quad | \\quad 2^\\circ \\text{ Alcohols} \\to \\text{Ketones}. Conditions: Acidic medium (conc. \\text{H}_2\\text{SO}_4), heat..",
+    "variables": "Reagent: \\text{K}_2\\text{Cr}_2\\text{O}_7 / \\text{H}_2\\text{SO}_4",
+    "examTip": "Selectivity / Pro Tip: Orange \\text{Cr}_2\\text{O}_7^{2-} turns green \\text{Cr}^{3+} upon reduction."
+  },
+  {
+    "id": "FORM-C-REAG-3",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Pyridinium Chlorochromate (PCC) (\\text{C}_5\\text{H}_5\\text{NH}^+ \\text{CrO}_3\\text{Cl}^-)",
+    "formula": "R\\text{-}CH_2OH \\xrightarrow{\\text{PCC} / \\text{CH}_2\\text{Cl}_2} R\\text{-}CHO",
+    "description": "Function: Mild Selective Oxidizing Agent. Transformations: 1^\\circ \\text{ Alcohols} \\to \\text{Aldehydes (Stops at Aldehyde)} \\quad | \\quad 2^\\circ \\text{ Alcohols} \\to \\text{Ketones}. Conditions: Anhydrous \\text{CH}_2\\text{Cl}_2 (dichloromethane) solvent..",
+    "variables": "Reagent: \\text{C}_5\\text{H}_5\\text{NH}^+ \\text{CrO}_3\\text{Cl}^-",
+    "examTip": "Selectivity / Pro Tip: Does NOT oxidize aldehydes further to carboxylic acids; leaves C=C double bonds intact."
+  },
+  {
+    "id": "FORM-C-REAG-4",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Lithium Aluminium Hydride (LAH) (\\text{LiAlH}_4)",
+    "formula": "R\\text{-}COOH \\xrightarrow[\\text{2. } H_3O^+]{\\text{1. LiAlH}_4 / \\text{ether}} R\\text{-}CH_2OH",
+    "description": "Function: Strong Nucleophilic Reducing Agent. Transformations: \\text{Carboxylic Acids, Esters, Aldehydes, Ketones} \\to \\text{Alcohols} \\quad | \\quad \\text{Amides, Nitriles} \\to \\text{Primary Amines}. Conditions: Dry ether or THF solvent followed by acidic aqueous workup (H_3O^+)..",
+    "variables": "Reagent: \\text{LiAlH}_4",
+    "examTip": "Selectivity / Pro Tip: Reacts violently with water/moisture releasing H_2 gas. Cannot reduce isolated C=C double bonds."
+  },
+  {
+    "id": "FORM-C-REAG-5",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Sodium Borohydride (\\text{NaBH}_4)",
+    "formula": "R\\text{-}CO\\text{-}R' \\xrightarrow{\\text{NaBH}_4 / \\text{CH}_3\\text{OH}} R\\text{-}CH(OH)\\text{-}R'",
+    "description": "Function: Mild Selective Reducing Agent. Transformations: \\text{Aldehydes} \\to 1^\\circ \\text{ Alcohols} \\quad | \\quad \\text{Ketones} \\to 2^\\circ \\text{ Alcohols} \\quad | \\quad \\text{Acyl Chlorides} \\to 1^\\circ \\text{ Alcohols}. Conditions: Protic solvents (methanol, ethanol, or water)..",
+    "variables": "Reagent: \\text{NaBH}_4",
+    "examTip": "Selectivity / Pro Tip: Safer than LAH; does NOT reduce esters, carboxylic acids, or amides."
+  },
+  {
+    "id": "FORM-C-REAG-6",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Ozone with Zinc / Water (\\text{O}_3 / \\text{Zn}, \\text{H}_2\\text{O})",
+    "formula": "R\\text{-}CH=CH\\text{-}R' \\xrightarrow[\\text{2. Zn / } H_2O]{\\text{1. } O_3} R\\text{-}CHO + R'\\text{-}CHO",
+    "description": "Function: Reductive Cleavage of C=C Double/Triple Bonds. Transformations: \\text{Alkenes } (R\\text{-}CH=CH\\text{-}R') \\to \\text{Aldehydes / Ketones}. Conditions: Low temp (-78^\\circ\\text{C} in \\text{CH}_2\\text{Cl}_2) followed by \\text{Zn}/\\text{H}_2\\text{O} reduction..",
+    "variables": "Reagent: \\text{O}_3 / \\text{Zn}, \\text{H}_2\\text{O}",
+    "examTip": "Selectivity / Pro Tip: Zinc prevents further oxidation of aldehydes to carboxylic acids."
+  },
+  {
+    "id": "FORM-C-REAG-7",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Thionyl Chloride (\\text{SOCl}_2)",
+    "formula": "R\\text{-}OH + SOCl_2 \\xrightarrow{\\text{Pyridine}} R\\text{-}Cl + SO_2\\uparrow + HCl\\uparrow",
+    "description": "Function: Chlorinating Agent. Transformations: R\\text{-}OH \\to R\\text{-}Cl \\quad | \\quad R\\text{-}COOH \\to R\\text{-}COCl. Conditions: Reflux, often in presence of pyridine..",
+    "variables": "Reagent: \\text{SOCl}_2",
+    "examTip": "Selectivity / Pro Tip: Byproducts \\text{SO}_2(g) and \\text{HCl}(g) escape, leaving pure product."
+  },
+  {
+    "id": "FORM-C-REAG-8",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Grignard Reagent (R\\text{-}\\text{MgX})",
+    "formula": "R\\text{-}MgX + HCHO \\xrightarrow[\\text{2. } H_3O^+]{\\text{1. Dry Ether}} R\\text{-}CH_2OH",
+    "description": "Function: Strong Carbon Nucleophile & Base. Transformations: \\text{Formaldehyde} \\to 1^\\circ \\text{ Alcohol} \\quad | \\quad \\text{Aldehydes} \\to 2^\\circ \\text{ Alcohol} \\quad | \\quad \\text{Ketones} \\to 3^\\circ \\text{ Alcohol} \\quad | \\quad \\text{CO}_2 \\to \\text{Carboxylic Acid}. Conditions: Dry ether or THF solvent, followed by H_3O^+ hydrolysis..",
+    "variables": "Reagent: R\\text{-}\\text{MgX}",
+    "examTip": "Selectivity / Pro Tip: Protic sources (water, alcohol) destroy Grignard reagents to yield alkanes (R\\text{-}H)."
+  },
+  {
+    "id": "FORM-C-REAG-9",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Tollens' Reagent ([\\text{Ag(NH}_3)_2]^+\\text{OH}^-)",
+    "formula": "R\\text{-}CHO + 2[Ag(NH_3)_2]^+ + 3 OH^- \\to R\\text{-}COO^- + 2 Ag\\downarrow \\text{ (Mirror)} + 4 NH_3 + 2 H_2O",
+    "description": "Function: Mild Selective Oxidizing Agent. Transformations: \\text{Aliphatic & Aromatic Aldehydes} \\to \\text{Carboxylate Ions} + \\text{Ag Mirror (Silver)}. Conditions: Warm alkaline solution..",
+    "variables": "Reagent: [\\text{Ag(NH}_3)_2]^+\\text{OH}^-",
+    "examTip": "Selectivity / Pro Tip: Distinguishes aldehydes (positive silver mirror) from ketones (negative test)."
+  },
+  {
+    "id": "FORM-C-REAG-10",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Fehling's Solution (\\text{Fehling A (CuSO}_4) + \\text{Fehling B (Rochelle Salt + NaOH)})",
+    "formula": "R\\text{-}CHO + 2 Cu^{2+} + 5 OH^- \\to R\\text{-}COO^- + Cu_2O\\downarrow \\text{ (Red ppt)} + 3 H_2O",
+    "description": "Function: Mild Oxidizing Agent. Transformations: \\text{Aliphatic Aldehydes} \\to \\text{Carboxylate Ions} + \\text{Cu}_2\\text{O} \\text{ (Red ppt)}. Conditions: Heat in alkaline medium..",
+    "variables": "Reagent: \\text{Fehling A (CuSO}_4) + \\text{Fehling B (Rochelle Salt + NaOH)}",
+    "examTip": "Selectivity / Pro Tip: Aromatic aldehydes (benzaldehyde) do NOT reduce Fehling's solution."
+  },
+  {
+    "id": "FORM-C-REAG-11",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Clemmensen Reduction Reagent (\\text{Zn(Hg)} / \\text{conc. HCl})",
+    "formula": "R\\text{-}CO\\text{-}R' \\xrightarrow{\\text{Zn(Hg)} / \\text{conc. HCl}} R\\text{-}CH_2\\text{-}R' + H_2O",
+    "description": "Function: Deoxygenation of Carbonyl Group to Methylene. Transformations: \\text{Carbonyl Group } (C=O) \\to \\text{Methylene Group } (-CH_2-). Conditions: Strongly acidic conditions, reflux..",
+    "variables": "Reagent: \\text{Zn(Hg)} / \\text{conc. HCl}",
+    "examTip": "Selectivity / Pro Tip: Unsuitable for acid-sensitive compounds containing OH, ester, or ether groups."
+  },
+  {
+    "id": "FORM-C-REAG-12",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Wolff-Kishner Reduction Reagent (\\text{NH}_2\\text{NH}_2 / \\text{KOH}, \\text{Ethylene Glycol})",
+    "formula": "R\\text{-}CO\\text{-}R' \\xrightarrow[\\text{Glycol}, \\Delta]{\\text{NH}_2\\text{NH}_2 / \\text{KOH}} R\\text{-}CH_2\\text{-}R' + N_2\\uparrow",
+    "description": "Function: Deoxygenation of Carbonyl Group to Methylene. Transformations: \\text{Carbonyl Group } (C=O) \\to \\text{Methylene Group } (-CH_2-) + N_2\\uparrow. Conditions: Strongly basic medium, high temperature (180-200^\\circ\\text{C})..",
+    "variables": "Reagent: \\text{NH}_2\\text{NH}_2 / \\text{KOH}, \\text{Ethylene Glycol}",
+    "examTip": "Selectivity / Pro Tip: Ideal for acid-sensitive compounds; unsuitable for base-sensitive groups."
+  },
+  {
+    "id": "FORM-C-REAG-13",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Lucas Reagent (\\text{Anhydrous ZnCl}_2 + \\text{conc. HCl})",
+    "formula": "R\\text{-}OH + HCl \\xrightarrow{\\text{Anhyd. ZnCl}_2} R\\text{-}Cl\\downarrow \\text{ (Turbidity)} + H_2O",
+    "description": "Function: Classification of Alcohols. Transformations: 1^\\circ, 2^\\circ, 3^\\circ \\text{ Alcohols} \\to \\text{Insoluble Alkyl Chlorides } (R\\text{-}Cl). Conditions: Room temperature..",
+    "variables": "Reagent: \\text{Anhydrous ZnCl}_2 + \\text{conc. HCl}",
+    "examTip": "Selectivity / Pro Tip: 3^\\circ alcohols give immediate turbidity; 2^\\circ within 5 min; 1^\\circ requires heat."
+  },
+  {
+    "id": "FORM-C-REAG-14",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Hinsberg Reagent (\\text{C}_6\\text{H}_5\\text{SO}_2\\text{Cl})",
+    "formula": "R\\text{-}NH_2 + C_6H_5SO_2Cl \\to C_6H_5SO_2NHR \\text{ (Soluble in NaOH)}",
+    "description": "Function: Distinction & Separation of Amines. Transformations: 1^\\circ \\text{ Amine} \\to \\text{Soluble in alkali} \\quad | \\quad 2^\\circ \\text{ Amine} \\to \\text{Insoluble in alkali} \\quad | \\quad 3^\\circ \\text{ Amine} \\to \\text{No reaction}. Conditions: Aqueous \\text{NaOH} medium..",
+    "variables": "Reagent: \\text{C}_6\\text{H}_5\\text{SO}_2\\text{Cl}",
+    "examTip": "Selectivity / Pro Tip: Distinguishes primary, secondary, and tertiary amines."
+  },
+  {
+    "id": "FORM-C-REAG-15",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Lindlar's Catalyst (\\text{H}_2 / \\text{Pd-CaCO}_3 \\text{ poisoned with quinoline})",
+    "formula": "R\\text{-}C\\equiv C\\text{-}R' + H_2 \\xrightarrow{\\text{Pd-CaCO}_3 / \\text{Quinoline}} \\text{cis-}R\\text{-}CH=CH\\text{-}R'",
+    "description": "Function: Stereoselective Partial Hydrogenation of Alkynes. Transformations: \\text{Alkynes } (R\\text{-}C\\equiv C\\text{-}R') \\to \\text{cis-Alkenes / (Z)-Alkenes}. Conditions: Room temperature under hydrogen gas pressure..",
+    "variables": "Reagent: \\text{H}_2 / \\text{Pd-CaCO}_3 \\text{ poisoned with quinoline}",
+    "examTip": "Selectivity / Pro Tip: Prevents complete reduction to alkanes."
+  },
+  {
+    "id": "FORM-C-REAG-16",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Birch Reduction Reagents (\\text{Na} / \\text{liquid NH}_3 + \\text{C}_2\\text{H}_5\\text{OH})",
+    "formula": "R\\text{-}C\\equiv C\\text{-}R' \\xrightarrow{\\text{Na / Liq. } NH_3} \\text{trans-}R\\text{-}CH=CH\\text{-}R'",
+    "description": "Function: Stereoselective Partial Reduction. Transformations: \\text{Non-terminal Alkynes} \\to \\text{trans-Alkenes / (E)-Alkenes} \\quad | \\quad \\text{Benzene} \\to 1,4\\text{-Cyclohexadiene}. Conditions: Low temperature (-33^\\circ\\text{C})..",
+    "variables": "Reagent: \\text{Na} / \\text{liquid NH}_3 + \\text{C}_2\\text{H}_5\\text{OH}",
+    "examTip": "Selectivity / Pro Tip: Solvated electrons give trans-alkene geometry."
+  },
+  {
+    "id": "FORM-C-REAG-17",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Anhydrous Aluminium Chloride (\\text{Anhydrous AlCl}_3)",
+    "formula": "R\\text{-}Cl + AlCl_3 \\rightleftharpoons R^+ + AlCl_4^-",
+    "description": "Function: Strong Lewis Acid Catalyst. Transformations: \\text{Friedel-Crafts Alkylation } (R\\text{-}Cl) \\text{ and Acylation } (R\\text{-}COCl). Conditions: Anhydrous medium..",
+    "variables": "Reagent: \\text{Anhydrous AlCl}_3",
+    "examTip": "Selectivity / Pro Tip: Forms carbocation electrophiles from alkyl/acyl halides."
+  },
+  {
+    "id": "FORM-C-REAG-18",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Alcoholic KOH vs Aqueous KOH (\\text{alc. KOH vs aq. KOH})",
+    "formula": "R\\text{-}CH_2CH_2X \\xrightarrow[\\Delta]{\\text{alc. KOH}} R\\text{-}CH=CH_2 + KX + H_2O",
+    "description": "Function: Elimination (E2) vs Nucleophilic Substitution (S_N2). Transformations: \\text{Alc. KOH: Alkyl Halides } \\to \\text{Alkenes} \\quad | \\quad \\text{Aq. KOH: Alkyl Halides } \\to \\text{Alcohols}. Conditions: Heat for alc. KOH; room temp for aq. KOH..",
+    "variables": "Reagent: \\text{alc. KOH vs aq. KOH}",
+    "examTip": "Selectivity / Pro Tip: Alc. KOH contains ethoxide ion (\\text{C}_2\\text{H}_5\\text{O}^-), promoting elimination."
+  },
+  {
+    "id": "FORM-C-REAG-19",
+    "subject": "Chemistry",
+    "chapter": "Reagents & Organic Transformations",
+    "title": "Sodamide (\\text{NaNH}_2)",
+    "formula": "R\\text{-}C\\equiv CH + NaNH_2 \\xrightarrow{\\text{Liq. } NH_3} R\\text{-}C\\equiv C^- Na^+ + NH_3",
+    "description": "Function: Superbase. Transformations: \\text{Terminal Alkynes} \\to \\text{Acetylide Ions } (R\\text{-}C\\equiv C^- \\text{Na}^+) \\quad | \\quad \\text{Dihalides} \\to \\text{Alkynes}. Conditions: Liquid ammonia solvent (-33^\\circ\\text{C})..",
+    "variables": "Reagent: \\text{NaNH}_2",
+    "examTip": "Selectivity / Pro Tip: Much stronger base than \\text{KOH} or \\text{NaOH}."
+  },
+  {
+    "id": "FORM-C-NAME-1",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Wurtz Reaction",
+    "formula": "2 R\\text{-}X + 2\\text{Na} \\xrightarrow{\\text{Dry Ether}} R\\text{-}R + 2\\text{NaX}",
+    "description": "Reaction Type: Free Radical Coupling. Equation: $$2 R\\text{-}X + 2\\text{Na} \\xrightarrow{\\text{Dry Ether}} R\\text{-}R + 2\\text{NaX}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Used to prepare symmetrical alkanes with even carbon count."
+  },
+  {
+    "id": "FORM-C-NAME-2",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Finkelstein Reaction",
+    "formula": "R\\text{-}Cl/Br + \\text{NaI} \\xrightarrow{\\text{Dry Acetone}} R\\text{-}I + \\text{NaCl/NaBr}\\downarrow",
+    "description": "Reaction Type: S_N2 Halogen Exchange. Equation: $$R\\text{-}Cl/Br + \\text{NaI} \\xrightarrow{\\text{Dry Acetone}} R\\text{-}I + \\text{NaCl/NaBr}\\downarrow$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Precipitation of NaCl/NaBr drives reaction forward."
+  },
+  {
+    "id": "FORM-C-NAME-3",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Swarts Reaction",
+    "formula": "R\\text{-}Cl/Br + \\text{AgF} \\xrightarrow{\\Delta} R\\text{-}F + \\text{AgCl}\\downarrow",
+    "description": "Reaction Type: Fluorination Halogen Exchange. Equation: $$R\\text{-}Cl/Br + \\text{AgF} \\xrightarrow{\\Delta} R\\text{-}F + \\text{AgCl}\\downarrow$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Best method for preparing alkyl fluorides."
+  },
+  {
+    "id": "FORM-C-NAME-4",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Williamson Ether Synthesis",
+    "formula": "R\\text{-}X (1^\\circ) + R'\\text{-}O^-\\text{Na}^+ \\to R\\text{-}O\\text{-}R' + \\text{NaX}",
+    "description": "Reaction Type: S_N2 Nucleophilic Substitution. Equation: $$R\\text{-}X (1^\\circ) + R'\\text{-}O^-\\text{Na}^+ \\to R\\text{-}O\\text{-}R' + \\text{NaX}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: 3° alkyl halides yield alkenes via E2 elimination."
+  },
+  {
+    "id": "FORM-C-NAME-5",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Kolbe's Reaction",
+    "formula": "\\text{C}_6\\text{H}_5\\text{ONa} + \\text{CO}_2 \\xrightarrow{400\\text{K, 4-7atm}} \\text{Salicylic Acid}",
+    "description": "Reaction Type: Electrophilic Aromatic Substitution. Equation: $$\\text{C}_6\\text{H}_5\\text{ONa} + \\text{CO}_2 \\xrightarrow{400\\text{K, 4-7atm}} \\text{Salicylic Acid}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Industrial route for Salicylic Acid (precursor to Aspirin)."
+  },
+  {
+    "id": "FORM-C-NAME-6",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Reimer-Tiemann Reaction",
+    "formula": "\\text{C}_6\\text{H}_5\\text{OH} + \\text{CHCl}_3 + \\text{NaOH} \\to \\text{Salicylaldehyde}",
+    "description": "Reaction Type: Carbene Addition / Substitution. Equation: $$\\text{C}_6\\text{H}_5\\text{OH} + \\text{CHCl}_3 + \\text{NaOH} \\to \\text{Salicylaldehyde}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Active electrophile is neutral dichlorocarbene (:CCl_2)."
+  },
+  {
+    "id": "FORM-C-NAME-7",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Aldol Condensation",
+    "formula": "2 CH_3CHO \\xrightarrow{\\text{dil. NaOH}} \\text{Aldol} \\xrightarrow{\\Delta} \\text{Crotonaldehyde}",
+    "description": "Reaction Type: Nucleophilic Addition / Elimination. Equation: $$2 CH_3CHO \\xrightarrow{\\text{dil. NaOH}} \\text{Aldol} \\xrightarrow{\\Delta} \\text{Crotonaldehyde}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Requires alpha-hydrogen atom on carbonyl."
+  },
+  {
+    "id": "FORM-C-NAME-8",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Cannizzaro Reaction",
+    "formula": "2 HCHO + \\text{conc. NaOH} \\to CH_3OH + HCOONa",
+    "description": "Reaction Type: Disproportionation Redox. Equation: $$2 HCHO + \\text{conc. NaOH} \\to CH_3OH + HCOONa$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Occurs in aldehydes LACKING alpha-hydrogen atoms."
+  },
+  {
+    "id": "FORM-C-NAME-9",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Clemmensen Reduction",
+    "formula": ">C=O \\xrightarrow{\\text{Zn(Hg)} / \\text{conc. HCl}} >CH_2",
+    "description": "Reaction Type: Acidic Deoxygenation. Equation: $$>C=O \\xrightarrow{\\text{Zn(Hg)} / \\text{conc. HCl}} >CH_2$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Converts carbonyl to methylene in acidic medium."
+  },
+  {
+    "id": "FORM-C-NAME-10",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Wolff-Kishner Reduction",
+    "formula": ">C=O \\xrightarrow{\\text{NH}_2\\text{NH}_2 / \\text{KOH, glycol}} >CH_2 + N_2\\uparrow",
+    "description": "Reaction Type: Basic Deoxygenation. Equation: $$>C=O \\xrightarrow{\\text{NH}_2\\text{NH}_2 / \\text{KOH, glycol}} >CH_2 + N_2\\uparrow$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Converts carbonyl to methylene in basic medium."
+  },
+  {
+    "id": "FORM-C-NAME-11",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Iodoform Reaction",
+    "formula": "R\\text{-}COCH_3 + 3 I_2 + 4 NaOH \\to R\\text{-}COONa + CHI_3\\downarrow \\text{ (Yellow)}",
+    "description": "Reaction Type: Halogenation / Base-cleavage. Equation: $$R\\text{-}COCH_3 + 3 I_2 + 4 NaOH \\to R\\text{-}COONa + CHI_3\\downarrow \\text{ (Yellow)}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Identifies CH3C=O or CH3CH(OH) group via yellow CHI3 ppt."
+  },
+  {
+    "id": "FORM-C-NAME-12",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Hell-Volhard-Zelinsky (HVZ)",
+    "formula": "R\\text{-}CH_2\\text{-}COOH + X_2 \\xrightarrow{\\text{Red P}} R\\text{-}CH(X)\\text{-}COOH",
+    "description": "Reaction Type: Alpha-Halogenation. Equation: $$R\\text{-}CH_2\\text{-}COOH + X_2 \\xrightarrow{\\text{Red P}} R\\text{-}CH(X)\\text{-}COOH$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Specific alpha-halogenation of carboxylic acids."
+  },
+  {
+    "id": "FORM-C-NAME-13",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Gabriel Phthalimide Synthesis",
+    "formula": "\\text{Phthalimide} \\xrightarrow{\\text{KOH, R-X, NaOH}} R\\text{-}NH_2 (1^\\circ)",
+    "description": "Reaction Type: S_N2 Nucleophilic Substitution. Equation: $$\\text{Phthalimide} \\xrightarrow{\\text{KOH, R-X, NaOH}} R\\text{-}NH_2 (1^\\circ)$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Yields pure 1° aliphatic amines ONLY (aromatic amines fail)."
+  },
+  {
+    "id": "FORM-C-NAME-14",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Hofmann Bromamide Degradation",
+    "formula": "R\\text{-}CONH_2 + Br_2 + 4 NaOH \\to R\\text{-}NH_2 + Na_2CO_3 + 2 NaBr",
+    "description": "Reaction Type: Intramolecular Rearrangement. Equation: $$R\\text{-}CONH_2 + Br_2 + 4 NaOH \\to R\\text{-}NH_2 + Na_2CO_3 + 2 NaBr$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Stepping-down reaction: decreases carbon chain length by 1."
+  },
+  {
+    "id": "FORM-C-NAME-15",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Carbylamine Reaction",
+    "formula": "R\\text{-}NH_2 + CHCl_3 + 3 \\text{alc. KOH} \\to R\\text{-}NC \\text{ (Foul odor)}",
+    "description": "Reaction Type: Electrophilic Addition. Equation: $$R\\text{-}NH_2 + CHCl_3 + 3 \\text{alc. KOH} \\to R\\text{-}NC \\text{ (Foul odor)}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Specific test for primary amines (foul smelling isocyanide)."
+  },
+  {
+    "id": "FORM-C-NAME-16",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Sandmeyer Reaction",
+    "formula": "Ar\\text{-}N_2^+ Cl^- \\xrightarrow{\\text{Cu}_2\\text{Cl}_2 / \\text{HCl}} Ar\\text{-}Cl + N_2\\uparrow",
+    "description": "Reaction Type: Radical Substitution. Equation: $$Ar\\text{-}N_2^+ Cl^- \\xrightarrow{\\text{Cu}_2\\text{Cl}_2 / \\text{HCl}} Ar\\text{-}Cl + N_2\\uparrow$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Prepares aryl halides from diazonium salts."
+  },
+  {
+    "id": "FORM-C-NAME-17",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Azo Coupling Reaction",
+    "formula": "C_6H_5N_2^+ Cl^- + C_6H_5OH \\to p\\text{-}\\text{HO-C}_6\\text{H}_4\\text{-N=N-C}_6\\text{H}_5 \\text{ (Orange Dye)}",
+    "description": "Reaction Type: Electrophilic Substitution. Equation: $$C_6H_5N_2^+ Cl^- + C_6H_5OH \\to p\\text{-}\\text{HO-C}_6\\text{H}_4\\text{-N=N-C}_6\\text{H}_5 \\text{ (Orange Dye)}$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Dye test for aromatic diazonium salts with phenol/aniline."
+  },
+  {
+    "id": "FORM-C-NAME-18",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Etard Reaction",
+    "formula": "C_6H_5CH_3 + 2 CrO_2Cl_2 \\xrightarrow{\\text{CS}_2, H_3O^+} C_6H_5CHO",
+    "description": "Reaction Type: Controlled Side-Chain Oxidation. Equation: $$C_6H_5CH_3 + 2 CrO_2Cl_2 \\xrightarrow{\\text{CS}_2, H_3O^+} C_6H_5CHO$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Converts toluene specifically to benzaldehyde."
+  },
+  {
+    "id": "FORM-C-NAME-19",
+    "subject": "Chemistry",
+    "chapter": "Organic Named Reactions",
+    "title": "Rosenmund Reduction",
+    "formula": "R\\text{-}COCl + H_2 \\xrightarrow{\\text{Pd-BaSO}_4 / \\text{Sulfur}} R\\text{-}CHO",
+    "description": "Reaction Type: Selective Hydrogenation. Equation: $$R\\text{-}COCl + H_2 \\xrightarrow{\\text{Pd-BaSO}_4 / \\text{Sulfur}} R\\text{-}CHO$$",
+    "variables": "Reactant & Reagents in Equation",
+    "examTip": "JEE Key Pro Tip: Poisoned catalyst stops reduction at aldehyde stage."
+  },
+  {
+    "id": "FORM-C-STRUCT-1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Methane (\\text{CH}_4)",
+    "formula": "\\text{Shape: } Tetrahedral, \\quad \\text{Hybridization: } sp^3, \\quad \\text{Angle: } 109.5^\\circ",
+    "description": "Properties: Non-polar molecule, regular tetrahedral symmetry.",
+    "variables": "Central Atom: Lone Pairs = 0, Oxidation State = -4",
+    "examTip": "VSEPR Geometry: Tetrahedral (sp^3) with 0 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-2",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Ammonia (\\text{NH}_3)",
+    "formula": "\\text{Shape: } Trigonal Pyramidal, \\quad \\text{Hybridization: } sp^3, \\quad \\text{Angle: } 107^\\circ",
+    "description": "Properties: Lewis base due to 1 lone pair on N; distorted from tetrahedral 109.5°.",
+    "variables": "Central Atom: Lone Pairs = 1, Oxidation State = -3",
+    "examTip": "VSEPR Geometry: Trigonal Pyramidal (sp^3) with 1 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-3",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Water (\\text{H}_2\\text{O})",
+    "formula": "\\text{Shape: } Bent / V-shaped, \\quad \\text{Hybridization: } sp^3, \\quad \\text{Angle: } 104.5^\\circ",
+    "description": "Properties: Highly polar, extensive intermolecular hydrogen bonding.",
+    "variables": "Central Atom: Lone Pairs = 2, Oxidation State = -2",
+    "examTip": "VSEPR Geometry: Bent / V-shaped (sp^3) with 2 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-4",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Boron Trifluoride (\\text{BF}_3)",
+    "formula": "\\text{Shape: } Trigonal Planar, \\quad \\text{Hybridization: } sp^2, \\quad \\text{Angle: } 120^\\circ",
+    "description": "Properties: Incomplete octet (6 valence electrons around B); strong Lewis acid.",
+    "variables": "Central Atom: Lone Pairs = 0, Oxidation State = +3",
+    "examTip": "VSEPR Geometry: Trigonal Planar (sp^2) with 0 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-5",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Phosphorus Pentachloride (\\text{PCl}_5)",
+    "formula": "\\text{Shape: } Trigonal Bipyramidal, \\quad \\text{Hybridization: } sp^3d, \\quad \\text{Angle: } 90^\\circ \\text{ and } 120^\\circ",
+    "description": "Properties: 2 axial bonds are longer and weaker than 3 equatorial bonds.",
+    "variables": "Central Atom: Lone Pairs = 0, Oxidation State = +5",
+    "examTip": "VSEPR Geometry: Trigonal Bipyramidal (sp^3d) with 0 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-6",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Sulfur Hexafluoride (\\text{SF}_6)",
+    "formula": "\\text{Shape: } Octahedral, \\quad \\text{Hybridization: } sp^3d^2, \\quad \\text{Angle: } 90^\\circ",
+    "description": "Properties: Extremely inert, hypervalent molecule (12 electrons around S).",
+    "variables": "Central Atom: Lone Pairs = 0, Oxidation State = +6",
+    "examTip": "VSEPR Geometry: Octahedral (sp^3d^2) with 0 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-7",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Xenon Difluoride (\\text{XeF}_2)",
+    "formula": "\\text{Shape: } Linear, \\quad \\text{Hybridization: } sp^3d, \\quad \\text{Angle: } 180^\\circ",
+    "description": "Properties: 3 lone pairs occupy equatorial positions at 120° to minimize repulsion.",
+    "variables": "Central Atom: Lone Pairs = 3, Oxidation State = +2",
+    "examTip": "VSEPR Geometry: Linear (sp^3d) with 3 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-8",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Xenon Tetrafluoride (\\text{XeF}_4)",
+    "formula": "\\text{Shape: } Square Planar, \\quad \\text{Hybridization: } sp^3d^2, \\quad \\text{Angle: } 90^\\circ",
+    "description": "Properties: 2 lone pairs occupy trans axial positions; 4 F atoms in square plane.",
+    "variables": "Central Atom: Lone Pairs = 2, Oxidation State = +4",
+    "examTip": "VSEPR Geometry: Square Planar (sp^3d^2) with 2 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-STRUCT-9",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "title": "Structure: Xenon Hexafluoride (\\text{XeF}_6)",
+    "formula": "\\text{Shape: } Distorted Octahedral, \\quad \\text{Hybridization: } sp^3d^3, \\quad \\text{Angle: } < 90^\\circ",
+    "description": "Properties: Stereochemically active single lone pair distorts octahedral symmetry.",
+    "variables": "Central Atom: Lone Pairs = 1, Oxidation State = +6",
+    "examTip": "VSEPR Geometry: Distorted Octahedral (sp^3d^3) with 1 lone pair(s)."
+  },
+  {
+    "id": "FORM-C-QUAL-01",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Bromine Water Test (Unsaturation (Alkenes / Alkynes))",
+    "formula": "R-\\text{CH}=\\text{CH}-R' + \\text{Br}_2 \\rightarrow R-\\text{CH(Br)}-\\text{CH(Br)}-R'",
+    "description": "Observation: Decolorization of reddish-brown bromine solution. | Reagent: \\text{Br}_2 / \\text{CCl}_4",
+    "variables": "Target Group: Unsaturation (Alkenes / Alkynes)",
+    "examTip": "Inference: Presence of C=C or C\\equiv C unsaturation."
+  },
+  {
+    "id": "FORM-C-QUAL-02",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Baeyer's Test (Unsaturation (Alkenes / Alkynes))",
+    "formula": "R-\\text{CH}=\\text{CH}-R' + [\\text{O}] + \\text{H}_2\\text{O} \\rightarrow R-\\text{CH(OH)}-\\text{CH(OH)}-R'",
+    "description": "Observation: Decolorization of purple \\text{KMnO}_4 with brown ppt of \\text{MnO}_2. | Reagent: Cold dilute alkaline \\text{KMnO}_4 (1\\%)",
+    "variables": "Target Group: Unsaturation (Alkenes / Alkynes)",
+    "examTip": "Inference: Presence of unsaturation (syn-1,2-diol formed)."
+  },
+  {
+    "id": "FORM-C-QUAL-03",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Ceric Ammonium Nitrate Test (Alcoholic Group (-OH))",
+    "formula": "R-\\text{OH} + (\\text{NH}_4)_2\\text{Ce(NO}_3)_6 \\rightarrow \\text{Red alkoxy complex}",
+    "description": "Observation: Appearance of red or pink color solution. | Reagent: (\\text{NH}_4)_2\\text{Ce(NO}_3)_6",
+    "variables": "Target Group: Alcoholic Group (-OH)",
+    "examTip": "Inference: Presence of alcoholic hydroxyl group."
+  },
+  {
+    "id": "FORM-C-QUAL-04",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Neutral Ferric Chloride Test (Phenolic Group (Ar-OH))",
+    "formula": "3 \\text{C}_6\\text{H}_5\\text{OH} + \\text{FeCl}_3 \\rightarrow [\\text{Fe(OC}_6\\text{H}_5)_3] \\text{ (Violet complex)} + 3 \\text{HCl}",
+    "description": "Observation: Formation of violet, blue, or green coloration. | Reagent: Freshly prepared neutral \\text{FeCl}_3 solution",
+    "variables": "Target Group: Phenolic Group (Ar-OH)",
+    "examTip": "Inference: Presence of phenolic group."
+  },
+  {
+    "id": "FORM-C-QUAL-05",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: 2,4-DNP Test (Brady's Test) (Carbonyl Group (C=O))",
+    "formula": "R_2\\text{C}=\\text{O} + \\text{H}_2\\text{N-NH-C}_6\\text{H}_3(\\text{NO}_2)_2 \\rightarrow R_2\\text{C}=\\text{N-NH-C}_6\\text{H}_3(\\text{NO}_2)_2 + \\text{H}_2\\text{O}",
+    "description": "Observation: Yellow, orange, or red crystalline precipitate. | Reagent: 2,4-Dinitrophenylhydrazine",
+    "variables": "Target Group: Carbonyl Group (C=O)",
+    "examTip": "Inference: Presence of aldehyde or ketone carbonyl group."
+  },
+  {
+    "id": "FORM-C-QUAL-06",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Tollens' Silver Mirror Test (Aldehydes (-CHO))",
+    "formula": "R-\\text{CHO} + 2[\\text{Ag(NH}_3)_2]^+ + 3\\text{OH}^- \\rightarrow R-\\text{COO}^- + 2\\text{Ag}\\downarrow + 4\\text{NH}_3 + 2\\text{H}_2\\text{O}",
+    "description": "Observation: Formation of shiny silver mirror on test-tube wall. | Reagent: [\\text{Ag(NH}_3)_2]^+\\text{OH}^-",
+    "variables": "Target Group: Aldehydes (-CHO)",
+    "examTip": "Inference: Presence of aldehyde group."
+  },
+  {
+    "id": "FORM-C-QUAL-07",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Fehling's Test (Aliphatic Aldehydes)",
+    "formula": "R-\\text{CHO} + 2\\text{Cu}^{2+} + 5\\text{OH}^- \\rightarrow R-\\text{COO}^- + \\text{Cu}_2\\text{O}\\downarrow + 3\\text{H}_2\\text{O}",
+    "description": "Observation: Reddish-brown precipitate of \\text{Cu}_2\\text{O}. | Reagent: \\text{Fehling A (CuSO}_4) + \\text{Fehling B (Rochelle Salt + NaOH)}",
+    "variables": "Target Group: Aliphatic Aldehydes",
+    "examTip": "Inference: Presence of aliphatic aldehyde."
+  },
+  {
+    "id": "FORM-C-QUAL-08",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Iodoform Test (Methyl Ketones / Ethanol)",
+    "formula": "\\text{CH}_3\\text{COR} + 3\\text{I}_2 + 4\\text{NaOH} \\rightarrow \\text{CHI}_3\\downarrow + R\\text{COONa} + 3\\text{NaI} + 3\\text{H}_2\\text{O}",
+    "description": "Observation: Yellow crystalline ppt of Iodoform (\\text{CHI}_3) with antiseptic odor. | Reagent: \\text{I}_2 + \\text{NaOH (NaOI)}",
+    "variables": "Target Group: Methyl Ketones / Ethanol",
+    "examTip": "Inference: Presence of \\text{CH}_3\\text{CO}- or \\text{CH}_3\\text{CH(OH)}- group."
+  },
+  {
+    "id": "FORM-C-QUAL-09",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Sodium Bicarbonate Test (Carboxylic Acid (-COOH))",
+    "formula": "R-\\text{COOH} + \\text{NaHCO}_3 \\rightarrow R-\\text{COONa} + \\text{H}_2\\text{O} + \\text{CO}_2\\uparrow",
+    "description": "Observation: Brisk effervescence of \\text{CO}_2 gas. | Reagent: Saturated aqueous \\text{NaHCO}_3 solution",
+    "variables": "Target Group: Carboxylic Acid (-COOH)",
+    "examTip": "Inference: Presence of carboxylic acid group."
+  },
+  {
+    "id": "FORM-C-QUAL-10",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Functional Group Tests",
+    "title": "Test: Carbylamine Test (Primary Amine (-NH2))",
+    "formula": "R-\\text{NH}_2 + \\text{CHCl}_3 + 3\\text{KOH} \\rightarrow R-\\text{NC} + 3\\text{KCl} + 3\\text{H}_2\\text{O}",
+    "description": "Observation: Extremely offensive, foul odor of carbylamine/isocyanide. | Reagent: \\text{CHCl}_3 + \\text{alcoholic KOH}",
+    "variables": "Target Group: Primary Amine (-NH2)",
+    "examTip": "Inference: Presence of primary aliphatic or aromatic amine."
+  },
+  {
+    "id": "FORM-C-FLAME-01",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Lithium (Li)",
+    "formula": "\\text{Flame Color: } \\text{Crimson Red} \\quad (\\lambda = \\text{670.8 nm})",
+    "description": "Characteristic flame color of Lithium (Li): Crimson Red.",
+    "variables": "Wavelength: 670.8 nm",
+    "examTip": "Note: Characteristic alkali metal flame test."
+  },
+  {
+    "id": "FORM-C-FLAME-02",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Sodium (Na)",
+    "formula": "\\text{Flame Color: } \\text{Golden Yellow} \\quad (\\lambda = \\text{589.0 nm})",
+    "description": "Characteristic flame color of Sodium (Na): Golden Yellow.",
+    "variables": "Wavelength: 589.0 nm",
+    "examTip": "Note: Intense D-lines emission."
+  },
+  {
+    "id": "FORM-C-FLAME-03",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Potassium (K)",
+    "formula": "\\text{Flame Color: } \\text{Violet / Lilac} \\quad (\\lambda = \\text{766.5 nm})",
+    "description": "Characteristic flame color of Potassium (K): Violet / Lilac.",
+    "variables": "Wavelength: 766.5 nm",
+    "examTip": "Note: Viewed through cobalt blue glass to filter Na yellow."
+  },
+  {
+    "id": "FORM-C-FLAME-04",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Calcium (Ca)",
+    "formula": "\\text{Flame Color: } \\text{Brick Red} \\quad (\\lambda = \\text{622.0 nm})",
+    "description": "Characteristic flame color of Calcium (Ca): Brick Red.",
+    "variables": "Wavelength: 622.0 nm",
+    "examTip": "Note: Alkaline earth metal."
+  },
+  {
+    "id": "FORM-C-FLAME-05",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Strontium (Sr)",
+    "formula": "\\text{Flame Color: } \\text{Crimson Red} \\quad (\\lambda = \\text{680.0 nm})",
+    "description": "Characteristic flame color of Strontium (Sr): Crimson Red.",
+    "variables": "Wavelength: 680.0 nm",
+    "examTip": "Note: Alkaline earth metal."
+  },
+  {
+    "id": "FORM-C-FLAME-06",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Barium (Ba)",
+    "formula": "\\text{Flame Color: } \\text{Apple Green} \\quad (\\lambda = \\text{553.5 nm})",
+    "description": "Characteristic flame color of Barium (Ba): Apple Green.",
+    "variables": "Wavelength: 553.5 nm",
+    "examTip": "Note: Alkaline earth metal."
+  },
+  {
+    "id": "FORM-C-FLAME-07",
+    "subject": "Chemistry",
+    "chapter": "Flame Test Colors & Emission Spectra",
+    "title": "Flame Test: Copper (Cu)",
+    "formula": "\\text{Flame Color: } \\text{Blue-Green / Emerald Green} \\quad (\\lambda = \\text{510.0 nm})",
+    "description": "Characteristic flame color of Copper (Cu): Blue-Green / Emerald Green.",
+    "variables": "Wavelength: 510.0 nm",
+    "examTip": "Note: Beilstein test for halides."
+  },
+  {
+    "id": "FORM-M-074",
+    "subject": "Mathematics",
+    "chapter": "Sets",
+    "title": "Sets & Power Set Cardinality",
+    "formula": "n(P(A)) = 2^n, \\quad n(P(P(\\emptyset))) = 2",
+    "description": "Power set contains all subsets. Number of proper subsets = $2^n - 1$.",
+    "variables": "$n = n(A)$: number of elements in set A",
+    "examTip": "Number of subsets with at least $k$ elements = $\\sum_{r=k}^n {}^n C_r$."
+  },
+  {
+    "id": "FORM-M-075",
+    "subject": "Mathematics",
+    "chapter": "Sets",
+    "title": "Inclusion-Exclusion Principle",
+    "formula": "n(A \\cup B) = n(A) + n(B) - n(A \\cap B)",
+    "description": "Cardinality of union of sets. For 3 sets: $n(A \\cup B \\cup C) = \\sum n(A) - \\sum n(A \\cap B) + n(A \\cap B \\cap C)$.",
+    "variables": "n(A): cardinality of set A",
+    "examTip": "Disjoint sets: $n(A \\cap B) = 0 \\implies n(A \\cup B) = n(A) + n(B)$."
+  },
+  {
+    "id": "FORM-M-076",
+    "subject": "Mathematics",
+    "chapter": "Relations and Functions",
+    "title": "Cartesian Product & Total Relations",
+    "formula": "n(A \\times B) = m \\cdot n, \\quad \\text{Total Relations} = 2^{m n}",
+    "description": "Cartesian product $A \\times B = \\{(a,b) : a \\in A, b \\in B\\}$. Subset of $A \\times B$ defines a relation.",
+    "variables": "m = n(A), n = n(B)",
+    "examTip": "Number of non-empty relations = $2^{mn} - 1$."
+  },
+  {
+    "id": "FORM-M-077",
+    "subject": "Mathematics",
+    "chapter": "Relations and Functions",
+    "title": "Types of Relations",
+    "formula": "R \\text{ Reflexive } \\iff (a,a) \\in R, \\quad R \\text{ Symmetric } \\iff (a,b) \\in R \\implies (b,a) \\in R",
+    "description": "Equivalence relation is Reflexive, Symmetric, and Transitive. Transitive: $(a,b),(b,c) \\in R \\implies (a,c) \\in R$.",
+    "variables": "a, b, c \\in A",
+    "examTip": "Reflexive relations count = $2^{n(n-1)}$; Symmetric relations count = $2^{n(n+1)/2}$."
+  },
+  {
+    "id": "FORM-M-078",
+    "subject": "Mathematics",
+    "chapter": "Mathematical Induction",
+    "title": "Principle of Mathematical Induction & Summations",
+    "formula": "\\sum_{r=1}^n r = \\frac{n(n+1)}{2}, \\quad \\sum_{r=1}^n r^2 = \\frac{n(n+1)(2n+1)}{6}, \\quad \\sum_{r=1}^n r^3 = \\left[\\frac{n(n+1)}{2}\\right]^2",
+    "description": "Base step $P(1)$, assume $P(k)$, prove $P(k+1)$. Divisibility: $a^n - b^n$ is always divisible by $a-b$.",
+    "variables": "n \\in \\mathbb{N}",
+    "examTip": "Bernoulli's Inequality: $(1+x)^n \\ge 1 + nx$ for $x > -1$."
+  },
+  {
+    "id": "FORM-M-079",
+    "subject": "Mathematics",
+    "chapter": "Matrices",
+    "title": "Matrix Operations & Transpose Properties",
+    "formula": "(AB)^T = B^T A^T, \\quad (AB)^{-1} = B^{-1} A^{-1}, \\quad \\text{Tr}(AB) = \\text{Tr}(BA)",
+    "description": "Symmetric: $A^T = A$. Skew-Symmetric: $A^T = -A$. Every square matrix $A = \\frac{1}{2}(A+A^T) + \\frac{1}{2}(A-A^T)$.",
+    "variables": "A, B: square matrices",
+    "examTip": "Diagonal elements of skew-symmetric matrix are always ZERO."
+  },
+  {
+    "id": "FORM-M-080",
+    "subject": "Mathematics",
+    "chapter": "Determinants",
+    "title": "Adjoint Identities & Cramer's Rule",
+    "formula": "A \\cdot \\text{adj}(A) = |A| I_n, \\quad |\\text{adj}(A)| = |A|^{n-1}, \\quad |\\text{adj}(\\text{adj}(A))| = |A|^{(n-1)^2}",
+    "description": "Cramer's rule: $x = \\Delta_x / \\Delta, y = \\Delta_y / \\Delta, z = \\Delta_z / \\Delta$. Unique solution iff $\\Delta \\neq 0$.",
+    "variables": "|A|: determinant of n x n matrix A",
+    "examTip": "Vandermonde determinant $|1, 1, 1; a, b, c; a^2, b^2, c^2| = (a-b)(b-c)(c-a)$."
+  },
+  {
+    "id": "FORM-M-081",
+    "subject": "Mathematics",
+    "chapter": "Complex Numbers",
+    "title": "Modulus, Argument & De Moivre's Theorem",
+    "formula": "|z| = \\sqrt{x^2+y^2}, \\quad z \\bar{z} = |z|^2, \\quad (\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)",
+    "description": "Euler form $z = r e^{i\\theta}$. Cube roots of unity: $1 + \\omega + \\omega^2 = 0, \\omega^3 = 1$.",
+    "variables": "r = |z|, \\theta = \\text{Arg}(z) \\in (-\\pi, \\pi]",
+    "examTip": "Square root of complex number $\\sqrt{x+iy} = \\pm [ \\sqrt{(|z|+x)/2} + i \\text{sgn}(y) \\sqrt{(|z|-x)/2} ]$."
+  },
+  {
+    "id": "FORM-M-082",
+    "subject": "Mathematics",
+    "chapter": "Quadratic Equations",
+    "title": "Roots, Discriminant & Vieta's Formulas",
+    "formula": "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}, \\quad \\alpha+\\beta = -b/a, \\quad \\alpha\\beta = c/a",
+    "description": "Discriminant $D = b^2 - 4ac$. Difference of roots $|\\alpha - \\beta| = \\sqrt{D}/|a|$. Vertex at $x = -b/(2a), y = -D/(4a)$.",
+    "variables": "a, b, c \\in \\mathbb{R}, a \\neq 0",
+    "examTip": "Common root of two quadratics: $(a_1 c_2 - a_2 c_1)^2 = (a_1 b_2 - a_2 b_1)(b_1 c_2 - b_2 c_1)$."
+  },
+  {
+    "id": "FORM-M-083",
+    "subject": "Mathematics",
+    "chapter": "Permutations and Combinations",
+    "title": "Arrangements, Selections & Derangements",
+    "formula": "{}^n P_r = \\frac{n!}{(n-r)!}, \\quad {}^n C_r = \\frac{n!}{r!(n-r)!}, \\quad D_n = n! \\sum_{k=0}^n \\frac{(-1)^k}{k!}",
+    "description": "Pascal identity: ${}^n C_r + {}^n C_{r-1} = {}^{n+1} C_r$. Stars and bars: ${}^{n+r-1} C_{r-1}$. Polygon diagonals: $n(n-3)/2$.",
+    "variables": "n, r \\in \\mathbb{N}, 0 \\le r \\le n",
+    "examTip": "Number of ways to divide $2n$ distinct items into 2 equal unlabeled groups = $(2n)! / (2! (n!)^2)$."
+  },
+  {
+    "id": "FORM-M-084",
+    "subject": "Mathematics",
+    "chapter": "Binomial Theorem",
+    "title": "Expansion, General Term & Coefficient Sums",
+    "formula": "(x+y)^n = \\sum_{r=0}^n {}^n C_r x^{n-r} y^r, \\quad T_{r+1} = {}^n C_r x^{n-r} y^r",
+    "description": "Sum of coefficients $C_0 + C_1 + ... + C_n = 2^n$. Sum of squares $C_0^2 + C_1^2 + ... + C_n^2 = {}^{2n} C_n$.",
+    "variables": "n \\in \\mathbb{N}",
+    "examTip": "Multinomial terms count in $(x_1 + ... + x_k)^n$ is ${}^{n+k-1} C_{k-1}$."
+  },
+  {
+    "id": "FORM-M-085",
+    "subject": "Mathematics",
+    "chapter": "Sequences and Series",
+    "title": "AP, GP, HP & AGP Summations",
+    "formula": "S_n(AP) = \\frac{n}{2}[2a+(n-1)d], \\quad S_n(GP) = \\frac{a(r^n-1)}{r-1}, \\quad S_\\infty(GP) = \\frac{a}{1-r}",
+    "description": "AM-GM-HM Inequality: $A \\ge G \\ge H \\implies \\frac{a+b}{2} \\ge \\sqrt{ab} \\ge \\frac{2ab}{a+b}$. GM squared: $G^2 = A \\cdot H$.",
+    "variables": "a: first term, d: common diff, r: common ratio",
+    "examTip": "Infinite AGP sum: $S_\\infty = \\frac{a}{1-r} + \\frac{d r}{(1-r)^2}$ for $|r| < 1$."
+  },
+  {
+    "id": "FORM-M-086",
+    "subject": "Mathematics",
+    "chapter": "Straight Lines",
+    "title": "Line Forms, Distance & Perpendiculars",
+    "formula": "y - y_1 = m(x - x_1), \\quad \\frac{x}{a} + \\frac{y}{b} = 1, \\quad d = \\frac{|a x_1 + b y_1 + c|}{\\sqrt{a^2+b^2}}",
+    "description": "Distance between parallel lines $a x + b y + c_1 = 0$ and $a x + b y + c_2 = 0$ is $d = \\frac{|c_1 - c_2|}{\\sqrt{a^2+b^2}}$.",
+    "variables": "m: slope = \\tan\\theta, (x_1, y_1): point",
+    "examTip": "Foot of perpendicular: $\\frac{h-x_1}{a} = \\frac{k-y_1}{b} = -\\frac{a x_1 + b y_1 + c}{a^2+b^2}$."
+  },
+  {
+    "id": "FORM-M-087",
+    "subject": "Mathematics",
+    "chapter": "Pair of Straight Lines",
+    "title": "Homogeneous 2nd Degree Pair & Angle",
+    "formula": "a x^2 + 2 h x y + b y^2 = 0, \\quad \\tan\\theta = \\left| \\frac{2\\sqrt{h^2 - a b}}{a + b} \\right|",
+    "description": "Lines are perpendicular iff $a + b = 0$. Coincident iff $h^2 = a b$. Angle bisectors: $\\frac{x^2-y^2}{a-b} = \\frac{xy}{h}$.",
+    "variables": "a, b, h: coefficients",
+    "examTip": "General 2nd degree pair condition: $\\Delta = a b c + 2 f g h - a f^2 - b g^2 - c h^2 = 0$."
+  },
+  {
+    "id": "FORM-M-088",
+    "subject": "Mathematics",
+    "chapter": "Circle",
+    "title": "Equations, Tangent & Director Circle",
+    "formula": "x^2 + y^2 + 2gx + 2fy + c = 0 \\implies r = \\sqrt{g^2+f^2-c}, \\quad y = m x \\pm r \\sqrt{1+m^2}",
+    "description": "Tangent at $(x_1, y_1)$: $x x_1 + y y_1 + g(x+x_1) + f(y+y_1) + c = 0$. Director circle of $x^2+y^2=r^2$ is $x^2+y^2=2r^2$.",
+    "variables": "Center: (-g, -f), Radius: r",
+    "examTip": "Orthogonal circles condition: $2 g_1 g_2 + 2 f_1 f_2 = c_1 + c_2$."
+  },
+  {
+    "id": "FORM-M-089",
+    "subject": "Mathematics",
+    "chapter": "Conic Sections",
+    "title": "Parabola, Ellipse & Hyperbola Standard Forms",
+    "formula": "y^2 = 4ax \\, (e=1), \\quad \\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1 \\, (e < 1), \\quad \\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1 \\, (e > 1)",
+    "description": "Parabola: LR $= 4a$, Focus $(a,0)$. Ellipse: $b^2 = a^2(1-e^2)$, LR $= 2b^2/a$. Hyperbola: $b^2 = a^2(e^2-1)$, LR $= 2b^2/a$.",
+    "variables": "e: eccentricity",
+    "examTip": "Rectangular hyperbola $x^2 - y^2 = a^2$ or $x y = c^2$ has eccentricity $e = \\sqrt{2}$."
+  },
+  {
+    "id": "FORM-M-090",
+    "subject": "Mathematics",
+    "chapter": "Limits and Continuity",
+    "title": "Standard Limits, L'Hôpital & Continuity",
+    "formula": "\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1, \\quad \\lim_{x \\to 0} \\frac{e^x-1}{x} = 1, \\quad \\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\lim_{x \\to a} \\frac{f'(x)}{g'(x)} \\text{ (0/0)}",
+    "description": "Continuity at $a$: $\\lim_{x \\to a^-} f(x) = \\lim_{x \\to a^+} f(x) = f(a)$. Form $1^\\infty$: $e^{\\lim g(x)[f(x)-1]}$.",
+    "variables": "x \\in \\mathbb{R}",
+    "examTip": "$\\lim_{x \\to 0} \\frac{1-\\cos x}{x^2} = \\frac{1}{2}$."
+  },
+  {
+    "id": "FORM-M-091",
+    "subject": "Mathematics",
+    "chapter": "Differentiation",
+    "title": "Derivative Rules & Standard Forms",
+    "formula": "\\frac{d}{dx}(u v) = u v' + v u', \\quad \\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\frac{v u' - u v'}{v^2}, \\quad \\frac{d}{dx}f(g(x)) = f'(g(x)) g'(x)",
+    "description": "Standard: $\\frac{d}{dx}(\\sin x) = \\cos x, \\frac{d}{dx}(\\tan x) = \\sec^2 x, \\frac{d}{dx}(\\ln x) = \\frac{1}{x}, \\frac{d}{dx}(\\tan^{-1} x) = \\frac{1}{1+x^2}$.",
+    "variables": "u, v: functions of x",
+    "examTip": "Implicit partial derivative shortcut: $\\frac{dy}{dx} = -\\frac{\\partial F / \\partial x}{\\partial F / \\partial y}$."
+  },
+  {
+    "id": "FORM-M-092",
+    "subject": "Mathematics",
+    "chapter": "Applications of Derivatives",
+    "title": "Tangents, Monotonicity & LMVT",
+    "formula": "m_T = f'(x_1), \\quad m_N = -\\frac{1}{f'(x_1)}, \\quad f'(c) = \\frac{f(b) - f(a)}{b - a} \\quad c \\in (a,b)",
+    "description": "Strictly Increasing: $f'(x) > 0$. Strictly Decreasing: $f'(x) < 0$. Second derivative test: $f''(c) < 0 \\implies$ Local Max; $f''(c) > 0 \\implies$ Local Min.",
+    "variables": "x_1: point of contact",
+    "examTip": "Subnormal for $y^2 = 4ax$ is constant $= 2a$."
+  },
+  {
+    "id": "FORM-M-093",
+    "subject": "Mathematics",
+    "chapter": "Indefinite Integration",
+    "title": "Standard Forms & Integration by Parts",
+    "formula": "\\int u dv = u v - \\int v du, \\quad \\int e^x [f(x) + f'(x)] dx = e^x f(x) + C",
+    "description": "Standard: $\\int \\frac{dx}{x^2+a^2} = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right) + C, \\int \\frac{dx}{\\sqrt{a^2-x^2}} = \\sin^{-1}\\left(\\frac{x}{a}\\right) + C$.",
+    "variables": "u, v: functions of x",
+    "examTip": "ILATE rule for choice of $u$: Inverse trig, Logarithmic, Algebraic, Trigonometric, Exponential."
+  },
+  {
+    "id": "FORM-M-094",
+    "subject": "Mathematics",
+    "chapter": "Definite Integration",
+    "title": "Properties & King's Rule",
+    "formula": "\\int_a^b f(x) dx = \\int_a^b f(a+b-x) dx, \\quad \\int_{-a}^a f(x) dx = 2\\int_0^a f(x) dx \\text{ (Even)}; 0 \\text{ (Odd)}",
+    "description": "Walli's formula: $\\int_0^{\\pi/2} \\sin^n x dx = \\frac{(n-1)(n-3)...}{n(n-2)...} \\times K$ ($K=\\pi/2$ if $n$ even, else $1$).",
+    "variables": "a, b: bounds",
+    "examTip": "Area bounded by two parabolas $y^2 = 4ax$ and $x^2 = 4by$ is $\\frac{16ab}{3}$."
+  },
+  {
+    "id": "FORM-M-095",
+    "subject": "Mathematics",
+    "chapter": "Differential Equations",
+    "title": "First Order Linear & Variable Separable",
+    "formula": "\\frac{dy}{dx} + P(x) y = Q(x) \\implies I F = e^{\\int P dx}, \\quad y \\cdot (I F) = \\int Q \\cdot (I F) dx + C",
+    "description": "Homogeneous DE $\\frac{dy}{dx} = f(y/x) \\implies$ substitute $y = v x$. Order = highest derivative, Degree = power of highest derivative.",
+    "variables": "P(x), Q(x): functions of x",
+    "examTip": "Bernoulli's DE $\\frac{dy}{dx} + P y = Q y^n \\implies$ divide by $y^n$, substitute $v = y^{1-n}$."
+  },
+  {
+    "id": "FORM-M-096",
+    "subject": "Mathematics",
+    "chapter": "Vector Algebra",
+    "title": "Dot, Cross & Triple Products",
+    "formula": "\\vec{a} \\cdot \\vec{b} = |a||b| \\cos\\theta, \\quad |\\vec{a} \\times \\vec{b}| = |a||b| \\sin\\theta, \\quad [\\vec{a} \\, \\vec{b} \\, \\vec{c}] = \\vec{a} \\cdot (\\vec{b} \\times \\vec{c})",
+    "description": "BAC-CAB Rule: $\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = (\\vec{a} \\cdot \\vec{c}) \\vec{b} - (\\vec{a} \\cdot \\vec{b}) \\vec{c}$. Vector projection of $\\vec{a}$ on $\\vec{b} = (\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2}) \\vec{b}$.",
+    "variables": "\\vec{a}, \\vec{b}, \\vec{c}: 3D vectors",
+    "examTip": "Volume of parallelepiped $V = |[\\vec{a} \\, \\vec{b} \\, \\vec{c}]|$. Coplanar iff $[\\vec{a} \\, \\vec{b} \\, \\vec{c}] = 0$."
+  },
+  {
+    "id": "FORM-M-097",
+    "subject": "Mathematics",
+    "chapter": "Three-Dimensional Geometry",
+    "title": "Line, Plane & Shortest Distance",
+    "formula": "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}, \\quad S D = \\frac{|(\\vec{a}_2 - \\vec{a}_1) \\cdot (\\vec{b}_1 \\times \\vec{b}_2)|}{|\\vec{b}_1 \\times \\vec{b}_2|}",
+    "description": "Plane form: $a x + b y + c z + d = 0$. Distance from $(x_1,y_1,z_1)$ to plane $= \\frac{|a x_1 + b y_1 + c z_1 + d|}{\\sqrt{a^2+b^2+c^2}}$.",
+    "variables": "a, b, c: direction ratios",
+    "examTip": "Angle between line and plane: $\\sin\\phi = \\frac{|a_1 a_2 + b_1 b_2 + c_1 c_2|}{\\sqrt{\\sum a_1^2}\\sqrt{\\sum a_2^2}}$."
+  },
+  {
+    "id": "FORM-M-098",
+    "subject": "Mathematics",
+    "chapter": "Probability & Statistics",
+    "title": "Bayes' Theorem & Binomial Distribution",
+    "formula": "P(E_k | A) = \\frac{P(E_k) P(A | E_k)}{\\sum P(E_i) P(A | E_i)}, \\quad P(X = k) = {}^n C_k p^k q^{n-k}",
+    "description": "Binomial Mean $= n p$, Variance $= n p q \\implies \\text{Mean} > \\text{Variance}$. Standard Deviation $\\sigma = \\sqrt{npq}$.",
+    "variables": "n: trials, p: success, q = 1-p",
+    "examTip": "Variance of first $n$ natural numbers $= (n^2 - 1) / 12$. Coefficient of Variation $CV = (\\sigma / \\bar{x}) \\times 100$."
+  },
+  {
+    "id": "FORM-M-099",
+    "subject": "Mathematics",
+    "chapter": "Sets",
+    "title": "Sets & Power Set Cardinality",
+    "formula": "n(P(A)) = 2^n, \\quad n(P(P(\\emptyset))) = 2",
+    "description": "Power set contains all subsets. Number of proper subsets = $2^n - 1$.",
+    "variables": "$n = n(A)$: number of elements in set A",
+    "examTip": "Number of subsets with at least $k$ elements = $\\sum_{r=k}^n {}^n C_r$."
+  },
+  {
+    "id": "FORM-M-100",
+    "subject": "Mathematics",
+    "chapter": "Relations and Functions",
+    "title": "Cartesian Product & Total Relations",
+    "formula": "n(A \\times B) = m \\cdot n, \\quad \\text{Total Relations} = 2^{m n}",
+    "description": "Cartesian product $A \\times B = \\{(a,b) : a \\in A, b \\in B\\}$. Subset of $A \\times B$ defines a relation.",
+    "variables": "m = n(A), n = n(B)",
+    "examTip": "Number of non-empty relations = $2^{mn} - 1$."
+  },
+  {
+    "id": "FORM-M-101",
+    "subject": "Mathematics",
+    "chapter": "Relations and Functions",
+    "title": "Domain, Range & Composition",
+    "formula": "(f \\circ g)(x) = f(g(x)), \\quad (g \\circ f)(x) = g(f(x))",
+    "description": "Domain of $f \\circ g = \\{x \\in \\text{Dom}(g) : g(x) \\in \\text{Dom}(f)\\}$. Invertible iff one-one and onto.",
+    "variables": "f, g: real functions",
+    "examTip": "If $f$ is bijective $\\implies (f^{-1})^{-1} = f$ and $(f \\circ g)^{-1} = g^{-1} \\circ f^{-1}$."
+  },
+  {
+    "id": "FORM-M-102",
+    "subject": "Mathematics",
+    "chapter": "Complex Numbers",
+    "title": "Modulus, Argument & Euler Form",
+    "formula": "|z| = \\sqrt{x^2+y^2}, \\quad z = r e^{i\\theta} = r(\\cos\\theta + i\\sin\\theta)",
+    "description": "Conjugate $z \\bar{z} = |z|^2$. Inverse $z^{-1} = \\bar{z} / |z|^2$. Triangle inequality $||z_1|-|z_2|| \\le |z_1 \\pm z_2| \\le |z_1|+|z_2|$.",
+    "variables": "r = |z|, \\theta = \\text{Arg}(z) \\in (-\\pi, \\pi]",
+    "examTip": "Locus $|z - z_1| = |z - z_2|$ is perpendicular bisector of segment $z_1 z_2$."
+  },
+  {
+    "id": "FORM-M-103",
+    "subject": "Mathematics",
+    "chapter": "De Moivre's Theorem",
+    "title": "De Moivre's Theorem & Roots of Unity",
+    "formula": "(\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta), \\quad 1 + \\omega + \\omega^2 = 0, \\quad \\omega^3 = 1",
+    "description": "Cube roots of unity $\\omega = e^{i 2\\pi/3} = -\\frac{1}{2} + i\\frac{\\sqrt{3}}{2}$. Sum of $n$-th roots of unity $= 0$, Product $= (-1)^{n-1}$.",
+    "variables": "\\omega: \\text{cube root of unity}",
+    "examTip": "$1 + \\omega^k + \\omega^{2k} = 3$ if $3 \\mid k$, else $0$."
+  },
+  {
+    "id": "FORM-M-104",
+    "subject": "Mathematics",
+    "chapter": "Quadratic Equations",
+    "title": "Roots, Discriminant & Vieta Formulas",
+    "formula": "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}, \\quad \\alpha+\\beta = -b/a, \\quad \\alpha\\beta = c/a",
+    "description": "Difference of roots $|\\alpha - \\beta| = \\sqrt{D}/|a|$. Vertex at $x = -b/(2a), y = -D/(4a)$. $D < 0 \\implies$ complex conjugate roots.",
+    "variables": "a, b, c \\in \\mathbb{R}, a \\neq 0",
+    "examTip": "Condition for 1 common root: $(a_1 c_2 - a_2 c_1)^2 = (a_1 b_2 - a_2 b_1)(b_1 c_2 - b_2 c_1)$."
+  },
+  {
+    "id": "FORM-M-105",
+    "subject": "Mathematics",
+    "chapter": "Theory of Equations",
+    "title": "Polynomial Roots & Transformation",
+    "formula": "\\sum \\alpha = -\\frac{a_{n-1}}{a_n}, \\quad \\sum \\alpha\\beta = \\frac{a_{n-2}}{a_n}, \\quad \\prod \\alpha = (-1)^n \\frac{a_0}{a_n}",
+    "description": "Descartes Rule of Signs: Max positive real roots = sign changes in $P(x)$; Max negative real roots = sign changes in $P(-x)$.",
+    "variables": "P(x): \\text{polynomial of degree } n",
+    "examTip": "Newton's sum method: $a S_n + b S_{n-1} + c S_{n-2} = 0$ for $S_n = \\alpha^n + \\beta^n$."
+  },
+  {
+    "id": "FORM-M-106",
+    "subject": "Mathematics",
+    "chapter": "Permutations and Combinations",
+    "title": "Arrangements, Selections & Derangements",
+    "formula": "{}^n P_r = \\frac{n!}{(n-r)!}, \\quad {}^n C_r = \\frac{n!}{r!(n-r)!}, \\quad D_n = n! \\sum_{k=0}^n \\frac{(-1)^k}{k!}",
+    "description": "Pascal identity ${}^n C_r + {}^n C_{r-1} = {}^{n+1} C_r$. Circular permutations $(n-1)!$. Stars and bars ${}^{n+r-1} C_{r-1}$.",
+    "variables": "n, r \\in \\mathbb{N}",
+    "examTip": "Polygon diagonals count $= \\frac{n(n-3)}{2}$. Number of onto functions from $m \\to n$ items $= \\sum_{r=0}^n (-1)^{n-r} {}^n C_r r^m$."
+  },
+  {
+    "id": "FORM-M-107",
+    "subject": "Mathematics",
+    "chapter": "Binomial Theorem",
+    "title": "Expansion, General Term & Infinite Series",
+    "formula": "(x+y)^n = \\sum_{r=0}^n {}^n C_r x^{n-r} y^r, \\quad T_{r+1} = {}^n C_r x^{n-r} y^r",
+    "description": "Sum of coefficients $\\sum C_r = 2^n$. Sum of squares $\\sum C_r^2 = {}^{2n} C_n$. Infinite binomial $(1-x)^{-1} = 1 + x + x^2 + ... \\infty$ for $|x| < 1$.",
+    "variables": "n \\in \\mathbb{N}",
+    "examTip": "Multinomial terms count in $(x_1 + ... + x_k)^n$ is ${}^{n+k-1} C_{k-1}$."
+  },
+  {
+    "id": "FORM-M-108",
+    "subject": "Mathematics",
+    "chapter": "Partial Fractions",
+    "title": "Decomposition of Proper Rational Fractions",
+    "formula": "\\frac{P(x)}{(x-a)(x-b)} = \\frac{A}{x-a} + \\frac{B}{x-b}, \\quad \\frac{P(x)}{(x-a)^2} = \\frac{A}{x-a} + \\frac{B}{(x-a)^2}",
+    "description": "Degree $P(x) <$ Degree $Q(x)$. Heaviside cover-up method evaluates linear constants directly.",
+    "variables": "P(x), Q(x): \\text{polynomials}",
+    "examTip": "Irreducible quadratic factor $a x^2+b x+c \\implies$ use numerator $A x + B$."
+  },
+  {
+    "id": "FORM-M-109",
+    "subject": "Mathematics",
+    "chapter": "Sequences and Series",
+    "title": "AP, GP, HP & AGP Progressions",
+    "formula": "S_n(AP) = \\frac{n}{2}[2a+(n-1)d], \\quad S_n(GP) = \\frac{a(r^n-1)}{r-1}, \\quad S_\\infty(GP) = \\frac{a}{1-r}",
+    "description": "AM-GM-HM Inequality: $A \\ge G \\ge H$. $G^2 = A \\cdot H$. Sum of squares $\\sum k^2 = \\frac{n(n+1)(2n+1)}{6}$, sum of cubes $\\sum k^3 = [\\frac{n(n+1)}{2}]^2$.",
+    "variables": "a: first term, d: diff, r: ratio",
+    "examTip": "Infinite AGP sum: $S_\\infty = \\frac{a}{1-r} + \\frac{d r}{(1-r)^2}$ for $|r| < 1$."
+  },
+  {
+    "id": "FORM-M-110",
+    "subject": "Mathematics",
+    "chapter": "Straight Lines",
+    "title": "Line Equations, Distance & Angle Bisectors",
+    "formula": "y - y_1 = m(x - x_1), \\quad \\frac{x}{a} + \\frac{y}{b} = 1, \\quad d = \\frac{|a x_1 + b y_1 + c|}{\\sqrt{a^2+b^2}}",
+    "description": "Parallel distance $d = \\frac{|c_1-c_2|}{\\sqrt{a^2+b^2}}$. Foot of perpendicular $\\frac{h-x_1}{a} = \\frac{k-y_1}{b} = -\\frac{a x_1 + b y_1 + c}{a^2+b^2}$.",
+    "variables": "m: slope = \\tan\\theta",
+    "examTip": "Image of point $(x_1, y_1)$ in line: $\\frac{h-x_1}{a} = \\frac{k-y_1}{b} = -2 \\frac{a x_1 + b y_1 + c}{a^2+b^2}$."
+  },
+  {
+    "id": "FORM-M-111",
+    "subject": "Mathematics",
+    "chapter": "Pair of Straight Lines",
+    "title": "Homogeneous 2nd Degree Pair & General Form",
+    "formula": "a x^2 + 2 h x y + b y^2 = 0, \\quad \\tan\\theta = \\left| \\frac{2\\sqrt{h^2 - a b}}{a + b} \\right|",
+    "description": "Perpendicular lines iff $a+b=0$. Coincident iff $h^2=ab$. Angle bisectors $\\frac{x^2-y^2}{a-b} = \\frac{xy}{h}$.",
+    "variables": "a, b, h: coefficients",
+    "examTip": "General 2nd degree pair condition: $\\Delta = a b c + 2 f g h - a f^2 - b g^2 - c h^2 = 0$."
+  },
+  {
+    "id": "FORM-M-112",
+    "subject": "Mathematics",
+    "chapter": "Circle",
+    "title": "Standard, General & System of Circles",
+    "formula": "x^2 + y^2 + 2gx + 2fy + c = 0 \\implies r = \\sqrt{g^2+f^2-c}, \\quad y = m x \\pm r \\sqrt{1+m^2}",
+    "description": "Tangent at $(x_1, y_1)$: $x x_1 + y y_1 + g(x+x_1) + f(y+y_1) + c = 0$. Director circle $x^2+y^2=2r^2$. Orthogonal condition $2 g_1 g_2 + 2 f_1 f_2 = c_1 + c_2$.",
+    "variables": "Center: (-g, -f), Radius: r",
+    "examTip": "Radical axis of two circles $S_1, S_2$ is $S_1 - S_2 = 0$."
+  },
+  {
+    "id": "FORM-M-113",
+    "subject": "Mathematics",
+    "chapter": "System of Circles",
+    "title": "Co-axial Circles & Radical Axis",
+    "formula": "S_1 - S_2 = 0, \\quad x^2 + y^2 + 2 g x + c = 0",
+    "description": "Radical axis is perpendicular to line joining centers. Limiting points of co-axial system are $(-\\sqrt{c}, 0)$ and $(\\sqrt{c}, 0)$ for $c > 0$.",
+    "variables": "g: variable parameter, c: constant",
+    "examTip": "Common chord of two intersecting circles $S_1, S_2$ is $S_1 - S_2 = 0$."
+  },
+  {
+    "id": "FORM-M-114",
+    "subject": "Mathematics",
+    "chapter": "Parabola",
+    "title": "Standard Parabola $y^2 = 4ax$ & Tangent Forms",
+    "formula": "y^2 = 4ax, \\quad y = m x + \\frac{a}{m}, \\quad t y = x + a t^2",
+    "description": "Focus $(a,0)$, Directrix $x=-a$, LR $= 4a$. Focal chord $t_1 t_2 = -1$. Normal in slope form $y = m x - 2am - am^3$.",
+    "variables": "a: focal parameter, m: slope",
+    "examTip": "Intersection of perpendicular tangents lies on directrix $x = -a$."
+  },
+  {
+    "id": "FORM-M-115",
+    "subject": "Mathematics",
+    "chapter": "Ellipse",
+    "title": "Standard Ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ & Properties",
+    "formula": "\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1, \\quad e = \\sqrt{1 - \\frac{b^2}{a^2}}, \\quad y = m x \\pm \\sqrt{a^2 m^2 + b^2}",
+    "description": "Foci $(\\pm ae, 0)$, Directrices $x = \\pm a/e$, LR $= 2b^2/a$. Sum of focal distances $SP + S'P = 2a$. Director circle $x^2+y^2=a^2+b^2$.",
+    "variables": "a > b, e < 1",
+    "examTip": "Area of ellipse $= \\pi a b$."
+  },
+  {
+    "id": "FORM-M-116",
+    "subject": "Mathematics",
+    "chapter": "Hyperbola",
+    "title": "Standard & Conjugate Hyperbola",
+    "formula": "\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1, \\quad e = \\sqrt{1 + \\frac{b^2}{a^2}}, \\quad y = m x \\pm \\sqrt{a^2 m^2 - b^2}",
+    "description": "Foci $(\\pm ae, 0)$, Directrices $x = \\pm a/e$, LR $= 2b^2/a$. Difference of focal distances $|SP - S'P| = 2a$. Asymptotes $y = \\pm (b/a)x$.",
+    "variables": "e > 1",
+    "examTip": "Rectangular hyperbola $x^2 - y^2 = a^2$ or $x y = c^2$ has eccentricity $e = \\sqrt{2}$."
+  },
+  {
+    "id": "FORM-M-117",
+    "subject": "Mathematics",
+    "chapter": "Indefinite Integration",
+    "title": "Standard Formulas & Special Techniques",
+    "formula": "\\int u dv = u v - \\int v du, \\quad \\int e^x [f(x) + f'(x)] dx = e^x f(x) + C",
+    "description": "Standard: $\\int \\frac{dx}{x^2+a^2} = \\frac{1}{a}\\tan^{-1}\\left(\\frac{x}{a}\\right), \\int \\frac{dx}{\\sqrt{a^2-x^2}} = \\sin^{-1}\\left(\\frac{x}{a}\\right), \\int \\frac{dx}{\\sqrt{x^2 \\pm a^2}} = \\ln|x + \\sqrt{x^2 \\pm a^2}|$.",
+    "variables": "u, v: functions of x",
+    "examTip": "ILATE rule for choice of $u$: Inverse trig, Logarithmic, Algebraic, Trigonometric, Exponential."
+  },
+  {
+    "id": "FORM-M-118",
+    "subject": "Mathematics",
+    "chapter": "Definite Integration",
+    "title": "Properties, King's Rule & Walli Formula",
+    "formula": "\\int_a^b f(x) dx = \\int_a^b f(a+b-x) dx, \\quad \\int_{-a}^a f(x) dx = 2\\int_0^a f(x) dx \\text{ (Even)}; 0 \\text{ (Odd)}",
+    "description": "Walli formula: $\\int_0^{\\pi/2} \\sin^n x dx = \\frac{(n-1)(n-3)...}{n(n-2)...} \\times K$ ($K=\\pi/2$ if $n$ even, else $1$). Leibniz rule: $\\frac{d}{dx}\\int_{g(x)}^{h(x)} f(t) dt = f(h)h' - f(g)g'$.",
+    "variables": "a, b: integration bounds",
+    "examTip": "$\\int_0^{\\pi/2} \\ln(\\sin x) dx = -\\frac{\\pi}{2} \\ln 2$."
+  },
+  {
+    "id": "FORM-M-119",
+    "subject": "Mathematics",
+    "chapter": "Applications of Integration",
+    "title": "Area Bounded by Curves",
+    "formula": "A = \\int_a^b [f(x) - g(x)] dx = \\int_a^b (y_{\\text{upper}} - y_{\\text{lower}}) dx",
+    "description": "Area between parabola $y^2 = 4ax$ and line $y = mx$ is $\\frac{8a^2}{3m^3}$. Area between two parabolas $y^2=4ax$ and $x^2=4by$ is $\\frac{16ab}{3}$.",
+    "variables": "f(x), g(x): curves",
+    "examTip": "Area of ellipse $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ is $\\pi a b$. Area of circle $x^2+y^2=r^2$ is $\\pi r^2$."
+  },
+  {
+    "id": "FORM-M-120",
+    "subject": "Mathematics",
+    "chapter": "Differential Equations",
+    "title": "First Order DE Methods & Linear Form",
+    "formula": "\\frac{dy}{dx} + P(x) y = Q(x) \\implies I F = e^{\\int P dx}, \\quad y \\cdot (I F) = \\int Q \\cdot (I F) dx + C",
+    "description": "Homogeneous DE $\\frac{dy}{dx} = f(y/x) \\implies y = v x$. Exact DE $M dx + N dy = 0 \\iff \\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x}$.",
+    "variables": "P(x), Q(x): functions of x",
+    "examTip": "Bernoulli DE $\\frac{dy}{dx} + P y = Q y^n \\implies$ divide by $y^n$, substitute $v = y^{1-n}$."
+  },
+  {
+    "id": "FORM-M-121",
+    "subject": "Mathematics",
+    "chapter": "Three-Dimensional Geometry",
+    "title": "Line, Plane & Shortest Distance",
+    "formula": "\\frac{x-x_1}{a} = \\frac{y-y_1}{b} = \\frac{z-z_1}{c}, \\quad S D = \\frac{|(\\vec{a}_2 - \\vec{a}_1) \\cdot (\\vec{b}_1 \\times \\vec{b}_2)|}{|\\vec{b}_1 \\times \\vec{b}_2|}",
+    "description": "Plane form: $a x + b y + c z + d = 0$. Distance from $(x_1,y_1,z_1)$ to plane $= \\frac{|a x_1 + b y_1 + c z_1 + d|}{\\sqrt{a^2+b^2+c^2}}$. Sphere: $x^2+y^2+z^2+2ux+2vy+2wz+d=0$.",
+    "variables": "a, b, c: direction ratios",
+    "examTip": "Angle between line and plane: $\\sin\\phi = \\frac{|a_1 a_2 + b_1 b_2 + c_1 c_2|}{\\sqrt{\\sum a_1^2}\\sqrt{\\sum a_2^2}}$."
+  },
+  {
+    "id": "FORM-M-122",
+    "subject": "Mathematics",
+    "chapter": "Vectors",
+    "title": "Dot, Cross & Triple Products",
+    "formula": "\\vec{a} \\cdot \\vec{b} = |a||b| \\cos\\theta, \\quad |\\vec{a} \\times \\vec{b}| = |a||b| \\sin\\theta, \\quad [\\vec{a} \\, \\vec{b} \\, \\vec{c}] = \\vec{a} \\cdot (\\vec{b} \\times \\vec{c})",
+    "description": "BAC-CAB Rule: $\\vec{a} \\times (\\vec{b} \\times \\vec{c}) = (\\vec{a} \\cdot \\vec{c}) \\vec{b} - (\\vec{a} \\cdot \\vec{b}) \\vec{c}$. Vector projection of $\\vec{a}$ on $\\vec{b} = (\\frac{\\vec{a} \\cdot \\vec{b}}{|\\vec{b}|^2}) \\vec{b}$.",
+    "variables": "\\vec{a}, \\vec{b}, \\vec{c}: 3D vectors",
+    "examTip": "Volume of parallelepiped $V = |[\\vec{a} \\, \\vec{b} \\, \\vec{c}]|$. Coplanar iff $[\\vec{a} \\, \\vec{b} \\, \\vec{c}] = 0$."
+  },
+  {
+    "id": "FORM-M-123",
+    "subject": "Mathematics",
+    "chapter": "Linear Programming",
+    "title": "LPP Formulation & Corner Point Theorem",
+    "formula": "Z = a x + b y \\quad (\\text{Optimize}), \\quad a_i x + b_i y \\le c_i, \\quad x \\ge 0, y \\ge 0",
+    "description": "Corner Point Theorem: Optimal value of objective function $Z$ occurs at one of the corner points (vertices) of the feasible region.",
+    "variables": "x, y: decision variables",
+    "examTip": "Multiple optimal solutions occur when two adjacent vertices yield the same optimal $Z$ value."
+  },
+  {
+    "id": "FORM-M-124",
+    "subject": "Mathematics",
+    "chapter": "Probability",
+    "title": "Bayes Theorem, Distribution & Variance",
+    "formula": "P(E_k | A) = \\frac{P(E_k) P(A | E_k)}{\\sum P(E_i) P(A | E_i)}, \\quad P(X = k) = {}^n C_k p^k q^{n-k}",
+    "description": "Binomial Mean $= n p$, Variance $= n p q \\implies \\text{Mean} > \\text{Variance}$. Variance of first $n$ natural numbers $= (n^2 - 1) / 12$.",
+    "variables": "n: trials, p: success, q = 1-p",
+    "examTip": "Coefficient of Variation $CV = (\\sigma / \\bar{x}) \\times 100$. Lower CV $\\implies$ higher consistency."
+  },
+  {
+    "id": "FORM-P-125",
+    "subject": "Physics",
+    "chapter": "Units and Measurements",
+    "title": "SI Units & Dimensional Formulas",
+    "formula": "[G] = [M^{-1} L^3 T^{-2}], \\quad [h] = [M L^2 T^{-1}], \\quad [\\varepsilon_0] = [M^{-1} L^{-3} T^4 A^2]",
+    "description": "Principle of Homogeneity: LHS and RHS dimensions must be equal. Error propagation: $\\frac{\\Delta Z}{Z} = p \\frac{\\Delta A}{A} + q \\frac{\\Delta B}{B}$.",
+    "variables": "G: gravitational constant, h: Planck constant",
+    "examTip": "Absolute errors always ADD in sum and difference: $\\Delta Z = \\Delta A + \\Delta B$."
+  },
+  {
+    "id": "FORM-P-126",
+    "subject": "Physics",
+    "chapter": "Motion in a Straight Line",
+    "title": "1D Motion Equations & Relative Speed",
+    "formula": "v = u + a t, \\quad s = u t + \\frac{1}{2} a t^2, \\quad v^2 = u^2 + 2 a s, \\quad s_n = u + \\frac{a}{2}(2n - 1)",
+    "description": "Galileo odd numbers law for free fall $1:3:5:7...$. Max height $H = u^2/(2g)$, Time of flight $T = 2u/g$. Relative speed in 1D $v_{rel} = v_A \\pm v_B$.",
+    "variables": "u: initial velocity, a: acceleration, t: time",
+    "examTip": "Kinematic 3 equations apply ONLY when acceleration $a$ is CONSTANT."
+  },
+  {
+    "id": "FORM-P-127",
+    "subject": "Physics",
+    "chapter": "Motion in a Plane",
+    "title": "Oblique Projectile & Circular Motion",
+    "formula": "T = \\frac{2 u \\sin\\theta}{g}, \\quad H_{\\max} = \\frac{u^2 \\sin^2\\theta}{2g}, \\quad R = \\frac{u^2 \\sin 2\\theta}{g}, \\quad a_c = \\frac{v^2}{r} = \\omega^2 r",
+    "description": "Trajectory $y = x \\tan\\theta - \\frac{g x^2}{2 u^2 \\cos^2\\theta}$. Range is max at $\\theta = 45^\\circ$. Complementary angles $\\theta$ and $90^\\circ - \\theta$ give SAME range.",
+    "variables": "u: projection speed, \\theta: angle, r: radius",
+    "examTip": "Centripetal force does ZERO work ($W=0$) because force is perpendicular to velocity."
+  },
+  {
+    "id": "FORM-P-128",
+    "subject": "Physics",
+    "chapter": "Laws of Motion",
+    "title": "Newton's Laws, Friction & Banking",
+    "formula": "F_{net} = m a, \\quad f_s \\le \\mu_s N, \\quad f_k = \\mu_k N, \\quad v_{\\max} = \\sqrt{r g \\frac{\\mu_s + \\tan\\theta}{1 - \\mu_s \\tan\\theta}}",
+    "description": "Apparent weight in elevator $N = m(g \\pm a)$. Angle of repose $\\tan\\theta = \\mu_s$. Atwood machine $a = \\frac{m_2 - m_1}{m_1 + m_2} g$.",
+    "variables": "m: mass, \\mu: friction coeff, N: normal force",
+    "examTip": "Optimum speed on banked road without friction dependency: $v = \\sqrt{r g \\tan\\theta}$."
+  },
+  {
+    "id": "FORM-P-129",
+    "subject": "Physics",
+    "chapter": "Work, Energy and Power",
+    "title": "Work-Energy Theorem & Collisions",
+    "formula": "W_{net} = \\Delta K = \\frac{1}{2}m v^2 - \\frac{1}{2}m u^2, \\quad P = \\vec{F} \\cdot \\vec{v}, \\quad e = \\frac{v_2 - v_1}{u_1 - u_2}",
+    "description": "Spring potential energy $U = \\frac{1}{2} k x^2$. Force-Potential relation $F = -\\frac{dU}{dx}$. Elastic collision $e=1$, Inelastic $0 < e < 1$, Perfectly inelastic $e=0$.",
+    "variables": "W: work, K: kinetic energy, e: restitution",
+    "examTip": "1D Elastic collision of equal masses $m_1 = m_2$: velocities INTERCHANGE ($v_1 = u_2, v_2 = u_1$)."
+  },
+  {
+    "id": "FORM-P-130",
+    "subject": "Physics",
+    "chapter": "Rotational Motion",
+    "title": "Moment of Inertia, Torque & Pure Rolling",
+    "formula": "I = \\sum m_i r_i^2, \\quad \\tau = I \\alpha, \\quad L = I \\omega, \\quad K_{rot} = \\frac{1}{2} I \\omega^2",
+    "description": "Parallel axis theorem $I = I_{cm} + M d^2$. Perpendicular axis theorem $I_z = I_x + I_y$ (2D lamina). Pure rolling $v_{cm} = R \\omega, a_{cm} = R \\alpha$.",
+    "variables": "I: moment of inertia, \\tau: torque, L: angular momentum",
+    "examTip": "Moment of inertia: Solid sphere $2/5 M R^2$, Disc $1/2 M R^2$, Ring $M R^2$, Shell $2/3 M R^2$."
+  },
+  {
+    "id": "FORM-P-131",
+    "subject": "Physics",
+    "chapter": "Gravitation",
+    "title": "Kepler Laws, Variation of g & Escape Speed",
+    "formula": "F = \\frac{G M m}{r^2}, \\quad g_h = g\\left(1 - \\frac{2h}{R}\\right), \\quad v_e = \\sqrt{\\frac{2 G M}{R}} = \\sqrt{2 g R}",
+    "description": "Orbital speed $v_o = \\sqrt{\\frac{G M}{r}}$. Relation $v_e = \\sqrt{2} v_o \\approx 11.2 \\text{ km/s}$. Kepler's 3rd law $T^2 \\propto r^3$. Geostationary height $h \\approx 36000 \\text{ km}$.",
+    "variables": "G: gravitational constant, R: Earth radius",
+    "examTip": "Binding energy of satellite in circular orbit $E_{total} = -\\frac{G M m}{2r} = -K = \\frac{1}{2} U$."
+  },
+  {
+    "id": "FORM-P-132",
+    "subject": "Physics",
+    "chapter": "Properties of Matter",
+    "title": "Elasticity, Viscosity & Surface Tension",
+    "formula": "Y = \\frac{\\text{Stress}}{\\text{Strain}} = \\frac{F L}{A \\Delta L}, \\quad v_t = \\frac{2 r^2 (\\rho - \\sigma) g}{9 \\eta}, \\quad h = \\frac{2 T \\cos\\theta}{r \\rho g}",
+    "description": "Bulk modulus $B = -\\frac{\\Delta P}{\\Delta V/V}$. Excess pressure in soap bubble $\\Delta P = \\frac{4T}{R}$ (liquid drop $\\Delta P = \\frac{2T}{R}$). Bernoulli law $P + \\frac{1}{2}\\rho v^2 + \\rho g y = \\text{const}$.",
+    "variables": "Y: Young's modulus, \\eta: viscosity, T: surface tension",
+    "examTip": "Terminal velocity is directly proportional to the SQUARE of radius ($v_t \\propto r^2$)."
+  },
+  {
+    "id": "FORM-P-133",
+    "subject": "Physics",
+    "chapter": "Heat and Thermodynamics",
+    "title": "Heat Transfer, First Law & Carnot Engine",
+    "formula": "\\Delta Q = \\Delta U + W, \\quad W_{iso} = n R T \\ln\\left(\\frac{V_2}{V_1}\\right), \\quad \\eta = 1 - \\frac{T_2}{T_1}",
+    "description": "First law $\\Delta U = q + w$. Adiabatic process $P V^\\gamma = \\text{const}, W = \\frac{P_1 V_1 - P_2 V_2}{\\gamma - 1}$. Stefan law $P = \\varepsilon \\sigma A T^4$. Wien displacement law $\\lambda_{max} T = b$.",
+    "variables": "\\gamma = C_p/C_v, T_1: source, T_2: sink",
+    "examTip": "Mayer's relation $C_p - C_v = R$. Monatomic $\\gamma = 1.67$, Diatomic $\\gamma = 1.40$."
+  },
+  {
+    "id": "FORM-P-134",
+    "subject": "Physics",
+    "chapter": "Kinetic Theory of Gases",
+    "title": "Molecular Speeds & Degrees of Freedom",
+    "formula": "v_{rms} = \\sqrt{\\frac{3 R T}{M}}, \\quad v_{avg} = \\sqrt{\\frac{8 R T}{\\pi M}}, \\quad v_{mp} = \\sqrt{\\frac{2 R T}{M}}, \\quad U = \\frac{f}{2} n R T",
+    "description": "Equipartition law: Energy per degree of freedom per molecule $= \\frac{1}{2} k_B T$. Pressure $P = \\frac{1}{3} \\rho v_{rms}^2$. $\\gamma = 1 + \\frac{2}{f}$.",
+    "variables": "f: degrees of freedom, M: molar mass",
+    "examTip": "Speed ratio RAM: $v_{rms} > v_{avg} > v_{mp}$ ($1.225 : 1.128 : 1.000$)."
+  },
+  {
+    "id": "FORM-P-135",
+    "subject": "Physics",
+    "chapter": "Oscillations",
+    "title": "Simple Harmonic Motion & Pendulum",
+    "formula": "a = -\\omega^2 x, \\quad x(t) = A \\sin(\\omega t + \\phi), \\quad T = 2\\pi \\sqrt{\\frac{m}{k}}, \\quad T = 2\\pi \\sqrt{\\frac{L}{g}}",
+    "description": "Velocity $v = \\omega \\sqrt{A^2 - x^2}$. Total energy $E = \\frac{1}{2} m \\omega^2 A^2$. Position where $K=U$ is $x = \\pm A/\\sqrt{2}$.",
+    "variables": "A: amplitude, \\omega: angular frequency",
+    "examTip": "Frequency of energy oscillation ($K$ or $U$) is DOUBLE the frequency of SHM displacement ($2f$)."
+  },
+  {
+    "id": "FORM-P-136",
+    "subject": "Physics",
+    "chapter": "Waves",
+    "title": "Wave Equation, Sound Speed & Doppler Effect",
+    "formula": "y(x,t) = A \\sin(k x - \\omega t), \\quad v = \\sqrt{\\frac{T}{\\mu}}, \\quad f' = f \\left(\\frac{v \\pm v_o}{v \\mp v_s}\\right)",
+    "description": "Speed of sound in gas $v = \\sqrt{\\frac{\\gamma P}{\\rho}}$. Organ pipes: Open $f_n = n \\frac{v}{2L}$ (all harmonics); Closed $f_n = (2n-1)\\frac{v}{4L}$ (odd harmonics). Beats $f_{beat} = |f_1 - f_2|$.",
+    "variables": "v: sound speed, v_o: observer, v_s: source",
+    "examTip": "Closed organ pipe produces ONLY odd harmonics ($1:3:5...$)."
+  },
+  {
+    "id": "FORM-P-137",
+    "subject": "Physics",
+    "chapter": "Electrostatics",
+    "title": "Coulomb Law, Field, Potential & Capacitors",
+    "formula": "F = \\frac{1}{4\\pi\\varepsilon_0}\\frac{|q_1 q_2|}{r^2}, \\quad E = -\\frac{dV}{dr}, \\quad C = \\frac{\\varepsilon_0 A}{d}, \\quad U = \\frac{1}{2} C V^2",
+    "description": "Gauss law $\\oint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enc}}{\\varepsilon_0}$. Short dipole field: Axial $E = \\frac{2 k p}{r^3}$, Equatorial $E = \\frac{k p}{r^3}$. Dielectric insertion $C' = K C_0$.",
+    "variables": "\\varepsilon_0 = 8.854 \\times 10^{-12} \\text{ F/m}",
+    "examTip": "Electric field inside a hollow conducting sphere is strictly ZERO ($E_{in} = 0$)."
+  },
+  {
+    "id": "FORM-P-138",
+    "subject": "Physics",
+    "chapter": "Current Electricity",
+    "title": "Ohm's Law, Resistivity & Potentiometer",
+    "formula": "V = I R, \\quad R = \\rho \\frac{L}{A}, \\quad v_d = \\frac{e E \\tau}{m}, \\quad I = n e A v_d, \\quad P_{max} = \\frac{\\mathcal{E}^2}{4r}",
+    "description": "Wheatstone bridge balance $P/Q = R/S$. Meter bridge $R/S = l/(100-l)$. Potentiometer internal resistance $r = R(l_1/l_2 - 1)$. Stretched wire $L' = n L \\implies R' = n^2 R$.",
+    "variables": "v_d: drift velocity, \\tau: relaxation time",
+    "examTip": "Max power transfer theorem: Power delivered to load $R$ is maximum when load matches internal resistance ($R = r$)."
+  },
+  {
+    "id": "FORM-P-139",
+    "subject": "Physics",
+    "chapter": "Moving Charges and Magnetism",
+    "title": "Lorentz Force, Biot-Savart & Cyclotron",
+    "formula": "\\vec{F} = q(\\vec{v} \\times \\vec{B}), \\quad r = \\frac{m v}{q B}, \\quad B_{\\text{wire}} = \\frac{\\mu_0 I}{2\\pi r}, \\quad B_{\\text{loop}} = \\frac{\\mu_0 N I}{2 R}",
+    "description": "Biot-Savart law $d\\vec{B} = \\frac{\\mu_0}{4\\pi} \\frac{I d\\vec{l} \\times \\hat{r}}{r^2}$. Ampere law $\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I$. Parallel wires force per length $F/L = \\frac{\\mu_0 I_1 I_2}{2\\pi d}$.",
+    "variables": "B: magnetic field, q: charge, v: speed",
+    "examTip": "Magnetic force does ZERO work ($W=0$) on moving charge because force is perpendicular to velocity."
+  },
+  {
+    "id": "FORM-P-140",
+    "subject": "Physics",
+    "chapter": "Magnetism and Matter",
+    "title": "Earth's Magnetism & Magnetic Materials",
+    "formula": "B_H = B_e \\cos\\delta, \\quad B_V = B_e \\sin\\delta, \\quad \\tan\\delta = \\frac{B_V}{B_H}, \\quad B = \\mu_0 H(1 + \\chi_m)",
+    "description": "Diamagnetic $\\chi_m < 0, \\mu_r < 1$. Paramagnetic $\\chi_m > 0, \\mu_r > 1$. Ferromagnetic $\\chi_m \\gg 1, \\mu_r \\gg 1$. Curie law $\\chi \\propto 1/T$.",
+    "variables": "\\delta: dip angle, \\chi_m: susceptibility",
+    "examTip": "At magnetic equator $\\delta = 0^\\circ \\implies B_V = 0$. At poles $\\delta = 90^\\circ \\implies B_H = 0$."
+  },
+  {
+    "id": "FORM-P-141",
+    "subject": "Physics",
+    "chapter": "Electromagnetic Induction",
+    "title": "Faraday's Law, Motional EMF & Inductance",
+    "formula": "\\mathcal{E} = -N \\frac{d\\Phi_B}{dt}, \\quad \\mathcal{E}_{rot} = \\frac{1}{2} B \\omega L^2, \\quad L = \\frac{\\mu_0 N^2 A}{l}, \\quad U = \\frac{1}{2} L I^2",
+    "description": "Motional EMF $\\mathcal{E} = B L v$. Lenz law reflects energy conservation. Mutual inductance $M = k \\sqrt{L_1 L_2}$. Induced charge $q = \\Delta\\Phi_B / R$.",
+    "variables": "\\Phi_B: magnetic flux, L: self inductance",
+    "examTip": "AC generator peak EMF $\\mathcal{E}_0 = N B A \\omega$."
+  },
+  {
+    "id": "FORM-P-142",
+    "subject": "Physics",
+    "chapter": "Alternating Current",
+    "title": "Reactance, Impedance & LCR Resonance",
+    "formula": "X_L = \\omega L, \\quad X_C = \\frac{1}{\\omega C}, \\quad Z = \\sqrt{R^2 + (X_L - X_C)^2}, \\quad f_0 = \\frac{1}{2\\pi\\sqrt{LC}}",
+    "description": "RMS values $V_{rms} = V_0/\\sqrt{2}, I_{rms} = I_0/\\sqrt{2}$. Average power $P_{avg} = V_{rms} I_{rms} \\cos\\phi$. Quality factor $Q = \\frac{\\omega_0 L}{R} = \\frac{1}{R}\\sqrt{\\frac{L}{C}}$. Transformer ratio $V_s/V_p = N_s/N_p = I_p/I_s$.",
+    "variables": "Z: impedance, \\phi: phase angle",
+    "examTip": "At series resonance ($X_L = X_C$), $Z_{min} = R$, current is maximum $I_{max} = V/R$, power factor $\\cos\\phi = 1$."
+  },
+  {
+    "id": "FORM-P-143",
+    "subject": "Physics",
+    "chapter": "Electromagnetic Waves",
+    "title": "Maxwell Equations & Speed of Light",
+    "formula": "c = \\frac{1}{\\sqrt{\\mu_0 \\varepsilon_0}} = \\frac{E_0}{B_0} = 3 \\times 10^8 \\text{ m/s}, \\quad I_d = \\varepsilon_0 \\frac{d\\Phi_E}{dt}",
+    "description": "Total energy density $u = \\frac{1}{2}\\varepsilon_0 E_0^2 = \\frac{B_0^2}{2\\mu_0}$. Poynting vector $\\vec{S} = \\frac{1}{\\mu_0} (\\vec{E} \\times \\vec{B})$. Radiation pressure $P = I/c$.",
+    "variables": "I_d: displacement current, c: speed of light",
+    "examTip": "EM waves are transverse non-mechanical waves; $\\vec{E}$ and $\\vec{B}$ oscillate in phase perpendicular to propagation."
+  },
+  {
+    "id": "FORM-P-144",
+    "subject": "Physics",
+    "chapter": "Ray Optics",
+    "title": "Mirrors, Lenses, Prism & Telescope",
+    "formula": "\\frac{1}{f} = \\frac{1}{v} + \\frac{1}{u} \\text{ (Mirror)}, \\quad \\frac{1}{f} = \\frac{1}{v} - \\frac{1}{u} \\text{ (Lens)}, \\quad \\frac{1}{f} = (\\mu-1)\\left(\\frac{1}{R_1}-\\frac{1}{R_2}\\right)",
+    "description": "Snell law $\\mu_1 \\sin i = \\mu_2 \\sin r$. Critical angle $\\sin i_c = 1/\\mu$. Prism formula $\\mu = \\frac{\\sin((A+D_m)/2)}{\\sin(A/2)}$. Astronomical telescope magnification $M = -f_o / f_e$, length $L = f_o + f_e$.",
+    "variables": "f: focal length, \\mu: refractive index",
+    "examTip": "Lens power $P = 1/f(\\text{m})$ Diopters. Contact lenses $P_{eq} = P_1 + P_2$."
+  },
+  {
+    "id": "FORM-P-145",
+    "subject": "Physics",
+    "chapter": "Wave Optics",
+    "title": "Interference, Diffraction & Polarization",
+    "formula": "\\beta = \\frac{\\lambda D}{d}, \\quad I = 4 I_0 \\cos^2(\\phi/2), \\quad a \\sin\\theta = n \\lambda \\text{ (Diffraction Minima)}",
+    "description": "YDSE bright fringe $y_n = n \\lambda D / d$, dark fringe $y'_n = (2n-1)\\lambda D / (2d)$. Single slit central max width $\\beta_0 = 2 \\lambda D / a$. Brewster law $\\tan i_p = \\mu$. Malus law $I = I_0 \\cos^2\\theta$.",
+    "variables": "\\beta: fringe width, \\lambda: wavelength",
+    "examTip": "Central diffraction maximum width is TWICE the width of secondary maxima."
+  },
+  {
+    "id": "FORM-P-146",
+    "subject": "Physics",
+    "chapter": "Dual Nature of Matter",
+    "title": "Photoelectric Effect & de Broglie Wavelength",
+    "formula": "h \\nu = \\phi_0 + K_{\\max} = h \\nu_0 + e V_0, \\quad \\lambda = \\frac{h}{p} = \\frac{h}{\\sqrt{2 m e V}} = \\frac{12.27}{\\sqrt{V}} \\text{ \\AA}",
+    "description": "Photon energy $E = h \\nu = hc/\\lambda \\approx 12400 / \\lambda(\\text{\\AA}) \\text{ eV}$. Stopping potential $V_0$ depends ONLY on frequency, independent of intensity. Current depends on intensity.",
+    "variables": "V_0: stopping potential, \\lambda: de Broglie wavelength",
+    "examTip": "Davisson-Germer experiment proved wave nature of electrons through Nickel crystal diffraction ($V=54\\text{V}, \\lambda=1.66\\text{\\AA}$)."
+  },
+  {
+    "id": "FORM-P-147",
+    "subject": "Physics",
+    "chapter": "Atoms",
+    "title": "Bohr Atomic Model & Hydrogen Lines",
+    "formula": "r_n = 0.529 \\frac{n^2}{Z} \\text{ \\AA}, \\quad v_n = 2.18 \\times 10^6 \\frac{Z}{n} \\text{ m/s}, \\quad E_n = -13.6 \\frac{Z^2}{n^2} \\text{ eV}",
+    "description": "Rydberg formula $1/\\lambda = R Z^2 (1/n_1^2 - 1/n_2^2)$. Lyman (UV, $n_1=1$), Balmer (Visible, $n_1=2$), Paschen (IR, $n_1=3$). Angular momentum quantization $m v r = n h / (2\\pi)$.",
+    "variables": "n: principal quantum number, Z: atomic number",
+    "examTip": "Total spectral lines emitted from level $n$ to ground state: $N = n(n-1)/2$."
+  },
+  {
+    "id": "FORM-P-148",
+    "subject": "Physics",
+    "chapter": "Nuclei",
+    "title": "Nuclear Radius, Binding Energy & Decay",
+    "formula": "R = R_0 A^{1/3}, \\quad E_b = \\Delta m (\\text{amu}) \\times 931.5 \\text{ MeV}, \\quad N(t) = N_0 e^{-\\lambda t}",
+    "description": "Half-life $T_{1/2} = \\frac{0.693}{\\lambda}$. Mean life $\\tau = 1/\\lambda = 1.44 T_{1/2}$. Nuclear density $\\rho \\approx 2.3 \\times 10^{17} \\text{ kg/m}^3$ is CONSTANT for all nuclei. Max $E_b/A$ at Fe-56 ($8.75 \\text{ MeV}$).",
+    "variables": "A: mass number, \\lambda: decay constant",
+    "examTip": "Nuclear force is short-range, charge-independent, and non-central."
+  },
+  {
+    "id": "FORM-P-149",
+    "subject": "Physics",
+    "chapter": "Semiconductor Electronics",
+    "title": "Diodes, Rectifiers, Transistors & Logic Gates",
+    "formula": "\\sigma = e(n_e \\mu_e + n_h \\mu_h), \\quad n_e n_h = n_i^2, \\quad \\beta = \\frac{\\alpha}{1-\\alpha}, \\quad Y = \\overline{A \\cdot B} \\text{ (NAND)}",
+    "description": "Rectifier efficiency: Half-wave $40.6\\%$, Full-wave $81.2\\%$. Zener diode operates in reverse breakdown as voltage regulator. Transistor $I_e = I_b + I_c$. De Morgan laws $\\overline{A+B} = \\bar{A} \\cdot \\bar{B}$.",
+    "variables": "n_i: intrinsic carrier density, \\beta: CE current gain",
+    "examTip": "CE transistor amplifier introduces a $180^\\circ$ ($\\pi$ rad) phase shift between input and output signal."
+  },
+  {
+    "id": "FORM-C-150",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Avogadro Constant (N_A)",
+    "formula": "N_A = 6.02214076 \\times 10^{23} \\; \\text{mol}^{-1}",
+    "description": "Standard Value: $N_A = 6.02214076 \\times 10^{23} \\text{ \\text{mol}^{-1}}$.",
+    "variables": "Usage: Conversion between moles and number of particles (atoms, molecules, ions).",
+    "examTip": "Exam Tip: Essential constant for Avogadro Constant stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-151",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Universal Gas Constant (SI) (R)",
+    "formula": "R = 8.3144626 \\; \\text{J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}",
+    "description": "Standard Value: $R = 8.3144626 \\text{ \\text{J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}}$.",
+    "variables": "Usage: Ideal gas equation $PV = nRT$, thermodynamic free energy $\\Delta G^0 = -RT \\ln K$.",
+    "examTip": "Exam Tip: Essential constant for Universal Gas Constant (SI) stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-152",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Universal Gas Constant (L·atm) (R)",
+    "formula": "R = 0.082057 \\; \\text{L}\\cdot\\text{atm}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}",
+    "description": "Standard Value: $R = 0.082057 \\text{ \\text{L}\\cdot\\text{atm}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}}$.",
+    "variables": "Usage: Gas law calculations with pressure in atm and volume in liters.",
+    "examTip": "Exam Tip: Essential constant for Universal Gas Constant (L·atm) stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-153",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Universal Gas Constant (Calories) (R)",
+    "formula": "R = 1.987 \\approx 2.0 \\; \\text{cal}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}",
+    "description": "Standard Value: $R = 1.987 \\approx 2.0 \\text{ \\text{cal}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}}$.",
+    "variables": "Usage: Thermal chemistry calculations where energy is given in calories.",
+    "examTip": "Exam Tip: Essential constant for Universal Gas Constant (Calories) stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-154",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Boltzmann Constant (k_B = R / N_A)",
+    "formula": "k_B = R / N_A = 1.380649 \\times 10^{-23} \\; \\text{J}\\cdot\\text{K}^{-1}",
+    "description": "Standard Value: $k_B = R / N_A = 1.380649 \\times 10^{-23} \\text{ \\text{J}\\cdot\\text{K}^{-1}}$.",
+    "variables": "Usage: Gas kinetic theory, equipartition of energy per molecule.",
+    "examTip": "Exam Tip: Essential constant for Boltzmann Constant stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-155",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Faraday Constant (F = N_A e)",
+    "formula": "F = N_A e = 96485.33 \\approx 96500 \\; \\text{C}\\cdot\\text{mol}^{-1}",
+    "description": "Standard Value: $F = N_A e = 96485.33 \\approx 96500 \\text{ \\text{C}\\cdot\\text{mol}^{-1}}$.",
+    "variables": "Usage: Electrolysis, charge carried by 1 mole of electrons ($Q = n F$).",
+    "examTip": "Exam Tip: Essential constant for Faraday Constant stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-156",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Planck Constant (h)",
+    "formula": "h = 6.62607015 \\times 10^{-34} \\; \\text{J}\\cdot\\text{s}",
+    "description": "Standard Value: $h = 6.62607015 \\times 10^{-34} \\text{ \\text{J}\\cdot\\text{s}}$.",
+    "variables": "Usage: Photon energy $E = h\\nu = hc/\\lambda$, de Broglie wavelength $\\lambda = h/p$.",
+    "examTip": "Exam Tip: Essential constant for Planck Constant stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-157",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Speed of Light in Vacuum (c)",
+    "formula": "c = 2.99792458 \\times 10^8 \\; \\text{m}\\cdot\\text{s}^{-1}",
+    "description": "Standard Value: $c = 2.99792458 \\times 10^8 \\text{ \\text{m}\\cdot\\text{s}^{-1}}$.",
+    "variables": "Usage: Electromagnetic radiation frequency-wavelength relation $c = \\nu \\lambda$.",
+    "examTip": "Exam Tip: Essential constant for Speed of Light in Vacuum stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-158",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Elementary Charge (e)",
+    "formula": "e = 1.602176634 \\times 10^{-19} \\; \\text{C}",
+    "description": "Standard Value: $e = 1.602176634 \\times 10^{-19} \\text{ \\text{C}}$.",
+    "variables": "Usage: Charge of single electron or proton.",
+    "examTip": "Exam Tip: Essential constant for Elementary Charge stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-159",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Electron Rest Mass (m_e)",
+    "formula": "m_e = 9.1093837 \\times 10^{-31} \\; \\text{kg}",
+    "description": "Standard Value: $m_e = 9.1093837 \\times 10^{-31} \\text{ \\text{kg}}$.",
+    "variables": "Usage: Bohr model, de Broglie wavelength of electron.",
+    "examTip": "Exam Tip: Essential constant for Electron Rest Mass stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-160",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Proton Rest Mass (m_p)",
+    "formula": "m_p = 1.6726219 \\times 10^{-27} \\; \\text{kg}",
+    "description": "Standard Value: $m_p = 1.6726219 \\times 10^{-27} \\text{ \\text{kg}}$.",
+    "variables": "Usage: Atomic mass unit scale reference.",
+    "examTip": "Exam Tip: Essential constant for Proton Rest Mass stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-161",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Neutron Rest Mass (m_n)",
+    "formula": "m_n = 1.6749275 \\times 10^{-27} \\; \\text{kg}",
+    "description": "Standard Value: $m_n = 1.6749275 \\times 10^{-27} \\text{ \\text{kg}}$.",
+    "variables": "Usage: Nuclear mass defect and mass number.",
+    "examTip": "Exam Tip: Essential constant for Neutron Rest Mass stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-162",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Atomic Mass Unit (1 u) (1 \\text{ u} = 1/12 \\text{ Mass of } ^{12}\\text{C})",
+    "formula": "1 \\text{ u} = 1/12 \\text{ Mass of } ^{12}\\text{C} = 1.660539 \\times 10^{-27} \\; \\text{kg}",
+    "description": "Standard Value: $1 \\text{ u} = 1/12 \\text{ Mass of } ^{12}\\text{C} = 1.660539 \\times 10^{-27} \\text{ \\text{kg}}$.",
+    "variables": "Usage: Conversion between amu and kilograms ($1 \\text{ u} \\equiv 931.5 \\text{ MeV}$).",
+    "examTip": "Exam Tip: Essential constant for Atomic Mass Unit (1 u) stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-163",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Rydberg Constant for Hydrogen (R_H)",
+    "formula": "R_H = 1.09677 \\times 10^7 \\; \\text{m}^{-1}",
+    "description": "Standard Value: $R_H = 1.09677 \\times 10^7 \\text{ \\text{m}^{-1}}$.",
+    "variables": "Usage: Hydrogen spectral lines wave number $\\bar{\\nu} = R_H Z^2 (1/n_1^2 - 1/n_2^2)$.",
+    "examTip": "Exam Tip: Essential constant for Rydberg Constant for Hydrogen stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-164",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Standard Atmospheric Pressure (1 \\text{ atm})",
+    "formula": "1 \\text{ atm} = 1.01325 \\times 10^5 = 760 \\; \\text{Pa} = \\text{N/m}^2 = \\text{mmHg}",
+    "description": "Standard Value: $1 \\text{ atm} = 1.01325 \\times 10^5 = 760 \\text{ \\text{Pa} = \\text{N/m}^2 = \\text{mmHg}}$.",
+    "variables": "Usage: Gas law calculations and standard state conditions (STP).",
+    "examTip": "Exam Tip: Essential constant for Standard Atmospheric Pressure stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-165",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Standard Temperature & Pressure (STP) (T_{\\text{STP}}, P_{\\text{STP}})",
+    "formula": "T_{\\text{STP}}, P_{\\text{STP}} = 273.15 \\text{ K } (0^\\circ\\text{C}), 1 \\text{ atm} \\; \\text{K, atm}",
+    "description": "Standard Value: $T_{\\text{STP}}, P_{\\text{STP}} = 273.15 \\text{ K } (0^\\circ\\text{C}), 1 \\text{ atm} \\text{ \\text{K, atm}}$.",
+    "variables": "Usage: Molar volume of ideal gas at STP = $22.414 \\text{ L/mol}$ ($22.7 \\text{ L}$ at 1 bar).",
+    "examTip": "Exam Tip: Essential constant for Standard Temperature & Pressure (STP) stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-166",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Constant: Standard Ambient Temp & Pressure (SATP) (T_{\\text{SATP}}, P_{\\text{SATP}})",
+    "formula": "T_{\\text{SATP}}, P_{\\text{SATP}} = 298.15 \\text{ K } (25^\\circ\\text{C}), 1 \\text{ bar} \\; \\text{K, bar}",
+    "description": "Standard Value: $T_{\\text{SATP}}, P_{\\text{SATP}} = 298.15 \\text{ K } (25^\\circ\\text{C}), 1 \\text{ bar} \\text{ \\text{K, bar}}$.",
+    "variables": "Usage: Standard thermodynamic state calculations.",
+    "examTip": "Exam Tip: Essential constant for Standard Ambient Temp & Pressure (SATP) stoichiometry and physical chemistry calculations."
+  },
+  {
+    "id": "FORM-C-167",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Hydrogen (H) (Z=1)",
+    "formula": "\\text{Molar Mass: } 1 \\text{ g/mol} \\quad (Exact: 1.008 \\text{ u})",
+    "description": "Atomic Number $Z = 1$. Standard molar mass: $1 \\text{ g/mol}$.",
+    "variables": "Element: Hydrogen (H)",
+    "examTip": "Use rounded atomic mass 1 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-168",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Helium (He) (Z=2)",
+    "formula": "\\text{Molar Mass: } 4 \\text{ g/mol} \\quad (Exact: 4.0026 \\text{ u})",
+    "description": "Atomic Number $Z = 2$. Standard molar mass: $4 \\text{ g/mol}$.",
+    "variables": "Element: Helium (He)",
+    "examTip": "Use rounded atomic mass 4 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-169",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Carbon (C) (Z=6)",
+    "formula": "\\text{Molar Mass: } 12 \\text{ g/mol} \\quad (Exact: 12.011 \\text{ u})",
+    "description": "Atomic Number $Z = 6$. Standard molar mass: $12 \\text{ g/mol}$.",
+    "variables": "Element: Carbon (C)",
+    "examTip": "Use rounded atomic mass 12 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-170",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Nitrogen (N) (Z=7)",
+    "formula": "\\text{Molar Mass: } 14 \\text{ g/mol} \\quad (Exact: 14.007 \\text{ u})",
+    "description": "Atomic Number $Z = 7$. Standard molar mass: $14 \\text{ g/mol}$.",
+    "variables": "Element: Nitrogen (N)",
+    "examTip": "Use rounded atomic mass 14 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-171",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Oxygen (O) (Z=8)",
+    "formula": "\\text{Molar Mass: } 16 \\text{ g/mol} \\quad (Exact: 15.999 \\text{ u})",
+    "description": "Atomic Number $Z = 8$. Standard molar mass: $16 \\text{ g/mol}$.",
+    "variables": "Element: Oxygen (O)",
+    "examTip": "Use rounded atomic mass 16 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-172",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Fluorine (F) (Z=9)",
+    "formula": "\\text{Molar Mass: } 19 \\text{ g/mol} \\quad (Exact: 18.998 \\text{ u})",
+    "description": "Atomic Number $Z = 9$. Standard molar mass: $19 \\text{ g/mol}$.",
+    "variables": "Element: Fluorine (F)",
+    "examTip": "Use rounded atomic mass 19 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-173",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Sodium (Na) (Z=11)",
+    "formula": "\\text{Molar Mass: } 23 \\text{ g/mol} \\quad (Exact: 22.99 \\text{ u})",
+    "description": "Atomic Number $Z = 11$. Standard molar mass: $23 \\text{ g/mol}$.",
+    "variables": "Element: Sodium (Na)",
+    "examTip": "Use rounded atomic mass 23 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-174",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Magnesium (Mg) (Z=12)",
+    "formula": "\\text{Molar Mass: } 24 \\text{ g/mol} \\quad (Exact: 24.305 \\text{ u})",
+    "description": "Atomic Number $Z = 12$. Standard molar mass: $24 \\text{ g/mol}$.",
+    "variables": "Element: Magnesium (Mg)",
+    "examTip": "Use rounded atomic mass 24 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-175",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Aluminium (Al) (Z=13)",
+    "formula": "\\text{Molar Mass: } 27 \\text{ g/mol} \\quad (Exact: 26.982 \\text{ u})",
+    "description": "Atomic Number $Z = 13$. Standard molar mass: $27 \\text{ g/mol}$.",
+    "variables": "Element: Aluminium (Al)",
+    "examTip": "Use rounded atomic mass 27 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-176",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Silicon (Si) (Z=14)",
+    "formula": "\\text{Molar Mass: } 28 \\text{ g/mol} \\quad (Exact: 28.085 \\text{ u})",
+    "description": "Atomic Number $Z = 14$. Standard molar mass: $28 \\text{ g/mol}$.",
+    "variables": "Element: Silicon (Si)",
+    "examTip": "Use rounded atomic mass 28 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-177",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Phosphorus (P) (Z=15)",
+    "formula": "\\text{Molar Mass: } 31 \\text{ g/mol} \\quad (Exact: 30.974 \\text{ u})",
+    "description": "Atomic Number $Z = 15$. Standard molar mass: $31 \\text{ g/mol}$.",
+    "variables": "Element: Phosphorus (P)",
+    "examTip": "Use rounded atomic mass 31 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-178",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Sulfur (S) (Z=16)",
+    "formula": "\\text{Molar Mass: } 32 \\text{ g/mol} \\quad (Exact: 32.06 \\text{ u})",
+    "description": "Atomic Number $Z = 16$. Standard molar mass: $32 \\text{ g/mol}$.",
+    "variables": "Element: Sulfur (S)",
+    "examTip": "Use rounded atomic mass 32 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-179",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Chlorine (Cl) (Z=17)",
+    "formula": "\\text{Molar Mass: } 35.5 \\text{ g/mol} \\quad (Exact: 35.453 \\text{ u})",
+    "description": "Atomic Number $Z = 17$. Standard molar mass: $35.5 \\text{ g/mol}$.",
+    "variables": "Element: Chlorine (Cl)",
+    "examTip": "Use rounded atomic mass 35.5 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-180",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Potassium (K) (Z=19)",
+    "formula": "\\text{Molar Mass: } 39 \\text{ g/mol} \\quad (Exact: 39.098 \\text{ u})",
+    "description": "Atomic Number $Z = 19$. Standard molar mass: $39 \\text{ g/mol}$.",
+    "variables": "Element: Potassium (K)",
+    "examTip": "Use rounded atomic mass 39 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-181",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Calcium (Ca) (Z=20)",
+    "formula": "\\text{Molar Mass: } 40 \\text{ g/mol} \\quad (Exact: 40.078 \\text{ u})",
+    "description": "Atomic Number $Z = 20$. Standard molar mass: $40 \\text{ g/mol}$.",
+    "variables": "Element: Calcium (Ca)",
+    "examTip": "Use rounded atomic mass 40 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-182",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Manganese (Mn) (Z=25)",
+    "formula": "\\text{Molar Mass: } 55 \\text{ g/mol} \\quad (Exact: 54.938 \\text{ u})",
+    "description": "Atomic Number $Z = 25$. Standard molar mass: $55 \\text{ g/mol}$.",
+    "variables": "Element: Manganese (Mn)",
+    "examTip": "Use rounded atomic mass 55 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-183",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Iron (Fe) (Z=26)",
+    "formula": "\\text{Molar Mass: } 56 \\text{ g/mol} \\quad (Exact: 55.845 \\text{ u})",
+    "description": "Atomic Number $Z = 26$. Standard molar mass: $56 \\text{ g/mol}$.",
+    "variables": "Element: Iron (Fe)",
+    "examTip": "Use rounded atomic mass 56 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-184",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Copper (Cu) (Z=29)",
+    "formula": "\\text{Molar Mass: } 63.5 \\text{ g/mol} \\quad (Exact: 63.546 \\text{ u})",
+    "description": "Atomic Number $Z = 29$. Standard molar mass: $63.5 \\text{ g/mol}$.",
+    "variables": "Element: Copper (Cu)",
+    "examTip": "Use rounded atomic mass 63.5 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-185",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Zinc (Zn) (Z=30)",
+    "formula": "\\text{Molar Mass: } 65 \\text{ g/mol} \\quad (Exact: 65.38 \\text{ u})",
+    "description": "Atomic Number $Z = 30$. Standard molar mass: $65 \\text{ g/mol}$.",
+    "variables": "Element: Zinc (Zn)",
+    "examTip": "Use rounded atomic mass 65 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-186",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Bromine (Br) (Z=35)",
+    "formula": "\\text{Molar Mass: } 80 \\text{ g/mol} \\quad (Exact: 79.904 \\text{ u})",
+    "description": "Atomic Number $Z = 35$. Standard molar mass: $80 \\text{ g/mol}$.",
+    "variables": "Element: Bromine (Br)",
+    "examTip": "Use rounded atomic mass 80 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-187",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Silver (Ag) (Z=47)",
+    "formula": "\\text{Molar Mass: } 108 \\text{ g/mol} \\quad (Exact: 107.868 \\text{ u})",
+    "description": "Atomic Number $Z = 47$. Standard molar mass: $108 \\text{ g/mol}$.",
+    "variables": "Element: Silver (Ag)",
+    "examTip": "Use rounded atomic mass 108 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-188",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Iodine (I) (Z=53)",
+    "formula": "\\text{Molar Mass: } 127 \\text{ g/mol} \\quad (Exact: 126.904 \\text{ u})",
+    "description": "Atomic Number $Z = 53$. Standard molar mass: $127 \\text{ g/mol}$.",
+    "variables": "Element: Iodine (I)",
+    "examTip": "Use rounded atomic mass 127 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-189",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Barium (Ba) (Z=56)",
+    "formula": "\\text{Molar Mass: } 137 \\text{ g/mol} \\quad (Exact: 137.327 \\text{ u})",
+    "description": "Atomic Number $Z = 56$. Standard molar mass: $137 \\text{ g/mol}$.",
+    "variables": "Element: Barium (Ba)",
+    "examTip": "Use rounded atomic mass 137 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-190",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Gold (Au) (Z=79)",
+    "formula": "\\text{Molar Mass: } 197 \\text{ g/mol} \\quad (Exact: 196.967 \\text{ u})",
+    "description": "Atomic Number $Z = 79$. Standard molar mass: $197 \\text{ g/mol}$.",
+    "variables": "Element: Gold (Au)",
+    "examTip": "Use rounded atomic mass 197 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-191",
+    "subject": "Chemistry",
+    "chapter": "Constants & Atomic Masses",
+    "title": "Atomic Weight: Lead (Pb) (Z=82)",
+    "formula": "\\text{Molar Mass: } 207 \\text{ g/mol} \\quad (Exact: 207.2 \\text{ u})",
+    "description": "Atomic Number $Z = 82$. Standard molar mass: $207 \\text{ g/mol}$.",
+    "variables": "Element: Lead (Pb)",
+    "examTip": "Use rounded atomic mass 207 g/mol for numerical calculations."
+  },
+  {
+    "id": "FORM-C-192",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Silver Chloride (AgCl)",
+    "formula": "\\text{Color: } \\text{Curdy White}",
+    "description": "Compound Silver Chloride (AgCl) produces a characteristic Curdy White precipitate.",
+    "variables": "Solubility Behavior: Soluble in dil. \\text{NH}_4\\text{OH}, insoluble in \\text{HNO}_3.",
+    "examTip": "Analytical Identification: Curdy White precipitate confirms presence of Silver Chloride (AgCl)."
+  },
+  {
+    "id": "FORM-C-193",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Silver Bromide (AgBr)",
+    "formula": "\\text{Color: } \\text{Pale Yellow}",
+    "description": "Compound Silver Bromide (AgBr) produces a characteristic Pale Yellow precipitate.",
+    "variables": "Solubility Behavior: Sparingly soluble in conc. \\text{NH}_4\\text{OH}.",
+    "examTip": "Analytical Identification: Pale Yellow precipitate confirms presence of Silver Bromide (AgBr)."
+  },
+  {
+    "id": "FORM-C-194",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Silver Iodide (AgI)",
+    "formula": "\\text{Color: } \\text{Bright Yellow}",
+    "description": "Compound Silver Iodide (AgI) produces a characteristic Bright Yellow precipitate.",
+    "variables": "Solubility Behavior: Insoluble in \\text{NH}_4\\text{OH}.",
+    "examTip": "Analytical Identification: Bright Yellow precipitate confirms presence of Silver Iodide (AgI)."
+  },
+  {
+    "id": "FORM-C-195",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Barium Sulfate (BaSO4)",
+    "formula": "\\text{Color: } \\text{White}",
+    "description": "Compound Barium Sulfate (BaSO4) produces a characteristic White precipitate.",
+    "variables": "Solubility Behavior: Insoluble in dil. \\text{HCl} or \\text{HNO}_3.",
+    "examTip": "Analytical Identification: White precipitate confirms presence of Barium Sulfate (BaSO4)."
+  },
+  {
+    "id": "FORM-C-196",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Lead Iodide (PbI2)",
+    "formula": "\\text{Color: } \\text{Golden Yellow (Golden Spangles)}",
+    "description": "Compound Lead Iodide (PbI2) produces a characteristic Golden Yellow (Golden Spangles) precipitate.",
+    "variables": "Solubility Behavior: Soluble in hot water, crystallizes on cooling.",
+    "examTip": "Analytical Identification: Golden Yellow (Golden Spangles) precipitate confirms presence of Lead Iodide (PbI2)."
+  },
+  {
+    "id": "FORM-C-197",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Copper(II) Sulfide (CuS)",
+    "formula": "\\text{Color: } \\text{Black}",
+    "description": "Compound Copper(II) Sulfide (CuS) produces a characteristic Black precipitate.",
+    "variables": "Solubility Behavior: Insoluble in yellow ammonium sulfide.",
+    "examTip": "Analytical Identification: Black precipitate confirms presence of Copper(II) Sulfide (CuS)."
+  },
+  {
+    "id": "FORM-C-198",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Cadmium Sulfide (CdS)",
+    "formula": "\\text{Color: } \\text{Yellow}",
+    "description": "Compound Cadmium Sulfide (CdS) produces a characteristic Yellow precipitate.",
+    "variables": "Solubility Behavior: Insoluble in \\text{KCN} solution.",
+    "examTip": "Analytical Identification: Yellow precipitate confirms presence of Cadmium Sulfide (CdS)."
+  },
+  {
+    "id": "FORM-C-199",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Zinc Sulfide (ZnS)",
+    "formula": "\\text{Color: } \\text{White / Off-White}",
+    "description": "Compound Zinc Sulfide (ZnS) produces a characteristic White / Off-White precipitate.",
+    "variables": "Solubility Behavior: Soluble in dil. \\text{HCl}.",
+    "examTip": "Analytical Identification: White / Off-White precipitate confirms presence of Zinc Sulfide (ZnS)."
+  },
+  {
+    "id": "FORM-C-200",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Ferric Hydroxide Fe(OH)3",
+    "formula": "\\text{Color: } \\text{Reddish-Brown}",
+    "description": "Compound Ferric Hydroxide Fe(OH)3 produces a characteristic Reddish-Brown precipitate.",
+    "variables": "Solubility Behavior: Precipitated by \\text{NH}_4\\text{OH} in presence of \\text{NH}_4\\text{Cl}.",
+    "examTip": "Analytical Identification: Reddish-Brown precipitate confirms presence of Ferric Hydroxide Fe(OH)3."
+  },
+  {
+    "id": "FORM-C-201",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Ferrous Hydroxide Fe(OH)2",
+    "formula": "\\text{Color: } \\text{Dirty Green}",
+    "description": "Compound Ferrous Hydroxide Fe(OH)2 produces a characteristic Dirty Green precipitate.",
+    "variables": "Solubility Behavior: Turns brown in air due to oxidation to \\text{Fe(OH)}_3.",
+    "examTip": "Analytical Identification: Dirty Green precipitate confirms presence of Ferrous Hydroxide Fe(OH)2."
+  },
+  {
+    "id": "FORM-C-202",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Precipitate: Nickel Dimethylglyoximate",
+    "formula": "\\text{Color: } \\text{Rosy Red / Scarlet Red}",
+    "description": "Compound Nickel Dimethylglyoximate produces a characteristic Rosy Red / Scarlet Red precipitate.",
+    "variables": "Solubility Behavior: Specific test for \\text{Ni}^{2+} using DMG in ammoniacal medium.",
+    "examTip": "Analytical Identification: Rosy Red / Scarlet Red precipitate confirms presence of Nickel Dimethylglyoximate."
+  },
+  {
+    "id": "FORM-C-203",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Ti^3+$",
+    "formula": "\\text{Color: } \\text{Purple / Violet} \\quad (3d^1)",
+    "description": "Ion $Ti^3+$ in aqueous solution displays Purple / Violet color.",
+    "variables": "Electron Configuration: 3d^1",
+    "examTip": "Color Origin: d-d transition."
+  },
+  {
+    "id": "FORM-C-204",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $V^3+$",
+    "formula": "\\text{Color: } \\text{Green} \\quad (3d^2)",
+    "description": "Ion $V^3+$ in aqueous solution displays Green color.",
+    "variables": "Electron Configuration: 3d^2",
+    "examTip": "Color Origin: d-d transition."
+  },
+  {
+    "id": "FORM-C-205",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Cr^3+$",
+    "formula": "\\text{Color: } \\text{Violet / Dark Green} \\quad (3d^3)",
+    "description": "Ion $Cr^3+$ in aqueous solution displays Violet / Dark Green color.",
+    "variables": "Electron Configuration: 3d^3",
+    "examTip": "Color Origin: Stable octahedral complex."
+  },
+  {
+    "id": "FORM-C-206",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Mn^2+$",
+    "formula": "\\text{Color: } \\text{Pale Pink} \\quad (3d^5)",
+    "description": "Ion $Mn^2+$ in aqueous solution displays Pale Pink color.",
+    "variables": "Electron Configuration: 3d^5",
+    "examTip": "Color Origin: High spin d5 spin-forbidden transition."
+  },
+  {
+    "id": "FORM-C-207",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Mn^7+ (MnO4^-)$",
+    "formula": "\\text{Color: } \\text{Deep Purple} \\quad (3d^0)",
+    "description": "Ion $Mn^7+ (MnO4^-)$ in aqueous solution displays Deep Purple color.",
+    "variables": "Electron Configuration: 3d^0",
+    "examTip": "Color Origin: Charge transfer transition (L → M)."
+  },
+  {
+    "id": "FORM-C-208",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Fe^2+$",
+    "formula": "\\text{Color: } \\text{Pale Green} \\quad (3d^6)",
+    "description": "Ion $Fe^2+$ in aqueous solution displays Pale Green color.",
+    "variables": "Electron Configuration: 3d^6",
+    "examTip": "Color Origin: Hydrated ion."
+  },
+  {
+    "id": "FORM-C-209",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Fe^3+$",
+    "formula": "\\text{Color: } \\text{Yellowish Brown} \\quad (3d^5)",
+    "description": "Ion $Fe^3+$ in aqueous solution displays Yellowish Brown color.",
+    "variables": "Electron Configuration: 3d^5",
+    "examTip": "Color Origin: Hydrolysis forms brown hydroxo complexes."
+  },
+  {
+    "id": "FORM-C-210",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Co^2+$",
+    "formula": "\\text{Color: } \\text{Pink (Hydrated) / Blue (Anhydrous)} \\quad (3d^7)",
+    "description": "Ion $Co^2+$ in aqueous solution displays Pink (Hydrated) / Blue (Anhydrous) color.",
+    "variables": "Electron Configuration: 3d^7",
+    "examTip": "Color Origin: Octahedral pink, tetrahedral blue."
+  },
+  {
+    "id": "FORM-C-211",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Ni^2+$",
+    "formula": "\\text{Color: } \\text{Green} \\quad (3d^8)",
+    "description": "Ion $Ni^2+$ in aqueous solution displays Green color.",
+    "variables": "Electron Configuration: 3d^8",
+    "examTip": "Color Origin: Hydrated ion [\\text{Ni(H}_2\\text{O)}_6]^{2+}."
+  },
+  {
+    "id": "FORM-C-212",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Cu^2+$",
+    "formula": "\\text{Color: } \\text{Blue} \\quad (3d^9)",
+    "description": "Ion $Cu^2+$ in aqueous solution displays Blue color.",
+    "variables": "Electron Configuration: 3d^9",
+    "examTip": "Color Origin: Hydrated ion [\\text{Cu(H}_2\\text{O)}_6]^{2+}."
+  },
+  {
+    "id": "FORM-C-213",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis & Color Tests",
+    "title": "Transition Ion: $Zn^2+, Sc^3+, Ti^4+$",
+    "formula": "\\text{Color: } \\text{Colorless} \\quad (3d^0 \\text{ or } 3d^{10})",
+    "description": "Ion $Zn^2+, Sc^3+, Ti^4+$ in aqueous solution displays Colorless color.",
+    "variables": "Electron Configuration: 3d^0 \\text{ or } 3d^{10}",
+    "examTip": "Color Origin: No d-d transition possible."
+  }
+]

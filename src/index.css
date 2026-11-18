@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen transition-colors duration-200;
+  }
+}
+
+/* Custom scrollbars - Dark Mode (Default) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99, 102, 241, 0.7);
+}
+
+.katex-display {
+  margin: 0.5em 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+
+/* =========================================================================
+   LIGHT THEME SYSTEM (Active when html does not have .dark or has .light)
+   Preserves all features, questions, solutions, timers, and mathematical formulas
+   ========================================================================= */
+
+html.light,
+html.light body,
+html:not(.dark),
+html:not(.dark) body {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
+
+/* Cards & Surface Backgrounds */
+html.light .bg-slate-950:not([class*="bg-indigo"]):not([class*="bg-purple"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-blue"]):not([class*="bg-pink"]):not([class*="bg-amber"]):not([class*="bg-gradient"]),
+html:not(.dark) .bg-slate-950:not([class*="bg-indigo"]):not([class*="bg-purple"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-blue"]):not([class*="bg-pink"]):not([class*="bg-amber"]):not([class*="bg-gradient"]) {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-slate-900:not([class*="bg-indigo"]):not([class*="bg-purple"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-blue"]):not([class*="bg-pink"]):not([class*="bg-amber"]):not([class*="bg-gradient"]),
+html:not(.dark) .bg-slate-900:not([class*="bg-indigo"]):not([class*="bg-purple"]):not([class*="bg-emerald"]):not([class*="bg-rose"]):not([class*="bg-blue"]):not([class*="bg-pink"]):not([class*="bg-amber"]):not([class*="bg-gradient"]) {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-slate-900\/90,
+html.light .bg-slate-900\/80,
+html.light .bg-slate-900\/70,
+html.light .bg-slate-900\/60,
+html.light .bg-slate-900\/50,
+html.light .bg-slate-950\/90,
+html.light .bg-slate-950\/80,
+html:not(.dark) .bg-slate-900\/90,
+html:not(.dark) .bg-slate-900\/80,
+html:not(.dark) .bg-slate-900\/60 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Border Overrides in Light Mode */
+html.light .border-slate-800,
+html.light .border-slate-800\/90,
+html.light .border-slate-800\/80,
+html.light .border-slate-800\/60,
+html.light .border-slate-800\/40,
+html.light .border-slate-800\/30,
+html.light .border-slate-800\/20,
+html:not(.dark) .border-slate-800,
+html:not(.dark) .border-slate-800\/80 {
+  border-color: #e2e8f0 !important;
+}
+
+html.light .border-slate-700,
+html.light .border-slate-700\/80,
+html:not(.dark) .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+/* Text Contrast Overrides in Light Mode */
+html.light .text-slate-100,
+html:not(.dark) .text-slate-100 {
+  color: #0f172a !important;
+}
+
+html.light .text-slate-200,
+html:not(.dark) .text-slate-200 {
+  color: #1e293b !important;
+}
+
+html.light .text-slate-300,
+html:not(.dark) .text-slate-300 {
+  color: #334155 !important;
+}
+
+html.light .text-slate-400,
+html:not(.dark) .text-slate-400 {
+  color: #64748b !important;
+}
+
+html.light .text-slate-500,
+html:not(.dark) .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+/* Heading Titles with .text-white on light cards become crisp dark slate */
+html.light h1.text-white,
+html.light h2.text-white,
+html.light h3.text-white,
+html.light h4.text-white,
+html.light h5.text-white,
+html.light h6.text-white,
+html.light p.text-white,
+html:not(.dark) h1.text-white,
+html:not(.dark) h2.text-white,
+html:not(.dark) h3.text-white,
+html:not(.dark) h4.text-white {
+  color: #0f172a !important;
+}
+
+/* Colored CTA buttons with white text must retain pure white text */
+html.light button[class*="bg-indigo"] .text-white,
+html.light button[class*="bg-purple"] .text-white,
+html.light button[class*="bg-emerald"] .text-white,
+html.light button[class*="bg-rose"] .text-white,
+html.light button[class*="bg-blue"] .text-white,
+html.light button[class*="bg-gradient"],
+html.light button[class*="bg-gradient"] *,
+html.light .bg-indigo-600,
+html.light .bg-indigo-600 * {
+  color: #ffffff;
+}
+
+/* KaTeX Formulas in Light Mode */
+html.light .katex,
+html.light .katex-html,
+html:not(.dark) .katex,
+html:not(.dark) .katex-html {
+  color: #0f172a !important;
+}
+
+/* Inputs, Textareas, Select Elements */
+html.light input:not([type="checkbox"]):not([type="radio"]),
+html.light textarea,
+html.light select,
+html:not(.dark) input:not([type="checkbox"]):not([type="radio"]),
+html:not(.dark) textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+
+html.light input::placeholder,
+html.light textarea::placeholder,
+html:not(.dark) input::placeholder {
+  color: #94a3b8 !important;
+}
+
+/* Hover States on Lists and Rows in Light Mode */
+html.light .hover\:bg-slate-900\/60:hover,
+html.light .hover\:bg-slate-800\/60:hover,
+html.light .hover\:bg-slate-800:hover,
+html.light .hover\:bg-slate-900:hover,
+html:not(.dark) .hover\:bg-slate-900\/60:hover {
+  background-color: #f1f5f9 !important;
+}
+
+/* Light Theme Scrollbars */
+html.light ::-webkit-scrollbar-track,
+html:not(.dark) ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+html.light ::-webkit-scrollbar-thumb,
+html:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover,
+html:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

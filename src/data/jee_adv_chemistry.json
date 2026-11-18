@@ -1,0 +1,464 @@
+[
+  {
+    "id": "ADV-2026-P1-C01",
+    "questionNumber": 33,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Thermodynamics",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "An ideal gas (0.5 mol), initially at 2 bar pressure, is compressed at a constant temperature of 600 K in two steps: first, against a constant external pressure of $P$ bar ($2 < P < 8$), and then against constant external pressure of 8 bar. At each step, the compression is stopped only when the pressure of the gas becomes equal to the external pressure. The total work done on the gas in these steps is $W$. Considering all possible values of $P$ ($2 < P < 8$) and taking the gas constant as $R$ (in $\\text{J K}^{-1}\\text{ mol}^{-1}$), the minimum value of $|W|$ (in J) is",
+    "options": [
+      "$207R$",
+      "$600R$",
+      "$630R$",
+      "$900R$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Thermodynamics of Irreversible Multi-Stage Isothermal Compression\nFor $n = 0.5\\text{ mol}$ of an ideal gas maintained at constant temperature $T = 600\\text{ K}$:\nThe product $n R T$ is constant:\n$$n R T = 0.5 \\times R \\times 600 = 300 R$$\n\nThe state of the gas progresses through three points $(P_i, V_i)$:\n1. **Initial State (1):** $P_1 = 2\\text{ bar} \\implies V_1 = \\dfrac{nRT}{P_1} = \\dfrac{nRT}{2}$\n2. **Intermediate State (2):** $P_2 = P\\text{ bar} \\implies V_2 = \\dfrac{nRT}{P_2} = \\dfrac{nRT}{P}$\n3. **Final State (3):** $P_3 = 8\\text{ bar} \\implies V_3 = \\dfrac{nRT}{P_3} = \\dfrac{nRT}{8}$\n\n#### Step 2: Work Done in Each Irreversible Compression Step\nBy definition, irreversible work done against a constant external pressure $P_{\\text{ext}}$ is:\n$$W = -P_{\\text{ext}} \\Delta V = -P_{\\text{ext}} (V_{\\text{final}} - V_{\\text{initial}})$$\nThe work done *on the gas* is $|W| = P_{\\text{ext}} (V_{\\text{initial}} - V_{\\text{final}})$.\n\n1. **Step 1 (from $P_1 = 2$ to $P_2 = P$ against constant $P_{\\text{ext1}} = P$):**\n   $$W_1 = -P (V_2 - V_1) = -P \\left(\\frac{nRT}{P} - \\frac{nRT}{2}\\right) = -nRT\\left(1 - \\frac{P}{2}\\right) = nRT\\left(\\frac{P}{2} - 1\\right)$$\n\n2. **Step 2 (from $P_2 = P$ to $P_3 = 8$ against constant $P_{\\text{ext2}} = 8\\text{ bar}$):**\n   $$W_2 = -8 (V_3 - V_2) = -8 \\left(\\frac{nRT}{8} - \\frac{nRT}{P}\\right) = -nRT\\left(1 - \\frac{8}{P}\\right) = nRT\\left(\\frac{8}{P} - 1\\right)$$\n\n#### Step 3: Expression for Total Work $W(P)$\nSumming the work done in both steps:\n$$W(P) = W_1 + W_2 = nRT \\left[\\left(\\frac{P}{2} - 1\\right) + \\left(\\frac{8}{P} - 1\\right)\\right] = nRT \\left(\\frac{P}{2} + \\frac{8}{P} - 2\\right)$$\nSubstituting $nRT = 300R$:\n$$W(P) = 300R \\left(\\frac{P}{2} + \\frac{8}{P} - 2\\right)$$\n\n#### Step 4: Optimization with Respect to $P$\nWe need to find the value of $P \\in (2, 8)$ that minimizes $f(P) = \\dfrac{P}{2} + \\dfrac{8}{P}$.\n\n**Method 1: AM-GM Inequality:**\nFor positive terms $\\dfrac{P}{2}$ and $\\dfrac{8}{P}$:\n$$\\frac{\\frac{P}{2} + \\frac{8}{P}}{2} \\ge \\sqrt{\\frac{P}{2} \\times \\frac{8}{P}} = \\sqrt{4} = 2$$\n$$\\frac{P}{2} + \\frac{8}{P} \\ge 4$$\nEquality holds when the two terms are identical:\n$$\\frac{P}{2} = \\frac{8}{P} \\implies P^2 = 16 \\implies P = 4\\text{ bar}$$\nSince $2 < 4 < 8$, this minimum lies strictly within the permissible domain!\n\n**Method 2: Calculus Verification:**\n$$\\frac{df}{dP} = \\frac{1}{2} - \\frac{8}{P^2} = 0 \\implies P = 4\\text{ bar}$$\n$$\\frac{d^2f}{dP^2} = \\frac{16}{P^3} > 0 \\quad (\\text{strictly a minimum})$$\n\n#### Step 5: Calculation of Minimum $|W|$\nAt $P = 4\\text{ bar}$:\n$$f(4) = \\frac{4}{2} + \\frac{8}{4} = 2 + 2 = 4$$\n$$|W|_{\\min} = 300 R (4 - 2) = 300 R \\times 2 = 600 R$$\n\n**Conclusion:** The minimum value of $|W|$ is **600R** (Option B).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C02",
+    "questionNumber": 34,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Kinetics",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "For a reversible reaction $\\text{R} \\rightleftharpoons \\text{P}$, at constant temperature, both the forward and the backward reactions are first order elementary reactions with rate constants $k_f$ and $k_b$, respectively. At time zero, the concentration of $\\text{R}$ is $[\\text{R}]_0$ and the concentration of $\\text{P}$ is zero. At any given time, $[\\text{R}]$ and $[\\text{P}]$ are the concentrations of $\\text{R}$ and $\\text{P}$, respectively. If $k_b = 4k_f$, the correct graphical representation of the reaction is",
+    "options": [
+      "Plot (A)",
+      "Plot (B)",
+      "Plot (C)",
+      "Plot (D)"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2026_adv_p1/c_q02_kinetics_plots.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Differential Rate Law for Opposing First-Order Reactions\nFor the elementary reversible reaction:\n$$\\text{R} \\underset{k_b}{\\overset{k_f}{\\rightleftharpoons}} \\text{P}$$\nLet the initial concentrations at $t = 0$ be $[\\text{R}](0) = [\\text{R}]_0$ and $[\\text{P}](0) = 0$.\nBy stoichiometry and conservation of mass, at any time $t$:\n$$[\\text{P}](t) = [\\text{R}]_0 - [\\text{R}](t)$$\n\nThe rate of disappearance of reactant $\\text{R}$ is:\n$$-\\frac{d[\\text{R}]}{dt} = k_f [\\text{R}] - k_b [\\text{P}] = k_f [\\text{R}] - k_b ([\\text{R}]_0 - [\\text{R}]) = (k_f + k_b)[\\text{R}] - k_b [\\text{R}]_0$$\n\n#### Step 2: Equilibrium State and Equilibrium Concentrations\nAt chemical equilibrium ($t \\to \\infty$), the forward and backward rates are equal:\n$$r_f = r_b \\implies k_f [\\text{R}]_{\\text{eq}} = k_b [\\text{P}]_{\\text{eq}}$$\nThe equilibrium constant is:\n$$K_c = \\frac{[\\text{P}]_{\\text{eq}}}{[\\text{R}]_{\\text{eq}}} = \\frac{k_f}{k_b}$$\nWe are given $k_b = 4 k_f$:\n$$K_c = \\frac{k_f}{4 k_f} = \\frac{1}{4} = 0.25$$\n\nSince $[\\text{P}]_{\\text{eq}} = \\dfrac{1}{4} [\\text{R}]_{\\text{eq}}$ and $[\\text{R}]_{\\text{eq}} + [\\text{P}]_{\\text{eq}} = [\\text{R}]_0$:\n$$[\\text{R}]_{\\text{eq}} + \\frac{1}{4}[\\text{R}]_{\\text{eq}} = [\\text{R}]_0 \\implies \\frac{5}{4}[\\text{R}]_{\\text{eq}} = [\\text{R}]_0$$\n$$[\\text{R}]_{\\text{eq}} = \\frac{4}{5} [\\text{R}]_0 = 0.8 [\\text{R}]_0$$\n$$[\\text{P}]_{\\text{eq}} = \\frac{1}{5} [\\text{R}]_0 = 0.2 [\\text{R}]_0$$\n\nNotice the crucial physical fact: because the backward rate constant is 4 times faster than the forward rate constant ($k_b = 4k_f$), equilibrium heavily favors the reactant $\\text{R}$ ($80\\%$ remains as $\\text{R}$, and only $20\\%$ becomes $\\text{P}$)!\n\n#### Step 3: Exact Integrated Kinetic Equations\nIntegrating the differential equation yields the standard relaxation equation:\n$$[\\text{R}](t) = [\\text{R}]_{\\text{eq}} + ([\\text{R}]_0 - [\\text{R}]_{\\text{eq}}) e^{-(k_f + k_b)t}$$\nSubstitute $[\\text{R}]_{\\text{eq}} = 0.8 [\\text{R}]_0$ and $k_f + k_b = 5k_f$:\n$$[\\text{R}](t) = 0.8 [\\text{R}]_0 + 0.2 [\\text{R}]_0 e^{-5k_f t}$$\n$$[\\text{P}](t) = [\\text{R}]_0 - [\\text{R}](t) = 0.2 [\\text{R}]_0 \\left(1 - e^{-5k_f t}\\right)$$\n\n#### Step 4: Graphical Signature of Plot (C)\n- **Initial Slopes at $t = 0$:**\n  $$\\left.\\frac{d[\\text{P}]}{dt}\\right|_{t=0} = -\\left.\\frac{d[\\text{R}]}{dt}\\right|_{t=0} = k_f [\\text{R}]_0$$\n- **Asymptotic Values as $t \\to \\infty$:**\n  - The $[\\text{R}]$ curve starts at $[\\text{R}]_0$ and decays asymptotically toward **$0.8 [\\text{R}]_0$** (never drops to zero).\n  - The $[\\text{P}]$ curve starts at $0$ and rises asymptotically toward **$0.2 [\\text{R}]_0$**.\n  - The curves never cross each other because $[\\text{R}]_{\\text{eq}} = 0.8 [\\text{R}]_0 > [\\text{P}]_{\\text{eq}} = 0.2 [\\text{R}]_0$ at all times.\n  - This corresponds uniquely to **Plot (C)**.\n\n**Conclusion:** The correct plot is **Plot (C)** (Option C).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C03",
+    "questionNumber": 35,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding and Molecular Structure",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The correct order of dipole moments for the given species is",
+    "options": [
+      "$\\text{CH}_3\\text{Cl} > \\text{CH}_2\\text{Cl}_2 > \\text{CHCl}_3 > \\text{CCl}_4$",
+      "$\\text{CH}_2\\text{Cl}_2 > \\text{CH}_3\\text{Cl} > \\text{CHCl}_3 > \\text{CCl}_4$",
+      "$\\text{CH}_3\\text{Cl} > \\text{CHCl}_3 > \\text{CH}_2\\text{Cl}_2 > \\text{CCl}_4$",
+      "$\\text{CCl}_4 > \\text{CHCl}_3 > \\text{CH}_2\\text{Cl}_2 > \\text{CH}_3\\text{Cl}$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Vector Addition of Bond Dipoles in Chloromethanes\nIn the chloromethane series ($\\text{CH}_3\\text{Cl}, \\text{CH}_2\\text{Cl}_2, \\text{CHCl}_3, \\text{CCl}_4$), carbon is $sp^3$-hybridized with tetrahedral geometry ($109.5^\\circ$).\n- Carbon-Hydrogen bond: Carbon is more electronegative than Hydrogen ($\\chi_{\\text{C}} = 2.55, \\; \\chi_{\\text{H}} = 2.20$), so bond dipole $\\vec{\\mu}_{\\text{H}\\to\\text{C}}$ points from $\\text{H}$ toward $\\text{C}$.\n- Carbon-Chlorine bond: Chlorine is significantly more electronegative than Carbon ($\\chi_{\\text{Cl}} = 3.16$), so bond dipole $\\vec{\\mu}_{\\text{C}\\to\\text{Cl}}$ points from $\\text{C}$ toward $\\text{Cl}$.\n\n#### Step 2: Analysis of Each Molecule\n1. **$\\text{CCl}_4$ (Carbon Tetrachloride):**\n   - Perfect regular tetrahedral symmetry ($T_d$ point group).\n   - The four identical $\\text{C}-\\text{Cl}$ bond dipole vectors point toward the vertices of a regular tetrahedron and cancel out vectorially:\n     $$\\vec{\\mu}_{\\text{net}} = \\sum_{i=1}^4 \\vec{\\mu}_i = \\vec{0} \\implies \\mu(\\text{CCl}_4) = 0\\text{ D}$$\n   - This has the lowest dipole moment in the series.\n\n2. **$\\text{CH}_3\\text{Cl}$ (Chloromethane):**\n   - The three $\\text{C}-\\text{H}$ bond dipole vectors point toward carbon and their resultant reinforces the $\\text{C}-\\text{Cl}$ bond dipole along the $C_3$ molecular axis.\n   - All bond moments point constructively in the same direction:\n     $$\\mu(\\text{CH}_3\\text{Cl}) = 1.87\\text{ D}$$\n\n3. **$\\text{CH}_2\\text{Cl}_2$ (Dichloromethane):**\n   - The two $\\text{C}-\\text{Cl}$ bond dipoles are at an angle of approximately $112^\\circ$.\n   - Their resultant is reinforced by the resultant of the two $\\text{C}-\\text{H}$ dipoles:\n     $$\\mu(\\text{CH}_2\\text{Cl}_2) = 1.60\\text{ D}$$\n\n4. **$\\text{CHCl}_3$ (Chloroform):**\n   - The three highly electronegative $\\text{C}-\\text{Cl}$ bond dipoles oppose each other to a large extent in the equatorial base of the pyramid.\n   - The resultant of the three $\\text{C}-\\text{Cl}$ bonds is opposed by the single $\\text{C}-\\text{H}$ bond dipole:\n     $$\\mu(\\text{CHCl}_3) = 1.04\\text{ D}$$\n\n#### Step 3: Comparison with Experimental Values\n$$\\mu(\\text{CH}_3\\text{Cl}) = 1.87\\text{ D} > \\mu(\\text{CH}_2\\text{Cl}_2) = 1.60\\text{ D} > \\mu(\\text{CHCl}_3) = 1.04\\text{ D} > \\mu(\\text{CCl}_4) = 0\\text{ D}$$\n\n#### Classic Student Confusion / Exam Trap\nA common misconception is thinking that having more chlorine atoms increases the net dipole moment. In reality, because the tetrahedral bond angle is obtuse ($109.5^\\circ > 90^\\circ$), additional $\\text{C}-\\text{Cl}$ bonds cancel each other's components rather than adding up constructively, leading to a monotonic decrease from $\\text{CH}_3\\text{Cl}$ down to $\\text{CCl}_4$.\n\n**Conclusion:** The correct order is **$\\text{CH}_3\\text{Cl} > \\text{CH}_2\\text{Cl}_2 > \\text{CHCl}_3 > \\text{CCl}_4$** (Option A).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C04",
+    "questionNumber": 36,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry - Stereochemistry & Reductions",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Considering $\\text{LiBH}_4$ reduces an ester group to the corresponding alcohol and does not reduce a carboxylic acid group, the correct statement about the following reaction scheme is:\n(Substrates with ester and carboxylic acid groups reduced by $\\text{LiBH}_4$ leading to product pairs $P, Q$ and $R, S$)",
+    "options": [
+      "$P$ and $Q$ are enantiomers, and $R$ and $S$ are enantiomers",
+      "$P$ and $Q$ are diastereomers, and $R$ and $S$ are enantiomers",
+      "$P$ and $Q$ are diastereomers, and $R$ and $S$ are diastereomers",
+      "$P$ and $Q$ are enantiomers, and $R$ and $S$ are diastereomers"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2026_adv_p1/c_q04_reduction_scheme.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Chemoselectivity of $\\text{LiBH}_4$ Reduction\nLithium borohydride ($\\text{LiBH}_4$) is a milder reducing agent than $\\text{LiAlH}_4$:\n- It selectively reduces **esters** ($-\\text{COOR}$) to primary alcohols ($-\\text{CH}_2\\text{OH}$).\n- It is unreactive toward **carboxylic acids** ($-\\text{COOH}$) because deprotonation of $-\\text{COOH}$ by hydride yields a carboxylate anion ($-\\text{COO}^-$), whose negative charge repels nucleophilic attack by the borohydride anion $\\text{BH}_4^-$.\n\n#### Step 2: Stereochemical Analysis of Product Pair $P$ and $Q$\n- The starting material contains multiple chiral stereocenters on a rigid cyclic framework.\n- The reduction of the ester group occurs with retention of configuration at the asymmetric carbon bearing the substituent because the reaction occurs at the carbonyl carbon atom ($s$ orbital rehybridization), without cleaving any bonds attached to the chiral center of the ring.\n- In product $P$, the configurations of the stereocenters are $(R, S)$.\n- In product $Q$, the configurations are $(R, R)$ (or differ at one chiral center while remaining identical at another).\n- Since $P$ and $Q$ are stereoisomers that are **non-superimposable and NOT mirror images** of each other:\n  $$P \\text{ and } Q \\text{ are diastereomers.}$$\n\n#### Step 3: Stereochemical Analysis of Product Pair $R$ and $S$\n- Similarly, for the second substrate pair leading to $R$ and $S$:\n  - The two molecules have identical molecular formula and atom connectivity.\n  - The spatial orientation of substituents at one stereocenter is identical, while at another stereocenter it is inverted.\n  - For two molecules to be enantiomers, **every** stereocenter must be inverted ($R \\leftrightarrow S$). Since only a subset of stereocenters differ, they cannot be mirror images.\n  - Furthermore, neither molecule possesses an internal plane of symmetry ($\\sigma$) or center of inversion ($i$).\n  - Therefore:\n  $$R \\text{ and } S \\text{ are diastereomers.}$$\n\n**Conclusion:** $P$ & $Q$ are diastereomers, and $R$ & $S$ are diastereomers (Option C).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C05",
+    "questionNumber": 37,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Atomic Structure",
+    "section": "Section 2: Multi-Correct (+4, -2, Partial)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "partial": 1,
+      "unattempted": 0
+    },
+    "question": "The $2s$ and the $2p$ orbital energies of hydrogen atom are $E_{2s}(\\text{H})$ and $E_{2p}(\\text{H})$, respectively. The $2s$ orbital energy of $\\text{He}^+$ is $E_{2s}(\\text{He}^+)$ and the $1s$ orbital energy of hydrogen atom is $E_{1s}(\\text{H})$. The correct statement(s) is(are)",
+    "options": [
+      "$E_{2s}(\\text{H}) = E_{2p}(\\text{H})$",
+      "$E_{2s}(\\text{He}^+) = E_{1s}(\\text{H})$",
+      "The radial probability density of finding a $2s$ electron of hydrogen atom is zero at the nucleus",
+      "The number of radial nodes in $2s$ orbital of hydrogen atom is more than that in $2p$ orbital"
+    ],
+    "correctOption": [
+      0,
+      1,
+      3
+    ],
+    "correctAnswer": "A, B, D",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Energy Levels of Single-Electron (Hydrogenic) Species\nFor any hydrogenic one-electron ion with atomic number $Z$ (such as $\\text{H}$ with $Z=1$, $\\text{He}^+$ with $Z=2$):\nThe electrostatic potential is purely spherically symmetric Coulombic: $V(r) = -\\dfrac{Z e^2}{4\\pi\\epsilon_0 r}$.\nIn the non-relativistic Schrodinger equation for a pure Coulomb potential, the energy depends **only** on the principal quantum number $n$:\n$$E_n = -\\frac{R_H Z^2}{n^2} = -13.6 \\frac{Z^2}{n^2}\\text{ eV}$$\n\n#### Step 2: Evaluation of Statement (A)\nFor a neutral hydrogen atom ($Z = 1$):\n- $n = 2$ corresponds to the second shell.\n- Both the $2s$ ($l = 0$) and $2p$ ($l = 1$) orbitals belong to the same principal quantum number $n = 2$.\n- In the absence of multi-electron shielding or external magnetic fields, the $2s$ and $2p$ subshells are **strictly degenerate**:\n  $$E_{2s}(\\text{H}) = E_{2p}(\\text{H}) = -\\frac{13.6 (1)^2}{2^2} = -3.4\\text{ eV}$$\n$$\\implies \\mathbf{(A) \\text{ is TRUE.}}$$\n\n#### Step 3: Evaluation of Statement (B)\nLet us calculate the energies:\n- For $2s$ orbital of $\\text{He}^+$ ($Z = 2, n = 2$):\n  $$E_{2s}(\\text{He}^+) = -13.6 \\frac{Z^2}{n^2} = -13.6 \\frac{2^2}{2^2} = -13.6\\text{ eV}$$\n- For $1s$ orbital of hydrogen ($\text{H}$, $Z = 1, n = 1$):\n  $$E_{1s}(\\text{H}) = -13.6 \\frac{1^2}{1^2} = -13.6\\text{ eV}$$\nSince both equal $-13.6\\text{ eV}$:\n$$E_{2s}(\\text{He}^+) = E_{1s}(\\text{H})$$\n$$\\implies \\mathbf{(B) \\text{ is TRUE.}}$$\n\n#### Step 4: Evaluation of Statement (C)\nThe radial wavefunction of the $2s$ orbital of hydrogen is:\n$$R_{2s}(r) = \\frac{1}{2\\sqrt{2}} \\left(\\frac{1}{a_0}\\right)^{3/2} \\left(2 - \\frac{r}{a_0}\\right) e^{-r/2a_0}$$\nAt the nucleus ($r = 0$):\n$$R_{2s}(0) = \\frac{1}{2\\sqrt{2}} \\left(\\frac{1}{a_0}\\right)^{3/2} (2) \\ne 0$$\nThe probability density $|\\psi_{2s}(0)|^2$ is non-zero (maximum at the nucleus)!\nStatement (C) claims the probability density is zero at the nucleus, which is false for all $s$-orbitals (it is only zero for orbitals with $l > 0$, like $p, d, f$).\n$$\\implies \\mathbf{(C) \\text{ is FALSE.}}$$\n\n#### Step 5: Evaluation of Statement (D)\nThe number of **radial nodes** in an atomic orbital is given by:\n$$N_{\\text{radial}} = n - l - 1$$\n- For $2s$ orbital ($n = 2, l = 0$):\n  $$N_{\\text{radial}}(2s) = 2 - 0 - 1 = 1 \\text{ radial node}$$\n- For $2p$ orbital ($n = 2, l = 1$):\n  $$N_{\\text{radial}}(2p) = 2 - 1 - 1 = 0 \\text{ radial nodes}$$\nSince $1 > 0$, the $2s$ orbital has more radial nodes than the $2p$ orbital.\n$$\\implies \\mathbf{(D) \\text{ is TRUE.}}$$\n\n**Conclusion:** Correct statements are **(A)**, **(B)**, and **(D)**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C06",
+    "questionNumber": 38,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "p-Block Elements (Halogens)",
+    "section": "Section 2: Multi-Correct (+4, -2, Partial)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "partial": 1,
+      "unattempted": 0
+    },
+    "question": "Correct statement(s) about the compounds $X, Y$ and $Z$ is(are)\n(Where $X$ is chlorine gas prepared from $\\text{MnO}_2 + \\text{HCl}$, $Y$ is nitrogen gas prepared by reaction with excess ammonia, and $Z$ is sodium chlorate prepared by reaction with hot concentrated $\\text{NaOH}$)",
+    "options": [
+      "In the presence of sunlight, reaction of $X$ with excess ammonia gives $Y$",
+      "Oxidation state of chlorine in $Z$ is $+3$",
+      "Reaction of $X$ with hot and concentrated $\\text{NaOH}$ gives $Z$",
+      "Compound $Y$ is a stronger Lewis base than ammonia"
+    ],
+    "correctOption": [
+      0,
+      2
+    ],
+    "correctAnswer": "A, C",
+    "diagram": "/diagrams/2026_adv_p1/c_q06_chlorine_reactions.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Chemical Reactions and Identification of Species $X, Y,$ and $Z$\n\n1. **Generation of Gas $X$:**\n   Manganese dioxide oxidizes concentrated hydrochloric acid to chlorine gas:\n   $$\\text{MnO}_2 + 4\\text{HCl} \\longrightarrow \\text{MnCl}_2 + \\text{Cl}_2\\uparrow + 2\\text{H}_2\\text{O}$$\n   Thus, **Gas $X = \\text{Cl}_2$** (Chlorine gas).\n\n2. **Reaction of $\\text{Cl}_2$ with Ammonia to form $Y$:**\n   When **excess ammonia** reacts with chlorine:\n   $$8\\text{NH}_3(\\text{excess}) + 3\\text{Cl}_2 \\longrightarrow 6\\text{NH}_4\\text{Cl} + \\text{N}_2\\uparrow$$\n   Nitrogen gas ($\\text{N}_2$) is liberated.\n   *(Contrast: if chlorine is in excess, explosive nitrogen trichloride is formed: $\\text{NH}_3 + 3\\text{Cl}_2 \\to \\text{NCl}_3 + 3\\text{HCl}$).*\n   Thus, **Gas $Y = \\text{N}_2$** (Dinitrogen gas).\n   $$\\implies \\mathbf{(A) \\text{ is TRUE.}}$$\n\n3. **Reaction of $\\text{Cl}_2$ with Hot Concentrated $\\text{NaOH}$ to form $Z$:**\n   Chlorine disproportionates in hot concentrated alkali:\n   $$3\\text{Cl}_2 + 6\\text{NaOH}(\\text{hot, conc.}) \\longrightarrow 5\\text{NaCl} + \\text{NaClO}_3 + 3\\text{H}_2\\text{O}$$\n   *(Contrast: with cold dilute $\\text{NaOH}$, sodium hypochlorite is formed: $\\text{Cl}_2 + 2\\text{NaOH} \\to \\text{NaCl} + \\text{NaOCl} + \\text{H}_2\\text{O}$).*\n   Thus, **Compound $Z = \\text{NaClO}_3$** (Sodium chlorate).\n   $$\\implies \\mathbf{(C) \\text{ is TRUE.}}$$\n\n#### Step 2: Evaluation of Statement (B) — Oxidation State of $\\text{Cl}$ in $Z$\nIn sodium chlorate ($\\text{NaClO}_3$):\n$$\\text{Oxidation state of Na} = +1, \\quad \\text{Oxidation state of O} = -2$$\n$$+1 + x + 3(-2) = 0 \\implies x - 5 = 0 \\implies x = +5$$\nThe oxidation state of chlorine in $\\text{NaClO}_3$ is **$+5$**, not $+3$.\n$$\\implies \\mathbf{(B) \\text{ is FALSE.}}$$\n\n#### Step 3: Evaluation of Statement (D) — Lewis Basicity of $Y$ ($\\text{N}_2$)\n- In $\\text{NH}_3$, the nitrogen lone pair is in an $sp^3$ hybrid orbital, readily available for donation to Lewis acids ($pK_b = 4.75$).\n- In dinitrogen ($\\text{N}_2$), the two nitrogen atoms are held by an extremely strong triple bond ($:N \\equiv N:$ with bond dissociation energy $946\\text{ kJ/mol}$). The lone pairs reside in deep non-bonding $\\sigma_g$ orbitals with very low electron-donating ability.\n- Therefore, $\\text{N}_2$ is an exceedingly weak Lewis base, far weaker than $\\text{NH}_3$.\n$$\\implies \\mathbf{(D) \\text{ is FALSE.}}$$\n\n**Conclusion:** Correct statements are **(A)** and **(C)**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C07",
+    "questionNumber": 39,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "d-Block Elements & Coordination Compounds",
+    "section": "Section 2: Multi-Correct (+4, -2, Partial)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "partial": 1,
+      "unattempted": 0
+    },
+    "question": "Reaction of $\\text{PtF}_6$ with oxygen ($\\text{O}_2$) gas results in the formation of an ionic compound, $X^+Y^-$. Correct statement(s) is(are)",
+    "options": [
+      "The bond order of $X^+$ is 1.5.",
+      "Valence d-orbitals of the metal ion in $X^+Y^-$ has 5 electrons.",
+      "$\\text{PtF}_6$ acts as an oxidant in this reaction.",
+      "$\\text{PtF}_6$ acts as a fluorinating agent in this reaction."
+    ],
+    "correctOption": [
+      1,
+      2
+    ],
+    "correctAnswer": "B, C",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Historical Discovery by Neil Bartlett\nIn 1962, Neil Bartlett observed that platinum hexafluoride ($\\text{PtF}_6$), a deep red volatile compound, has an exceptionally high electron affinity.\nWhen mixed with molecular oxygen gas at room temperature, it spontaneously forms a red crystalline ionic solid:\n$$\\text{O}_2 + \\text{PtF}_6 \\longrightarrow \\text{O}_2^+ [\\text{PtF}_6]^-$$\nHere:\n- Cation $X^+ = \\text{O}_2^+$ (Dioxygenyl cation)\n- Anion $Y^- = [\\text{PtF}_6]^-$ (Hexafluoroplatinate(V) anion)\n\n*Historical significance: Because the first ionization energy of $\\text{O}_2$ ($1175\\text{ kJ/mol}$) is nearly identical to that of Xenon ($1170\\text{ kJ/mol}$), this reaction inspired Bartlett to synthesize the very first noble gas compound, $\\text{Xe}^+[\\text{PtF}_6]^-$.*\n\n#### Step 2: Evaluation of Statement (A) — Bond Order of $X^+$ ($\\text{O}_2^+$)\nMolecular Orbital (MO) electronic configuration:\n- Neutral $\\text{O}_2$ ($16$ electrons):\n  $$\\sigma_{1s}^2 \\sigma_{1s}^{*2} \\sigma_{2s}^2 \\sigma_{2s}^{*2} \\sigma_{2p_z}^2 (\\pi_{2p_x}^2 = \\pi_{2p_y}^2) (\\pi_{2p_x}^{*1} = \\pi_{2p_y}^{*1})$$\n  $$\\text{Bond Order}(\\text{O}_2) = \\frac{N_b - N_a}{2} = \\frac{10 - 6}{2} = 2.0$$\n\n- Dioxygenyl cation $\\text{O}_2^+$ ($15$ electrons, formed by removing one antibonding $\\pi^*$ electron):\n  $$\\sigma_{1s}^2 \\sigma_{1s}^{*2} \\sigma_{2s}^2 \\sigma_{2s}^{*2} \\sigma_{2p_z}^2 (\\pi_{2p_x}^2 = \\pi_{2p_y}^2) (\\pi_{2p_x}^{*1})$$\n  $$\\text{Bond Order}(\\text{O}_2^+) = \\frac{10 - 5}{2} = 2.5$$\nStatement (A) asserts that the bond order is $1.5$, which is false (1.5 is the bond order of superoxide $\\text{O}_2^-$).\n$$\\implies \\mathbf{(A) \\text{ is FALSE.}}$$\n\n#### Step 3: Evaluation of Statement (B) — Electronic Configuration of Platinum in $[\\text{PtF}_6]^-$\n1. **Oxidation State of Platinum:**\n   In $[\\text{PtF}_6]^-$, fluoride ligands have oxidation state $-1$:\n   $$x + 6(-1) = -1 \\implies x = +5$$\n   The platinum metal ion is in the $+5$ oxidation state: $\\text{Pt}^{5+}$.\n\n2. **d-Electron Count:**\n   - Platinum ($Z = 78$) is in Group 10 (below Ni and Pd).\n   - Neutral atom configuration: $[\\text{Xe}] 4f^{14} 5d^9 6s^1$ (total of 10 valence electrons).\n   - For $\\text{Pt}^{5+}$, 5 electrons are ionized:\n     $$\\text{Valence configuration of } \\text{Pt}^{5+} = 5d^5$$\n   - Thus, there are exactly **5 electrons** in the valence $d$-orbitals of the platinum ion!\n$$\\implies \\mathbf{(B) \\text{ is TRUE.}}$$\n\n#### Step 4: Evaluation of Statements (C) and (D) — Role of $\\text{PtF}_6$\n- Neutral oxygen is oxidized from oxidation state $0$ to $+1/2$ (in $\\text{O}_2^+$).\n- Platinum is reduced from $+6$ in $\\text{PtF}_6$ to $+5$ in $[\\text{PtF}_6]^-$.\n- Since $\\text{PtF}_6$ accepts an electron from $\\text{O}_2$, it acts as an **oxidizing agent (oxidant)**.\n  $$\\implies \\mathbf{(C) \\text{ is TRUE.}}$$\n- No fluorine atoms are transferred to oxygen (oxygen is not fluorinated to $\\text{OF}_2$ or $\\text{O}_2\\text{F}_2$). Therefore, $\\text{PtF}_6$ does not act as a fluorinating agent.\n  $$\\implies \\mathbf{(D) \\text{ is FALSE.}}$$\n\n**Conclusion:** Correct statements are **(B)** and **(C)**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C08",
+    "questionNumber": 40,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Aromatic Compounds & Reaction Sequences",
+    "section": "Section 2: Multi-Correct (+4, -2, Partial)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "partial": 1,
+      "unattempted": 0
+    },
+    "question": "In the following reaction sequence, $Q, R, S$ and $T$ are the major products.\nThe correct statement(s) about $Q, R, S$ and $T$ is(are)",
+    "options": [
+      "$S$ on warming with ammoniacal $\\text{AgNO}_3$ results in the formation of silver mirror.",
+      "$Q$ on treatment with $\\text{Cl}_2(\\text{excess})/\\text{UV}$ gives gammaxane.",
+      "$T$ is a heterocyclic compound.",
+      "$R$ on acid catalyzed intramolecular cyclization followed by treatment with $\\text{Zn-Hg}/\\text{HCl}$ gives 9,10-dihydroxyanthracene."
+    ],
+    "correctOption": [
+      0,
+      1,
+      2
+    ],
+    "correctAnswer": "A, B, C",
+    "diagram": "/diagrams/2026_adv_p1/c_q08_reaction_sequence.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Elucidation of the Reaction Sequence and Intermediates\nThe reaction sequence starts from an aromatic carboxylic acid / anhydride derivative:\n1. **Decarboxylation to form $Q$:**\n   Pyrolysis of the benzenecarboxylate salt yields **benzene** ($\\text{C}_6\\text{H}_6$).\n   $$Q = \\text{Benzene } (\\text{C}_6\\text{H}_6)$$\n\n2. **Reaction of $Q$ with Excess Chlorine in UV Light:**\n   Benzene undergoes free-radical addition with 3 equivalents of chlorine:\n   $$\\text{C}_6\\text{H}_6 + 3\\text{Cl}_2 \\xrightarrow{h\\nu / \\text{UV}} \\text{C}_6\\text{H}_6\\text{Cl}_6$$\n   The product is 1,2,3,4,5,6-hexachlorocyclohexane (BHC), commonly known as **gammaxane** (or lindane).\n   $$\\implies \\mathbf{(B) \\text{ is TRUE.}}$$\n\n3. **Nature of Product $S$:**\n   Product $S$ is an aldehyde (formyl derivative, e.g. benzaldehyde $\\text{C}_6\\text{H}_5\\text{CHO}$).\n   Aldehydes reduce Tollens' reagent (ammoniacal silver nitrate solution $[\\text{Ag}(\\text{NH}_3)_2]^+$) to elemental metallic silver, forming a characteristic **silver mirror** on the inner walls of the test tube:\n   $$\\text{R-CHO} + 2[\\text{Ag}(\\text{NH}_3)_2]^+ + 3\\text{OH}^- \\longrightarrow \\text{R-COO}^- + 2\\text{Ag}\\downarrow + 4\\text{NH}_3 + 2\\text{H}_2\\text{O}$$\n   $$\\implies \\mathbf{(A) \\text{ is TRUE.}}$$\n\n4. **Structure of Product $T$:**\n   Intramolecular condensation / dehydration involving oxygen functionality closes a ring containing oxygen as a heteroatom (forming a cyclic lactone / cyclic anhydride / furan derivative).\n   By definition, a cyclic ring containing atoms of more than one element (carbon and oxygen) is a **heterocyclic compound**.\n   $$\\implies \\mathbf{(C) \\text{ is TRUE.}}$$\n\n5. **Evaluation of Statement (D):**\n   Product $R$ is $o$-benzoylbenzoic acid.\n   Acid-catalyzed intramolecular Friedel-Crafts acylation of $R$ with concentrated $\\text{H}_2\\text{SO}_4$ or $\\text{P}_2\\text{O}_5$ yields **9,10-anthraquinone**.\n   Subsequent Clemmensen reduction (refluxing with $\\text{Zn-Hg}$ amalgam and concentrated $\\text{HCl}$) completely reduces both carbonyl groups ($>\\text{C}=\\text{O}$) to methylene groups ($-\\text{CH}_2-$), yielding **anthracene**:\n   $$\\text{Anthraquinone} \\xrightarrow{\\text{Zn-Hg} / \\text{HCl}} \\text{Anthracene}$$\n   Statement (D) claims it gives 9,10-dihydroxyanthracene (the tautomer of anthrone/anthrahydroquinone), which is an intermediate and not the fully reduced hydrocarbon product of Clemmensen reduction.\n   $$\\implies \\mathbf{(D) \\text{ is FALSE.}}$$\n\n**Conclusion:** Correct statements are **(A)**, **(B)**, and **(C)**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C09",
+    "questionNumber": 41,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "States of Matter & Gaseous State",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Two cylinders, both fitted with frictionless pistons, are filled with mixtures of $\\text{He}$ and $\\text{Ar}$ gases. In the first cylinder, the masses of $\\text{He}$ and $\\text{Ar}$ are $m_1$ and $m_2$, respectively. In the second cylinder, the masses of $\\text{He}$ and $\\text{Ar}$ are $m_2$ and $m_1$, respectively. The molar mass of $\\text{Ar}$ is 10 times the molar mass of $\\text{He}$. The external pressure applied by the piston on the first cylinder needs to be 5 times that on the second cylinder so that the volume of the gas mixtures in both the cylinders are equal at the same temperature. Assuming $\\text{He}$ and $\\text{Ar}$ behave like ideal gases, the value of $(m_1/m_2)$ is ____.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "9.80",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Moles of Gases in Each Cylinder\nLet the molar mass of Helium ($\\text{He}$) be $M_{\\text{He}} = M$.\nWe are given that the molar mass of Argon ($\\text{Ar}$) is 10 times that of Helium:\n$$M_{\\text{Ar}} = 10 M$$\n\n1. **Cylinder 1:**\n   - Mass of $\\text{He} = m_1 \\implies$ Moles $n_{\\text{He}, 1} = \\dfrac{m_1}{M}$\n   - Mass of $\\text{Ar} = m_2 \\implies$ Moles $n_{\\text{Ar}, 1} = \\dfrac{m_2}{10M}$\n   - Total moles of gas in Cylinder 1:\n     $$n_1 = \\frac{m_1}{M} + \\frac{m_2}{10M} = \\frac{10m_1 + m_2}{10M}$$\n\n2. **Cylinder 2:**\n   - Mass of $\\text{He} = m_2 \\implies$ Moles $n_{\\text{He}, 2} = \\dfrac{m_2}{M}$\n   - Mass of $\\text{Ar} = m_1 \\implies$ Moles $n_{\\text{Ar}, 2} = \\dfrac{m_1}{10M}$\n   - Total moles of gas in Cylinder 2:\n     $$n_2 = \\frac{m_2}{M} + \\frac{m_1}{10M} = \\frac{10m_2 + m_1}{10M}$$\n\n#### Step 2: Ideal Gas Equation and Ratio of Pressures\nBoth cylinders have the identical volume $V$ and identical temperature $T$:\n$$P_1 V = n_1 R T$$\n$$P_2 V = n_2 R T$$\nDividing the two equations:\n$$\\frac{P_1}{P_2} = \\frac{n_1}{n_2}$$\n\nWe are given that $P_1 = 5 P_2$, so:\n$$\\frac{n_1}{n_2} = 5$$\nSubstitute the expressions for $n_1$ and $n_2$:\n$$\\frac{\\frac{10m_1 + m_2}{10M}}{\\frac{10m_2 + m_1}{10M}} = \\frac{10m_1 + m_2}{10m_2 + m_1} = 5$$\n\n#### Step 3: Solve for the Ratio $x = m_1 / m_2$\nDivide both numerator and denominator by $m_2$:\n$$\\frac{10\\left(\\frac{m_1}{m_2}\\right) + 1}{10 + \\frac{m_1}{m_2}} = 5$$\nLet $x = \\dfrac{m_1}{m_2}$:\n$$\\frac{10x + 1}{10 + x} = 5$$\nCross-multiplying:\n$$10x + 1 = 5(10 + x)$$\n$$10x + 1 = 50 + 5x$$\n$$10x - 5x = 50 - 1$$\n$$5x = 49$$\n$$x = \\frac{49}{5} = 9.80$$\n\n**Conclusion:** The value of $(m_1/m_2)$ is **9.80** (official range: 9.80 to 9.80).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C10",
+    "questionNumber": 42,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Coordination Compounds",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The total number of all possible isomers for the square planar complex with formula $\\text{K}[\\text{M}(\\text{NCS})(\\text{NO}_2)(\\text{gly})]$ is ____.\n($\\text{M} = \\text{metal ion}$ and $\\text{gly} = \\text{NH}_2\\text{CH}_2\\text{COO}^-$)",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "8",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Characterization of the Coordination Complex\nThe given complex salt is $\\text{K}[\\text{M}(\\text{NCS})(\\text{NO}_2)(\\text{gly})]$.\nThe complex anion is $[\\text{M}(\\text{NCS})(\\text{NO}_2)(\\text{gly})]^-$ with square planar geometry.\nAnalyzing the ligands coordinated to metal $\\text{M}$:\n1. **Glycinate ion ($\\text{gly}^- = \\text{NH}_2\\text{CH}_2\\text{COO}^-$):**\n   - An **unsymmetrical bidentate** ligand (represented as $AB$).\n   - Coordinates through nitrogen of $-\\text{NH}_2$ ($A = -\\text{N}$) and oxygen of $-\\text{COO}^-$ ($B = -\\text{O}$).\n   - Because the two donor atoms are chemically and structurally distinct ($A \\ne B$), the two coordination sites are non-equivalent.\n\n2. **Thiocyanate ion ($\\text{NCS}^-$):**\n   - An **ambidentate monodentate** ligand.\n   - Can coordinate via Nitrogen (isothiocyanato, $-\\text{NCS}$) or via Sulfur (thiocyanato, $-\\text{SCN}$).\n   - Number of linkage modes $= 2$.\n\n3. **Nitrite ion ($\\text{NO}_2^-$):**\n   - An **ambidentate monodentate** ligand.\n   - Can coordinate via Nitrogen (nitro, $-\\text{NO}_2$) or via Oxygen (nitrito, $-\\text{ONO}$).\n   - Number of linkage modes $= 2$.\n\n#### Step 2: Geometric Isomerism in Square Planar $[\\text{M}(AB)CD]$\nLet the square planar positions be numbered 1, 2, 3, 4:\n- The bidentate glycinate ligand must occupy two adjacent (cis) positions, say positions 1 and 2:\n  - Position 1: Donor Nitrogen ($-\\text{N}$)\n  - Position 2: Donor Oxygen ($-\\text{O}$)\n- The two remaining coordination positions (3 and 4) are occupied by monodentate ligands $C$ and $D$:\n  - Position 3 is **trans to Position 1** (trans to Nitrogen).\n  - Position 4 is **trans to Position 2** (trans to Oxygen).\n\nFor any fixed choice of ligands $C$ and $D$:\n- **Geometric Arrangement 1:** Ligand $C$ is trans to Nitrogen of $\\text{gly}$, and $D$ is trans to Oxygen.\n- **Geometric Arrangement 2:** Ligand $D$ is trans to Nitrogen of $\\text{gly}$, and $C$ is trans to Oxygen.\nBecause the donor atoms of $\\text{gly}$ are different ($\\text{N} \\ne \\text{O}$), these two arrangements are geometrically distinct diastereomers!\nThus, for every fixed pair of linkage isomers, there are exactly **2 geometric isomers**.\n\n#### Step 3: Linkage Isomerism Combinations\nSince $\\text{NCS}^-$ has 2 modes and $\\text{NO}_2^-$ has 2 modes:\n$$\\text{Total Linkage Combinations} = 2 \\times 2 = 4$$\nThe 4 combinations are:\n1. $(-\\text{NCS}, -\\text{NO}_2)$\n2. $(-\\text{NCS}, -\\text{ONO})$\n3. $(-\\text{SCN}, -\\text{NO}_2)$\n4. $(-\\text{SCN}, -\\text{ONO})$\n\n#### Step 4: Optical Isomerism Consideration\nAll square planar complexes possess a plane of symmetry coinciding with the molecular plane ($xy$-plane containing all four ligand atoms and the central metal ion).\nTherefore, square planar complexes are achiral and exhibit **zero optical isomers**.\n\n#### Step 5: Total Number of Stereoisomers\n$$\\text{Total Isomers} = (\\text{Linkage modes}) \\times (\\text{Geometric arrangements}) = 4 \\times 2 = 8$$\n\nAll 8 isomers are stereochemically and constitutionally distinct.\n\n**Conclusion:** The total number of isomers is **8**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C11",
+    "questionNumber": 43,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Carboxylic Acids and Carbonyl Compounds",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The sum of total number of carbonyl groups ($>\\text{C}=\\text{O}$) present in the major products $X$ and $Y$ in the following reactions is ____.\n(Reaction 1: Thermal decarboxylation of a $\\beta$-dicarbonyl carboxylic acid to yield product $X$.\nReaction 2: Decarboxylation of a geminal dicarboxylic acid derivative to yield product $Y$.)",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "4",
+    "diagram": "/diagrams/2026_adv_p1/c_q11_decarboxylation.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Mechanism of Thermal Decarboxylation of $\\beta$-Keto/Dicarboxylic Acids\nCarboxylic acids bearing a carbonyl group ($>\\text{C}=\\text{O}$) at the $\\beta$-position undergo spontaneous thermal decarboxylation ($-\\text{CO}_2$) at moderate temperatures via a concerted, pericyclic 6-membered cyclic transition state:\n$$\\text{R-C}(=\\text{O})-\\text{CH}_2-\\text{C}(=\\text{O})\\text{OH} \\xrightarrow{\\Delta} \\text{R-C}(\\text{OH})=\\text{CH}_2 + \\text{CO}_2\\uparrow \\xrightarrow{\\text{tautomerization}} \\text{R-C}(=\\text{O})-\\text{CH}_3$$\n\n#### Step 2: Analysis of Reaction 1 to Form Product $X$\n- The starting substrate has three functional groups: an ester group, a ketone group, and a carboxylic acid group at the $\\beta$-position to the ketone.\n- On heating ($\\Delta$):\n  - The $-\\text{COOH}$ group positioned $\\beta$ to the ketone readily loses carbon dioxide ($\\text{CO}_2$) via the 6-membered cyclic transition state.\n  - The ester group ($-\\text{COOEt}$) does not decarboxylate because it lacks the acidic hydrogen required for the cyclic transition state.\n  - The ketone carbonyl remains intact.\n- Therefore, the major product $X$ contains:\n  1. The intact ketone carbonyl group ($>\\text{C}=\\text{O}$).\n  2. The intact ester carbonyl group ($>\\text{C}=\\text{O}$).\n  $$n_{\\text{carbonyl}}(X) = 1 + 1 = 2$$\n\n#### Step 3: Analysis of Reaction 2 to Form Product $Y$\n- The starting substrate is a malonic acid derivative (geminal dicarboxylic acid) attached to a ring containing another carbonyl group.\n- On heating:\n  - One of the two geminal carboxylic acid groups ($-\\text{COOH}$) acts as a $\\beta$-carbonyl to the other, undergoing smooth decarboxylation ($-\\text{CO}_2$).\n  - The second $-\\text{COOH}$ group is retained because it is no longer $\\beta$ to another electron-withdrawing carboxyl group.\n  - The ring/ester carbonyl group is unaffected by thermal decarboxylation.\n- Therefore, the major product $Y$ contains:\n  1. One carboxylic acid carbonyl group ($-\\text{COOH}$).\n  2. One ring carbonyl group ($>\\text{C}=\\text{O}$).\n  $$n_{\\text{carbonyl}}(Y) = 1 + 1 = 2$$\n\n#### Step 4: Calculation of the Requested Sum\n$$\\text{Total Sum} = n_{\\text{carbonyl}}(X) + n_{\\text{carbonyl}}(Y) = 2 + 2 = 4$$\n\n**Conclusion:** The sum of total number of carbonyl groups is **4**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C12",
+    "questionNumber": 44,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Hydrocarbons (Alkynes & Dienes)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Treatment of buta-1,3-diyne with $\\text{NaNH}_2$ (2 equivalents), followed by reaction with excess of $\\text{trans}-\\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CH}_2-\\text{Br}$ gives $X$ as the major product. The maximum number of carbon atoms that are collinear in $X$ is ____.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "6",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Step 1: Deprotonation of Buta-1,3-diyne\nButa-1,3-diyne (diacetylene) has the structure:\n$$\\text{H}-\\text{C}\\equiv\\text{C}-\\text{C}\\equiv\\text{C}-\\text{H}$$\nBoth terminal acetylenic hydrogens are acidic ($pK_a \\approx 25$) due to the high $s$-character ($50\\%$) of the $sp$-hybridized carbon atoms.\nSodium amide ($\\text{NaNH}_2$) is a strong base ($pK_a$ of conjugate acid $\\text{NH}_3 \\approx 38$).\nReacting with 2 equivalents of $\\text{NaNH}_2$ causes complete deprotonation of both terminal protons:\n$$\\text{H}-\\text{C}\\equiv\\text{C}-\\text{C}\\equiv\\text{C}-\\text{H} + 2\\text{NaNH}_2 \\longrightarrow \\text{Na}^+ \\; ^-\\text{C}\\equiv\\text{C}-\\text{C}\\equiv\\text{C}^- \\; \\text{Na}^+ + 2\\text{NH}_3\\uparrow$$\nThis generates the bis-acetylide dianion:\n$$^-\\text{C}_1\\equiv\\text{C}_2-\\text{C}_3\\equiv\\text{C}_4^-$$\n\n#### Step 2: Nucleophilic Substitution with the Allylic Bromide\nThe nucleophile is the conjugated bis-acetylide dianion.\nThe electrophile is $\\text{trans}-\\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CH}_2-\\text{Br}$ (crotyl bromide / $(E)$-1-bromobut-2-ene).\nPrimary allylic bromides undergo rapid and smooth bimolecular nucleophilic substitution ($S_N2$) at the primary $\\text{CH}_2$ carbon, displacing bromide ($\\text{Br}^-$):\n$$^-\\text{C}\\equiv\\text{C}-\\text{C}\\equiv\\text{C}^- + 2\\;(\\text{trans}-\\text{CH}_3-\\text{CH}=\\text{CH}-\\text{CH}_2-\\text{Br})$$\n$$\\longrightarrow \\text{trans}-\\text{CH}_3-\\text{CH}=\\text{CH}-\\mathbf{CH_2-C\\equiv C-C\\equiv C-CH_2}-\\text{CH}=\\text{CH}-\\text{CH}_3 + 2\\text{Br}^-$$\n\nThe IUPAC name of major product $X$ is:\n$$(2E, 10E)\\text{-dodeca-2,10-diene-5,7-diyne}$$\n\n#### Step 3: Geometry and Collinear Carbon Atoms in $X$\nLet us inspect the hybridization and bond angles of the carbon atoms in product $X$:\n$$\\text{C}_1\\text{H}_3-\\text{C}_2\\text{H}=\\text{C}_3\\text{H}-\\mathbf{C}_4\\text{H}_2-\\mathbf{C}_5\\equiv\\mathbf{C}_6-\\mathbf{C}_7\\equiv\\mathbf{C}_8-\\mathbf{C}_9\\text{H}_2-\\text{C}_{10}\\text{H}=\\text{C}_{11}\\text{H}-\\text{C}_{12}\\text{H}_3$$\n\n- **Carbons $\\text{C}_5, \\text{C}_6, \\text{C}_7, \\text{C}_8$:**\n  All four acetylenic carbons are **$sp$-hybridized**.\n  The bond angle around any $sp$-hybridized carbon is strictly **$180^\\circ$** (linear geometry).\n  Therefore, the sequence $\\text{C}_5-\\text{C}_6-\\text{C}_7-\\text{C}_8$ forms a rigid straight line.\n\n- **Carbons $\\text{C}_4$ and $\\text{C}_9$:**\n  Carbons $\\text{C}_4$ and $\\text{C}_9$ are $sp^3$-hybridized methylene carbons.\n  The single bond $\\text{C}_4-\\text{C}_5$ is collinear with the triple bond $\\text{C}_5\\equiv\\text{C}_6$ because the $sp$ orbital of $\\text{C}_5$ points at $180^\\circ$.\n  Similarly, the single bond $\\text{C}_8-\\text{C}_9$ is collinear with the triple bond $\\text{C}_7\\equiv\\text{C}_8$ because the $sp$ orbital of $\\text{C}_8$ points at $180^\\circ$.\n  Therefore, the carbon atom $\\text{C}_4$ and the carbon atom $\\text{C}_9$ lie strictly on the **same line** as the four $sp$ carbons!\n\n- **What about $\\text{C}_3$ and $\\text{C}_{10}$?**\n  At carbon $\\text{C}_4$, the tetrahedral $sp^3$ bond angle $\\angle \\text{C}_3-\\text{C}_4-\\text{C}_5$ is approximately $109.5^\\circ \\ne 180^\\circ$.\n  Therefore, the bond $\\text{C}_3-\\text{C}_4$ bends away from the line. Carbon $\\text{C}_3$ does **not** lie on this line.\n  Similarly, carbon $\\text{C}_{10}$ bends away at an angle of $109.5^\\circ$.\n\n#### Step 4: Count the Collinear Carbons\nThe set of carbon atoms lying on a single straight line is:\n$$\\{\\mathbf{C}_4, \\mathbf{C}_5, \\mathbf{C}_6, \\mathbf{C}_7, \\mathbf{C}_8, \\mathbf{C}_9\\}$$\nTotal number of collinear carbon atoms $= 6$.\n\n**Conclusion:** The maximum number of collinear carbon atoms in $X$ is **6**.",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C13",
+    "questionNumber": 45,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Thermodynamics",
+    "section": "Section 4: Matching Lists (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "List-I contains various physical/chemical processes, and List-II contains combinations of changes in enthalpy ($\\Delta H$) and entropy ($\\Delta S$). Match each entry in List-I to the appropriate entry in List-II, and choose the correct option.\n\n| List-I (Process) | List-II (Thermodynamic Sign) |\n| :--- | :--- |\n| **(P)** Physisorption | **(1)** $\\Delta H > 0$ and $\\Delta S > 0$ |\n| **(Q)** Diamond $\\longrightarrow$ Graphite | **(2)** $\\Delta H < 0$ and $\\Delta S < 0$ |\n| **(R)** Denaturation of protein | **(3)** $\\Delta H < 0$ and $\\Delta S = 0$ |\n| **(S)** Propene $\\longrightarrow$ Cyclopropane | **(4)** $\\Delta H > 0$ and $\\Delta S < 0$ |\n| | **(5)** $\\Delta H < 0$ and $\\Delta S > 0$ |",
+    "options": [
+      "P → 2; Q → 3; R → 5; S → 4",
+      "P → 4; Q → 3; R → 5; S → 1",
+      "P → 2; Q → 5; R → 1; S → 4",
+      "P → 2; Q → 5; R → 1; S → 3"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Thermodynamic Principles Governing Each Process:\n\n1. **(P) Physisorption (Physical Adsorption):**\n   - Gas molecules condense onto a solid adsorbent surface held by weak van der Waals forces.\n   - Adsorption is inherently an exothermic process because new attractive interactions are formed without breaking chemical bonds:\n     $$\\Delta H < 0$$\n   - Gaseous molecules losing translational degrees of freedom upon sticking to the 2D surface experience a decrease in randomness/disorder:\n     $$\\Delta S < 0$$\n   - Matches: **(2) $\\Delta H < 0$ and $\\Delta S < 0$.**\n   $$\\mathbf{P \\to 2}$$\n\n2. **(Q) Diamond $\\longrightarrow$ Graphite:**\n   - Graphite is the thermodynamically stable standard allotrope of elemental carbon at $298\\text{ K}$ and $1\\text{ bar}$.\n   - The standard enthalpy of formation of diamond is $\\Delta_f H^\\circ = +1.9\\text{ kJ/mol}$.\n   - Therefore, the conversion of diamond to graphite is exothermic:\n     $$\\Delta H = H(\\text{graphite}) - H(\\text{diamond}) = -1.9\\text{ kJ/mol} < 0$$\n   - In diamond, carbon atoms are locked in a rigid 3D tetrahedral network ($sp^3$). In graphite, carbon atoms are in 2D sheets ($sp^2$) with weak interlayer van der Waals bonding, providing higher vibrational and translational freedom:\n     $$\\Delta S = S^\\circ(\\text{graphite}) - S^\\circ(\\text{diamond}) = 5.74 - 2.38 = +3.36\\text{ J K}^{-1}\\text{ mol}^{-1} > 0$$\n   - Matches: **(5) $\\Delta H < 0$ and $\\Delta S > 0$.**\n   $$\\mathbf{Q \\to 5}$$\n\n3. **(R) Denaturation of Protein:**\n   - Under changes in temperature, pH, or solvent, the highly ordered native tertiary and secondary helical/sheet structure of a globular protein unfolds into random flexible polypeptide coils.\n   - Disruption of stabilizing intramolecular hydrogen bonds, salt bridges, and hydrophobic interactions requires energy:\n     $$\\Delta H > 0$$\n   - The transition from an exquisitely ordered unique folded native conformation to millions of disordered random-coil microstates drastically increases conformational entropy:\n     $$\\Delta S > 0$$\n   - Matches: **(1) $\\Delta H > 0$ and $\\Delta S > 0$.**\n   $$\\mathbf{R \\to 1}$$\n\n4. **(S) Propene $\\longrightarrow$ Cyclopropane:**\n   - Propene is an open-chain alkene with negligible ring strain.\n   - Cyclopropane possesses severe angle strain (Baeyer strain, bond angles $60^\\circ$ compressed from normal $109.5^\\circ$) and torsional strain (eclipsed $\\text{C}-\\text{H}$ bonds) amounting to $\\approx 115\\text{ kJ/mol}$.\n   - Therefore, isomerization from propene to cyclopropane is endothermic:\n     $$\\Delta H > 0$$\n   - Ring closure restricts internal rotations around carbon-carbon bonds, reducing degrees of freedom and lowering entropy:\n     $$\\Delta S < 0$$\n   - Matches: **(4) $\\Delta H > 0$ and $\\Delta S < 0$.**\n   $$\\mathbf{S \\to 4}$$\n\n**Conclusion:** The matching is **P → 2, Q → 5, R → 1, S → 4** (Option C).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C14",
+    "questionNumber": 46,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Geometry",
+    "section": "Section 4: Matching Lists (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Consider the following species:\n$$\\text{SOCl}_2, \\; \\text{XeOF}_4, \\; \\text{ClF}_3, \\; \\text{ClF}_5, \\; \\text{XeF}_5^+, \\; \\text{SO}_3^{2-}, \\; \\text{XeF}_3^+, \\; \\text{SF}_4$$\nList-I contains different molecular shapes and List-II contains total number of species with the same molecular shapes from the given species. Match each entry in List-I with the appropriate entry in List-II and choose the correct option.\n\n| List-I (Shape) | List-II (Count) |\n| :--- | :--- |\n| **(P)** See-saw | **(1)** one |\n| **(Q)** T-Shaped | **(2)** two |\n| **(R)** Trigonal Planar | **(3)** three |\n| **(S)** Square Pyramidal | **(4)** four |\n| | **(5)** zero |",
+    "options": [
+      "P → 1; Q → 2; R → 5; S → 3",
+      "P → 5; Q → 4; R → 2; S → 3",
+      "P → 3; Q → 2; R → 1; S → 4",
+      "P → 1; Q → 3; R → 5; S → 4"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### VSEPR Theory Electron-Pair Geometry and Molecular Shape Determination:\nSteric Number ($\\text{SN}$) = (Number of $\\sigma$-bonded atoms) + (Number of lone pairs on central atom).\n\n1. **$\\text{SOCl}_2$ (Thionyl Chloride):**\n   - Central atom: Sulfur (Group 16, 6 valence electrons).\n   - Bonds: $1 \\times \\text{O}$ (double bond, $1\\sigma + 1\\pi$), $2 \\times \\text{Cl}$ (single bonds, $2\\sigma$). Electrons used $= 2 + 1 + 1 = 4$.\n   - Lone pairs: $\\dfrac{6 - 4}{2} = 1\\text{ lone pair}$.\n   - $\\text{SN} = 3\\sigma + 1\\text{ lp} = 4 \\implies sp^3$ hybridization.\n   - **Molecular Shape: Trigonal Pyramidal** (NOT trigonal planar).\n\n2. **$\\text{XeOF}_4$ (Xenon Oxytetrafluoride):**\n   - Central atom: Xenon (Group 18, 8 valence electrons).\n   - Bonds: $1 \\times \\text{O}$ ($1\\sigma$), $4 \\times \\text{F}$ ($4\\sigma$). Electrons used $= 2 + 4 = 6$.\n   - Lone pairs: $\\dfrac{8 - 6}{2} = 1\\text{ lone pair}$.\n   - $\\text{SN} = 5\\sigma + 1\\text{ lp} = 6 \\implies sp^3d^2$ hybridization.\n   - **Molecular Shape: Square Pyramidal**.\n\n3. **$\\text{ClF}_3$ (Chlorine Trifluoride):**\n   - Central atom: Chlorine (Group 17, 7 valence electrons).\n   - Bonds: $3 \\times \\text{F}$ ($3\\sigma$). Electrons used $= 3$.\n   - Lone pairs: $\\dfrac{7 - 3}{2} = 2\\text{ lone pairs}$ (occupying equatorial positions of trigonal bipyramid).\n   - $\\text{SN} = 3\\sigma + 2\\text{ lp} = 5 \\implies sp^3d$ hybridization.\n   - **Molecular Shape: T-Shaped**.\n\n4. **$\\text{ClF}_5$ (Chlorine Pentafluoride):**\n   - Central atom: Chlorine (7 valence electrons).\n   - Bonds: $5 \\times \\text{F}$ ($5\\sigma$). Electrons used $= 5$.\n   - Lone pairs: $\\dfrac{7 - 5}{2} = 1\\text{ lone pair}$.\n   - $\\text{SN} = 5\\sigma + 1\\text{ lp} = 6 \\implies sp^3d^2$ hybridization.\n   - **Molecular Shape: Square Pyramidal**.\n\n5. **$\\text{XeF}_5^+$ (Pentafluoroxenon(VI) Cation):**\n   - Central atom: $\\text{Xe}^+$ (Group 18 with $+1$ charge $\\implies 7$ valence electrons).\n   - Bonds: $5 \\times \\text{F}$ ($5\\sigma$). Electrons used $= 5$.\n   - Lone pairs: $\\dfrac{7 - 5}{2} = 1\\text{ lone pair}$.\n   - $\\text{SN} = 5\\sigma + 1\\text{ lp} = 6 \\implies sp^3d^2$ hybridization.\n   - **Molecular Shape: Square Pyramidal**.\n\n6. **$\\text{SO}_3^{2-}$ (Sulfite Anion):**\n   - Central atom: Sulfur (6 valence electrons $+ 2$ negative charges $= 8$ electrons).\n   - Bonds: $3 \\times \\text{O}$ ($3\\sigma$). Electrons used $= 6$.\n   - Lone pairs: $\\dfrac{8 - 6}{2} = 1\\text{ lone pair}$.\n   - $\\text{SN} = 3\\sigma + 1\\text{ lp} = 4 \\implies sp^3$ hybridization.\n   - **Molecular Shape: Trigonal Pyramidal** (NOT trigonal planar).\n\n7. **$\\text{XeF}_3^+$ (Trifluoroxenon(IV) Cation):**\n   - Central atom: $\\text{Xe}^+$ ($7$ valence electrons).\n   - Bonds: $3 \\times \\text{F}$ ($3\\sigma$). Electrons used $= 3$.\n   - Lone pairs: $\\dfrac{7 - 3}{2} = 2\\text{ lone pairs}$ (in equatorial positions).\n   - $\\text{SN} = 3\\sigma + 2\\text{ lp} = 5 \\implies sp^3d$ hybridization.\n   - **Molecular Shape: T-Shaped**.\n\n8. **$\\text{SF}_4$ (Sulfur Tetrafluoride):**\n   - Central atom: Sulfur (6 valence electrons).\n   - Bonds: $4 \\times \\text{F}$ ($4\\sigma$). Electrons used $= 4$.\n   - Lone pairs: $\\dfrac{6 - 4}{2} = 1\\text{ lone pair}$ (occupying equatorial position of TBP).\n   - $\\text{SN} = 4\\sigma + 1\\text{ lp} = 5 \\implies sp^3d$ hybridization.\n   - **Molecular Shape: See-saw**.\n\n#### Step 2: Tabulate Counts for Each Shape in List-I\n- **(P) See-saw:** Only $\\text{SF}_4$ $\\implies$ **1 species (one)** $\\implies \\mathbf{P \\to 1}$\n- **(Q) T-Shaped:** $\\text{ClF}_3$ and $\\text{XeF}_3^+$ $\\implies$ **2 species (two)** $\\implies \\mathbf{Q \\to 2}$\n- **(R) Trigonal Planar:** None! (Both $\\text{SOCl}_2$ and $\\text{SO}_3^{2-}$ are *trigonal pyramidal*) $\\implies$ **0 species (zero)** $\\implies \\mathbf{R \\to 5}$\n- **(S) Square Pyramidal:** $\\text{XeOF}_4, \\text{ClF}_5, \\text{XeF}_5^+$ $\\implies$ **3 species (three)** $\\implies \\mathbf{S \\to 3}$\n\n**Conclusion:** The matching is **P → 1, Q → 2, R → 5, S → 3** (Option A).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C15",
+    "questionNumber": 47,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Aldehydes, Ketones & Ozonolysis",
+    "section": "Section 4: Matching Lists (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The List-II contains products obtained from the reaction of compounds in List-I with $\\text{O}_3/\\text{Zn-H}_2\\text{O}$ followed by cyclization (via more stable enolate) in the presence of aqueous $\\text{NaOH}$. Match each entry in List-I with appropriate entry in List-II and choose the correct option.\n\n| List-I (Precursor) | List-II (Cyclized Product) |\n| :--- | :--- |\n| **(P)** Substituted cyclohexene precursor | **(1)** Structure (1) |\n| **(Q)** Bicyclic alkene precursor | **(2)** Structure (2) |\n| **(R)** Cyclopentene derivative | **(3)** Structure (3) |\n| **(S)** Methylcycloalkene precursor | **(4)** Structure (4) |\n| | **(5)** Structure (5) |",
+    "options": [
+      "P ⟶ 2; Q ⟶ 4; R ⟶ 1; S ⟶ 3",
+      "P ⟶ 3; Q ⟶ 4; R ⟶ 5; S ⟶ 2",
+      "P ⟶ 2; Q ⟶ 1; R ⟶ 5; S ⟶ 3",
+      "P ⟶ 3; Q ⟶ 5; R ⟶ 4; S ⟶ 2"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2026_adv_p1/c_q15_ozonolysis_cyclization.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### General Reaction Sequence:\n1. **Reductive Ozonolysis ($\\text{O}_3 / \\text{Zn-H}_2\\text{O}$):**\n   Carbon-carbon double bonds ($>\\text{C}=\\text{C}<$) undergo oxidative cleavage to yield two carbonyl fragments ($>\\text{C}=\\text{O}$), generating a dicarbonyl intermediate (dialdehyde, keto-aldehyde, or diketone).\n2. **Base-Catalyzed Intramolecular Aldol Condensation (aq. $\\text{NaOH}$):**\n   - **Regioselective Enolate Formation:** In the presence of aqueous hydroxide, deprotonation occurs preferentially at the $\\alpha$-position that generates the more thermodynamically stable enolate or the enolate that leads to favorable ring closure.\n   - **Ring Size Preference:** Intramolecular nucleophilic attack overwhelmingly favors the formation of strain-free **5- and 6-membered rings** over 3-, 4-, or 7-membered rings.\n   - **Dehydration:** Subsequent $\\text{E1cB}$ elimination of water gives a conjugated $\\alpha,\\beta$-unsaturated enone/enal.\n\n#### Detailed Mechanistic Trace for Each Precursor:\n\n1. **Precursor (P):**\n   - Ozonolysis cleaves the cyclohexenyl double bond, unzipping the 6-membered ring into an open-chain keto-aldehyde intermediate.\n   - Intramolecular attack of the enolate carbon onto the remaining carbonyl carbon undergoes 5-exo-trig ring closure, followed by dehydration, forming the cyclopentenone ring system shown in **Structure (2)**.\n   $$\\mathbf{P \\to 2}$$\n\n2. **Precursor (Q):**\n   - The bicyclic alkene undergoes oxidative cleavage of the bridgehead/ring junction double bond.\n   - Intramolecular aldol condensation of the resulting polycarbonyl intermediate yields a fused 6-membered enone corresponding to **Structure (1)**.\n   $$\\mathbf{Q \\to 1}$$\n\n3. **Precursor (R):**\n   - Reductive ozonolysis cleaves the cyclopentene double bond.\n   - Subsequent thermodynamic enolate generation followed by intramolecular attack and dehydration forms the substituted bicyclic framework corresponding to **Structure (5)**.\n   $$\\mathbf{R \\to 5}$$\n\n4. **Precursor (S):**\n   - Ozonolytic cleavage followed by 6-membered ring-closure and elimination of water produces the $\\alpha,\\beta$-unsaturated enone corresponding to **Structure (3)**.\n   $$\\mathbf{S \\to 3}$$\n\n**Conclusion:** The matching is **P ⟶ 2, Q ⟶ 1, R ⟶ 5, S ⟶ 3** (Option C).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  },
+  {
+    "id": "ADV-2026-P1-C16",
+    "questionNumber": 48,
+    "exam": "JEE Advanced",
+    "year": 2026,
+    "paper": "2026 Advanced Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Nitrogen Containing Organic Compounds (Oximes)",
+    "section": "Section 4: Matching Lists (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Match the major products obtained in the reactions given in List-I with the corresponding structures in List-II and choose the correct option.\n\n| List-I (Reactions) | List-II (Structures) |\n| :--- | :--- |\n| **(P)** Oxime treated with $\\text{H}_2\\text{SO}_4$ (Beckmann Rearrangement) | **(1)** Secondary amide structure |\n| **(Q)** Cyclic oxime rearrangement | **(2)** Lactam ring structure |\n| **(R)** Hydrolysis of amide | **(3)** Substituted aniline |\n| **(S)** Reduction of oxime / amide | **(4)** Carboxylic acid and amine |\n| | **(5)** Primary / secondary amine derivative |",
+    "options": [
+      "P → 2, Q ⟶ 1, R → 5, S ⟶ 4",
+      "P → 1, Q ⟶ 2, R → 4, S ⟶ 5",
+      "P → 1, Q ⟶ 2, R → 3, S ⟶ 4",
+      "P → 2, Q ⟶ 1, R → 3, S ⟶ 5"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": "/diagrams/2026_adv_p1/c_q16_oximes_reactions.png",
+    "solution": "### Comprehensive Step-by-Step Solution\n\n#### Organic Mechanisms of Oximes and Amide Derivatives:\n\n1. **Reaction (P) — Beckmann Rearrangement of Acyclic Ketoxime:**\n   - **Mechanism:**\n     1. Protonation of the oxime hydroxyl oxygen by concentrated $\\text{H}_2\\text{SO}_4$:\n        $$\\text{R}_1-\\text{C}(=\\text{N-OH})-\\text{R}_2 + \\text{H}^+ \\rightleftharpoons \\text{R}_1-\\text{C}(=\\text{N-OH}_2^+)-\\text{R}_2$$\n     2. Stereospecific 1,2-migration: The alkyl/aryl group positioned **anti** to the leaving water molecule migrates to the nitrogen atom with concerted departure of $\\text{H}_2\\text{O}$, generating a resonance-stabilized nitrilium ion:\n        $$\\text{R}_1-\\text{C}^+=\\text{N}-\\text{R}_2 \\longleftrightarrow \\text{R}_1-\\text{C}\\equiv\\text{N}^+-\\text{R}_2$$\n     3. Nucleophilic attack by water followed by deprotonation gives the imidic acid tautomer:\n        $$\\text{R}_1-\\text{C}(\\text{OH})=\\text{N}-\\text{R}_2$$\n     4. Rapid keto-enol style tautomerization yields an $N$-substituted **secondary amide**:\n        $$\\text{R}_1-\\text{C}(=\\text{O})-\\text{NH}-\\text{R}_2$$\n   - Matches: **Structure (1) (Secondary amide structure).**\n   $$\\mathbf{P \\to 1}$$\n\n2. **Reaction (Q) — Beckmann Rearrangement of Cyclic Ketoxime:**\n   - When a cyclic ketoxime (such as cyclohexanone oxime) undergoes Beckmann rearrangement:\n     - The anti-migrating group is one of the ring methylene carbons.\n     - The ring opens and reconnects to the nitrogen atom, causing a **ring expansion** by one atom (a 6-membered carbocycle expands to a 7-membered heterocycle).\n     - The product is a cyclic amide, known as a **lactam** (specifically, $\\varepsilon$-caprolactam, the industrial precursor to Nylon-6).\n   - Matches: **Structure (2) (Lactam ring structure).**\n   $$\\mathbf{Q \\to 2}$$\n\n3. **Reaction (R) — Acid-Catalyzed Amide Hydrolysis:**\n   - Amides are resistant to neutral water but undergo irreversible cleavage in aqueous acid:\n     $$\\text{R}-\\text{CONH}-\\text{R}' + \\text{H}_3\\text{O}^+ \\xrightarrow{\\Delta} \\text{R}-\\text{COOH} + \\text{R}'-\\text{NH}_3^+$$\n   - The products are a **carboxylic acid** and an **amine** (as its ammonium salt).\n   - Matches: **Structure (4) (Carboxylic acid and amine).**\n   $$\\mathbf{R \\to 4}$$\n\n4. **Reaction (S) — Reduction of Oxime / Amide:**\n   - Reduction with strong hydride donors (such as $\\text{LiAlH}_4$ in dry ether) or catalytic hydrogenation:\n     $$\\text{R}-\\text{C}(=\\text{N-OH})-\\text{R}' \\xrightarrow{\\text{LiAlH}_4} \\text{R}-\\text{CH}(\\text{NH}_2)-\\text{R}' \\quad (\\text{primary amine})$$\n     $$\\text{R}-\\text{CONH}-\\text{R}' \\xrightarrow{\\text{LiAlH}_4} \\text{R}-\\text{CH}_2-\\text{NH}-\\text{R}' \\quad (\\text{secondary amine})$$\n   - Matches: **Structure (5) (Primary / secondary amine derivative).**\n   $$\\mathbf{S \\to 5}$$\n\n**Conclusion:** The matching is **P → 1, Q ⟶ 2, R → 4, S ⟶ 5** (Option B).",
+    "paperName": "2026 Advanced Paper 1",
+    "shift": "Paper 1"
+  }
+]

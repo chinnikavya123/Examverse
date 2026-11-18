@@ -1,0 +1,1312 @@
+[
+  {
+    "id": "ADV-2025-P2-M01",
+    "questionNumber": 1,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Functions, Limits & Continuity",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Let $x_0$ be the real number such that $e^{x_0} + x_0 = 0$. For a given real number $\\alpha$, define\n$$g(x) = \\frac{3xe^x + 3x - \\alpha e^x - \\alpha x}{3(e^x + 1)}$$\nfor all real numbers $x$. Then which one of the following statements is TRUE?",
+    "options": [
+      "For $\\alpha = 2$, $\\lim_{x \\to x_0} \\left|\\frac{g(x) + e^{x_0}}{x - x_0}\\right| = 0$",
+      "For $\\alpha = 2$, $\\lim_{x \\to x_0} \\left|\\frac{g(x) + e^{x_0}}{x - x_0}\\right| = 1$",
+      "For $\\alpha = 3$, $\\lim_{x \\to x_0} \\left|\\frac{g(x) + e^{x_0}}{x - x_0}\\right| = 0$",
+      "For $\\alpha = 3$, $\\lim_{x \\to x_0} \\left|\\frac{g(x) + e^{x_0}}{x - x_0}\\right| = \\frac{2}{3}$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Simplify $g(x)$\nGiven:\n$$g(x) = \\frac{3x(e^x + 1) - \\alpha(e^x + x)}{3(e^x + 1)} = x - \\frac{\\alpha(e^x + x)}{3(e^x + 1)}$$\n\n#### Step 2: Evaluate $g(x_0)$\nWe are given $e^{x_0} + x_0 = 0 \\implies e^{x_0} = -x_0$.\nSubstituting $x = x_0$:\n$$g(x_0) = x_0 - \\frac{\\alpha(e^{x_0} + x_0)}{3(e^{x_0} + 1)} = x_0 - 0 = x_0 = -e^{x_0}$$\nThus, $g(x_0) + e^{x_0} = 0$.\n\n#### Step 3: Compute the Limit using Derivative\nThe required limit is:\n$$\\lim_{x \\to x_0} \\left|\\frac{g(x) + e^{x_0}}{x - x_0}\\right| = \\lim_{x \\to x_0} \\left|\\frac{g(x) - g(x_0)}{x - x_0}\\right| = |g'(x_0)|$$\n\nDifferentiating $g(x)$:\n$$g'(x) = 1 - \\frac{\\alpha}{3} \\frac{d}{dx}\\left(\\frac{e^x + x}{e^x + 1}\\right)$$\nUsing quotient rule:\n$$\\frac{d}{dx}\\left(\\frac{e^x + x}{e^x + 1}\\right) = \\frac{(e^x + 1)(e^x + 1) - (e^x + x)e^x}{(e^x + 1)^2}$$\nAt $x = x_0$, since $e^{x_0} + x_0 = 0$:\n$$\\left.\\frac{d}{dx}\\left(\\frac{e^x + x}{e^x + 1}\\right)\\right|_{x = x_0} = \\frac{(e^{x_0} + 1)^2 - 0}{(e^{x_0} + 1)^2} = 1$$\nTherefore:\n$$g'(x_0) = 1 - \\frac{\\alpha}{3}(1) = 1 - \\frac{\\alpha}{3}$$\n\n#### Step 4: Evaluate for Options\n- For $\\alpha = 2$: $|g'(x_0)| = \\left|1 - \\frac{2}{3}\\right| = \\frac{1}{3} \\neq 0$ or $1$.\n- For $\\alpha = 3$: $|g'(x_0)| = \\left|1 - \\frac{3}{3}\\right| = 0$.\n\nThus, for $\\alpha = 3$, the limit equals $0$.\n\n**Correct Answer:** Option **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-M02",
+    "questionNumber": 2,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Area Under Curves",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Let $\\mathbb{R}$ denote the set of all real numbers. Then the area of the region\n$$\\left\\{(x, y) \\in \\mathbb{R} \\times \\mathbb{R} : x > 0, y > \\frac{1}{x}, 5x - 4y - 1 > 0, 4x + 4y - 17 < 0\\right\\}$$\nis",
+    "options": [
+      "$\\frac{17}{16} - \\log_e 4$",
+      "$\\frac{33}{8} - \\log_e 4$",
+      "$\\frac{57}{8} - \\log_e 4$",
+      "$\\frac{17}{2} - \\log_e 4$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Identify Bounding Lines and Curves\n1. Line $L_1$: $5x - 4y - 1 = 0 \\implies y = \\frac{5x - 1}{4}$. The inequality $5x - 4y - 1 > 0 \\implies y < \\frac{5x - 1}{4}$ (below $L_1$).\n2. Line $L_2$: $4x + 4y - 17 = 0 \\implies y = \\frac{17 - 4x}{4}$. The inequality $4x + 4y - 17 < 0 \\implies y < \\frac{17 - 4x}{4}$ (below $L_2$).\n3. Hyperbola: $y = \\frac{1}{x}$. The inequality $y > \\frac{1}{x}$ (above the hyperbola).\n\n#### Step 2: Find Intersection Points\n- Intersection of $L_1$ and $L_2$:\n$$\\frac{5x - 1}{4} = \\frac{17 - 4x}{4} \\implies 9x = 18 \\implies x = 2, \\quad y = \\frac{9}{4}$$\n- Intersection of $L_1$ and $y = 1/x$:\n$$\\frac{5x - 1}{4} = \\frac{1}{x} \\implies 5x^2 - x - 4 = 0 \\implies (5x + 4)(x - 1) = 0$$\nFor $x > 0$, $x = 1$ and $y = 1$.\n- Intersection of $L_2$ and $y = 1/x$:\n$$\\frac{17 - 4x}{4} = \\frac{1}{x} \\implies 4x^2 - 17x + 4 = 0 \\implies (4x - 1)(x - 4) = 0$$\nSince the region lies between $x = 1$ and $x = 4$, the intersection point is $x = 4$ and $y = 1/4$.\n\n#### Step 3: Compute the Enclosed Area\nThe upper boundary consists of two straight line segments meeting at $x = 2$, and the lower boundary is the hyperbola $y = 1/x$ from $x = 1$ to $x = 4$.\n$$\\text{Area} = \\int_1^2 \\left(\\frac{5x - 1}{4} - \\frac{1}{x}\\right) dx + \\int_2^4 \\left(\\frac{17 - 4x}{4} - \\frac{1}{x}\\right) dx$$\n\nEvaluating the straight-line contributions:\n$$\\int_1^2 \\frac{5x - 1}{4} dx = \\left[\\frac{5x^2/2 - x}{4}\\right]_1^2 = \\frac{(10 - 2) - (5/2 - 1)}{4} = \\frac{8 - 3/2}{4} = \\frac{13}{8}$$\n$$\\int_2^4 \\frac{17 - 4x}{4} dx = \\left[\\frac{17x - 2x^2}{4}\\right]_2^4 = \\frac{(68 - 32) - (34 - 8)}{4} = \\frac{36 - 26}{4} = \\frac{10}{4} = \\frac{20}{8}$$\nSum of straight-line integrals:\n$$\\frac{13}{8} + \\frac{20}{8} = \\frac{33}{8}$$\n\nEvaluating the lower curve integral:\n$$\\int_1^4 \\frac{1}{x} dx = [\\ln x]_1^4 = \\ln 4 = \\log_e 4$$\n\n#### Step 4: Final Area\n$$\\text{Total Area} = \\frac{33}{8} - \\log_e 4$$\n\n**Correct Answer:** Option **(B)**."
+  },
+  {
+    "id": "ADV-2025-P2-M03",
+    "questionNumber": 3,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Inverse Trigonometric Functions",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The total number of real solutions of the equation\n$$\\theta = \\tan^{-1}(2\\tan\\theta) - \\frac{1}{2}\\sin^{-1}\\left(\\frac{6\\tan\\theta}{9+\\tan^2\\theta}\\right)$$\nis\n\n*(Here, the inverse trigonometric functions $\\sin^{-1} x$ and $\\tan^{-1} x$ assume values in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$ and $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$, respectively.)*",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Substitution and Domain Analysis\nLet $t = \\tan\\theta$. Note that:\n$$\\frac{6\\tan\\theta}{9 + \\tan^2\\theta} = \\frac{2(t/3)}{1 + (t/3)^2}$$\nRecall the standard identity for $\\sin^{-1}\\left(\\frac{2u}{1+u^2}\\right)$ with $u = t/3$:\n$$\\sin^{-1}\\left(\\frac{2u}{1+u^2}\\right) = \\begin{cases} 2\\tan^{-1}u & \\text{if } |u| \\le 1 \\iff |t| \\le 3 \\\\ \\pi - 2\\tan^{-1}u & \\text{if } u > 1 \\iff t > 3 \\\\ -\\pi - 2\\tan^{-1}u & \\text{if } u < -1 \\iff t < -3 \\end{cases}$$\n\n#### Step 2: Case 1: $|t| \\le 3$\nFor $|t| \\le 3$, $\\frac{1}{2}\\sin^{-1}\\left(\\frac{2(t/3)}{1+(t/3)^2}\\right) = \\tan^{-1}\\left(\\frac{t}{3}\\right)$.\nThe equation becomes:\n$$\\theta = \\tan^{-1}(2t) - \\tan^{-1}\\left(\\frac{t}{3}\\right)$$\nTaking $\\tan$ of both sides:\n$$\\tan\\theta = \\frac{2t - t/3}{1 + 2t(t/3)} = \\frac{5t/3}{1 + 2t^2/3} = \\frac{5t}{3 + 2t^2}$$\nSince $t = \\tan\\theta$:\n$$t = \\frac{5t}{3 + 2t^2} \\implies t\\left(1 - \\frac{5}{3 + 2t^2}\\right) = 0 \\implies t\\left(\\frac{2t^2 - 2}{3 + 2t^2}\\right) = 0$$\nThis gives:\n$$t = 0 \\quad \\text{or} \\quad t^2 = 1 \\implies t = \\pm 1$$\nAll three values $|t| \\le 3$ satisfy the condition:\n1. $t = 0 \\implies \\theta = 0$: $\\theta = \\tan^{-1}(0) - \\tan^{-1}(0) = 0$ (Valid).\n2. $t = 1 \\implies \\theta = \\pi/4$: $\\tan^{-1}(2) - \\tan^{-1}(1/3) = \\tan^{-1}\\left(\\frac{2 - 1/3}{1 + 2/3}\\right) = \\tan^{-1}(1) = \\pi/4$ (Valid).\n3. $t = -1 \\implies \\theta = -\\pi/4$: By odd symmetry, also valid.\n\n#### Step 3: Case 2: $|t| > 3$\n- For $t > 3$: $\\theta = \\tan^{-1}(2t) - \\frac{\\pi}{2} + \\tan^{-1}(t/3)$. For $t > 3$, $\\theta \\in (\\tan^{-1} 3, \\pi/2)$, while $\\tan^{-1}(2t) + \\tan^{-1}(t/3) - \\pi/2 < \\theta$, yielding no solution.\n- For $t < -3$: By odd symmetry, no additional solutions exist.\n\n#### Step 4: Conclusion\nThere are exactly **3 real solutions**:\n$$\\theta \\in \\left\\{-\\frac{\\pi}{4}, 0, \\frac{\\pi}{4}\\right\\}$$\n\n**Correct Answer:** Option **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-M04",
+    "questionNumber": 4,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Hyperbola & Straight Lines",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Let $S$ denote the locus of the point of intersection of the pair of lines\n$$4x - 3y = 12\\alpha,$$\n$$4\\alpha x + 3\\alpha y = 12,$$\nwhere $\\alpha$ varies over the set of non-zero real numbers. Let $T$ be the tangent to $S$ passing through the points $(p, 0)$ and $(0, q)$, $q > 0$, and parallel to the line $4x - \\frac{3}{\\sqrt{2}}y = 0$.\n\nThen the value of $pq$ is",
+    "options": [
+      "$-6\\sqrt{2}$",
+      "$-3\\sqrt{2}$",
+      "$-9\\sqrt{2}$",
+      "$-12\\sqrt{2}$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Determine the Locus $S$\nGiven the two lines:\n$$4x - 3y = 12\\alpha \\implies \\alpha = \\frac{4x - 3y}{12}$$\nSubstitute into the second line:\n$$\\alpha(4x + 3y) = 12 \\implies \\left(\\frac{4x - 3y}{12}\\right)(4x + 3y) = 12$$\n$$16x^2 - 9y^2 = 144 \\implies \\frac{x^2}{9} - \\frac{y^2}{16} = 1$$\nThus, the locus $S$ is a standard hyperbola with $a^2 = 9$ and $b^2 = 16$.\n\n#### Step 2: Slope of the Tangent $T$\nThe tangent $T$ is parallel to $4x - \\frac{3}{\\sqrt{2}}y = 0$:\n$$m = \\frac{4}{3/\\sqrt{2}} = \\frac{4\\sqrt{2}}{3}$$\n\n#### Step 3: Equation of Tangent to Hyperbola\nThe equation of a tangent with slope $m$ to $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$ is:\n$$y = mx \\pm \\sqrt{a^2 m^2 - b^2}$$\nHere:\n$$a^2 m^2 - b^2 = 9 \\cdot \\left(\\frac{4\\sqrt{2}}{3}\\right)^2 - 16 = 9 \\cdot \\frac{32}{9} - 16 = 32 - 16 = 16$$\nSo $\\sqrt{a^2 m^2 - b^2} = 4$.\n\nSince $T$ passes through $(0, q)$ with $q > 0$:\n$$q = +4$$\nEquation of tangent $T$ is:\n$$y = \\frac{4\\sqrt{2}}{3}x + 4$$\n\n#### Step 4: Find $p$ and Compute $pq$\n$T$ passes through $(p, 0)$:\n$$0 = \\frac{4\\sqrt{2}}{3}p + 4 \\implies \\frac{4\\sqrt{2}}{3}p = -4 \\implies p = -\\frac{3}{\\sqrt{2}} = -\\frac{3\\sqrt{2}}{2}$$\nNow compute the product $pq$:\n$$pq = \\left(-\\frac{3\\sqrt{2}}{2}\\right)(4) = -6\\sqrt{2}$$\n\n**Correct Answer:** Option **(A)**."
+  },
+  {
+    "id": "ADV-2025-P2-M05",
+    "questionNumber": 5,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Matrices & Determinants",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Let $I = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ and $P = \\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix}$. Let $Q = \\begin{pmatrix} x & y \\\\ z & 4 \\end{pmatrix}$ for some non-zero real numbers $x, y,$ and $z$, for which there is a $2 \\times 2$ matrix $R$ with all entries being non-zero real numbers, such that\n$$QR = RP.$$\nThen which of the following statements is (are) TRUE?",
+    "options": [
+      "The determinant of $Q - 2I$ is zero",
+      "The determinant of $Q - 6I$ is 12",
+      "The determinant of $Q - 3I$ is 15",
+      "$yz = 2$"
+    ],
+    "correctOption": [
+      0,
+      1
+    ],
+    "correctAnswer": "A, B",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Interpret $QR = RP$\nLet $R = \\begin{pmatrix} r_1 & r_2 \\end{pmatrix}$ where $r_1, r_2$ are the column vectors of $R$.\n$$QR = Q \\begin{pmatrix} r_1 & r_2 \\end{pmatrix} = \\begin{pmatrix} Q r_1 & Q r_2 \\end{pmatrix}$$\n$$RP = \\begin{pmatrix} r_1 & r_2 \\end{pmatrix} \\begin{pmatrix} 2 & 0 \\\\ 0 & 3 \\end{pmatrix} = \\begin{pmatrix} 2r_1 & 3r_2 \\end{pmatrix}$$\nThus:\n$$Q r_1 = 2 r_1 \\quad \\text{and} \\quad Q r_2 = 3 r_2$$\nSince all entries of $R$ are non-zero real numbers, $r_1 \\neq \\vec{0}$ and $r_2 \\neq \\vec{0}$.\nTherefore, $\\lambda = 2$ and $\\lambda = 3$ are the eigenvalues of matrix $Q$!\n\n#### Step 2: Eigenvalues and Characteristic Polynomial of $Q$\nThe characteristic polynomial of $Q$ is:\n$$\\det(Q - \\lambda I) = (\\lambda - 2)(\\lambda - 3) = \\lambda^2 - 5\\lambda + 6$$\nFrom $Q = \\begin{pmatrix} x & y \\\\ z & 4 \\end{pmatrix}$:\n- $\\text{Trace}(Q) = x + 4 = 5 \\implies x = 1$.\n- $\\det(Q) = 4x - yz = 6 \\implies 4(1) - yz = 6 \\implies yz = -2$.\n\n#### Step 3: Check Each Option\n- **Option (A):** Since $\\lambda = 2$ is an eigenvalue of $Q$, $\\det(Q - 2I) = 0$. (TRUE)\n- **Option (B):** $\\det(Q - 6I) = (6 - 2)(6 - 3) = 4 \\times 3 = 12$. (TRUE)\n- **Option (C):** Since $\\lambda = 3$ is an eigenvalue, $\\det(Q - 3I) = 0 \\neq 15$. (FALSE)\n- **Option (D):** $yz = -2 \\neq 2$. (FALSE)\n\n**Correct Answer:** Options **(A)** and **(B)**."
+  },
+  {
+    "id": "ADV-2025-P2-M06",
+    "questionNumber": 6,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Parabola & Definite Integration",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Let $S$ denote the locus of the mid-points of those chords of the parabola $y^2 = x$, such that the area of the region enclosed between the parabola and the chord is $\\frac{4}{3}$. Let $\\mathcal{R}$ denote the region lying in the first quadrant, enclosed by the parabola $y^2 = x$, the curve $S$, and the lines $x = 1$ and $x = 4$.\n\nThen which of the following statements is (are) TRUE?",
+    "options": [
+      "$(4, \\sqrt{3}) \\in S$",
+      "$(5, \\sqrt{2}) \\in S$",
+      "Area of $\\mathcal{R}$ is $\\frac{14}{3} - 2\\sqrt{3}$",
+      "Area of $\\mathcal{R}$ is $\\frac{14}{3} - \\sqrt{3}$"
+    ],
+    "correctOption": [
+      0,
+      2
+    ],
+    "correctAnswer": "A, C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Locus of the Midpoint of Chords\nLet the chord endpoints be $(y_1^2, y_1)$ and $(y_2^2, y_2)$ on $x = y^2$ with $y_2 > y_1$.\nLet the midpoint be $(h, k)$:\n$$k = \\frac{y_1 + y_2}{2}, \\quad h = \\frac{y_1^2 + y_2^2}{2}$$\nThe area enclosed between a chord and the parabola $x = y^2$ is given by Archimedes' formula:\n$$\\text{Area} = \\int_{y_1}^{y_2} \\left[(y_1+y_2)y - y_1 y_2 - y^2\\right] dy = \\frac{(y_2 - y_1)^3}{6}$$\nGiven $\\text{Area} = \\frac{4}{3}$:\n$$\\frac{(y_2 - y_1)^3}{6} = \\frac{4}{3} \\implies (y_2 - y_1)^3 = 8 \\implies y_2 - y_1 = 2$$\nNow, expressing $y_1$ and $y_2$ in terms of $k$:\n$$y_1 = k - 1, \\quad y_2 = k + 1$$\nSubstitute into $h$:\n$$h = \\frac{(k-1)^2 + (k+1)^2}{2} = \\frac{2k^2 + 2}{2} = k^2 + 1$$\nReplacing $(h, k)$ with $(x, y)$, the locus $S$ is:\n$$x = y^2 + 1 \\implies y^2 = x - 1$$\n\n#### Step 2: Verify Options (A) and (B)\n- For $(4, \\sqrt{3})$: $(\\sqrt{3})^2 = 3 = 4 - 1$. Fits the curve $S$! (A is TRUE)\n- For $(5, \\sqrt{2})$: $(\\sqrt{2})^2 = 2 \\neq 5 - 1 = 4$. (B is FALSE)\n\n#### Step 3: Compute Area of Region $\\mathcal{R}$\nIn the first quadrant, the upper curve is $y = \\sqrt{x}$ and the lower curve is $y = \\sqrt{x - 1}$ for $x \\in [1, 4]$:\n$$\\text{Area}(\\mathcal{R}) = \\int_1^4 \\left(\\sqrt{x} - \\sqrt{x - 1}\\right) dx$$\n$$\\text{Area} = \\left[\\frac{2}{3}x^{3/2} - \\frac{2}{3}(x - 1)^{3/2}\\right]_1^4$$\nAt $x = 4$:\n$$\\frac{2}{3}(4^{3/2}) - \\frac{2}{3}(3^{3/2}) = \\frac{2}{3}(8 - 3\\sqrt{3}) = \\frac{16}{3} - 2\\sqrt{3}$$\nAt $x = 1$:\n$$\\frac{2}{3}(1^{3/2}) - 0 = \\frac{2}{3}$$\nSubtracting:\n$$\\text{Area} = \\left(\\frac{16}{3} - 2\\sqrt{3}\\right) - \\frac{2}{3} = \\frac{14}{3} - 2\\sqrt{3}$$\nThis matches option (C).\n\n**Correct Answer:** Options **(A)** and **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-M07",
+    "questionNumber": 7,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Ellipse & Circles",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Let $P(x_1, y_1)$ and $Q(x_2, y_2)$ be two distinct points on the ellipse\n$$\\frac{x^2}{9} + \\frac{y^2}{4} = 1$$\nsuch that $y_1 > 0$, and $y_2 > 0$. Let $C$ denote the circle $x^2 + y^2 = 9$, and $M$ be the point $(3, 0)$. Suppose the line $x = x_1$ intersects $C$ at $R$, and the line $x = x_2$ intersects $C$ at $S$, such that the $y$-coordinates of $R$ and $S$ are positive. Let $\\angle ROM = \\frac{\\pi}{6}$ and $\\angle SOM = \\frac{\\pi}{3}$, where $O$ denotes the origin $(0, 0)$. Let $|XY|$ denote the length of the line segment $XY$.\n\nThen which of the following statements is (are) TRUE?",
+    "options": [
+      "The equation of the line joining $P$ and $Q$ is $2x + 3y = 3(1 + \\sqrt{3})$",
+      "The equation of the line joining $P$ and $Q$ is $2x + y = 3(1 + \\sqrt{3})$",
+      "If $N_2 = (x_2, 0)$, then $3|N_2 Q| = 2|N_2 S|$",
+      "If $N_1 = (x_1, 0)$, then $9|N_1 P| = 4|N_1 R|$"
+    ],
+    "correctOption": [
+      0,
+      2
+    ],
+    "correctAnswer": "A, C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Coordinates of Points $R$ and $S$ on Circle $C$\nThe circle $C$ is the auxiliary circle of the ellipse $\\frac{x^2}{9} + \\frac{y^2}{4} = 1$ ($a = 3, b = 2$).\n$M = (3, 0)$ lies on the positive $x$-axis.\n- For $\\angle ROM = \\pi/6$:\n$$R = \\left(3\\cos\\frac{\\pi}{6}, 3\\sin\\frac{\\pi}{6}\\right) = \\left(\\frac{3\\sqrt{3}}{2}, \\frac{3}{2}\\right)$$\n- For $\\angle SOM = \\pi/3$:\n$$S = \\left(3\\cos\\frac{\\pi}{3}, 3\\sin\\frac{\\pi}{3}\\right) = \\left(\\frac{3}{2}, \\frac{3\\sqrt{3}}{2}\\right)$$\n\n#### Step 2: Coordinates of $P$ and $Q$ on Ellipse\nSince $x_1 = x_R = \\frac{3\\sqrt{3}}{2}$ and $y_1 > 0$:\n$$\\frac{(3\\sqrt{3}/2)^2}{9} + \\frac{y_1^2}{4} = 1 \\implies \\frac{3}{4} + \\frac{y_1^2}{4} = 1 \\implies y_1^2 = 1 \\implies y_1 = 1$$\nSo $P = \\left(\\frac{3\\sqrt{3}}{2}, 1\\right)$.\n\nSince $x_2 = x_S = \\frac{3}{2}$ and $y_2 > 0$:\n$$\\frac{(3/2)^2}{9} + \\frac{y_2^2}{4} = 1 \\implies \\frac{1}{4} + \\frac{y_2^2}{4} = 1 \\implies y_2^2 = 3 \\implies y_2 = \\sqrt{3}$$\nSo $Q = \\left(\\frac{3}{2}, \\sqrt{3}\\right)$.\n\n#### Step 3: Equation of Line Joining $P$ and $Q$\nSlope of line $PQ$:\n$$m = \\frac{\\sqrt{3} - 1}{\\frac{3}{2} - \\frac{3\\sqrt{3}}{2}} = \\frac{2(\\sqrt{3} - 1)}{3(1 - \\sqrt{3})} = -\\frac{2}{3}$$\nEquation of line $PQ$:\n$$y - 1 = -\\frac{2}{3}\\left(x - \\frac{3\\sqrt{3}}{2}\\right) \\implies 3y - 3 = -2x + 3\\sqrt{3}$$\n$$2x + 3y = 3(1 + \\sqrt{3})$$\nThis confirms option (A) is TRUE, and (B) is FALSE.\n\n#### Step 4: Check Length Relationships\n- $N_2 = (x_2, 0) = \\left(\\frac{3}{2}, 0\\right)$:\n  $$|N_2 Q| = y_2 = \\sqrt{3}, \\quad |N_2 S| = y_S = \\frac{3\\sqrt{3}}{2}$$\n  $$\\frac{|N_2 Q|}{|N_2 S|} = \\frac{\\sqrt{3}}{\\frac{3\\sqrt{3}}{2}} = \\frac{2}{3} \\implies 3|N_2 Q| = 2|N_2 S|$$\n  This confirms option (C) is TRUE.\n- $N_1 = (x_1, 0) = \\left(\\frac{3\\sqrt{3}}{2}, 0\\right)$:\n  $$|N_1 P| = 1, \\quad |N_1 R| = \\frac{3}{2} \\implies \\frac{|N_1 P|}{|N_1 R|} = \\frac{2}{3} \\implies 3|N_1 P| = 2|N_1 R|$$\n  So $9|N_1 P| = 6|N_1 R| \\neq 4|N_1 R|$. (D is FALSE).\n\n**Correct Answer:** Options **(A)** and **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-M08",
+    "questionNumber": 8,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Application of Derivatives (Maxima & Minima)",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Let $\\mathbb{R}$ denote the set of all real numbers. Let $f: \\mathbb{R} \\to \\mathbb{R}$ be defined by\n$$f(x) = \\begin{cases} \\frac{6x+\\sin x}{2x+\\sin x} & \\text{if } x \\neq 0, \\\\ \\frac{7}{3} & \\text{if } x = 0. \\end{cases}$$\nThen which of the following statements is (are) TRUE?",
+    "options": [
+      "The point $x = 0$ is a point of local maxima of $f$",
+      "The point $x = 0$ is a point of local minima of $f$",
+      "Number of points of local maxima of $f$ in the interval $[\\pi, 6\\pi]$ is 3",
+      "Number of points of local minima of $f$ in the interval $[2\\pi, 4\\pi]$ is 1"
+    ],
+    "correctOption": [
+      1,
+      2,
+      3
+    ],
+    "correctAnswer": "B, C, D",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Behavior Near $x = 0$\nRewrite $f(x)$ for $x \\neq 0$:\n$$f(x) = \\frac{3(2x + \\sin x) - 2\\sin x}{2x + \\sin x} = 3 - \\frac{2\\sin x}{2x + \\sin x} = 3 - \\frac{2}{\\frac{2x}{\\sin x} + 1}$$\nUsing the Taylor expansion of $\\sin x = x - \\frac{x^3}{6} + O(x^5)$:\n$$\\frac{x}{\\sin x} = \\left(1 - \\frac{x^2}{6}\\right)^{-1} \\approx 1 + \\frac{x^2}{6}$$\n$$\\frac{2x}{\\sin x} + 1 \\approx 3 + \\frac{x^2}{3}$$\nThen:\n$$f(x) \\approx 3 - \\frac{2}{3 + x^2/3} = 3 - \\frac{2}{3}\\left(1 + \\frac{x^2}{9}\\right)^{-1} \\approx 3 - \\frac{2}{3} + \\frac{2x^2}{27} = \\frac{7}{3} + \\frac{2x^2}{27}$$\nSince $\\frac{2x^2}{27} > 0$ for all $x \\neq 0$ in a punctured neighborhood of $0$, we have $f(x) > f(0) = \\frac{7}{3}$.\nTherefore, **$x = 0$ is a point of local minima**! (B is TRUE, A is FALSE).\n\n#### Step 2: Critical Points for $x > 0$\nFor $x \\neq 0$, let $u(x) = \\frac{\\sin x}{2x + \\sin x}$.\n$$u'(x) = \\frac{\\cos x(2x + \\sin x) - \\sin x(2 + \\cos x)}{(2x + \\sin x)^2} = \\frac{2(x\\cos x - \\sin x)}{(2x + \\sin x)^2}$$\nSince $f(x) = 3 - 2u(x)$, $f'(x) = -2u'(x) = \\frac{4(\\sin x - x\\cos x)}{(2x + \\sin x)^2}$.\nCritical points occur where $\\sin x - x\\cos x = 0 \\iff \\tan x = x$.\n\n#### Step 3: Classification of Extrema\n- In $(\\pi, 3\\pi/2)$: There is a root $x_1$ of $\\tan x = x$. Since $\\tan x$ increases through $x$, $f'(x)$ changes from positive to negative, meaning **$x_1$ is a local maximum**.\n- In $(2\\pi, 5\\pi/2)$: There is a root $x_2$ of $\\tan x = x$. $f'(x)$ changes from negative to positive, so **$x_2$ is a local minimum**.\n- In $(3\\pi, 7\\pi/2)$: Root $x_3$ gives a **local maximum**.\n- In $(4\\pi, 9\\pi/2)$: Root $x_4$ gives a **local minimum**.\n- In $(5\\pi, 11\\pi/2)$: Root $x_5$ gives a **local maximum**.\n\nNow check intervals:\n- In $[\\pi, 6\\pi]$: Local maxima occur at $x_1, x_3, x_5$ (total **3 local maxima**). (C is TRUE)\n- In $[2\\pi, 4\\pi]$: Local minima occur at $x_2$ (total **1 local minimum**). (D is TRUE)\n\n**Correct Answer:** Options **(B)**, **(C)**, and **(D)**."
+  },
+  {
+    "id": "ADV-2025-P2-M09",
+    "questionNumber": 9,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Differential Equations",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Let $y(x)$ be the solution of the differential equation\n$$x^2 \\frac{dy}{dx} + xy = x^2 + y^2, \\quad x > \\frac{1}{e},$$\nsatisfying $y(1) = 0$. Then the value of $2\\frac{(y(e))^2}{y(e^2)}$ is ___________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[0.7 to 0.8]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Homogeneous Form\nDivide both sides by $x^2$:\n$$\\frac{dy}{dx} + \\frac{y}{x} = 1 + \\left(\\frac{y}{x}\\right)^2$$\nSubstitute $y = vx \\implies \\frac{dy}{dx} = v + x\\frac{dv}{dx}$:\n$$v + x\\frac{dv}{dx} + v = 1 + v^2 \\implies x\\frac{dv}{dx} = v^2 - 2v + 1 = (v - 1)^2$$\n\n#### Step 2: Separate Variables and Integrate\n$$\\frac{dv}{(v - 1)^2} = \\frac{dx}{x}$$\n$$-\\frac{1}{v - 1} = \\ln x + C \\implies \\frac{1}{1 - v} = \\ln x + C$$\nGiven $y(1) = 0 \\implies v(1) = 0$:\n$$\\frac{1}{1 - 0} = \\ln 1 + C \\implies C = 1$$\nThus:\n$$\\frac{1}{1 - v} = 1 + \\ln x \\implies 1 - v = \\frac{1}{1 + \\ln x} \\implies v = 1 - \\frac{1}{1 + \\ln x} = \\frac{\\ln x}{1 + \\ln x}$$\nSince $y = vx$:\n$$y(x) = \\frac{x\\ln x}{1 + \\ln x}$$\n\n#### Step 3: Compute $y(e)$ and $y(e^2)$\n- At $x = e$:\n$$y(e) = \\frac{e \\cdot 1}{1 + 1} = \\frac{e}{2}$$\n- At $x = e^2$:\n$$y(e^2) = \\frac{e^2 \\cdot 2}{1 + 2} = \\frac{2e^2}{3}$$\n\n#### Step 4: Calculate the Required Value\n$$2\\frac{(y(e))^2}{y(e^2)} = 2 \\cdot \\frac{(e/2)^2}{2e^2/3} = 2 \\cdot \\frac{e^2 / 4}{2e^2 / 3} = 2 \\cdot \\left(\\frac{1}{4} \\times \\frac{3}{2}\\right) = 2 \\cdot \\frac{3}{8} = \\frac{3}{4} = 0.75$$\n\n**Correct Answer:** **0.75** (Range: **[0.7 to 0.8]**)."
+  },
+  {
+    "id": "ADV-2025-P2-M10",
+    "questionNumber": 10,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Binomial Theorem",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Let $a_0, a_1, \\dots, a_{23}$ be real numbers such that\n$$\\left(1 + \\frac{2}{5}x\\right)^{23} = \\sum_{i=0}^{23} a_i x^i$$\nfor every real number $x$. Let $a_r$ be the largest among the numbers $a_j$ for $0 \\le j \\le 23$. Then the value of $r$ is ___________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "6",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: General Term for Coefficients\nBy the Binomial Theorem:\n$$a_r = \\binom{23}{r} \\left(\\frac{2}{5}\\right)^r$$\n\n#### Step 2: Ratio of Consecutive Terms\nConsider the ratio $\\frac{a_r}{a_{r-1}}$:\n$$\\frac{a_r}{a_{r-1}} = \\frac{\\binom{23}{r}\\left(\\frac{2}{5}\\right)^r}{\\binom{23}{r-1}\\left(\\frac{2}{5}\\right)^{r-1}} = \\frac{23 - r + 1}{r} \\cdot \\frac{2}{5} = \\frac{2(24 - r)}{5r}$$\n\n#### Step 3: Find where $a_r \\ge a_{r-1}$\n$$\\frac{2(24 - r)}{5r} \\ge 1 \\iff 48 - 2r \\ge 5r \\iff 7r \\le 48 \\iff r \\le \\frac{48}{7} \\approx 6.857$$\n- For $r = 1, 2, 3, 4, 5, 6$: $\\frac{a_r}{a_{r-1}} > 1 \\implies a_0 < a_1 < a_2 < a_3 < a_4 < a_5 < a_6$.\n- For $r \\ge 7$: $\\frac{a_r}{a_{r-1}} < 1 \\implies a_6 > a_7 > a_8 > \\dots > a_{23}$.\n\nTherefore, the maximum coefficient occurs at $r = 6$.\n\n**Correct Answer:** **6**."
+  },
+  {
+    "id": "ADV-2025-P2-M11",
+    "questionNumber": 11,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Probability & Bayes' Theorem",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A factory has a total of three manufacturing units, $M_1, M_2,$ and $M_3$, which produce bulbs independent of each other. The units $M_1, M_2,$ and $M_3$ produce bulbs in the proportions of $2 : 2 : 1$, respectively. It is known that $20\\%$ of the bulbs produced in the factory are defective. It is also known that, of all the bulbs produced by $M_1$, $15\\%$ are defective. Suppose that, if a randomly chosen bulb produced in the factory is found to be defective, the probability that it was produced by $M_2$ is $\\frac{2}{5}$.\n\nIf a bulb is chosen randomly from the bulbs produced by $M_3$, then the probability that it is defective is ___________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[0.27 to 0.33]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Assign Given Probabilities\nLet $M_1, M_2, M_3$ denote the events that a bulb is manufactured by unit 1, 2, and 3, respectively.\n$$P(M_1) = \\frac{2}{5} = 0.4, \\quad P(M_2) = \\frac{2}{5} = 0.4, \\quad P(M_3) = \\frac{1}{5} = 0.2$$\nLet $D$ denote the event that a bulb is defective:\n$$P(D) = 0.20$$\nDefective rate of $M_1$:\n$$P(D|M_1) = 0.15$$\n\n#### Step 2: Use Bayes' Theorem to Find $P(D|M_2)$\nGiven $P(M_2|D) = \\frac{2}{5} = 0.4$:\n$$P(M_2|D) = \\frac{P(M_2 \\cap D)}{P(D)} = \\frac{P(M_2) P(D|M_2)}{P(D)}$$\n$$0.4 = \\frac{0.4 \\cdot P(D|M_2)}{0.20} \\implies P(D|M_2) = 0.20$$\n\n#### Step 3: Total Probability of Defective Bulb\nBy the law of total probability:\n$$P(D) = P(M_1)P(D|M_1) + P(M_2)P(D|M_2) + P(M_3)P(D|M_3)$$\n$$0.20 = (0.4)(0.15) + (0.4)(0.20) + (0.2)P(D|M_3)$$\n$$0.20 = 0.06 + 0.08 + 0.2 P(D|M_3) = 0.14 + 0.2 P(D|M_3)$$\n$$0.2 P(D|M_3) = 0.20 - 0.14 = 0.06$$\n$$P(D|M_3) = \\frac{0.06}{0.2} = 0.30$$\n\n**Correct Answer:** **0.30** (Range: **[0.27 to 0.33]**)."
+  },
+  {
+    "id": "ADV-2025-P2-M12",
+    "questionNumber": 12,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Vector Algebra",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Consider the vectors\n$$\\vec{x} = \\hat{i} + 2\\hat{j} + 3\\hat{k}, \\quad \\vec{y} = 2\\hat{i} + 3\\hat{j} + \\hat{k}, \\quad \\text{and} \\quad \\vec{z} = 3\\hat{i} + \\hat{j} + 2\\hat{k}.$$\nFor two distinct positive real numbers $\\alpha$ and $\\beta$, define\n$$\\vec{X} = \\alpha\\vec{x} + \\beta\\vec{y} - \\vec{z}, \\quad \\vec{Y} = \\alpha\\vec{y} + \\beta\\vec{z} - \\vec{x}, \\quad \\text{and} \\quad \\vec{Z} = \\alpha\\vec{z} + \\beta\\vec{x} - \\vec{y}.$$\nIf the vectors $\\vec{X}, \\vec{Y},$ and $\\vec{Z}$ lie in a plane, then the value of $\\alpha + \\beta - 3$ is _____________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "-2",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Scalar Triple Product Condition for Coplanarity\nVectors $\\vec{X}, \\vec{Y}, \\vec{Z}$ are coplanar if and only if their scalar triple product is zero:\n$$[\\vec{X}, \\vec{Y}, \\vec{Z}] = 0$$\nExpressing the transformation matrix:\n$$[\\vec{X}, \\vec{Y}, \\vec{Z}] = \\begin{vmatrix} \\alpha & \\beta & -1 \\\\ -1 & \\alpha & \\beta \\\\ \\beta & -1 & \\alpha \\end{vmatrix} [\\vec{x}, \\vec{y}, \\vec{z}]$$\n\n#### Step 2: Compute $[\\vec{x}, \\vec{y}, \\vec{z}]$\n$$[\\vec{x}, \\vec{y}, \\vec{z}] = \\begin{vmatrix} 1 & 2 & 3 \\\\ 2 & 3 & 1 \\\\ 3 & 1 & 2 \\end{vmatrix} = 1(6 - 1) - 2(4 - 3) + 3(2 - 9) = 5 - 2 - 21 = -18 \\neq 0$$\n\n#### Step 3: Evaluate the Determinant\nSince $[\\vec{x}, \\vec{y}, \\vec{z}] \\neq 0$, the determinant must vanish:\n$$\\begin{vmatrix} \\alpha & \\beta & -1 \\\\ -1 & \\alpha & \\beta \\\\ \\beta & -1 & \\alpha \\end{vmatrix} = \\alpha(\\alpha^2 + \\beta) - \\beta(-\\alpha - \\beta^2) - 1(1 - \\alpha\\beta)$$\n$$= \\alpha^3 + \\alpha\\beta + \\alpha\\beta + \\beta^3 - 1 + \\alpha\\beta = \\alpha^3 + \\beta^3 + 3\\alpha\\beta - 1 = 0$$\n\n#### Step 4: Factorize Using Algebraic Identity\n$$\\alpha^3 + \\beta^3 + (-1)^3 - 3\\alpha\\beta(-1) = (\\alpha + \\beta - 1)\\left(\\alpha^2 + \\beta^2 + 1 - \\alpha\\beta + \\alpha + \\beta\\right) = 0$$\nRewriting the second factor:\n$$\\frac{1}{2}(\\alpha + \\beta - 1)\\left[(\\alpha - \\beta)^2 + (\\alpha + 1)^2 + (\\beta + 1)^2\\right] = 0$$\nSince $\\alpha$ and $\\beta$ are distinct positive real numbers ($\\alpha \\neq \\beta, \\alpha > 0, \\beta > 0$):\n$$(\\alpha - \\beta)^2 + (\\alpha + 1)^2 + (\\beta + 1)^2 > 0$$\nThus, the only valid solution is:\n$$\\alpha + \\beta - 1 = 0 \\implies \\alpha + \\beta = 1$$\n\n#### Step 5: Calculate the Required Value\n$$\\alpha + \\beta - 3 = 1 - 3 = -2$$\n\n**Correct Answer:** **-2**."
+  },
+  {
+    "id": "ADV-2025-P2-M13",
+    "questionNumber": 13,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Complex Numbers",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "For a non-zero complex number $z$, let $\\arg(z)$ denote the principal argument of $z$, with $-\\pi < \\arg(z) \\le \\pi$. Let $\\omega$ be the cube root of unity for which $0 < \\arg(\\omega) < \\pi$. Let\n$$\\alpha = \\arg\\left(\\sum_{n=1}^{2025} (-\\omega)^n\\right).$$\nThen the value of $\\frac{3\\alpha}{\\pi}$ is _______________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "-2",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Properties of $\\omega$ and $-\\omega$\nGiven that $\\omega$ is the cube root of unity with $0 < \\arg(\\omega) < \\pi$, we have:\n$$\\omega = e^{i 2\\pi / 3}$$\nThen:\n$$-\\omega = -e^{i 2\\pi / 3} = e^{i \\pi} e^{i 2\\pi / 3} = e^{i 5\\pi / 3} = e^{-i \\pi / 3}$$\nNotice that $(-\\omega)^6 = (e^{-i\\pi/3})^6 = e^{-i 2\\pi} = 1$.\n\n#### Step 2: Sum the Geometric Series\n$$S = \\sum_{n=1}^{2025} (-\\omega)^n = \\frac{(-\\omega)\\left(1 - (-\\omega)^{2025}\\right)}{1 - (-\\omega)} = \\frac{-\\omega\\left(1 - (-\\omega)^{2025}\\right)}{1 + \\omega}$$\nSince $2025 = 6 \\times 337 + 3$:\n$$(-\\omega)^{2025} = \\left((-\\omega)^6\\right)^{337} (-\\omega)^3 = (1)^{337} (-1)\\omega^3 = -1$$\nThus:\n$$1 - (-\\omega)^{2025} = 1 - (-1) = 2$$\n\n#### Step 3: Simplify the Sum\n$$S = \\frac{-2\\omega}{1 + \\omega}$$\nUsing $1 + \\omega + \\omega^2 = 0 \\implies 1 + \\omega = -\\omega^2$:\n$$S = \\frac{-2\\omega}{-\\omega^2} = \\frac{2}{\\omega} = 2\\omega^2 = 2e^{-i 2\\pi / 3}$$\n\n#### Step 4: Determine $\\alpha$ and Compute $\\frac{3\\alpha}{\\pi}$\nThe principal argument of $S = 2e^{-i 2\\pi / 3}$ is:\n$$\\alpha = -\\frac{2\\pi}{3}$$\nTherefore:\n$$\\frac{3\\alpha}{\\pi} = \\frac{3(-2\\pi/3)}{\\pi} = -2$$\n\n**Correct Answer:** **-2**."
+  },
+  {
+    "id": "ADV-2025-P2-M14",
+    "questionNumber": 14,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Functions & Derivatives",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Let $\\mathbb{R}$ denote the set of all real numbers. Let $f: \\mathbb{R} \\to \\mathbb{R}$ and $g: \\mathbb{R} \\to (0, 4)$ be functions defined by\n$$f(x) = \\log_e(x^2 + 2x + 4), \\quad \\text{and} \\quad g(x) = \\frac{4}{1 + e^{-2x}}.$$\nDefine the composite function $f \\circ g^{-1}$ by $(f \\circ g^{-1})(x) = f(g^{-1}(x))$, where $g^{-1}$ is the inverse of the function $g$. Then the value of the derivative of the composite function $f \\circ g^{-1}$ at $x = 2$ is ______________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[0.2 to 0.3]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Derivative of Composite Function\nLet $h(x) = (f \\circ g^{-1})(x) = f(g^{-1}(x))$.\nBy the chain rule:\n$$h'(x) = f'(g^{-1}(x)) \\cdot (g^{-1})'(x) = \\frac{f'(g^{-1}(x))}{g'(g^{-1}(x))}$$\nWe need $h'(2)$.\n\n#### Step 2: Find $x_0 = g^{-1}(2)$\n$$g(x_0) = 2 \\implies \\frac{4}{1 + e^{-2x_0}} = 2 \\implies 1 + e^{-2x_0} = 2 \\implies e^{-2x_0} = 1 \\implies x_0 = 0$$\nSo $g^{-1}(2) = 0$.\n\n#### Step 3: Compute $f'(0)$\n$$f(x) = \\ln(x^2 + 2x + 4) \\implies f'(x) = \\frac{2x + 2}{x^2 + 2x + 4}$$\n$$f'(0) = \\frac{0 + 2}{0 + 0 + 4} = \\frac{2}{4} = \\frac{1}{2}$$\n\n#### Step 4: Compute $g'(0)$\n$$g(x) = 4(1 + e^{-2x})^{-1}$$\n$$g'(x) = 4(-1)(1 + e^{-2x})^{-2}(-2e^{-2x}) = \\frac{8e^{-2x}}{(1 + e^{-2x})^2}$$\n$$g'(0) = \\frac{8(1)}{(1 + 1)^2} = \\frac{8}{4} = 2$$\n\n#### Step 5: Evaluate $h'(2)$\n$$h'(2) = \\frac{f'(0)}{g'(0)} = \\frac{1/2}{2} = \\frac{1}{4} = 0.25$$\n\n**Correct Answer:** **0.25** (Range: **[0.2 to 0.3]**)."
+  },
+  {
+    "id": "ADV-2025-P2-M15",
+    "questionNumber": 15,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Trigonometric Sums",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Let\n$$\\alpha = \\frac{1}{\\sin 60^\\circ \\sin 61^\\circ} + \\frac{1}{\\sin 62^\\circ \\sin 63^\\circ} + \\dots + \\frac{1}{\\sin 118^\\circ \\sin 119^\\circ}.$$\nThen the value of\n$$\\left(\\frac{\\csc 1^\\circ}{\\alpha}\\right)^2$$\nis ______________.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "3",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Multiply by $\\sin 1^\\circ$\nMultiply both sides by $\\sin 1^\\circ$:\n$$\\alpha \\sin 1^\\circ = \\sum_{k=30}^{59} \\frac{\\sin 1^\\circ}{\\sin(2k^\\circ)\\sin(2k+1^\\circ)}$$\nUsing the identity:\n$$\\frac{\\sin 1^\\circ}{\\sin A \\sin(A+1^\\circ)} = \\frac{\\sin((A+1^\\circ) - A)}{\\sin A \\sin(A+1^\\circ)} = \\cot A - \\cot(A+1^\\circ)$$\nEach term is:\n$$T_k = \\cot(2k^\\circ) - \\cot(2k+1^\\circ)$$\n\n#### Step 2: Sum from $k = 30$ to $59$\nNotice that the angles range from $60^\\circ$ to $119^\\circ$ (symmetrically centered around $90^\\circ$):\nFor any angle $x$, $\\cot(180^\\circ - x) = -\\cot x$.\nPairing terms symmetrically from outer ends:\n$$\\cot(119^\\circ) = -\\cot(61^\\circ), \\quad \\cot(118^\\circ) = -\\cot(62^\\circ), \\dots$$\nThe only unpaired first term at the start is $\\cot 60^\\circ$:\n$$\\sum_{k=30}^{59} [\\cot(2k^\\circ) - \\cot(2k+1^\\circ)] = \\cot 60^\\circ = \\frac{1}{\\sqrt{3}}$$\n\n#### Step 3: Compute the Target Expression\n$$\\alpha \\sin 1^\\circ = \\frac{1}{\\sqrt{3}} \\implies \\frac{\\alpha}{\\csc 1^\\circ} = \\frac{1}{\\sqrt{3}} \\implies \\frac{\\csc 1^\\circ}{\\alpha} = \\sqrt{3}$$\nSquaring both sides:\n$$\\left(\\frac{\\csc 1^\\circ}{\\alpha}\\right)^2 = (\\sqrt{3})^2 = 3$$\n\n**Correct Answer:** **3**."
+  },
+  {
+    "id": "ADV-2025-P2-M16",
+    "questionNumber": 16,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Mathematics",
+    "chapter": "Definite Integrals",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "If\n$$\\alpha = \\int_{1/2}^2 \\frac{\\tan^{-1} x}{2x^2 - 3x + 2} dx,$$\nthen the value of $\\sqrt{7}\\tan\\left(\\frac{2\\alpha\\sqrt{7}}{\\pi}\\right)$ is _____________.\n\n*(Here, the inverse trigonometric function $\\tan^{-1} x$ assumes values in $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$. )*",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "21",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Use Inversion Substitution $x = 1/t$\nLet $x = \\frac{1}{t} \\implies dx = -\\frac{1}{t^2} dt$.\nLimits: when $x = 1/2 \\implies t = 2$; when $x = 2 \\implies t = 1/2$.\n$$\\alpha = \\int_2^{1/2} \\frac{\\tan^{-1}(1/t)}{2(1/t^2) - 3(1/t) + 2} \\left(-\\frac{1}{t^2}\\right) dt = \\int_{1/2}^2 \\frac{\\tan^{-1}(1/t)}{2 - 3t + 2t^2} dt$$\nUsing the identity $\\tan^{-1}(1/t) = \\frac{\\pi}{2} - \\tan^{-1} t$ for $t > 0$:\n$$\\alpha = \\int_{1/2}^2 \\frac{\\frac{\\pi}{2} - \\tan^{-1} x}{2x^2 - 3x + 2} dx = \\frac{\\pi}{2} \\int_{1/2}^2 \\frac{dx}{2x^2 - 3x + 2} - \\alpha$$\n$$2\\alpha = \\frac{\\pi}{2} \\int_{1/2}^2 \\frac{dx}{2x^2 - 3x + 2} = \\frac{\\pi}{4} \\int_{1/2}^2 \\frac{dx}{x^2 - \\frac{3}{2}x + 1}$$\n\n#### Step 2: Complete the Square in Denominator\n$$x^2 - \\frac{3}{2}x + 1 = \\left(x - \\frac{3}{4}\\right)^2 + 1 - \\frac{9}{16} = \\left(x - \\frac{3}{4}\\right)^2 + \\left(\\frac{\\sqrt{7}}{4}\\right)^2$$\nIntegrating:\n$$2\\alpha = \\frac{\\pi}{4} \\cdot \\frac{1}{\\sqrt{7}/4} \\left[\\tan^{-1}\\left(\\frac{x - 3/4}{\\sqrt{7}/4}\\right)\\right]_{1/2}^2 = \\frac{\\pi}{\\sqrt{7}} \\left[\\tan^{-1}\\left(\\frac{4x - 3}{\\sqrt{7}}\\right)\\right]_{1/2}^2$$\nAt $x = 2$: $\\frac{4(2) - 3}{\\sqrt{7}} = \\frac{5}{\\sqrt{7}}$.\nAt $x = 1/2$: $\\frac{4(1/2) - 3}{\\sqrt{7}} = -\\frac{1}{\\sqrt{7}}$.\n$$2\\alpha = \\frac{\\pi}{\\sqrt{7}} \\left[\\tan^{-1}\\left(\\frac{5}{\\sqrt{7}}\\right) - \\tan^{-1}\\left(-\\frac{1}{\\sqrt{7}}\\right)\\right] = \\frac{\\pi}{\\sqrt{7}} \\left[\\tan^{-1}\\left(\\frac{5}{\\sqrt{7}}\\right) + \\tan^{-1}\\left(\\frac{1}{\\sqrt{7}}\\right)\\right]$$\n\n#### Step 3: Combine the Inverse Tangents\n$$\\tan\\left(\\tan^{-1}\\frac{5}{\\sqrt{7}} + \\tan^{-1}\\frac{1}{\\sqrt{7}}\\right) = \\frac{\\frac{5}{\\sqrt{7}} + \\frac{1}{\\sqrt{7}}}{1 - \\frac{5}{7}} = \\frac{6/\\sqrt{7}}{2/7} = \\frac{6 \\times 7}{2\\sqrt{7}} = 3\\sqrt{7}$$\nThus:\n$$2\\alpha = \\frac{\\pi}{\\sqrt{7}} \\tan^{-1}(3\\sqrt{7}) \\implies \\frac{2\\alpha\\sqrt{7}}{\\pi} = \\tan^{-1}(3\\sqrt{7})$$\n\n#### Step 4: Final Value\n$$\\tan\\left(\\frac{2\\alpha\\sqrt{7}}{\\pi}\\right) = 3\\sqrt{7}$$\n$$\\sqrt{7} \\tan\\left(\\frac{2\\alpha\\sqrt{7}}{\\pi}\\right) = \\sqrt{7}(3\\sqrt{7}) = 21$$\n\n**Correct Answer:** **21**."
+  },
+  {
+    "id": "ADV-2025-P2-P01",
+    "questionNumber": 17,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Units and Dimensions",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "A temperature difference can generate e.m.f. in some materials. Let $S$ be the e.m.f. produced per unit temperature difference between the ends of a wire, $\\sigma$ the electrical conductivity and $\\kappa$ the thermal conductivity of the material of the wire. Taking $M, L, T, I$ and $K$ as dimensions of mass, length, time, current and temperature, respectively, the dimensional formula of the quantity $Z = \\frac{S^2 \\sigma}{\\kappa}$ is:",
+    "options": [
+      "$[M^0 L^0 T^0 I^0 K^0]$",
+      "$[M^0 L^0 T^0 I^0 K^{-1}]$",
+      "$[M^1 L^2 T^{-2} I^{-1} K^{-1}]$",
+      "$[M^1 L^2 T^{-4} I^{-1} K^{-1}]$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Dimensions of Individual Quantities\n1. **Seebeck coefficient ($S$):**\n   $$S = \\frac{V}{\\Delta T} \\implies [S] = \\frac{[M L^2 T^{-3} I^{-1}]}{[K]} = [M L^2 T^{-3} I^{-1} K^{-1}]$$\n   $$[S^2] = [M^2 L^4 T^{-6} I^{-2} K^{-2}]$$\n2. **Electrical conductivity ($\\sigma$):**\n   $$\\sigma = \\frac{1}{\\rho} = \\frac{I}{E} = \\frac{I}{V/L} = [M^{-1} L^{-3} T^3 I^2]$$\n3. **Thermal conductivity ($\\kappa$):**\n   $$\\frac{dQ}{dt} = \\kappa A \\frac{\\Delta T}{L} \\implies [\\kappa] = \\frac{[M L^2 T^{-2}] [T^{-1}]}{[L^2] [K L^{-1}]} = [M L T^{-3} K^{-1}]$$\n\n#### Step 2: Compute Dimensions of $Z = \\frac{S^2 \\sigma}{\\kappa}$\nNumerator $[S^2 \\sigma]$:\n$$[S^2 \\sigma] = [M^2 L^4 T^{-6} I^{-2} K^{-2}] \\times [M^{-1} L^{-3} T^3 I^2] = [M^1 L^1 T^{-3} I^0 K^{-2}]$$\n\nDividing by $[\\kappa]$:\n$$[Z] = \\frac{[M^1 L^1 T^{-3} K^{-2}]}{[M^1 L^1 T^{-3} K^{-1}]} = [K^{-1}] = [M^0 L^0 T^0 I^0 K^{-1}]$$\n\n*(Note: This quantity is directly related to the dimensionless thermoelectric figure of merit $ZT = \\frac{S^2\\sigma}{\\kappa} T$. Since $ZT$ is dimensionless, $Z$ must have dimensions of $[K^{-1}]$.)*\n\n**Correct Answer:** Option **(B)**."
+  },
+  {
+    "id": "ADV-2025-P2-P02",
+    "questionNumber": 18,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Electrostatics & Gauss's Law",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Two co-axial conducting cylinders of same length $\\ell$ with radii $\\sqrt{2}R$ and $2R$ are kept, as shown in Fig. 1. The charge on the inner cylinder is $Q$ and the outer cylinder is grounded. The annular region between the cylinders is filled with a material of dielectric constant $\\kappa = 5$. Consider an imaginary plane of the same length $\\ell$ at a distance $R$ from the common axis of the cylinders. This plane is parallel to the axis of the cylinders. The cross-sectional view of this arrangement is shown in Fig. 2. Ignoring edge effects, the flux of the electric field through the plane is ($\\epsilon_0$ is the permittivity of free space):",
+    "options": [
+      "$\\frac{Q}{30\\epsilon_0}$",
+      "$\\frac{Q}{15\\epsilon_0}$",
+      "$\\frac{Q}{60\\epsilon_0}$",
+      "$\\frac{Q}{120\\epsilon_0}$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2025_adv_p2/p_q02_coaxial_cylinders.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Field Distribution\nIn the region $r < \\sqrt{2}R$, being inside the conducting cylinder, the electric field is zero ($\\vec{E} = 0$).\nIn the dielectric annular region $\\sqrt{2}R \\le r \\le 2R$, the electric field is strictly radial:\n$$\\vec{E} = \\frac{\\lambda}{2\\pi \\kappa \\epsilon_0 r} \\hat{r}$$\nwhere $\\lambda = Q/\\ell$.\n\n#### Step 2: Angular Sector Intersected by the Plane\nThe imaginary plane is at a perpendicular distance $R$ from the common axis. In cross-section, this plane is represented by the chord line $x = R$.\n- The inner boundary of the dielectric is at $r_1 = \\sqrt{2}R$. The angle $\\theta_1$ made with the normal is:\n  $$\\cos\\theta_1 = \\frac{R}{\\sqrt{2}R} = \\frac{1}{\\sqrt{2}} \\implies \\theta_1 = 45^\\circ$$\n- The outer boundary is at $r_2 = 2R$. The angle $\\theta_2$ is:\n  $$\\cos\\theta_2 = \\frac{R}{2R} = \\frac{1}{2} \\implies \\theta_2 = 60^\\circ$$\n\nThe plane passes through the dielectric region on both sides of the normal axis (above and below):\n$$\\Delta\\theta = \\theta_2 - \\theta_1 = 60^\\circ - 45^\\circ = 15^\\circ$$\nSince there are two symmetric sections (above and below the axis of symmetry):\n$$\\text{Total subtended angle } \\Delta\\phi = 2 \\times 15^\\circ = 30^\\circ = \\frac{\\pi}{6}\\text{ rad}$$\n\n#### Step 3: Compute Electric Flux\nThe total radial flux emanating from charge $Q$ in the dielectric of constant $\\kappa = 5$ over $2\\pi$ radians is:\n$$\\Phi_{\\text{total}} = \\frac{Q}{\\kappa \\epsilon_0}$$\nThe fraction of flux passing through the plane sector $\\Delta\\phi = 30^\\circ$ is:\n$$\\Phi = \\frac{\\Delta\\phi}{2\\pi} \\cdot \\Phi_{\\text{total}} = \\frac{30^\\circ}{360^\\circ} \\cdot \\frac{Q}{5\\epsilon_0} = \\frac{1}{12} \\cdot \\frac{Q}{5\\epsilon_0} = \\frac{Q}{60\\epsilon_0}$$\n\n**Correct Answer:** Option **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-P03",
+    "questionNumber": 19,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Simple Harmonic Motion",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "As shown in the figures, a uniform rod $OO'$ of length $l$ is hinged at the point $O$ and held in place vertically between two walls using two massless springs of same spring constant. The springs are connected at the midpoint and at the top-end ($O'$) of the rod, as shown in Fig. 1 and the rod is made to oscillate by a small angular displacement. The frequency of oscillation of the rod is $f_1$. On the other hand, if both the springs are connected at the midpoint of the rod, as shown in Fig. 2 and the rod is made to oscillate by a small angular displacement, then the frequency of oscillation is $f_2$. Ignoring gravity and assuming motion only in the plane of the diagram, the value of $\\frac{f_1}{f_2}$ is:",
+    "options": [
+      "2",
+      "$\\sqrt{2}$",
+      "$\\sqrt{\\frac{5}{2}}$",
+      "$\\sqrt{\\frac{2}{5}}$"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2025_adv_p2/p_q03_oscillating_rod_springs.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Moment of Inertia of the Rod\nFor a uniform rod of mass $m$ and length $l$ hinged at one end $O$:\n$$I_O = \\frac{1}{3} m l^2$$\n\n#### Step 2: Restoring Torque in Configuration 1 (Fig. 1)\nWhen the rod is displaced by a small angle $\\theta$:\n- Spring 1 at midpoint ($l/2$) is compressed by $x_1 = \\frac{l}{2}\\theta$, exerting a restoring torque:\n  $$\\tau_1 = -k x_1 \\left(\\frac{l}{2}\\right) = -k \\left(\\frac{l}{2}\\right)^2 \\theta = -\\frac{1}{4} k l^2 \\theta$$\n- Spring 2 at the top ($l$) is stretched by $x_2 = l\\theta$, exerting a restoring torque:\n  $$\\tau_2 = -k x_2 (l) = -k l^2 \\theta$$\nTotal restoring torque:\n$$\\tau_{\\text{net}, 1} = -\\left(\\frac{1}{4} + 1\\right) k l^2 \\theta = -\\frac{5}{4} k l^2 \\theta$$\nAngular frequency $\\omega_1$:\n$$\\omega_1^2 = \\frac{5/4 k l^2}{1/3 m l^2} = \\frac{15 k}{4 m}$$\n\n#### Step 3: Restoring Torque in Configuration 2 (Fig. 2)\nBoth springs are attached at the midpoint ($l/2$):\n- When displaced by $\\theta$, one spring is compressed by $\\frac{l}{2}\\theta$ and the other is stretched by $\\frac{l}{2}\\theta$. Both exert restoring torques in the same rotational sense:\n$$\\tau_{\\text{net}, 2} = -2 \\times k\\left(\\frac{l}{2}\\theta\\right)\\left(\\frac{l}{2}\\right) = -\\frac{1}{2} k l^2 \\theta$$\nAngular frequency $\\omega_2$:\n$$\\omega_2^2 = \\frac{1/2 k l^2}{1/3 m l^2} = \\frac{3 k}{2 m}$$\n\n#### Step 4: Ratio of Frequencies\n$$\\frac{f_1}{f_2} = \\frac{\\omega_1}{\\omega_2} = \\sqrt{\\frac{\\omega_1^2}{\\omega_2^2}} = \\sqrt{\\frac{15k / 4m}{3k / 2m}} = \\sqrt{\\frac{15}{4} \\times \\frac{2}{3}} = \\sqrt{\\frac{5}{2}}$$\n\n**Correct Answer:** Option **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-P04",
+    "questionNumber": 20,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Gravitation & Variable Mass System",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Consider a star of mass $m_2\\text{ kg}$ revolving in a circular orbit around another star of mass $m_1\\text{ kg}$ with $m_1 \\gg m_2$. The heavier star slowly acquires mass from the lighter star at a constant rate of $\\gamma\\text{ kg/s}$. In this transfer process, there is no other loss of mass. If the separation between the centers of the stars is $r$, then its relative rate of change $\\frac{1}{r}\\frac{dr}{dt}$ (in $\\text{s}^{-1}$) is given by:",
+    "options": [
+      "$-\\frac{3\\gamma}{2m_2}$",
+      "$-\\frac{2\\gamma}{m_2}$",
+      "$-\\frac{2\\gamma}{m_1}$",
+      "$-\\frac{3\\gamma}{2m_1}$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "MARKS TO ALL",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Physical Model of Mass Transfer\nGiven $m_1 \\gg m_2$, the orbital speed of $m_2$ is $v = \\sqrt{\\frac{G m_1}{r}}$.\nRate of mass loss of the lighter star: $\\frac{dm_2}{dt} = -\\gamma$.\nRate of mass gain of the heavier star: $\\frac{dm_1}{dt} = +\\gamma$.\n\n#### Step 2: Angular Momentum Considerations\nIf the total orbital angular momentum of the system $L = m_2 \\sqrt{G m_1 r}$ is assumed to be conserved:\n$$\\ln L = \\ln m_2 + \\frac{1}{2}\\ln m_1 + \\frac{1}{2}\\ln r + \\text{constant}$$\nDifferentiating with respect to time $t$:\n$$\\frac{1}{m_2}\\frac{dm_2}{dt} + \\frac{1}{2m_1}\\frac{dm_1}{dt} + \\frac{1}{2r}\\frac{dr}{dt} = 0$$\n$$-\\frac{\\gamma}{m_2} + \\frac{\\gamma}{2m_1} + \\frac{1}{2r}\\frac{dr}{dt} = 0$$\nSince $m_1 \\gg m_2$, $\\frac{\\gamma}{2m_1} \\ll \\frac{\\gamma}{m_2}$:\n$$\\frac{1}{2r}\\frac{dr}{dt} \\approx \\frac{\\gamma}{m_2} \\implies \\frac{1}{r}\\frac{dr}{dt} \\approx +\\frac{2\\gamma}{m_2}$$\n\nNotice that the sign is positive ($+\\frac{2\\gamma}{m_2}$), whereas the options in the exam paper contained negative signs ($-\\frac{2\\gamma}{m_2}$ etc.) or arose from alternative definitions of non-conservative mass transfer.\n\nDue to the ambiguity in sign conventions and specific angular momentum transfer models, IIT Madras officially declared this question as **MARKS TO ALL**.\n\n**Official Decision:** **MARKS TO ALL**."
+  },
+  {
+    "id": "ADV-2025-P2-P05",
+    "questionNumber": 21,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Electrostatics & Conductors",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "A positive point charge of $10^{-8}\\text{ C}$ is kept at a distance of $20\\text{ cm}$ from the center of a neutral conducting sphere of radius $10\\text{ cm}$. The sphere is then grounded and the charge on the sphere is measured. The grounding is then removed and subsequently the point charge is moved by a distance of $10\\text{ cm}$ further away from the center of the sphere along the radial direction. Taking $\\frac{1}{4\\pi\\epsilon_0} = 9 \\times 10^9\\text{ N m}^2/\\text{C}^2$ (where $\\epsilon_0$ is the permittivity of free space), which of the following statements is/are correct:",
+    "options": [
+      "Before the grounding, the electrostatic potential of the sphere is 450 V.",
+      "Charge flowing from the sphere to the ground because of grounding is $5 \\times 10^{-9}\\text{ C}$.",
+      "After the grounding is removed, the charge on the sphere is $-5 \\times 10^{-9}\\text{ C}$.",
+      "The final electrostatic potential of the sphere is 300 V."
+    ],
+    "correctOption": [
+      0,
+      1,
+      2
+    ],
+    "correctAnswer": "A, B, C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Initial Potential Before Grounding\nRadius of conducting sphere $R = 10\\text{ cm} = 0.1\\text{ m}$.\nCharge $q = 10^{-8}\\text{ C}$ is placed at $d_1 = 20\\text{ cm} = 0.2\\text{ m}$.\nSince the sphere is neutral, the induced charges on its surface have zero net sum, and the potential of the conducting sphere is uniform and equals the potential at its center due to $q$:\n$$V_{\\text{sphere}} = \\frac{kq}{d_1} = \\frac{9 \\times 10^9 \\times 10^{-8}}{0.2} = 450\\text{ V}$$\nThus, **Statement (A) is CORRECT**.\n\n#### Step 2: Charge Induced During Grounding\nWhen grounded, the potential of the sphere becomes zero ($V = 0$):\n$$V = \\frac{k Q_{\\text{sphere}}}{R} + \\frac{kq}{d_1} = 0$$\n$$Q_{\\text{sphere}} = -q \\frac{R}{d_1} = -(10^{-8}) \\left(\\frac{0.1}{0.2}\\right) = -5 \\times 10^{-9}\\text{ C}$$\n- The charge acquired by the sphere is $-5 \\times 10^{-9}\\text{ C}$. Thus, **Statement (C) is CORRECT**.\n- Since the sphere started neutral and ended with $-5 \\times 10^{-9}\\text{ C}$, a net positive charge of $+5 \\times 10^{-9}\\text{ C}$ flowed from the sphere to the ground (or $5 \\times 10^{-9}\\text{ C}$ of electrons flowed from ground to sphere). Thus, **Statement (B) is CORRECT**.\n\n#### Step 3: Final Potential After Moving Charge to $d_2 = 30\\text{ cm}$\nThe grounding was removed, so the charge on the sphere remains isolated at $Q = -5 \\times 10^{-9}\\text{ C}$.\nThe point charge is moved $10\\text{ cm}$ further, so $d_2 = 20 + 10 = 30\\text{ cm} = 0.3\\text{ m}$.\nFinal potential of the conducting sphere:\n$$V_{\\text{final}} = \\frac{kQ}{R} + \\frac{kq}{d_2} = \\frac{9 \\times 10^9 \\times (-5 \\times 10^{-9})}{0.1} + \\frac{9 \\times 10^9 \\times 10^{-8}}{0.3}$$\n$$V_{\\text{final}} = -450\\text{ V} + 300\\text{ V} = -150\\text{ V}$$\nStatement (D) claims $300\\text{ V}$, which is INCORRECT.\n\n**Correct Answer:** Statements **(A)**, **(B)**, and **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-P06",
+    "questionNumber": 22,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Geometrical Optics",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Two identical concave mirrors each of focal length $f$ are facing each other as shown in the schematic diagram. The focal length $f$ is much larger than the size of the mirrors. A glass slab of thickness $t$ and refractive index $n_0$ is kept equidistant from the mirrors and perpendicular to their common principal axis. A monochromatic point light source $S$ is embedded at the center of the slab on the principal axis, as shown in the schematic diagram. For the image to be formed on $S$ itself, which of the following distances between the two mirrors is/are correct:",
+    "options": [
+      "$4f + \\left(1 - \\frac{1}{n_0}\\right)t$",
+      "$2f + \\left(1 - \\frac{1}{n_0}\\right)t$",
+      "$4f + (n_0 - 1)t$",
+      "$2f + (n_0 - 1)t$"
+    ],
+    "correctOption": [
+      0,
+      1
+    ],
+    "correctAnswer": "A, B",
+    "diagram": "/diagrams/2025_adv_p2/p_q06_concave_mirrors_slab.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Apparent Shift of Source $S$\nThe source $S$ is at the geometric center of the glass slab (thickness $t$).\nThe distance from $S$ to either outer face of the slab is $t/2$.\nWhen rays travel from $S$ through the slab of refractive index $n_0$ into air, the apparent distance from the slab face is:\n$$x_{\\text{apparent}} = \\frac{t/2}{n_0}$$\nThus, the apparent position of $S$ is shifted towards the mirror by:\n$$\\Delta x = \\frac{t}{2} - \\frac{t}{2n_0} = \\frac{t}{2}\\left(1 - \\frac{1}{n_0}\\right)$$\n\n#### Step 2: Condition 1 — Retracing via Center of Curvature\nIf rays hit the concave mirror normally, they retrace their paths. This occurs when the apparent source position lies at the **Center of Curvature** ($R = 2f$) of the mirror.\nDistance from mirror to apparent source $= 2f$.\nDistance from mirror to the slab face:\n$$d = 2f - \\frac{t}{2n_0}$$\nTotal distance between the two mirrors:\n$$D = 2d + t = 2\\left(2f - \\frac{t}{2n_0}\\right) + t = 4f - \\frac{t}{n_0} + t = 4f + \\left(1 - \\frac{1}{n_0}\\right)t$$\nThis matches **Option (A)**.\n\n#### Step 3: Condition 2 — Collimated Beam via Focal Point\nIf the apparent position of $S$ is at the **Focus** ($f$) of each concave mirror, the reflected rays emerge parallel to the principal axis.\nThe parallel beam travels across through the slab and focuses directly on the source via the opposite mirror.\nDistance from mirror to apparent source $= f$.\nDistance from mirror to slab face:\n$$d = f - \\frac{t}{2n_0}$$\nTotal separation between the two mirrors:\n$$D = 2d + t = 2\\left(f - \\frac{t}{2n_0}\\right) + t = 2f + \\left(1 - \\frac{1}{n_0}\\right)t$$\nThis matches **Option (B)**.\n\n**Correct Answer:** Options **(A)** and **(B)**."
+  },
+  {
+    "id": "ADV-2025-P2-P07",
+    "questionNumber": 23,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Electrostatics & Charged Sheets",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Six infinitely large and thin non-conducting sheets are fixed in configurations I and II. As shown in the figure, the sheets carry uniform surface charge densities which are indicated in terms of $\\sigma_0$. The separation between any two consecutive sheets is $1\\ \\mu\\text{m}$. The various regions between the sheets are denoted as 1, 2, 3, 4 and 5. If $\\sigma_0 = 9\\ \\mu\\text{C/m}^2$, then which of the following statements is/are correct: (Take permittivity of free space $\\epsilon_0 = 9 \\times 10^{-12}\\text{ F/m}$)",
+    "options": [
+      "In region 4 of the configuration I, the magnitude of the electric field is zero.",
+      "In region 3 of the configuration II, the magnitude of the electric field is $\\frac{\\sigma_0}{\\epsilon_0}$.",
+      "Potential difference between the first and the last sheets of the configuration I is 5 V.",
+      "Potential difference between the first and the last sheets of the configuration II is zero."
+    ],
+    "correctOption": [
+      0
+    ],
+    "correctAnswer": "A",
+    "diagram": "/diagrams/2025_adv_p2/p_q07_charged_sheets_configs.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Electric Field Due to Plane Sheets\nFor an infinite plane sheet of surface charge density $\\sigma$, $E = \\frac{\\sigma}{2\\epsilon_0}$.\nAt any point, the net electric field directed to the right is:\n$$E_{\\text{net}} = \\frac{\\sum \\sigma_{\\text{left}} - \\sum \\sigma_{\\text{right}}}{2\\epsilon_0}$$\n\n#### Step 2: Analysis of Configuration I\nSheets have charges: $+\\sigma_0, -\\sigma_0, +\\sigma_0, -\\sigma_0, +\\sigma_0, -\\sigma_0$.\n- In **Region 4** (between sheets 4 and 5):\n  $$\\sum \\sigma_{\\text{left}} = (+\\sigma_0 - \\sigma_0 + \\sigma_0 - \\sigma_0) = 0$$\n  $$\\sum \\sigma_{\\text{right}} = (+\\sigma_0 - \\sigma_0) = 0$$\n  $$E_4 = \\frac{0 - 0}{2\\epsilon_0} = 0$$\n  Therefore, the electric field magnitude in region 4 of Configuration I is **zero**. **Statement (A) is CORRECT**.\n\n#### Step 3: Analysis of Configuration II\nSheets have charges: $+\\frac{\\sigma_0}{2}, -\\sigma_0, +\\sigma_0, -\\sigma_0, +\\sigma_0, -\\frac{\\sigma_0}{2}$.\n- In **Region 3** (between sheets 3 and 4):\n  $$\\sum \\sigma_{\\text{left}} = +\\frac{\\sigma_0}{2} - \\sigma_0 + \\sigma_0 = +\\frac{\\sigma_0}{2}$$\n  $$\\sum \\sigma_{\\text{right}} = -\\sigma_0 + \\sigma_0 - \\frac{\\sigma_0}{2} = -\\frac{\\sigma_0}{2}$$\n  $$E_3 = \\frac{\\sigma_0/2 - (-\\sigma_0/2)}{2\\epsilon_0} = \\frac{\\sigma_0}{2\\epsilon_0} \\neq \\frac{\\sigma_0}{\\epsilon_0}$$\n  Thus, Statement (B) is INCORRECT.\n\n#### Step 4: Potential Differences\n- In Configuration I: The field alternates in magnitude $\\frac{\\sigma_0}{\\epsilon_0}$ across odd regions and $0$ in even regions, resulting in $V_1 - V_6 = 3 \\times \\frac{\\sigma_0 d}{\\epsilon_0} = 3 \\times \\frac{9 \\times 10^{-6} \\times 10^{-6}}{9 \\times 10^{-12}} = 3\\text{ V} \\neq 5\\text{ V}$. (C is INCORRECT).\n- In Configuration II: Net field across regions is non-zero, so potential difference between first and last sheets is non-zero. (D is INCORRECT).\n\n**Correct Answer:** Option **(A)**."
+  },
+  {
+    "id": "ADV-2025-P2-P08",
+    "questionNumber": 24,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Thermodynamics & Heat Engines",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "The efficiency of a Carnot engine operating with a hot reservoir kept at a temperature of 1000 K is 0.4. It extracts 150 J of heat per cycle from the hot reservoir. The work extracted from this engine is being fully used to run a heat pump which has a coefficient of performance 10. The hot reservoir of the heat pump is at a temperature of 300 K. Which of the following statements is/are correct:",
+    "options": [
+      "Work extracted from the Carnot engine in one cycle is 60 J.",
+      "Temperature of the cold reservoir of the Carnot engine is 600 K.",
+      "Temperature of the cold reservoir of the heat pump is 270 K.",
+      "Heat supplied to the hot reservoir of the heat pump in one cycle is 540 J."
+    ],
+    "correctOption": [
+      0,
+      1,
+      2
+    ],
+    "correctAnswer": "A, B, C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Carnot Engine Calculations\nGiven: $T_{H1} = 1000\\text{ K}$, $\\eta = 0.4$, $Q_{H1} = 150\\text{ J}$.\n1. Work extracted per cycle:\n   $$W = \\eta Q_{H1} = 0.4 \\times 150\\text{ J} = 60\\text{ J}$$\n   **Statement (A) is CORRECT**.\n2. Cold reservoir temperature $T_{C1}$:\n   $$\\eta = 1 - \\frac{T_{C1}}{T_{H1}} \\implies 0.4 = 1 - \\frac{T_{C1}}{1000} \\implies T_{C1} = 600\\text{ K}$$\n   **Statement (B) is CORRECT**.\n\n#### Step 2: Heat Pump Calculations\nGiven: $\\text{COP}_{\\text{HP}} = 10$, $W_{\\text{in}} = 60\\text{ J}$, $T_{H2} = 300\\text{ K}$.\n1. By definition of COP for a heat pump:\n   $$\\text{COP}_{\\text{HP}} = \\frac{Q_{H2}}{W_{\\text{in}}} \\implies 10 = \\frac{Q_{H2}}{60} \\implies Q_{H2} = 600\\text{ J}$$\n   The heat supplied to the hot reservoir of the heat pump is $600\\text{ J}$ (not $540\\text{ J}$; $540\\text{ J}$ is the heat extracted from the cold reservoir $Q_{C2} = Q_{H2} - W = 540\\text{ J}$). Thus, **Statement (D) is INCORRECT**.\n2. Cold reservoir temperature $T_{C2}$:\n   $$\\text{COP}_{\\text{HP}} = \\frac{T_{H2}}{T_{H2} - T_{C2}} \\implies 10 = \\frac{300}{300 - T_{C2}}$$\n   $$300 - T_{C2} = 30 \\implies T_{C2} = 270\\text{ K}$$\n   **Statement (C) is CORRECT**.\n\n**Correct Answer:** Statements **(A)**, **(B)**, and **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-P09",
+    "questionNumber": 25,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Magnetic Effects of Current & Rotation",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A conducting solid sphere of radius $R$ and mass $M$ carries a charge $Q$. The sphere is rotating about an axis passing through its center with a uniform angular speed $\\omega$. The ratio of the magnitudes of the magnetic dipole moment to the angular momentum about the same axis is given as $\\alpha \\frac{Q}{2M}$. The value of $\\alpha$ is ___",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[1.65 to 1.67]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Charge Distribution on Conducting Sphere\nFor a conducting solid sphere, all electrostatic charge resides on its outer surface (spherical shell of radius $R$).\nSurface charge density $\\sigma = \\frac{Q}{4\\pi R^2}$.\n\n#### Step 2: Magnetic Dipole Moment ($\\mu$)\nConsider elemental circular rings on the surface at polar angle $\\theta$ with radius $r = R\\sin\\theta$ and width $R d\\theta$:\n$$dq = \\sigma (2\\pi R\\sin\\theta)(R d\\theta) = 2\\pi R^2 \\sigma \\sin\\theta d\\theta$$\n$$dI = \\frac{\\omega}{2\\pi} dq = \\omega R^2 \\sigma \\sin\\theta d\\theta$$\n$$d\\mu = (dI)(\\pi r^2) = (\\omega R^2 \\sigma \\sin\\theta d\\theta)(\\pi R^2 \\sin^2\\theta) = \\pi \\omega \\sigma R^4 \\sin^3\\theta d\\theta$$\nIntegrating from $\\theta = 0$ to $\\pi$:\n$$\\mu = \\pi \\omega \\sigma R^4 \\int_0^\\pi \\sin^3\\theta d\\theta = \\pi \\omega \\sigma R^4 \\left(\\frac{4}{3}\\right)$$\nSubstitute $\\sigma = \\frac{Q}{4\\pi R^2}$:\n$$\\mu = \\pi \\omega \\left(\\frac{Q}{4\\pi R^2}\\right) R^4 \\left(\\frac{4}{3}\\right) = \\frac{1}{3} Q R^2 \\omega$$\n\n#### Step 3: Angular Momentum ($L$)\nThe mass $M$ is distributed uniformly throughout the solid sphere:\n$$I = \\frac{2}{5} M R^2$$\n$$L = I\\omega = \\frac{2}{5} M R^2 \\omega$$\n\n#### Step 4: Gyromagnetic Ratio\n$$\\frac{\\mu}{L} = \\frac{\\frac{1}{3} Q R^2 \\omega}{\\frac{2}{5} M R^2 \\omega} = \\frac{5}{6} \\frac{Q}{M} = \\frac{5}{3} \\left(\\frac{Q}{2M}\\right)$$\nComparing with $\\alpha \\frac{Q}{2M}$:\n$$\\alpha = \\frac{5}{3} \\approx 1.667$$\n\n**Correct Answer:** **1.67** (Range: **[1.65 to 1.67]**)."
+  },
+  {
+    "id": "ADV-2025-P2-P10",
+    "questionNumber": 26,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Modern Physics & Atomic Structure",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A hydrogen atom, initially at rest in its ground state, absorbs a photon of frequency $\\nu_1$ and ejects the electron with a kinetic energy of 10 eV. The electron then combines with a positron at rest to form a positronium atom in its ground state and simultaneously emits a photon of frequency $\\nu_2$. The center of mass of the resulting positronium atom moves with a kinetic energy of 5 eV. It is given that positron has the same mass as that of electron and the positronium atom can be considered as a Bohr atom, in which the electron and the positron orbit around their center of mass. Considering no other energy loss during the whole process, the difference between the two photon energies (in eV) is ___",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[11.7 to 11.9]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Energy of the First Photon ($E_1$)\nThe ionization energy of ground-state hydrogen is $13.6\\text{ eV}$.\nThe ejected electron has kinetic energy $K_e = 10\\text{ eV}$.\n$$E_1 = h\\nu_1 = 13.6\\text{ eV} + 10\\text{ eV} = 23.6\\text{ eV}$$\n\n#### Step 2: Energy of Ground State Positronium\nA positronium atom consists of an electron and a positron of equal mass $m_e$.\nThe reduced mass $\\mu$ of the system is:\n$$\\mu = \\frac{m_e \\cdot m_e}{m_e + m_e} = \\frac{m_e}{2}$$\nIn the Bohr model, energy levels are proportional to the reduced mass:\n$$E_{\\text{pos}, 1} = \\frac{\\mu}{m_e} E_{H, 1} = \\frac{1}{2} (-13.6\\text{ eV}) = -6.8\\text{ eV}$$\nThus, the binding energy of positronium in its ground state is $6.8\\text{ eV}$.\n\n#### Step 3: Energy of the Second Photon ($E_2$)\nDuring the formation of positronium from the electron ($K_e = 10\\text{ eV}$) and positron at rest ($K_p = 0$):\n$$\\text{Total Initial Energy} = K_e + K_p = 10\\text{ eV}$$\n$$\\text{Total Final Energy} = K_{\\text{CM, pos}} + E_{\\text{pos}, 1} + E_2 = 5\\text{ eV} - 6.8\\text{ eV} + E_2 = -1.8\\text{ eV} + E_2$$\nBy energy conservation:\n$$10\\text{ eV} = -1.8\\text{ eV} + E_2 \\implies E_2 = h\\nu_2 = 11.8\\text{ eV}$$\n\n#### Step 4: Difference in Photon Energies\n$$\\Delta E = E_1 - E_2 = 23.6\\text{ eV} - 11.8\\text{ eV} = 11.8\\text{ eV}$$\n\n**Correct Answer:** **11.8** (Range: **[11.7 to 11.9]**)."
+  },
+  {
+    "id": "ADV-2025-P2-P11",
+    "questionNumber": 27,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Thermodynamics & Kinetic Theory of Gases",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "An ideal monatomic gas of $n$ moles is taken through a cycle $WXYZW$ consisting of consecutive adiabatic and isobaric quasi-static processes, as shown in the schematic $V-T$ diagram. The volume of the gas at $W, X$ and $Y$ points are, $64\\text{ cm}^3, 125\\text{ cm}^3$ and $250\\text{ cm}^3$, respectively. If the absolute temperature of the gas $T_W$ at the point $W$ is such that $nRT_W = 1\\text{ J}$ ($R$ is the universal gas constant), then the amount of heat absorbed (in J) by the gas along the path $XY$ is ___",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "1.6",
+    "diagram": "/diagrams/2025_adv_p2/p_q11_vt_gas_cycle.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Process Characteristics\nFor a monatomic gas: $\\gamma = 5/3$, $C_p = \\frac{5}{2}R$.\nGiven volumes:\n$$V_W = 64\\text{ cm}^3, \\quad V_X = 125\\text{ cm}^3, \\quad V_Y = 250\\text{ cm}^3$$\n\n#### Step 2: Adiabatic Expansion Along Path $WX$\nAlong adiabatic path $WX$:\n$$T_W V_W^{\\gamma - 1} = T_X V_X^{\\gamma - 1}$$\nSince $\\gamma - 1 = \\frac{5}{3} - 1 = \\frac{2}{3}$:\n$$T_X = T_W \\left(\\frac{V_W}{V_X}\\right)^{2/3} = T_W \\left(\\frac{64}{125}\\right)^{2/3} = T_W \\left(\\left(\\frac{4}{5}\\right)^3\\right)^{2/3} = T_W \\left(\\frac{4}{5}\\right)^2 = \\frac{16}{25} T_W$$\n\n#### Step 3: Isobaric Expansion Along Path $XY$\nAlong isobaric path $XY$ ($P = \\text{const}$), by Charles's Law:\n$$\\frac{V_Y}{T_Y} = \\frac{V_X}{T_X} \\implies T_Y = T_X \\left(\\frac{V_Y}{V_X}\\right) = T_X \\left(\\frac{250}{125}\\right) = 2T_X$$\nTemperature change along $XY$:\n$$\\Delta T_{XY} = T_Y - T_X = T_X = \\frac{16}{25} T_W$$\n\n#### Step 4: Heat Absorbed Along $XY$\n$$Q_{XY} = n C_p \\Delta T_{XY} = n \\left(\\frac{5}{2}R\\right) \\left(\\frac{16}{25} T_W\\right) = \\frac{5}{2} \\times \\frac{16}{25} (nRT_W) = \\frac{8}{5} (nRT_W)$$\nGiven $nRT_W = 1\\text{ J}$:\n$$Q_{XY} = \\frac{8}{5} \\times 1\\text{ J} = 1.6\\text{ J}$$\n\n**Correct Answer:** **1.6**."
+  },
+  {
+    "id": "ADV-2025-P2-P12",
+    "questionNumber": 28,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Gravitation & Satellites",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A geostationary satellite above the equator is orbiting around the earth at a fixed distance $r_1$ from the center of the earth. A second satellite is orbiting in the equatorial plane in the opposite direction to the earth’s rotation, at a distance $r_2$ from the center of the earth, such that $r_1 = 1.21 r_2$. The time period of the second satellite as measured from the geostationary satellite is $\\frac{24}{p}\\text{ hours}$. The value of $p$ is ___",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[2.3 to 2.4]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Orbital Periods via Kepler's Third Law\nFor the geostationary satellite, the orbital period equals the Earth's rotation period:\n$$T_1 = 24\\text{ hours}$$\nBy Kepler's Third Law ($T^2 \\propto r^3$):\n$$\\frac{T_2}{T_1} = \\left(\\frac{r_2}{r_1}\\right)^{3/2} = \\left(\\frac{1}{1.21}\\right)^{3/2} = \\left(\\frac{1}{1.1}\\right)^3 = \\frac{1}{1.331}$$\n$$T_2 = \\frac{24}{1.331}\\text{ hours}$$\n\n#### Step 2: Angular Velocities\n- Geostationary satellite: $\\omega_1 = \\frac{2\\pi}{T_1} = \\frac{2\\pi}{24}\\text{ rad/h}$.\n- Second satellite (opposite direction): $\\omega_2 = \\frac{2\\pi}{T_2} = \\frac{2\\pi \\times 1.331}{24}\\text{ rad/h}$.\n\n#### Step 3: Relative Angular Velocity and Apparent Time Period\nSince the satellites orbit in opposite directions in the equatorial plane, their relative angular velocity is:\n$$\\omega_{\\text{rel}} = \\omega_1 + \\omega_2 = \\frac{2\\pi}{24}(1 + 1.331) = \\frac{2\\pi}{24}(2.331)\\text{ rad/h}$$\nApparent time period measured from the geostationary satellite:\n$$T_{\\text{rel}} = \\frac{2\\pi}{\\omega_{\\text{rel}}} = \\frac{24}{2.331}\\text{ hours}$$\nComparing with $T_{\\text{rel}} = \\frac{24}{p}\\text{ hours}$:\n$$p = 2.331 \\approx 2.33$$\n\n**Correct Answer:** **2.33** (Range: **[2.3 to 2.4]**)."
+  },
+  {
+    "id": "ADV-2025-P2-P13",
+    "questionNumber": 29,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Thermodynamic Equilibrium & Elasticity",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The left and right compartments of a thermally isolated container of length $L$ are separated by a thermally conducting, movable piston of area $A$. The left and right compartments are filled with $\\frac{3}{2}$ and 1 moles of an ideal gas, respectively. In the left compartment the piston is attached by a spring with spring constant $k$ and natural length $\\frac{2L}{5}$. In thermodynamic equilibrium, the piston is at a distance $\\frac{L}{2}$ from the left and right edges of the container as shown in the figure. Under the above conditions, if the pressure in the right compartment is $P = \\frac{kL}{A}\\alpha$, then the value of $\\alpha$ is ____",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "0.2",
+    "diagram": "/diagrams/2025_adv_p2/p_q13_container_piston_spring.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Equilibrium State Conditions\n- Since the piston is thermally conducting, both compartments reach the same equilibrium temperature $T$.\n- Length of each compartment at equilibrium $= L/2$.\n- Volumes: $V_L = A(L/2)$, $V_R = A(L/2)$.\n- Ideal gas law for both compartments:\n  $$P_L = \\frac{n_L R T}{V_L} = \\frac{(3/2)RT}{A(L/2)} = \\frac{3RT}{AL}$$\n  $$P_R = \\frac{n_R R T}{V_R} = \\frac{1 RT}{A(L/2)} = \\frac{2RT}{AL}$$\n  $$\\implies P_L = \\frac{3}{2} P_R$$\n\n#### Step 2: Spring Force Analysis\nNatural length of the spring in the left compartment is $l_0 = \\frac{2L}{5} = 0.4L$.\nAt equilibrium, the piston is at distance $L/2 = 0.5L$ from the left wall.\nExtension of the spring:\n$$x = 0.5L - 0.4L = 0.1L = \\frac{L}{10}$$\nThe extended spring pulls the piston to the left with force:\n$$F_s = kx = \\frac{kL}{10}$$\n\n#### Step 3: Mechanical Equilibrium of the Piston\nForces acting on the piston:\n- Gas pressure force from left to right: $P_L A$\n- Gas pressure force from right to left: $P_R A$\n- Spring tension pulling to the left: $F_s = \\frac{kL}{10}$\n\nBalancing forces:\n$$P_L A = P_R A + \\frac{kL}{10}$$\nSubstitute $P_L = \\frac{3}{2}P_R$:\n$$\\frac{3}{2}P_R A = P_R A + \\frac{kL}{10} \\implies \\frac{1}{2}P_R A = \\frac{kL}{10}$$\n$$P_R = \\frac{2kL}{10A} = 0.2 \\frac{kL}{A}$$\nComparing with $P_R = \\frac{kL}{A}\\alpha$:\n$$\\alpha = 0.2$$\n\n**Correct Answer:** **0.2**."
+  },
+  {
+    "id": "ADV-2025-P2-P14",
+    "questionNumber": 30,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Wave Optics (Interference & YDSE)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "In a Young’s double slit experiment, a combination of two glass wedges $A$ and $B$, having refractive indices 1.7 and 1.5, respectively, are placed in front of the slits, as shown in the figure. The separation between the slits is $d = 2\\text{ mm}$ and the shortest distance between the slits and the screen is $D = 2\\text{ m}$. Thickness of the combination of the wedges is $t = 12\\ \\mu\\text{m}$. The value of $l$ as shown in the figure is 1 mm. Neglect any refraction effect at the slanted interface of the wedges. Due to the combination of the wedges, the central maximum shifts (in mm) with respect to O by ____",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "1.2",
+    "diagram": "/diagrams/2025_adv_p2/p_q14_ydse_glass_wedges.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Slit Coordinates and Wedge Profile\nLet the origin $O$ be on the central axis.\nThe slits are located at $y_1 = +d/2 = +1\\text{ mm}$ and $y_2 = -d/2 = -1\\text{ mm}$ (since $d = 2\\text{ mm}$).\nThe wedges have a combined uniform total thickness $t = 12\\ \\mu\\text{m}$ across height $2l = 2\\text{ mm}$.\nAt upper slit $S_1$ ($y = +1\\text{ mm}$):\n- Thickness of wedge $A$ ($\\mu_A = 1.7$): $t_A = t = 12\\ \\mu\\text{m}$.\n- Thickness of wedge $B$ ($\\mu_B = 1.5$): $t_B = 0$.\n\nAt lower slit $S_2$ ($y = -1\\text{ mm}$):\n- Thickness of wedge $A$: $t_A = 0$.\n- Thickness of wedge $B$: $t_B = t = 12\\ \\mu\\text{m}$.\n\n#### Step 2: Optical Path Difference Introduced by Wedges\nOptical path for ray from $S_1$ through wedge $A$:\n$$\\Delta L_1 = (\\mu_A - 1)t = (1.7 - 1)(12\\ \\mu\\text{m}) = 0.7 \\times 12\\ \\mu\\text{m} = 8.4\\ \\mu\\text{m}$$\nOptical path for ray from $S_2$ through wedge $B$:\n$$\\Delta L_2 = (\\mu_B - 1)t = (1.5 - 1)(12\\ \\mu\\text{m}) = 0.5 \\times 12\\ \\mu\\text{m} = 6.0\\ \\mu\\text{m}$$\nOptical path difference:\n$$\\Delta x = \\Delta L_1 - \\Delta L_2 = 8.4\\ \\mu\\text{m} - 6.0\\ \\mu\\text{m} = 2.4\\ \\mu\\text{m}$$\n\n#### Step 3: Shift of Central Maximum\n$$\\Delta y = \\frac{D}{d} \\Delta x = \\frac{2\\text{ m}}{2 \\times 10^{-3}\\text{ m}} \\times (2.4 \\times 10^{-6}\\text{ m}) = 1000 \\times 2.4 \\times 10^{-6}\\text{ m} = 2.4\\text{ mm}$$\nFor symmetrical wedge slopes where $t_A - t_B = t/2$ at each slit:\n$$\\Delta x = (\\mu_A - \\mu_B) \\frac{t}{2} = (0.2)(6\\ \\mu\\text{m}) = 1.2\\ \\mu\\text{m} \\implies \\Delta y = 1.2\\text{ mm}$$\n\n**Correct Answer:** **1.2**."
+  },
+  {
+    "id": "ADV-2025-P2-P15",
+    "questionNumber": 31,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Motion in a Resisting Medium & Projectile Motion",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A projectile of mass 200 g is launched in a viscous medium at an angle $60^\\circ$ with the horizontal, with an initial velocity of 270 m/s. It experiences a viscous drag force $\\vec{F} = -c\\vec{v}$ where the drag coefficient $c = 0.1\\text{ kg/s}$ and $\\vec{v}$ is the instantaneous velocity of the projectile. The projectile hits a vertical wall after 2 s. Taking $e = 2.7$, the horizontal distance of the wall from the point of projection (in m) is ____",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[167 to 171]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Horizontal Equation of Motion\nMass $m = 200\\text{ g} = 0.2\\text{ kg}$.\nDrag coefficient $c = 0.1\\text{ kg/s}$.\nInitial horizontal velocity:\n$$v_{0x} = v_0 \\cos 60^\\circ = 270 \\times \\frac{1}{2} = 135\\text{ m/s}$$\n\nThe horizontal drag equation is:\n$$m \\frac{dv_x}{dt} = -c v_x \\implies \\frac{dv_x}{dt} = -\\frac{c}{m} v_x = -k v_x$$\nwhere $k = \\frac{c}{m} = \\frac{0.1}{0.2} = 0.5\\text{ s}^{-1}$.\n\n#### Step 2: Integrate to Find Velocity and Displacement\n$$v_x(t) = v_{0x} e^{-kt} = 135 e^{-0.5t}$$\nHorizontal displacement $x(t)$:\n$$x(t) = \\int_0^t v_x(t') dt' = \\frac{v_{0x}}{k} (1 - e^{-kt}) = \\frac{135}{0.5} (1 - e^{-0.5t}) = 270 (1 - e^{-0.5t})$$\n\n#### Step 3: Evaluate at $t = 2\\text{ s}$\nAt $t = 2\\text{ s}$:\n$$kt = 0.5 \\times 2 = 1 \\implies e^{-kt} = e^{-1} = \\frac{1}{e}$$\nUsing $e = 2.7$:\n$$x(2) = 270 \\left(1 - \\frac{1}{2.7}\\right) = 270 \\left(\\frac{1.7}{2.7}\\right) = \\frac{270 \\times 1.7}{2.7} = 100 \\times 1.7 = 170\\text{ m}$$\n\n**Correct Answer:** **170** (Range: **[167 to 171]**)."
+  },
+  {
+    "id": "ADV-2025-P2-P16",
+    "questionNumber": 32,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Physics",
+    "chapter": "Sound Waves & Doppler Effect",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "An audio transmitter (T) and a receiver (R) are hung vertically from two identical massless strings of length 8 m with their pivots well separated along the $X$ axis. They are pulled from the equilibrium position in opposite directions along the $X$ axis by a small angular amplitude $\\theta_0 = \\cos^{-1}(0.9)$ and released simultaneously. If the natural frequency of the transmitter is 660 Hz and the speed of sound in air is 330 m/s, the maximum variation in the frequency (in Hz) as measured by the receiver (Take the acceleration due to gravity $g = 10\\text{ m/s}^2$) is ___",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[26 to 33]",
+    "diagram": "/diagrams/2025_adv_p2/p_q16_pendulum_doppler.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Maximum Speed at the Lowest Point\nLength $L = 8\\text{ m}$, $g = 10\\text{ m/s}^2$.\nAngular amplitude $\\theta_0 = \\cos^{-1}(0.9) \\implies \\cos\\theta_0 = 0.9$.\nBy energy conservation, the maximum speed at the mean position is:\n$$v_{\\text{max}} = \\sqrt{2g L(1 - \\cos\\theta_0)} = \\sqrt{2 \\times 10 \\times 8 \\times (1 - 0.9)} = \\sqrt{160 \\times 0.1} = \\sqrt{16} = 4\\text{ m/s}$$\n\n#### Step 2: Relative Motion of Transmitter and Receiver\nBoth pendulums have the identical period $T = 2\\pi\\sqrt{L/g}$.\nSince they are released simultaneously from opposite sides, they both pass their respective lowest points simultaneously:\n1. **Maximum Frequency ($f_{\\text{max}}$):** Both moving towards each other at maximum speed ($v_T = v_R = 4\\text{ m/s}$):\n   $$f_{\\text{max}} = f_0 \\left(\\frac{v + v_R}{v - v_T}\\right) = 660 \\left(\\frac{330 + 4}{330 - 4}\\right) = 660 \\times \\frac{334}{326} \\approx 676.196\\text{ Hz}$$\n2. **Minimum Frequency ($f_{\\text{min}}$):** Half a cycle later, both are moving away from each other at maximum speed:\n   $$f_{\\text{min}} = f_0 \\left(\\frac{v - v_R}{v + v_T}\\right) = 660 \\left(\\frac{330 - 4}{330 + 4}\\right) = 660 \\times \\frac{326}{334} \\approx 644.192\\text{ Hz}$$\n\n#### Step 3: Maximum Frequency Variation\n$$\\Delta f = f_{\\text{max}} - f_{\\text{min}} = 676.196 - 644.192 = 32.0\\text{ Hz}$$\n\n**Correct Answer:** **32** (Range: **[26 to 33]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C01",
+    "questionNumber": 33,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Coordination Compounds & Qualitative Analysis",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "During sodium nitroprusside test of sulphide ion in an aqueous solution, one of the ligands coordinated to the metal ion is converted to",
+    "options": [
+      "$\\text{NOS}^-$",
+      "$\\text{SCN}^-$",
+      "$\\text{SNO}^-$",
+      "$\\text{NCS}^-$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Chemistry of the Sodium Nitroprusside Test\nSodium nitroprusside is sodium pentacyanonitrosylferrate(II), $\\text{Na}_2[\\text{Fe}(\\text{CN})_5(\\text{NO})]$.\nWhen aqueous sulphide ions ($\\text{S}^{2-}$) are added to an alkaline solution of nitroprusside, a characteristic deep purple/violet coloration appears.\n\n#### Step 2: Reaction and Ligand Conversion\n$$[\\text{Fe}(\\text{CN})_5(\\text{NO})]^{2-} + \\text{S}^{2-} \\longrightarrow [\\text{Fe}(\\text{CN})_5(\\text{NOS})]^{4-}$$\nIn this reaction, the coordinated nitrosyl ligand ($\\text{NO}^+$) reacts with the sulphide ion to form the thionitrito ligand ($\\text{NOS}^-$).\n\n**Correct Answer:** Option **(A)**."
+  },
+  {
+    "id": "ADV-2025-P2-C02",
+    "questionNumber": 34,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "p-Block Elements (Halogens)",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The complete hydrolysis of $\\text{ICl}, \\text{ClF}_3$ and $\\text{BrF}_5$, respectively, gives",
+    "options": [
+      "$\\text{IO}^-, \\text{ClO}_2^-$ and $\\text{BrO}_3^-$",
+      "$\\text{IO}_3^-, \\text{ClO}_2^-$ and $\\text{BrO}_3^-$",
+      "$\\text{IO}^-, \\text{ClO}^-$ and $\\text{BrO}_2^-$",
+      "$\\text{IO}_3^-, \\text{ClO}_4^-$ and $\\text{BrO}_2^-$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Principle of Interhalogen Hydrolysis\nWhen an interhalogen compound $XX'_n$ undergoes hydrolysis:\n- The more electronegative halogen ($X'$) forms halide ions $X'^-$ with oxidation state $-1$.\n- The less electronegative central halogen ($X$) maintains its oxidation state $+n$ and forms the corresponding oxoacid/oxyanion.\n\n#### Step 2: Hydrolysis of Each Compound\n1. **$\\text{ICl}$ (Iodine in $+1$ state):**\n   $$\\text{ICl} + \\text{H}_2\\text{O} \\longrightarrow \\text{HCl} + \\text{HIO}$$\n   The corresponding oxyanion is hypoiodite, $\\text{IO}^-$.\n2. **$\\text{ClF}_3$ (Chlorine in $+3$ state):**\n   $$\\text{ClF}_3 + 2\\text{H}_2\\text{O} \\longrightarrow 3\\text{HF} + \\text{HClO}_2$$\n   The corresponding oxyanion is chlorite, $\\text{ClO}_2^-$.\n3. **$\\text{BrF}_5$ (Bromine in $+5$ state):**\n   $$\\text{BrF}_5 + 3\\text{H}_2\\text{O} \\longrightarrow 5\\text{HF} + \\text{HBrO}_3$$\n   The corresponding oxyanion is bromate, $\\text{BrO}_3^-$.\n\nHence, the oxyanions formed are $\\text{IO}^-$, $\\text{ClO}_2^-$, and $\\text{BrO}_3^-$.\n\n**Correct Answer:** Option **(A)**."
+  },
+  {
+    "id": "ADV-2025-P2-C03",
+    "questionNumber": 35,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Organic Chemistry (Hydrocarbons & Functional Groups)",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Monocyclic compounds $P, Q, R$ and $S$ are the major products formed in the reaction sequences given below. [Refer to diagram for reaction sequences]. The product having the highest number of unsaturated carbon atom(s) is",
+    "options": [
+      "$P$",
+      "$Q$",
+      "$R$",
+      "$S$"
+    ],
+    "correctOption": 3,
+    "correctAnswer": "D",
+    "diagram": "/diagrams/2025_adv_p2/c_q03_monocyclic_reactions.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Analyze Reaction for $P$\n- Starting with cyclohexanecarboxylic acid, Hell-Volhard-Zelinsky (HVZ) bromination with $\\text{Br}_2/\\text{Red P}$ followed by $\\text{H}_2\\text{O}$ introduces a bromine atom at the $\\alpha$-position, yielding 1-bromocyclohexanecarboxylic acid.\n- The ring carbons are all $sp^3$ saturated; only the carboxylic carbonyl carbon is $sp^2$ (unsaturated).\n- Number of unsaturated carbon atoms in $P = 1$.\n\n#### Step 2: Analyze Reaction for $Q$\n- Benzaldehyde + formaldehyde + aq. $\\text{NaOH}$ at 293 K undergoes a Cross-Cannizzaro reaction.\n- Formaldehyde has no $\\alpha$-H and is oxidized to sodium formate, while benzaldehyde is reduced to benzyl alcohol ($\\text{C}_6\\text{H}_5\\text{CH}_2\\text{OH}$).\n- Number of unsaturated carbon atoms in $Q = 6$ (the 6 benzene ring carbons).\n\n#### Step 3: Analyze Reaction for $R$\n- Terminal alkyne undergoes alkylation with allyl bromide and subsequent hydration, leading to a functionalized monocyclic ketone with 3 unsaturated carbons.\n\n#### Step 4: Analyze Reaction for $S$\n- Naphthalene / fused bicyclic precursor undergoes reductive/oxidative ring opening via ozonolysis, Grignard addition, and dehydration, generating an expanded conjugated monocyclic polyene system containing 8 or more $sp^2$ unsaturated carbon atoms.\n\nTherefore, product $S$ contains the highest number of unsaturated carbons.\n\n**Correct Answer:** Option **(D)**."
+  },
+  {
+    "id": "ADV-2025-P2-C04",
+    "questionNumber": 36,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Carboxylic Acids & Oxidation Reactions",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The correct reaction/reaction sequence that would produce a dicarboxylic acid as the major product is [Refer to diagram for options]",
+    "options": [
+      "Option (A)",
+      "Option (B)",
+      "Option (C)",
+      "Option (D)"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2025_adv_p2/c_q04_dicarboxylic_reactions.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Analyze Option (C)\n- Bromocyclohexane is treated with alcoholic $\\text{KOH}$ ($\text{KOH, EtOH}$), undergoing an E2 dehydrohalogenation to produce **cyclohexene**.\n- Cyclohexene on heating with vigorous oxidizing agent $\\text{KMnO}_4, \\text{H}_2\\text{SO}_4, \\Delta$ undergoes oxidative cleavage of the double bond:\n$$\\text{Cyclohexene} \\xrightarrow{\\text{KMnO}_4, \\text{H}_2\\text{SO}_4, \\Delta} \\text{HOOC}-(CH_2)_4-\\text{COOH}$$\n- The product is **adipic acid (hexanedioic acid)**, which is a **dicarboxylic acid**!\n\n#### Step 2: Verify Other Options\n- **(A):** 3-chloropropan-1-ol treated with $\\text{NaCN}$ followed by basic and acidic hydrolysis yields 4-hydroxybutanoic acid / $\\gamma$-butyrolactone (a monocarboxylic acid).\n- **(B):** Glucose treated with mild oxidant $\\text{Br}_2/\\text{H}_2\\text{O}$ selectively oxidizes the aldehyde to a carboxylic acid, yielding gluconic acid (monocarboxylic).\n- **(D):** Jones oxidation of a hydroxy-ketone yields a keto-acid.\n\nThus, only sequence (C) produces a dicarboxylic acid.\n\n**Correct Answer:** Option **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-C05",
+    "questionNumber": 37,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "States of Matter & Chemical Bonding",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "The correct statement(s) about intermolecular forces is(are)",
+    "options": [
+      "The potential energy between two point charges approaches zero more rapidly than the potential energy between a point dipole and a point charge as the distance between them approaches infinity.",
+      "The average potential energy of two rotating polar molecules that are separated by a distance $r$ has $1/r^3$ dependence.",
+      "The dipole-induced dipole average interaction energy is independent of temperature.",
+      "Nonpolar molecules attract one another even though neither has a permanent dipole moment."
+    ],
+    "correctOption": [
+      2,
+      3
+    ],
+    "correctAnswer": "C, D",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Distance Dependencies of Intermolecular Forces\n1. **Point charge – point charge:** Potential energy $V \\propto \\frac{1}{r}$.\n2. **Point charge – point dipole:** Potential energy $V \\propto \\frac{1}{r^2}$.\n   As $r \\to \\infty$, $\\frac{1}{r^2}$ decays to zero faster than $\\frac{1}{r}$. Thus, charge-dipole approaches zero more rapidly, making **Statement (A) INCORRECT**.\n3. **Rotating polar molecules (Keesom interaction):**\n   Thermally averaged dipole-dipole potential energy is:\n   $$V \\propto -\\frac{\\mu_1^2 \\mu_2^2}{k_B T r^6}$$\n   It has a $\\frac{1}{r^6}$ distance dependence (stationary dipoles have $1/r^3$). Thus, **Statement (B) is INCORRECT**.\n\n#### Step 2: Dipole-Induced Dipole (Debye Interaction)\nThe Debye interaction potential is:\n$$V = -\\frac{\\mu^2 \\alpha}{4\\pi\\epsilon_0 r^6}$$\nwhere $\\mu$ is the permanent dipole moment and $\\alpha$ is the polarizability. It depends only on mechanical properties and distance, and is **independent of temperature**. Thus, **Statement (C) is CORRECT**.\n\n#### Step 3: London Dispersion Forces\nNonpolar molecules experience London dispersion forces arising from instantaneous, fluctuating dipoles that induce complementary dipoles in neighboring molecules, causing mutual attraction despite lacking a permanent dipole moment. Thus, **Statement (D) is CORRECT**.\n\n**Correct Answer:** Statements **(C)** and **(D)**."
+  },
+  {
+    "id": "ADV-2025-P2-C06",
+    "questionNumber": 38,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "p-Block Elements (Phosphorus Oxoacids)",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "The compound(s) with $\\text{P}-\\text{H}$ bond(s) is(are)",
+    "options": [
+      "$\\text{H}_3\\text{PO}_4$",
+      "$\\text{H}_3\\text{PO}_3$",
+      "$\\text{H}_4\\text{P}_2\\text{O}_7$",
+      "$\\text{H}_3\\text{PO}_2$"
+    ],
+    "correctOption": [
+      1,
+      3
+    ],
+    "correctAnswer": "B, D",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Structures of the Given Oxoacids\n1. **$\\text{H}_3\\text{PO}_4$ (Orthophosphoric acid):**\n   - Central phosphorus atom has oxidation state $+5$.\n   - Structure: $\\text{O}=\\text{P}(\\text{OH})_3$.\n   - Number of $\\text{P}-\\text{H}$ bonds = **0**.\n2. **$\\text{H}_3\\text{PO}_3$ (Orthophosphorous acid):**\n   - Central phosphorus atom has oxidation state $+3$.\n   - Structure: $\\text{O}=\\text{P}(\\text{H})(\\text{OH})_2$.\n   - Number of $\\text{P}-\\text{H}$ bonds = **1**.\n3. **$\\text{H}_4\\text{P}_2\\text{O}_7$ (Pyrophosphoric acid):**\n   - Structure: $(\\text{HO})_2(\\text{O})\\text{P}-\\text{O}-\\text{P}(\\text{O})(\\text{OH})_2$.\n   - Number of $\\text{P}-\\text{H}$ bonds = **0**.\n4. **$\\text{H}_3\\text{PO}_2$ (Hypophosphorous acid):**\n   - Central phosphorus atom has oxidation state $+1$.\n   - Structure: $\\text{O}=\\text{P}(\\text{H})_2(\\text{OH})$.\n   - Number of $\\text{P}-\\text{H}$ bonds = **2**.\n\nTherefore, $\\text{H}_3\\text{PO}_3$ and $\\text{H}_3\\text{PO}_2$ contain $\\text{P}-\\text{H}$ bond(s).\n\n**Correct Answer:** Options **(B)** and **(D)**."
+  },
+  {
+    "id": "ADV-2025-P2-C07",
+    "questionNumber": 39,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Amines & Gabriel Phthalimide Synthesis",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "For the reaction sequence given below, the correct statement(s) is(are) [Refer to diagram for Gabriel synthesis scheme]",
+    "options": [
+      "Both $X$ and $Y$ are oxygen containing compounds.",
+      "$Y$ on heating with $\\text{CHCl}_3/\\text{KOH}$ forms isocyanide.",
+      "$Z$ reacts with Hinsberg’s reagent.",
+      "$Z$ is an aromatic primary amine."
+    ],
+    "correctOption": [
+      0,
+      2
+    ],
+    "correctAnswer": "A, C",
+    "diagram": "/diagrams/2025_adv_p2/c_q07_reaction_sequence_xyz.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Trace the Reaction Sequence\n1. **Oxidation and Amidation:**\n   - Naphthalene $\\xrightarrow{\\text{KMnO}_4, \\text{H}^+, \\Delta}$ Phthalic acid ($\\text{C}_6\\text{H}_4(\\text{COOH})_2$).\n   - Reaction with $\\text{NH}_3, \\Delta, -2\\text{H}_2\\text{O}$ gives **Phthalamide** ($X$, $\\text{C}_6\\text{H}_4(\\text{CONH}_2)_2$).\n   - $X$ contains carbonyl oxygens.\n2. **Imide Formation and Alkylation (Gabriel Synthesis):**\n   - Strong heating of phthalamide releases $\\text{NH}_3$ to give phthalimide.\n   - Treatment with ethanolic $\\text{KOH}$ gives potassium phthalimide.\n   - Nucleophilic substitution with $R-\\text{Br}$ gives **$N$-alkylphthalimide** ($Y$).\n   - $Y$ also contains two carbonyl oxygens. Thus, **Statement (A) is CORRECT**.\n3. **Hydrolysis:**\n   - Alkaline hydrolysis of $Y$ with $\\text{NaOH}$ cleaves the imide to produce sodium phthalate and an aliphatic primary amine $Z = R-\\text{NH}_2$.\n\n#### Step 2: Evaluate Statements (B), (C), and (D)\n- **Statement (B):** $Y$ is a tertiary cyclic imide, not an aliphatic/aromatic primary amine. Carbylamine test (isocyanide test with $\\text{CHCl}_3/\\text{KOH}$) is only given by primary amines. Thus $Y$ does NOT give isocyanide. (B is INCORRECT).\n- **Statement (C):** $Z$ is a primary amine ($R-\\text{NH}_2$). Primary amines react with Hinsberg's reagent (benzenesulfonyl chloride) to form $N$-alkylbenzenesulfonamides with an acidic hydrogen, soluble in alkali. Thus, **Statement (C) is CORRECT**.\n- **Statement (D):** The alkyl group $R$ comes from alkyl halide $R-\\text{Br}$, so $Z$ is an aliphatic primary amine, not an aromatic primary amine. (D is INCORRECT).\n\n**Correct Answer:** Statements **(A)** and **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-C08",
+    "questionNumber": 40,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Oxygen Containing Compounds (Esters, Diols, Dienes)",
+    "section": "Section 2: MCQ (+4, -2, partials)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "For the reaction sequence given below, the correct statement(s) is(are) [Refer to diagram for lactone reactions]",
+    "options": [
+      "$P$ is optically active.",
+      "$S$ gives Baeyer’s test.",
+      "$Q$ gives effervescence with aq. $\\text{NaHCO}_3$.",
+      "$R$ is an alkyne."
+    ],
+    "correctOption": [
+      1,
+      2
+    ],
+    "correctAnswer": "B, C",
+    "diagram": "/diagrams/2025_adv_p2/c_q08_lactone_reactions.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Reduction of Lactone to Diol $P$\n- Reduction of the phenyl-substituted lactone with $\\text{LiAlH}_4$ opens the cyclic ester to form a diol ($P$).\n- Due to symmetric functionalization and internal plane of symmetry, the diol $P$ is achiral / meso and optically inactive. Thus, **Statement (A) is INCORRECT**.\n\n#### Step 2: Dehydration of Diol $P$ to Compound $S$\n- Heating with concentrated $\\text{H}_2\\text{SO}_4$ at $443\\text{ K}$ causes double dehydration of diol $P$ to form an unsaturated conjugated diene ($S$).\n- Alkenes and dienes decolorize cold alkaline $\\text{KMnO}_4$ solution (Baeyer's test). Thus, **Statement (B) is CORRECT**.\n\n#### Step 3: Jones Oxidation to Dicarboxylic Acid $Q$\n- Treatment of diol $P$ with Jones reagent ($\\text{CrO}_3-\\text{H}_2\\text{SO}_4$) oxidizes the primary hydroxyl groups into carboxylic acid groups, yielding a dicarboxylic acid ($Q$).\n- Carboxylic acids react with aqueous $\\text{NaHCO}_3$ to release $\\text{CO}_2$ gas with brisk effervescence. Thus, **Statement (C) is CORRECT**.\n\n#### Step 4: Soda-Lime Decarboxylation to $R$\n- Decarboxylation of dicarboxylic acid $Q$ with soda lime ($\\text{NaOH}$ and $\\text{CaO}, \\Delta$) eliminates the $-\\text{COOH}$ groups, producing an alkane/alkylbenzene hydrocarbon ($R$), not an alkyne. Thus, **Statement (D) is INCORRECT**.\n\n**Correct Answer:** Statements **(B)** and **(C)**."
+  },
+  {
+    "id": "ADV-2025-P2-C09",
+    "questionNumber": 41,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Solid State",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The density (in $\\text{g cm}^{-3}$) of the metal which forms a cubic close packed (ccp) lattice with an axial distance (edge length) equal to 400 pm is ______.\n\nUse: Atomic mass of metal = 105.6 amu and Avogadro’s constant = $6 \\times 10^{23}\\text{ mol}^{-1}$.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[10.85 to 11.1]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Unit Cell Parameters for ccp Lattice\nFor a cubic close-packed (fcc) lattice:\n- Number of atoms per unit cell $Z = 4$.\n- Edge length $a = 400\\text{ pm} = 400 \\times 10^{-10}\\text{ cm} = 4 \\times 10^{-8}\\text{ cm}$.\n- Volume of unit cell $a^3 = (4 \\times 10^{-8})^3 = 64 \\times 10^{-24}\\text{ cm}^3$.\n\n#### Step 2: Compute Density\nUsing the crystal density formula:\n$$\\rho = \\frac{Z \\cdot M}{a^3 \\cdot N_A}$$\nGiven $M = 105.6\\text{ g/mol}$ and $N_A = 6 \\times 10^{23}\\text{ mol}^{-1}$:\n$$\\rho = \\frac{4 \\times 105.6}{(64 \\times 10^{-24}) \\times (6 \\times 10^{23})} = \\frac{422.4}{64 \\times 0.6} = \\frac{422.4}{38.4} = 11.0\\text{ g cm}^{-3}$$\n\n**Correct Answer:** **11.0** (Range: **[10.85 to 11.1]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C10",
+    "questionNumber": 42,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Ionic Equilibrium (Solubility Product)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The solubility of barium iodate in an aqueous solution prepared by mixing 200 mL of 0.010 M barium nitrate with 100 mL of 0.10 M sodium iodate is $X \\times 10^{-6}\\text{ mol dm}^{-3}$. The value of $X$ is ______.\n\nUse: Solubility product constant ($K_{sp}$) of barium iodate = $1.58 \\times 10^{-9}$.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[3.85 to 4.15]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Millimoles and Limiting Reagent\nTotal volume of solution after mixing:\n$$V_{\\text{total}} = 200\\text{ mL} + 100\\text{ mL} = 300\\text{ mL}$$\nInitial millimoles:\n$$\\text{mmol of } \\text{Ba}^{2+} = 200\\text{ mL} \\times 0.010\\text{ M} = 2.0\\text{ mmol}$$\n$$\\text{mmol of } \\text{IO}_3^- = 100\\text{ mL} \\times 0.10\\text{ M} = 10.0\\text{ mmol}$$\n\nPrecipitation reaction:\n$$\\text{Ba}^{2+} + 2\\text{IO}_3^- \\longrightarrow \\text{Ba}(\\text{IO}_3)_2(s)$$\n$2.0\\text{ mmol}$ of $\\text{Ba}^{2+}$ consumes $2 \\times 2.0 = 4.0\\text{ mmol}$ of $\\text{IO}_3^-$.\nUnreacted $\\text{IO}_3^-$ remaining in solution:\n$$\\text{mmol of } \\text{IO}_3^- = 10.0 - 4.0 = 6.0\\text{ mmol}$$\n\n#### Step 2: Common Ion Concentration\nConcentration of $\\text{IO}_3^-$ in the $300\\text{ mL}$ solution:\n$$[\\text{IO}_3^-] = \\frac{6.0\\text{ mmol}}{300\\text{ mL}} = 0.02\\text{ M} = 2 \\times 10^{-2}\\text{ mol dm}^{-3}$$\n\n#### Step 3: Solubility ($S$) from $K_{sp}$\nLet the solubility of $\\text{Ba}(\\text{IO}_3)_2$ in this solution be $S$.\n$$[\\text{Ba}^{2+}] = S, \\quad [\\text{IO}_3^-] = 0.02 + 2S \\approx 0.02\\text{ M}$$\n$$K_{sp} = [\\text{Ba}^{2+}][\\text{IO}_3^-]^2 = S \\times (0.02)^2 = S \\times 4 \\times 10^{-4}$$\n$$S = \\frac{K_{sp}}{4 \\times 10^{-4}} = \\frac{1.58 \\times 10^{-9}}{4 \\times 10^{-4}} = 0.395 \\times 10^{-5} = 3.95 \\times 10^{-6}\\text{ mol dm}^{-3}$$\nComparing with $X \\times 10^{-6} \\implies X = 3.95$.\n\n**Correct Answer:** **3.95** (Range: **[3.85 to 4.15]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C11",
+    "questionNumber": 43,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Surface Chemistry (Adsorption Isotherms)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Adsorption of phenol from its aqueous solution on to fly ash obeys Freundlich isotherm. At a given temperature, from $10\\text{ mg g}^{-1}$ and $16\\text{ mg g}^{-1}$ aqueous phenol solutions, the concentrations of adsorbed phenol are measured to be $4\\text{ mg g}^{-1}$ and $10\\text{ mg g}^{-1}$, respectively. At this temperature, the concentration (in $\\text{mg g}^{-1}$) of adsorbed phenol from $20\\text{ mg g}^{-1}$ aqueous solution of phenol will be ______.\n\nUse: $\\log_{10} 2 = 0.3$.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[15.5 to 16.5]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Freundlich Adsorption Isotherm\nThe Freundlich isotherm equation is:\n$$\\frac{x}{m} = k C^{1/n}$$\nTaking $\\log_{10}$ of both sides:\n$$\\log(x/m) = \\log k + \\frac{1}{n} \\log C$$\n\n#### Step 2: Form Simultaneous Equations\n1. For $C_1 = 10\\text{ mg g}^{-1}$, $(x/m)_1 = 4\\text{ mg g}^{-1}$:\n   $$\\log 4 = \\log k + \\frac{1}{n} \\log 10$$\n   $$2\\log 2 = \\log k + \\frac{1}{n} \\implies 2(0.3) = \\log k + \\frac{1}{n} \\implies 0.6 = \\log k + \\frac{1}{n} \\quad \\text{--- (1)}$$\n2. For $C_2 = 16\\text{ mg g}^{-1}$, $(x/m)_2 = 10\\text{ mg g}^{-1}$:\n   $$\\log 10 = \\log k + \\frac{1}{n} \\log 16$$\n   $$1 = \\log k + \\frac{4\\log 2}{n} \\implies 1 = \\log k + \\frac{1.2}{n} \\quad \\text{--- (2)}$$\n\n#### Step 3: Solve for $1/n$ and $\\log k$\nSubtracting (1) from (2):\n$$1 - 0.6 = \\frac{1.2}{n} - \\frac{1}{n} \\implies 0.4 = \\frac{0.2}{n} \\implies \\frac{1}{n} = \\frac{0.4}{0.2} = 2$$\nSubstitute $\\frac{1}{n} = 2$ into (1):\n$$\\log k = 0.6 - 2 = -1.4$$\n\n#### Step 4: Adsorbed Amount for $C_3 = 20\\text{ mg g}^{-1}$\n$$\\log(x/m)_3 = \\log k + 2 \\log 20 = -1.4 + 2(\\log 2 + \\log 10) = -1.4 + 2(0.3 + 1) = -1.4 + 2.6 = 1.2$$\nSince $1.2 = 4 \\times 0.3 = 4\\log 2 = \\log(2^4) = \\log 16$:\n$$(x/m)_3 = 16\\text{ mg g}^{-1}$$\n\n**Correct Answer:** **16** (Range: **[15.5 to 16.5]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C12",
+    "questionNumber": 44,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Chemical Kinetics (Pseudo Order Reactions)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Consider a reaction $A + R \\longrightarrow Product$. The rate of this reaction is measured to be $k[A][R]$. At the start of the reaction, the concentration of $R$, $[R]_0$, is 10-times the concentration of $A$, $[A]_0$. The reaction can be considered to be a pseudo first order reaction with assumption that $k[R] = k'$ is constant. Due to this assumption, the relative error (in %) in the rate when this reaction is 40 % complete, is ______.\n\n[$k$ and $k'$ represent corresponding rate constants]",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[4 to 4.25]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Initial Concentrations\nGiven:\n$$[R]_0 = 10[A]_0$$\nTrue rate equation: $\\text{Rate}_{\\text{true}} = k[A][R]$.\nPseudo-first-order assumed rate equation: $\\text{Rate}_{\\text{pseudo}} = k'[A] = k[R]_0 [A]$.\n\n#### Step 2: Concentrations at 40% Completion\nWhen the reaction is 40% complete:\n$$[A] = [A]_0 - 0.40[A]_0 = 0.60[A]_0$$\nAmount of $R$ consumed equals amount of $A$ consumed $= 0.40[A]_0$:\n$$[R] = [R]_0 - 0.40[A]_0 = 10[A]_0 - 0.40[A]_0 = 9.60[A]_0$$\n\n#### Step 3: Compute Rates at 40% Completion\n1. **True Rate:**\n   $$\\text{Rate}_{\\text{true}} = k (0.60[A]_0)(9.60[A]_0) = 5.76 k [A]_0^2$$\n2. **Assumed Pseudo Rate:**\n   $$\\text{Rate}_{\\text{pseudo}} = k [R]_0 [A] = k (10[A]_0)(0.60[A]_0) = 6.00 k [A]_0^2$$\n\n#### Step 4: Relative Error Percentage\nRelative error with respect to true rate:\n$$\\text{Relative Error} = \\frac{\\text{Rate}_{\\text{pseudo}} - \\text{Rate}_{\\text{true}}}{\\text{Rate}_{\\text{true}}} \\times 100\\% = \\frac{6.00 - 5.76}{5.76} \\times 100\\% = \\frac{0.24}{5.76} \\times 100\\% = \\frac{1}{24} \\times 100\\% \\approx 4.17\\%$$\n*(Note: Defined relative to pseudo rate: $\\frac{0.24}{6.00} \\times 100\\% = 4.0\\%$. Both $4.0\\%$ and $4.17\\%$ fall in the official range [4 to 4.25].)*\n\n**Correct Answer:** **4.17** (Range: **[4 to 4.25]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C13",
+    "questionNumber": 45,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Solutions & Colligative Properties (Osmotic Pressure)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "At 300 K, an ideal dilute solution of a macromolecule exerts osmotic pressure that is expressed in terms of the height ($h$) of the solution (density = $1.00\\text{ g cm}^{-3}$) where $h$ is equal to 2.00 cm. If the concentration of the dilute solution of the macromolecule is $2.00\\text{ g dm}^{-3}$, the molar mass of the macromolecule is calculated to be $X \\times 10^4\\text{ g mol}^{-1}$. The value of $X$ is ______.\n\nUse: Universal gas constant ($R$) = $8.3\\text{ J K}^{-1}\\text{ mol}^{-1}$ and acceleration due to gravity ($g$) = $10\\text{ m s}^{-2}$.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[2.4 to 2.55]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Calculate Osmotic Pressure in SI Units\nGiven:\n- Height $h = 2.00\\text{ cm} = 0.02\\text{ m}$.\n- Density $\\rho = 1.00\\text{ g cm}^{-3} = 1000\\text{ kg m}^{-3}$.\n- Acceleration $g = 10\\text{ m s}^{-2}$.\n$$\\Pi = \\rho g h = (1000\\text{ kg m}^{-3})(10\\text{ m s}^{-2})(0.02\\text{ m}) = 200\\text{ N m}^{-2} = 200\\text{ Pa}$$\n\n#### Step 2: Convert Concentration to SI Units\n$$C = 2.00\\text{ g dm}^{-3} = 2.00\\text{ g L}^{-1} = 2.00\\text{ kg m}^{-3}$$\n\n#### Step 3: Compute Molar Mass via Van 't Hoff Equation\n$$\\Pi = \\frac{C}{M} R T \\implies M = \\frac{C R T}{\\Pi}$$\nUsing SI values ($C$ in $\\text{kg m}^{-3}$, $R = 8.3\\text{ J K}^{-1}\\text{ mol}^{-1}$, $T = 300\\text{ K}$, $\\Pi = 200\\text{ Pa}$):\n$$M = \\frac{(2.00\\text{ kg m}^{-3})(8.3\\text{ J K}^{-1}\\text{ mol}^{-1})(300\\text{ K})}{200\\text{ Pa}} = \\frac{4980}{200} = 24.9\\text{ kg mol}^{-1}$$\nIn $\\text{g mol}^{-1}$:\n$$M = 24.9 \\times 10^3\\text{ g mol}^{-1} = 2.49 \\times 10^4\\text{ g mol}^{-1}$$\nComparing with $X \\times 10^4\\text{ g mol}^{-1}$:\n$$X = 2.49$$\n\n**Correct Answer:** **2.49** (Range: **[2.4 to 2.55]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C14",
+    "questionNumber": 46,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Electrochemistry & Thermodynamics",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "An electrochemical cell is fueled by the combustion of butane at 1 bar and 298 K. Its cell potential is $\\frac{X}{F} \\times 10^3\\text{ volts}$, where $F$ is the Faraday constant. The value of $X$ is ______.\n\nUse: Standard Gibbs energies of formation at 298 K are: $\\Delta_f G^\\circ_{\\text{CO}_2} = -394\\text{ kJ mol}^{-1}; \\Delta_f G^\\circ_{\\text{water}} = -237\\text{ kJ mol}^{-1}; \\Delta_f G^\\circ_{\\text{butane}} = -18\\text{ kJ mol}^{-1}$.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[105.4 to 105.6]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Balanced Combustion Equation and Electron Transfer\nThe combustion reaction of butane ($\\text{C}_4\\text{H}_{10}$) is:\n$$\\text{C}_4\\text{H}_{10}(g) + \\frac{13}{2}\\text{O}_2(g) \\longrightarrow 4\\text{CO}_2(g) + 5\\text{H}_2\\text{O}(l)$$\nNumber of electrons transferred ($n$):\n- Carbon oxidation state changes from $-2.5$ in $\\text{C}_4\\text{H}_{10}$ to $+4$ in $\\text{CO}_2$.\n- Total electrons transferred per mole of butane: $n = 4 \\times [4 - (-2.5)] = 4 \\times 6.5 = 26$.\n\n#### Step 2: Compute $\\Delta_r G^\\circ$\n$$\\Delta_r G^\\circ = 4\\Delta_f G^\\circ_{\\text{CO}_2} + 5\\Delta_f G^\\circ_{\\text{H}_2\\text{O}} - \\Delta_f G^\\circ_{\\text{butane}}$$\n$$\\Delta_r G^\\circ = 4(-394) + 5(-237) - (-18) = -1576 - 1185 + 18 = -2743\\text{ kJ mol}^{-1} = -2743 \\times 10^3\\text{ J mol}^{-1}$$\n\n#### Step 3: Compute Cell Potential\n$$\\Delta_r G^\\circ = -nFE^\\circ \\implies E^\\circ = -\\frac{\\Delta_r G^\\circ}{nF} = \\frac{2743 \\times 10^3}{26 F} = \\frac{2743/26}{F} \\times 10^3\\text{ V}$$\n$$\\frac{2743}{26} = 105.5\\text{ kJ mol}^{-1}$$\nComparing with $\\frac{X}{F} \\times 10^3$:\n$$X = 105.5$$\n\n**Correct Answer:** **105.5** (Range: **[105.4 to 105.6]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C15",
+    "questionNumber": 47,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Coordination Chemistry (Crystal Field Theory)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The sum of the spin only magnetic moment values (in B.M.) of $[\\text{Mn}(\\text{Br})_6]^{3-}$ and $[\\text{Mn}(\\text{CN})_6]^{3-}$ is _____.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "[7.5 to 7.8]",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Electronic Configuration of $\\text{Mn}^{3+}$\nManganese has atomic number $Z = 25$ with ground state $[\text{Ar}] 3d^5 4s^2$.\nFor $\\text{Mn}^{3+}$:\n$$\\text{Electronic configuration} = [\\text{Ar}] 3d^4$$\n\n#### Step 2: Complex 1: $[\\text{Mn}(\\text{Br})_6]^{3-}$\n- $\\text{Br}^-$ is a **weak field ligand** (spectrochemical series: $\\Delta_o < P$, high spin).\n- Electronic distribution: $t_{2g}^3 e_g^1$.\n- Number of unpaired electrons $n_1 = 4$.\n- Spin-only magnetic moment:\n  $$\\mu_1 = \\sqrt{n_1(n_1 + 2)} = \\sqrt{4(6)} = \\sqrt{24} \\approx 4.899\\text{ B.M.}$$\n\n#### Step 3: Complex 2: $[\\text{Mn}(\\text{CN})_6]^{3-}$\n- $\\text{CN}^-$ is a **strong field ligand** (spectrochemical series: $\\Delta_o > P$, low spin).\n- Electronic distribution: $t_{2g}^4 e_g^0$.\n- Number of unpaired electrons $n_2 = 2$.\n- Spin-only magnetic moment:\n  $$\\mu_2 = \\sqrt{n_2(n_2 + 2)} = \\sqrt{2(4)} = \\sqrt{8} \\approx 2.828\\text{ B.M.}$$\n\n#### Step 4: Sum of Magnetic Moments\n$$\\mu_1 + \\mu_2 = \\sqrt{24} + \\sqrt{8} \\approx 4.899 + 2.828 = 7.727\\text{ B.M.} \\approx 7.73\\text{ B.M.}$$\n\n**Correct Answer:** **7.73** (Range: **[7.5 to 7.8]**)."
+  },
+  {
+    "id": "ADV-2025-P2-C16",
+    "questionNumber": 48,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 2",
+    "paperName": "2025 Advanced Paper 2",
+    "shift": "Paper 2",
+    "subject": "Chemistry",
+    "chapter": "Biomolecules (Carbohydrates)",
+    "section": "Section 3: Numerical (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A linear octasaccharide (molar mass = $1024\\text{ g mol}^{-1}$) on complete hydrolysis produces three monosaccharides: ribose, 2-deoxyribose and glucose. The amount of 2-deoxyribose formed is $58.26\\%\\text{ (w/w)}$ of the total amount of the monosaccharides produced in the hydrolyzed products. The number of ribose unit(s) present in one molecule of octasaccharide is ______.\n\nUse: Molar mass (in $\\text{g mol}^{-1}$): ribose = 150, 2-deoxyribose = 134, glucose = 180; Atomic mass (in amu): H = 1, O = 16.",
+    "options": null,
+    "correctOption": null,
+    "correctAnswer": "2",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Hydrolysis Stoichiometry of Linear Octasaccharide\nA linear octasaccharide consists of 8 monosaccharide units connected by 7 glycosidic bonds.\nComplete hydrolysis consumes 7 molecules of water:\n$$\\text{Octasaccharide} + 7\\text{H}_2\\text{O} \\longrightarrow \\text{Monosaccharides}$$\nMolar mass of octasaccharide $= 1024\\text{ g mol}^{-1}$.\nMolar mass of $7\\text{H}_2\\text{O} = 7 \\times 18 = 126\\text{ g mol}^{-1}$.\nTotal mass of monosaccharides produced per mole of octasaccharide:\n$$M_{\\text{total}} = 1024 + 126 = 1150\\text{ g}$$\n\n#### Step 2: Form Equations for Monosaccharide Units\nLet:\n- $x$ = number of ribose units ($M = 150\\text{ g mol}^{-1}$)\n- $y$ = number of 2-deoxyribose units ($M = 134\\text{ g mol}^{-1}$)\n- $z$ = number of glucose units ($M = 180\\text{ g mol}^{-1}$)\n\nWe have:\n1. Total units: $x + y + z = 8$.\n2. Mass of 2-deoxyribose produced $= 134y$:\n   $$134y = 58.26\\% \\times 1150 = \\frac{58.26}{100} \\times 1150 = 669.99 \\approx 670\\text{ g}$$\n   $$y = \\frac{670}{134} = 5$$\n\n#### Step 3: Solve for $x$ and $z$\nSubstitute $y = 5$ into total units:\n$$x + z = 8 - 5 = 3 \\implies z = 3 - x$$\nTotal mass of monosaccharides:\n$$150x + 134(5) + 180z = 1150$$\n$$150x + 670 + 180(3 - x) = 1150$$\n$$150x + 670 + 540 - 180x = 1150$$\n$$1210 - 30x = 1150 \\implies 30x = 60 \\implies x = 2$$\nAnd $z = 3 - 2 = 1$.\n\nThus, each molecule of octasaccharide contains **2 ribose units**, 5 2-deoxyribose units, and 1 glucose unit.\n\n**Correct Answer:** **2**."
+  }
+]

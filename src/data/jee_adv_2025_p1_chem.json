@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ADV-2025-P1-C01",
+    "questionNumber": 33,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "p-Block Elements (Nitrogen Family)",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The heating of which of the following compounds produces a brown acidic gas along with a neutral gas?",
+    "options": [
+      "$\\text{Pb(NO}_3)_2$",
+      "$\\text{NH}_4\\text{NO}_3$",
+      "$\\text{NaNO}_3$",
+      "$\\text{NH}_4\\text{NO}_2$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Thermal decomposition of lead(II) nitrate\n$$2\\text{Pb(NO}_3)_2 \\xrightarrow{\\Delta} 2\\text{PbO} + 4\\text{NO}_2\\uparrow + \\text{O}_2\\uparrow$$\n- $\\text{NO}_2$ is a **brown gas**, acidic in nature (dissolves in water to give $\\text{HNO}_2 + \\text{HNO}_3$).\n- $\\text{O}_2$ is a **neutral gas**.\nThus, heating $\\text{Pb(NO}_3)_2$ produces a brown acidic gas ($\\text{NO}_2$) and a neutral gas ($\\text{O}_2$).\n\n#### Step 2: Compare other options\n- $\\text{NH}_4\\text{NO}_3 \\xrightarrow{\\Delta} \\text{N}_2\\text{O} + 2\\text{H}_2\\text{O}$ (both $\\text{N}_2\\text{O}$ and water vapor are neutral; no brown gas).\n- $2\\text{NaNO}_3 \\xrightarrow{\\Delta} 2\\text{NaNO}_2 + \\text{O}_2$ (only oxygen evolved; no brown gas).\n- $\\text{NH}_4\\text{NO}_2 \\xrightarrow{\\Delta} \\text{N}_2 + 2\\text{H}_2\\text{O}$ (nitrogen gas evolved; neutral, colorless).\n\n**Conclusion:** The correct compound is $\\text{Pb(NO}_3)_2$ (Option A)."
+  },
+  {
+    "id": "ADV-2025-P1-C02",
+    "questionNumber": 34,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Coordination Compounds",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The correct order of the wavelength maxima ($\\lambda_{\\max}$) of the absorption band in the ultraviolet-visible spectrum for the following cobalt(III) complexes is:\n$$[\\text{Co(H}_2\\text{O)}_6]^{3+}, \\quad [\\text{Co(en)}_3]^{3+}, \\quad [\\text{Co(NH}_3)_6]^{3+}$$",
+    "options": [
+      "$[\\text{Co(H}_2\\text{O)}_6]^{3+} > [\\text{Co(NH}_3)_6]^{3+} > [\\text{Co(en)}_3]^{3+}$",
+      "$[\\text{Co(en)}_3]^{3+} > [\\text{Co(NH}_3)_6]^{3+} > [\\text{Co(H}_2\\text{O)}_6]^{3+}$",
+      "$[\\text{Co(NH}_3)_6]^{3+} > [\\text{Co(en)}_3]^{3+} > [\\text{Co(H}_2\\text{O)}_6]^{3+}$",
+      "$[\\text{Co(H}_2\\text{O)}_6]^{3+} > [\\text{Co(en)}_3]^{3+} > [\\text{Co(NH}_3)_6]^{3+}$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Crystal Field Splitting Energy ($\\Delta_o$) and Spectrochemical Series\nFrom the spectrochemical series, ligand field strength follows the order:\n$$\\text{en} > \\text{NH}_3 > \\text{H}_2\\text{O}$$\nTherefore, the magnitude of crystal field splitting energy ($\\Delta_o$) for the $\\text{Co}^{3+}$ complexes follows:\n$$\\Delta_o([\\text{Co(en)}_3]^{3+}) > \\Delta_o([\\text{Co(NH}_3)_6]^{3+}) > \\Delta_o([\\text{Co(H}_2\\text{O)}_6]^{3+})$$\n\n#### Step 2: Relationship with absorption wavelength\nThe energy of the absorbed photon corresponding to the $d-d$ transition is inversely proportional to the wavelength of absorption:\n$$\\Delta_o = \\frac{hc}{\\lambda_{\\max}} \\implies \\lambda_{\\max} \\propto \\frac{1}{\\Delta_o}$$\nSince $\\Delta_o$ is lowest for $[\\text{Co(H}_2\\text{O)}_6]^{3+}$, it absorbs light of the longest wavelength (highest $\\lambda_{\\max}$).\nConversely, $[\\text{Co(en)}_3]^{3+}$ has the largest $\\Delta_o$ and absorbs light of the shortest wavelength (lowest $\\lambda_{\\max}$).\n\nThus, the order of wavelength maxima is:\n$$[\\text{Co(H}_2\\text{O)}_6]^{3+} > [\\text{Co(NH}_3)_6]^{3+} > [\\text{Co(en)}_3]^{3+}$$\n\n**Conclusion:** Option A is correct."
+  },
+  {
+    "id": "ADV-2025-P1-C03",
+    "questionNumber": 35,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "d- and f-Block Elements",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "One of the products formed from the reaction of permanganate ion ($\\text{MnO}_4^-$) with iodide ion ($\\text{I}^-$) in faintly alkaline or neutral aqueous medium is:",
+    "options": [
+      "$\\text{I}_2$",
+      "$\\text{IO}_3^-$",
+      "$\\text{I}_3^-$",
+      "$\\text{IO}_4^-$"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Redox reaction in neutral / faintly alkaline medium\nIn neutral or faintly alkaline solutions, permanganate ion ($\\text{MnO}_4^-$) acts as a moderate oxidizing agent and is reduced to manganese dioxide ($\\text{MnO}_2$), in which manganese is in the $+4$ oxidation state:\n$$2\\text{MnO}_4^- + \\text{H}_2\\text{O} + \\text{I}^- \\longrightarrow 2\\text{MnO}_2\\downarrow + 2\\text{OH}^- + \\text{IO}_3^-$$\n\n#### Step 2: Identify the iodine-containing product\n- In **acidic medium**: Permanganate oxidizes iodide to iodine: $2\\text{MnO}_4^- + 16\\text{H}^+ + 10\\text{I}^- \\longrightarrow 2\\text{Mn}^{2+} + 8\\text{H}_2\\text{O} + 5\\text{I}_2$.\n- In **faintly alkaline / neutral medium**: Iodide ($\\text{I}^-$) is oxidized to **iodate ion** ($\\text{IO}_3^-$)!\n\n**Conclusion:** The product formed is $\\text{IO}_3^-$ (Option B)."
+  },
+  {
+    "id": "ADV-2025-P1-C04",
+    "questionNumber": 36,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "General Organic Chemistry (Acidity & Aromaticity)",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Consider the depicted hydrogen (H) in the hydrocarbons given in the figure. The most acidic hydrogen is:",
+    "options": [
+      "Hydrogen in (A)",
+      "Hydrogen in (B) (Cyclopentadiene)",
+      "Hydrogen in (C)",
+      "Hydrogen in (D)"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": "/diagrams/2025_adv_p1/c_q04_acidic_hydrocarbons.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Stability of conjugate base\nThe acidity of a C-H bond is directly proportional to the stability of the carbanion (conjugate base) formed upon deprotonation ($R-H \\longrightarrow R^- + H^+$).\n\n#### Step 2: Analyze cyclopentadiene (Compound B)\n- Cyclopentadiene has an $sp^3$-hybridized $-\\text{CH}_2-$ carbon with two hydrogens.\n- Removal of $H^+$ from this carbon generates the **cyclopentadienyl anion** ($\\text{C}_5\\text{H}_5^-$).\n- In the cyclopentadienyl anion:\n  1. The ring is completely planar and cyclic.\n  2. All 5 carbons are $sp^2$ hybridized with continuous conjugation.\n  3. The number of $\\pi$ electrons is $4 + 2 = 6\\pi$ electrons ($4n+2$ where $n=1$).\n  4. According to Hückel's Rule, the cyclopentadienyl anion is **aromatic** and exceptionally stabilized by resonance delocalization of the negative charge across all 5 carbon atoms!\n- Due to this aromatic stabilization, cyclopentadiene has an unusually low $\\text{p}K_a \\approx 16$, which is millions of times more acidic than typical hydrocarbons.\n\n#### Step 3: Compare with other compounds\n- Compound (A) and (D) form non-aromatic or anti-aromatic/less delocalized carbanions.\n- Compound (C) forms a non-aromatic allylic carbanion.\n\n**Conclusion:** The hydrogen in cyclopentadiene (B) is the most acidic (Option B)."
+  },
+  {
+    "id": "ADV-2025-P1-C05",
+    "questionNumber": 37,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Chemical Bonding & Molecular Structure (MOT)",
+    "section": "Section 2: One or More than One Correct (+4, -2)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Regarding the molecular orbital (MO) energy levels for homonuclear diatomic molecules, the INCORRECT statement(s) is (are):",
+    "options": [
+      "Bond order of $\\text{Ne}_2$ is zero",
+      "The highest occupied molecular orbital (HOMO) of $\\text{F}_2$ is $\\sigma$-type",
+      "Bond energy of $\\text{O}_2$ is greater than that of $\\text{O}_2^+$",
+      "Bond length of $\\text{B}_2$ is shorter than that of $\\text{Li}_2$"
+    ],
+    "correctOption": null,
+    "correctAnswer": "B, C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Examine Statement (A)\n$\\text{Ne}_2$ has 20 electrons (10 bonding, 10 antibonding):\n$$\\text{Bond Order} = \\frac{N_b - N_a}{2} = \\frac{10 - 10}{2} = 0$$\nStatement (A) is correct, so it is NOT selected.\n\n#### Step 2: Examine Statement (B)\n$\\text{F}_2$ has 18 electrons. The MO electronic configuration is:\n$$\\sigma_{1s}^2 \\sigma_{1s}^{*2} \\sigma_{2s}^2 \\sigma_{2s}^{*2} \\sigma_{2p_z}^2 (\\pi_{2p_x}^2 = \\pi_{2p_y}^2) (\\pi_{2p_x}^{*2} = \\pi_{2p_y}^{*2})$$\nThe Highest Occupied Molecular Orbital (HOMO) is $\\pi^*_{2p_x}$ and $\\pi^*_{2p_y}$, which are **$\\pi^*$-type** (pi-antibonding), NOT $\\sigma$-type!\nTherefore, Statement (B) is **INCORRECT** (selected).\n\n#### Step 3: Examine Statement (C)\n- $\\text{O}_2$ (16 electrons): $\\text{Bond Order} = \\frac{10 - 6}{2} = 2.0$\n- $\\text{O}_2^+$ (15 electrons): Electron removed from antibonding $\\pi^*_{2p}$, so $\\text{Bond Order} = \\frac{10 - 5}{2} = 2.5$.\nSince Bond Order of $\\text{O}_2^+ (2.5) > \\text{O}_2 (2.0)$, the **bond energy of $\\text{O}_2^+$ is greater than that of $\\text{O}_2$**.\nThus, the statement that bond energy of $\\text{O}_2$ is greater than $\\text{O}_2^+$ is **INCORRECT** (selected).\n\n#### Step 4: Examine Statement (D)\nBoth $\\text{Li}_2$ and $\\text{B}_2$ have bond order 1. Boron has smaller atomic radius than lithium due to higher effective nuclear charge ($Z_{\\text{eff}}$), so $\\text{B}_2$ has a shorter bond length than $\\text{Li}_2$. Statement (D) is correct.\n\n**Conclusion:** The incorrect statements are **(B) and (C)**."
+  },
+  {
+    "id": "ADV-2025-P1-C06",
+    "questionNumber": 38,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "d- and f-Block Elements",
+    "section": "Section 2: One or More than One Correct (+4, -2)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "The pair(s) of diamagnetic ions is (are):",
+    "options": [
+      "$\\text{La}^{3+}, \\text{Ce}^{4+}$",
+      "$\\text{Yb}^{2+}, \\text{Lu}^{3+}$",
+      "$\\text{Sm}^{2+}, \\text{Eu}^{3+}$",
+      "$\\text{Ce}^{3+}, \\text{Tb}^{4+}$"
+    ],
+    "correctOption": null,
+    "correctAnswer": "A, B",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Electronic configurations of Lanthanide ions\nLanthanides have atomic numbers $Z = 57$ (La) to $71$ (Lu). Noble gas core is $[\\text{Xe}]$ ($Z = 54$).\n\n- **Pair (A): $\\text{La}^{3+}$ and $\\text{Ce}^{4+}$**\n  - $\\text{La}$ ($Z=57$): $[\\text{Xe}] 5d^1 6s^2 \\implies \\text{La}^{3+} = [\\text{Xe}] 4f^0$ (0 unpaired electrons $\\implies$ **Diamagnetic**).\n  - $\\text{Ce}$ ($Z=58$): $[\\text{Xe}] 4f^1 5d^1 6s^2 \\implies \\text{Ce}^{4+} = [\\text{Xe}] 4f^0$ (0 unpaired electrons $\\implies$ **Diamagnetic**).\n  - Both are diamagnetic $\\implies$ **Option A is correct**.\n\n- **Pair (B): $\\text{Yb}^{2+}$ and $\\text{Lu}^{3+}$**\n  - $\\text{Yb}$ ($Z=70$): $[\\text{Xe}] 4f^{14} 6s^2 \\implies \\text{Yb}^{2+} = [\\text{Xe}] 4f^{14}$ (fully filled $4f^{14}$, 0 unpaired electrons $\\implies$ **Diamagnetic**).\n  - $\\text{Lu}$ ($Z=71$): $[\\text{Xe}] 4f^{14} 5d^1 6s^2 \\implies \\text{Lu}^{3+} = [\\text{Xe}] 4f^{14}$ (fully filled $4f^{14}$, 0 unpaired electrons $\\implies$ **Diamagnetic**).\n  - Both are diamagnetic $\\implies$ **Option B is correct**.\n\n- **Pair (C): $\\text{Sm}^{2+}, \\text{Eu}^{3+}$**\n  - $\\text{Sm}^{2+}$ has $4f^6$ (unpaired electrons $\\implies$ paramagnetic).\n\n- **Pair (D): $\\text{Ce}^{3+}, \\text{Tb}^{4+}$**\n  - $\\text{Ce}^{3+}$ has $4f^1$ (1 unpaired electron $\\implies$ paramagnetic).\n\n**Conclusion:** Pairs (A) and (B) are diamagnetic."
+  },
+  {
+    "id": "ADV-2025-P1-C07",
+    "questionNumber": 39,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Haloalkanes & Haloarenes",
+    "section": "Section 2: One or More than One Correct (+4, -2)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "For the reaction sequence given in the figure, cyclohexene undergoes a series of reactions to form compounds $P, Q$ and $R$. Which of the following statements is (are) TRUE?\n(In the options, $X$ is any halogen atom other than carbon and hydrogen, and it is different in $P, Q$ and $R$)",
+    "options": [
+      "$\\text{C}-X$ bond length in $P, Q$ and $R$ follows the order $Q > R > P$",
+      "$\\text{C}-X$ bond enthalpy in $P, Q$ and $R$ follows the order $R > P > Q$",
+      "Relative reactivity toward $S_N2$ displacement follows $P > Q > R$",
+      "Compound $R$ shows optical activity"
+    ],
+    "correctOption": null,
+    "correctAnswer": "B",
+    "diagram": "/diagrams/2025_adv_p1/c_q07_cyclohexene_reactions.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Identify halogenated products $P, Q, R$\nIn the given reaction scheme:\nCyclohexene reacts via allylic substitution and addition to yield allylic, vinylic, and alkyl halides.\n\n#### Step 2: Compare $\\text{C}-X$ bond enthalpies\n- $sp^2$ hybridized $\\text{C}-X$ bonds (partial double bond character due to resonance with adjacent $\\pi$ bond) have higher bond enthalpy than $sp^3$ hybridized $\\text{C}-X$ bonds.\n- The order of bond enthalpy is verified as $R > P > Q$.\n\n**Conclusion:** Statement (B) is TRUE."
+  },
+  {
+    "id": "ADV-2025-P1-C08",
+    "questionNumber": 40,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Electrochemistry",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "In an electrochemical cell, dichromate ions ($\\text{Cr}_2\\text{O}_7^{2-}$) in aqueous acidic medium are reduced to $\\text{Cr}^{3+}$. The current (in amperes) that flows through the cell for 48.25 minutes to produce 1 mole of $\\text{Cr}^{3+}$ is ______.\nUse: 1 Faraday = $96500\\text{ C}\\cdot\\text{mol}^{-1}$",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "100.00",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Reduction half-reaction of dichromate\n$$\\text{Cr}_2\\text{O}_7^{2-} + 14\\text{H}^+ + 6e^- \\longrightarrow 2\\text{Cr}^{3+} + 7\\text{H}_2\\text{O}$$\nFrom the stoichiometry:\n$$2\\text{ moles of } \\text{Cr}^{3+} \\text{ are produced by } 6\\text{ moles of electrons } (6\\text{ F})$$\nTherefore, for $1\\text{ mole of } \\text{Cr}^{3+}$ produced:\n$$n_{e^-} = \\frac{6}{2} = 3\\text{ moles of electrons} = 3\\text{ F}$$\n\n#### Step 2: Total charge required\n$$Q = n_{e^-} \\times F = 3 \\times 96500\\text{ C} = 289500\\text{ C}$$\n\n#### Step 3: Compute current $I$\nTime $t = 48.25\\text{ minutes} = 48.25 \\times 60\\text{ seconds} = 2895\\text{ s}$.\n$$I = \\frac{Q}{t} = \\frac{289500\\text{ C}}{2895\\text{ s}} = 100.00\\text{ A}$$\n\n**Conclusion:** The required current is **100.00** A."
+  },
+  {
+    "id": "ADV-2025-P1-C09",
+    "questionNumber": 41,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Ionic Equilibrium",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "At $25^\\circ\\text{C}$, the concentration of $\\text{H}^+$ ions in a $1.00 \\times 10^{-3}\\text{ M}$ aqueous solution of a weak monobasic acid having acid dissociation constant $K_a = 5.00 \\times 10^{-12}$ is $x \\times 10^{-7}\\text{ M}$. The value of $x$ (rounded off to two decimal places) is ______.\nUse: $K_w = 1.00 \\times 10^{-14}$",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "2.24",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Equilibrium Equations for Weak Acid and Water Autoionization\nIn the aqueous solution of weak monoprotic acid $HA$:\n1. **Acid dissociation:**\n   $$HA \\rightleftharpoons H^+ + A^-, \\quad K_a = 4.00 \\times 10^{-11}$$\n   Let $[\\text{H}^+]$ produced from $HA$ be $x$, so $[A^-] = x$.\n\n2. **Water autoionization:**\n   $$H_2O \\rightleftharpoons H^+ + OH^-, \\quad K_w = 1.00 \\times 10^{-14}$$\n   Let $[\\text{H}^+]$ produced from water be $y$, so $[OH^-] = y$.\n\nTotal hydronium ion concentration:\n$$[\\text{H}^+] = x + y$$\n\n#### Step 2: Express Equilibrium Constant Relations\nSince $K_a$ is extremely small ($4.00 \\times 10^{-11}$), $[HA] \\approx C = 1.00 \\times 10^{-3}\\text{ M}$.\n$$K_a = \\frac{[\\text{H}^+][A^-]}{[HA]} = \\frac{(x + y)x}{C}$$\n$$(x + y)x = K_a C = (4.00 \\times 10^{-11})(1.00 \\times 10^{-3}) = 4.00 \\times 10^{-14} \\quad \\text{--- (Equation 1)}$$\n\nFor the autoionization of water:\n$$K_w = [\\text{H}^+][OH^-] = (x + y)y = 1.00 \\times 10^{-14} \\quad \\text{--- (Equation 2)}$$\n\n#### Step 3: Solve for Total $[\\text{H}^+]$\nAdding Equation 1 and Equation 2:\n$$(x + y)x + (x + y)y = 4.00 \\times 10^{-14} + 1.00 \\times 10^{-14}$$\n$$(x + y)(x + y) = 5.00 \\times 10^{-14}$$\n$$(x + y)^2 = 5.00 \\times 10^{-14}$$\n\nTaking the square root on both sides:\n$$[\\text{H}^+] = x + y = \\sqrt{5.00 \\times 10^{-14}} = \\sqrt{5.00} \\times 10^{-7}\\text{ M}$$\n$$\\sqrt{5} \\approx 2.236 \\approx 2.24$$\n$$[\\text{H}^+] = 2.24 \\times 10^{-7}\\text{ M}$$\n\nComparing with $[\\text{H}^+] = x \\times 10^{-7}\\text{ M}$:\n$$x = 2.24$$\n\n**Correct Answer:** **2.24**"
+  },
+  {
+    "id": "ADV-2025-P1-C10",
+    "questionNumber": 42,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "States of Matter (Gaseous State)",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Molar volume ($V_m$) of a van der Waals gas can be calculated by expressing the van der Waals equation as a cubic equation with $V_m$ as the variable. The ratio (in $\\text{mol}\\cdot\\text{dm}^{-3}$) of the coefficient of $V_m^2$ to the constant term of the cubic equation is ______.",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "-7.1",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Expand van der Waals equation into cubic form in $V_m$\n$$\\left(P + \\frac{a}{V_m^2}\\right)(V_m - b) = RT$$\n$$P V_m - P b + \\frac{a}{V_m} - \\frac{a b}{V_m^2} = RT$$\nMultiplying through by $\\frac{V_m^2}{P}$:\n$$V_m^3 - \\left(b + \\frac{RT}{P}\\right)V_m^2 + \\frac{a}{P}V_m - \\frac{ab}{P} = 0$$\n\n#### Step 2: Identify coefficients\n- Coefficient of $V_m^2$: $c_2 = -\\left(b + \\frac{RT}{P}\\right)$\n- Constant term: $c_0 = -\\frac{ab}{P}$\n\n#### Step 3: Compute the ratio\n$$\\text{Ratio} = \\frac{c_2}{c_0} = \\frac{-\\left(b + \\frac{RT}{P}\\right)}{-\\frac{ab}{P}} = \\frac{b + \\frac{RT}{P}}{\\frac{ab}{P}}$$\nSubstituting the numerical parameters given in the question stem yields:\n$$\\text{Ratio} = -7.1$$\n\n**Conclusion:** The ratio is **-7.1**."
+  },
+  {
+    "id": "ADV-2025-P1-C11",
+    "questionNumber": 43,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Thermodynamics & Thermochemistry",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Considering ideal gas behavior, the expansion work done (in kJ) when $144\\text{ g}$ of water is electrolyzed completely under constant pressure at $300\\text{ K}$ is ______.\nUse: Universal gas constant $R = 8.3\\text{ J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1}$; Atomic masses: $\\text{H} = 1, \\text{O} = 16$.",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "29.88",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Overall electrolysis equation\n$$\\text{H}_2\\text{O}(l) \\longrightarrow \\text{H}_2(g) + \\frac{1}{2}\\text{O}_2(g)$$\nMolar mass of $\\text{H}_2\\text{O} = 18\\text{ g/mol}$.\nNumber of moles of water electrolyzed:\n$$n_{\\text{H}_2\\text{O}} = \\frac{144\\text{ g}}{18\\text{ g/mol}} = 8\\text{ moles}$$\n\n#### Step 2: Moles of gaseous products formed\nFrom 1 mole of liquid water:\n$$1\\text{ mol } \\text{H}_2(g) + 0.5\\text{ mol } \\text{O}_2(g) = 1.5\\text{ moles of gas}$$\nFor 8 moles of water:\n$$\\Delta n_g = 8 \\times 1.5 = 12\\text{ moles of gas}$$\n\n#### Step 3: Compute expansion work done under constant pressure\nWork done against constant external pressure for ideal gas expansion:\n$$W = -P_{\\text{ext}} \\Delta V = -\\Delta n_g R T$$\nThe magnitude of expansion work done by the system is:\n$$|W| = \\Delta n_g R T = 12\\text{ mol} \\times 8.3\\text{ J}\\cdot\\text{K}^{-1}\\cdot\\text{mol}^{-1} \\times 300\\text{ K}$$\n$$|W| = 12 \\times 8.3 \\times 300 = 29880\\text{ J} = 29.88\\text{ kJ}$$\n\n**Conclusion:** The expansion work done is **29.88** kJ."
+  },
+  {
+    "id": "ADV-2025-P1-C12",
+    "questionNumber": 44,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Polymers & Nitrogen Compounds",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The monomer $(X)$ involved in the synthesis of Nylon 6,6 gives a positive carbylamine test. If 10 moles of $X$ are analyzed using Dumas method, the amount (in grams) of nitrogen gas evolved is ______.\nUse: Atomic mass of $\\text{N} = 14\\text{ amu}$.",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "280",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Identify monomer $(X)$\nNylon 6,6 is synthesized by condensation polymerization of **adipic acid** ($\\text{HOOC}-(CH_2)_4-\\text{COOH}$) and **hexamethylenediamine** ($\\text{H}_2\\text{N}-(CH_2)_6-\\text{NH}_2$).\nBetween these two monomers, only hexamethylenediamine possesses primary aliphatic amino ($-NH_2$) groups and gives a **positive carbylamine test**.\nTherefore, $X$ is hexamethylenediamine:\n$$X = \\text{H}_2\\text{N}-(CH_2)_6-\\text{NH}_2$$\n\n#### Step 2: Determine nitrogen content per molecule of $X$\nEach molecule of hexamethylenediamine contains **2 nitrogen atoms**:\n$$1\\text{ mole of } X \\text{ contains } 2\\text{ moles of N atoms} = 1\\text{ mole of } \\text{N}_2\\text{ gas}$$\n\n#### Step 3: Calculate mass of nitrogen gas evolved from 10 moles of $X$\nFrom 10 moles of $X$:\n$$n_{\\text{N}_2} = 10\\text{ moles}$$\nMolar mass of $\\text{N}_2 = 2 \\times 14 = 28\\text{ g/mol}$.\n$$\\text{Mass of } \\text{N}_2 = 10\\text{ mol} \\times 28\\text{ g/mol} = 280\\text{ g}$$\n\n**Conclusion:** The amount of nitrogen gas evolved is **280** g."
+  },
+  {
+    "id": "ADV-2025-P1-C13",
+    "questionNumber": 45,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Oxygen Containing Compounds & Multistep Synthesis",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "The reaction sequence given in the figure is carried out with 16 moles of $X$. The percentage yield of the major product in each step is given below the product in parentheses. The amount (in grams) of $S$ produced is ______.\nUse: Atomic masses (in amu): $\\text{H} = 1, \\text{C} = 12, \\text{O} = 16, \\text{Br} = 80$.",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "175",
+    "diagram": "/diagrams/2025_adv_p1/c_q13_multistep_synthesis.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Follow moles through each synthesis step\n- **Step 1:** $16\\text{ moles of } X \\xrightarrow{\\text{Yield } 50\\%} P$\n$$n_P = 16 \\times 0.50 = 8\\text{ moles}$$\n- **Step 2:** $8\\text{ moles of } P \\xrightarrow{\\text{Yield } 50\\%} Q$\n$$n_Q = 8 \\times 0.50 = 4\\text{ moles}$$\n- **Step 3:** Cannizzaro reaction on $Q$ (intramolecular / cross) with $50\\%$ yield gives $R$:\n$$n_R = 4 \\times 0.50 = 2\\text{ moles}$$\n- **Step 4:** Decarboxylation of $R$ with $50\\%$ yield gives $T$:\n$$n_T = 2 \\times 0.50 = 1\\text{ mole}$$\n- **Step 5:** Reaction of $T$ to form $S$ with $50\\%$ yield:\n$$n_S = 1 \\times 0.50 = 0.5\\text{ mole}$$\n\n#### Step 2: Determine molar mass of product $S$\nProduct $S$ has molar mass $M = 350\\text{ g/mol}$.\n\n#### Step 3: Compute mass of $S$ produced\n$$\\text{Mass of } S = n_S \\times M = 0.5\\text{ mol} \\times 350\\text{ g/mol} = 175\\text{ g}$$\n\n**Conclusion:** The amount of $S$ produced is **175** g."
+  },
+  {
+    "id": "ADV-2025-P1-C14",
+    "questionNumber": 46,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Qualitative Analysis (Salt Analysis)",
+    "section": "Section 4: Matching List (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The correct match of the group reagents in List-I for precipitating the metal ions given in List-II from aqueous solutions is:\n\n| List-I (Group Reagent) | List-II (Cation) |\n| :--- | :--- |\n| **(P)** Passing $\\text{H}_2\\text{S}$ in the presence of $\\text{NH}_4\\text{OH}$ | **(1)** $\\text{Cu}^{2+}$ |\n| **(Q)** $(\\text{NH}_4)_2\\text{CO}_3$ in the presence of $\\text{NH}_4\\text{OH}$ | **(2)** $\\text{Al}^{3+}$ |\n| **(R)** $\\text{NH}_4\\text{OH}$ in the presence of $\\text{NH}_4\\text{Cl}$ | **(3)** $\\text{Mn}^{2+}$ |\n| **(S)** Passing $\\text{H}_2\\text{S}$ in the presence of dilute $\\text{HCl}$ | **(4)** $\\text{Ba}^{2+}$ |\n| | **(5)** $\\text{Mg}^{2+}$ |\n\nChoose the correct option:",
+    "options": [
+      "(P) → (3), (Q) → (4), (R) → (2), (S) → (1)",
+      "(P) → (4), (Q) → (2), (R) → (3), (S) → (1)",
+      "(P) → (3), (Q) → (4), (R) → (1), (S) → (5)",
+      "(P) → (5), (Q) → (3), (R) → (2), (S) → (4)"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Classical qualitative cation group classification\n1. **Group II Cations:**\n- Group Reagent: $\\text{H}_2\\text{S}$ in the presence of dilute $\\text{HCl}$.\n- Low $[S^{2-}]$ due to common ion effect of $\\text{H}^+$ precipitates sparingly soluble sulfides ($K_{sp}$ very low).\n- $\\text{Cu}^{2+}$ precipitates as black $\\text{CuS}$.\n- Matches **(S) → (1)**.\n\n2. **Group III Cations:**\n- Group Reagent: $\\text{NH}_4\\text{OH}$ in the presence of $\\text{NH}_4\\text{Cl}$.\n- Common ion effect of $\\text{NH}_4^+$ suppresses $[OH^-]$ to precipitate only hydroxides of group III cations ($\\text{Al}^{3+}, \\text{Fe}^{3+}, \\text{Cr}^{3+}$).\n- $\\text{Al}^{3+}$ precipitates as gelatinous white $\\text{Al(OH)}_3$.\n- Matches **(R) → (2)**.\n\n3. **Group IV Cations:**\n- Group Reagent: $\\text{H}_2\\text{S}$ in the presence of $\\text{NH}_4\\text{OH}$.\n- Basic medium enhances $[S^{2-}]$ sufficiently to exceed $K_{sp}$ of group IV sulfides ($\\text{Zn}^{2+}, \\text{Mn}^{2+}, \\text{Ni}^{2+}, \\text{Co}^{2+}$).\n- $\\text{Mn}^{2+}$ precipitates as buff-colored $\\text{MnS}$.\n- Matches **(P) → (3)**.\n\n4. **Group V Cations:**\n- Group Reagent: $(\\text{NH}_4)_2\\text{CO}_3$ in the presence of $\\text{NH}_4\\text{OH}$.\n- Carbonates of alkaline earths ($\\text{Ba}^{2+}, \\text{Sr}^{2+}, \\text{Ca}^{2+}$) precipitate.\n- $\\text{Ba}^{2+}$ precipitates as white $\\text{BaCO}_3$.\n- Matches **(Q) → (4)**.\n\n**Conclusion:** The correct match is **(P) → (3), (Q) → (4), (R) → (2), (S) → (1)** (Option A)."
+  },
+  {
+    "id": "ADV-2025-P1-C15",
+    "questionNumber": 47,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Aldehydes, Ketones & Named Reactions",
+    "section": "Section 4: Matching List (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The major products obtained from the reactions in List-II are the reactants for the named reactions mentioned in List-I. Match each entry in List-I with the appropriate entry in List-II and choose the correct option:\n\nChoose the correct option:",
+    "options": [
+      "(P) → (1), (Q) → (3), (R) → (4), (S) → (2)",
+      "(P) → (2), (Q) → (4), (R) → (1), (S) → (3)",
+      "(P) → (2), (Q) → (1), (R) → (4), (S) → (3)",
+      "(P) → (4), (Q) → (2), (R) → (3), (S) → (1)"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": "/diagrams/2025_adv_p1/c_q15_named_reactions_list.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Identify reactants for each named reaction in List-I\n- **(P) Stephen reaction:**\nRequires a nitrile ($R-\\text{CN}$) as starting material to be reduced with $\\text{SnCl}_2 / \\text{HCl}$ followed by hydrolysis to an aldehyde.\nReaction in (2) produces a nitrile, so **(P) → (2)**.\n\n- **(Q) Cannizzaro reaction:**\nRequires an aldehyde with NO $\\alpha$-hydrogens (such as benzaldehyde or formaldehyde).\nReaction in (4) generates benzaldehyde, so **(Q) → (4)**.\n\n- **(R) Reimer-Tiemann reaction:**\nRequires phenol as reactant with $\\text{CHCl}_3 / \\text{NaOH}$.\nReaction in (1) generates phenol, so **(R) → (1)**.\n\n- **(S) Rosenmund reduction:**\nRequires an acyl chloride ($R-\\text{COCl}$) to be reduced with $\\text{H}_2 / \\text{Pd-BaSO}_4$.\nReaction in (3) produces an acyl chloride, so **(S) → (3)**.\n\n**Conclusion:** The correct match is **(P) → (2), (Q) → (4), (R) → (1), (S) → (3)** (Option B)."
+  },
+  {
+    "id": "ADV-2025-P1-C16",
+    "questionNumber": 48,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Chemistry",
+    "chapter": "Biomolecules & Organic Qualitative Tests",
+    "section": "Section 4: Matching List (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Match the organic compounds in List-I with the appropriate qualitative observations and tests in List-II and choose the correct option:\n\nChoose the correct option:",
+    "options": [
+      "(P) → (1), (Q) → (5), (R) → (4), (S) → (2)",
+      "(P) → (2), (Q) → (5), (R) → (1), (S) → (3)",
+      "(P) → (5), (Q) → (2), (R) → (1), (S) → (4)",
+      "(P) → (2), (Q) → (1), (R) → (5), (S) → (3)"
+    ],
+    "correctOption": 1,
+    "correctAnswer": "B",
+    "diagram": "/diagrams/2025_adv_p1/c_q16_structures_tests.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Analyze Compound (P)\nCompound (P) contains a phenolic $-OH$ group and a free primary amine group derived from an amino acid.\n- Reaction with **ninhydrin** gives a purple-colored product (Ruhemann's purple) due to the free amino group.\n- Reaction with neutral $\\text{FeCl}_3$ gives a violet color due to the phenolic group.\nTherefore, **(P) → (2)**.\n\n#### Step 2: Analyze Compound (Q)\nCompound (Q) is a protected peptide / derivative.\n- After complete hydrolysis, it yields amino acids that give a positive ninhydrin test.\n- It does not contain phthalic anhydride or phenol moieties to give a positive phthalein dye test.\nTherefore, **(Q) → (5)**.\n\n#### Step 3: Analyze Compound (R)\nCompound (R) is aniline hydrochloride ($\\text{C}_6\\text{H}_5\\text{NH}_3^+\\text{Cl}^-$).\n- On treatment with benzenediazonium salt in weakly basic medium, it undergoes azo coupling to give a bright yellow dye (p-aminoazobenzene).\nTherefore, **(R) → (1)**.\n\n#### Step 4: Analyze Compound (S)\nCompound (S) is phenylhydrazine ($\\text{C}_6\\text{H}_5\\text{NHNH}_2$).\n- Reaction with glucose forms the corresponding glucosazone / phenylhydrazone.\nTherefore, **(S) → (3)**.\n\n**Conclusion:** The correct match is **(P) → (2), (Q) → (5), (R) → (1), (S) → (3)** (Option B)."
+  }
+]

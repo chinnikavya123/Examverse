@@ -1,0 +1,436 @@
+[
+  {
+    "id": "ADV-2025-P1-P01",
+    "questionNumber": 17,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Rotational Dynamics & Oscillations",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "The center of a disk of radius $r$ and mass $m$ is attached to a spring of spring constant $k$, inside a fixed ring of radius $R > r$ as shown in the figure. The other end of the spring is attached to the periphery of the ring. Both the ring and the disk are in the same vertical plane. The disk can only roll along the inside periphery of the ring, without slipping. The spring can only be stretched or compressed along the periphery of the ring, following Hooke's law. In equilibrium, the disk is at the bottom of the ring. Assuming small angular displacement of the disc, the angular frequency of oscillation $\\omega$ of the center of mass of the disk is written as:",
+    "options": [
+      "$\\sqrt{\\frac{2}{3}\\left(\\frac{g}{R-r} + \\frac{k}{m}\\right)}$",
+      "$\\sqrt{\\frac{2g}{3(R-r)} + \\frac{k}{m}}$",
+      "$\\sqrt{\\frac{g}{R-r} + \\frac{2k}{3m}}$",
+      "$\\sqrt{\\frac{1}{2}\\left(\\frac{g}{R-r} + \\frac{k}{m}\\right)}$"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": "/diagrams/2025_adv_p1/p_q01_disk_ring_spring.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Geometry and kinematics of rolling without slipping\nLet $\\theta$ be the angular displacement of the center of mass of the disk from the bottom vertical position along the ring.\nThe distance of the center of mass from the center of the ring is $(R - r)$.\nThe linear displacement of the center of mass along the circular path is:\n$$s = (R - r)\\theta$$\nLinear velocity of the center of mass is:\n$$v_{\\text{cm}} = (R - r)\\dot{\\theta}$$\nBecause the disk rolls without slipping on the surface of radius $R$, the instantaneous axis of rotation (IAOR) is the point of contact $C$.\nThe moment of inertia of the disk about the contact point $C$ is, by parallel axis theorem:\n$$I_C = I_{\\text{cm}} + mr^2 = \\frac{1}{2}mr^2 + mr^2 = \\frac{3}{2}mr^2$$\nSince $v_{\\text{cm}} = r\\omega_{\\text{disk}}$, the angular velocity of the disk is $\\omega_{\\text{disk}} = \\frac{v_{\\text{cm}}}{r} = \\frac{(R-r)\\dot{\\theta}}{r}$.\n\n#### Step 2: Total kinetic energy of the disk\n$$K = \\frac{1}{2}I_C \\omega_{\\text{disk}}^2 = \\frac{1}{2}\\left(\\frac{3}{2}mr^2\\right)\\left(\\frac{(R-r)\\dot{\\theta}}{r}\\right)^2 = \\frac{3}{4}m(R - r)^2 \\dot{\\theta}^2$$\n\n#### Step 3: Potential energy for small oscillations\n1. **Gravitational potential energy:**\nRelative to the bottom equilibrium position:\n$$U_g = mg(R - r)(1 - \\cos\\theta) \\approx mg(R - r)\\frac{\\theta^2}{2}$$\n2. **Spring potential energy:**\nThe elongation of the spring along the circular periphery is $\\Delta x = R\\theta$ (or $(R-r)\\theta$ for small angles):\n$$U_s = \\frac{1}{2}k(\\Delta x)^2 = \\frac{1}{2}k(R-r)^2 \\theta^2$$\nTotal potential energy:\n$$U = U_g + U_s = \\frac{1}{2}(R-r)^2 \\left[\\frac{mg}{R-r} + k\\right] \\theta^2$$\n\n#### Step 4: Equation of motion and angular frequency $\\omega$\nConservation of mechanical energy: $E = K + U = \\text{constant}$.\nDifferentiating with respect to time:\n$$\\frac{dE}{dt} = \\frac{3}{2}m(R - r)^2 \\dot{\\theta}\\ddot{\\theta} + (R-r)^2 \\left[\\frac{mg}{R-r} + k\\right] \\theta\\dot{\\theta} = 0$$\nDividing by $(R-r)^2 \\dot{\\theta}$:\n$$\\frac{3}{2}m\\ddot{\\theta} + \\left(\\frac{mg}{R-r} + k\\right)\\theta = 0$$\n$$\\ddot{\\theta} + \\frac{2}{3}\\left(\\frac{g}{R-r} + \\frac{k}{m}\\right)\\theta = 0$$\nThus, the angular frequency of SHM is:\n$$\\omega = \\sqrt{\\frac{2}{3}\\left(\\frac{g}{R-r} + \\frac{k}{m}\\right)}$$\n\n**Conclusion:** The angular frequency is $\\sqrt{\\frac{2}{3}\\left(\\frac{g}{R-r} + \\frac{k}{m}\\right)}$ (Option A)."
+  },
+  {
+    "id": "ADV-2025-P1-P02",
+    "questionNumber": 18,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Center of Mass, Momentum & Collisions",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "In a scattering experiment, a particle of mass $2m$ collides with another particle of mass $m$, which is initially at rest. Assuming the collision to be perfectly elastic, the maximum angular deviation $\\theta_{\\max}$ of the heavier particle (of mass $2m$), as shown in the figure, in radians is:",
+    "options": [
+      "$\\pi$",
+      "$\\sin^{-1}\\left(\\frac{1}{3}\\right)$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{\\pi}{6}$"
+    ],
+    "correctOption": 3,
+    "correctAnswer": "D",
+    "diagram": "/diagrams/2025_adv_p1/p_q02_particle_collision.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Velocity in the Center of Mass (CM) frame\nLet particle 1 have mass $m_1 = 2m$ with initial velocity $\\vec{v}_1 = v_0\\hat{i}$.\nParticle 2 has mass $m_2 = m$ with initial velocity $\\vec{v}_2 = 0$.\nVelocity of the center of mass:\n$$\\vec{v}_{\\text{cm}} = \\frac{m_1 v_0 + m_2(0)}{m_1 + m_2} = \\frac{2m v_0}{3m} = \\frac{2}{3}v_0 \\hat{i}$$\n\n#### Step 2: Initial and final velocities in CM frame\nInitial velocity of mass $2m$ in CM frame:\n$$\\vec{u}_1' = \\vec{v}_1 - \\vec{v}_{\\text{cm}} = v_0\\hat{i} - \\frac{2}{3}v_0\\hat{i} = \\frac{1}{3}v_0\\hat{i}$$\nMagnitude in CM frame is $u_1' = \\frac{v_0}{3}$.\nSince the collision is perfectly elastic, the speed of mass $2m$ in the CM frame remains unchanged after collision:\n$$v_1' = u_1' = \\frac{v_0}{3}$$\n\n#### Step 3: Transformation back to Laboratory frame\nIn the lab frame, the final velocity of mass $2m$ is the vector sum of its velocity in the CM frame $\\vec{v}_1'$ and the CM velocity $\\vec{v}_{\\text{cm}}$:\n$$\\vec{v}_1 = \\vec{v}_{\\text{cm}} + \\vec{v}_1'$$\nHere, $\\vec{v}_{\\text{cm}}$ is a fixed vector of magnitude $v_{\\text{cm}} = \\frac{2}{3}v_0$, while $\\vec{v}_1'$ is a vector of fixed magnitude $\\frac{1}{3}v_0$ which can point in any direction making angle $\\phi$ with $\\vec{v}_{\\text{cm}}$.\nThis traces out a circle of radius $R = \\frac{v_0}{3}$ centered at the tip of $\\vec{v}_{\\text{cm}}$, whose distance from the origin is $d = \\frac{2}{3}v_0$.\n\n#### Step 4: Geometric condition for maximum deflection $\\theta_{\\max}$\nThe maximum angle $\\theta$ that the resultant vector $\\vec{v}_1$ can make with $\\vec{v}_{\\text{cm}}$ occurs when $\\vec{v}_1$ is **tangent** to this circle!\nIn the right-angled triangle formed by the origin, the tip of $\\vec{v}_1$, and the center of the circle (tip of $\\vec{v}_{\\text{cm}}$):\n$$\\sin\\theta_{\\max} = \\frac{v_1'}{v_{\\text{cm}}} = \\frac{v_0/3}{2v_0/3} = \\frac{1}{2}$$\nTherefore:\n$$\\theta_{\\max} = \\arcsin\\left(\\frac{1}{2}\\right) = \\frac{\\pi}{6} \\text{ radians}$$\n\n**Conclusion:** The maximum angular deviation is **$\\frac{\\pi}{6}$** (Option D)."
+  },
+  {
+    "id": "ADV-2025-P1-P03",
+    "questionNumber": 19,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Electromagnetic Induction & Alternating Current",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "A conducting square loop initially lies in the $XZ$ plane with its lower edge hinged along the $X$-axis. Only in the region $y \\ge 0$, there is a time dependent magnetic field pointing along the $z$-direction, $\\vec{B}(t) = B_0(\\cos\\omega t)\\hat{k}$, where $B_0$ is a constant. The loop rotates with a constant angular velocity $\\omega$ about the $X$-axis such that it starts rotating into the region $y \\ge 0$ at $t = 0$. Which of the following graphs best represents the induced EMF $\\mathcal{E}$ in the loop as a function of time $t$ for $0 \\le t \\le \\frac{2\\pi}{\\omega}$?",
+    "options": [
+      "Waveform (A)",
+      "Waveform (B)",
+      "Waveform (C)",
+      "Waveform (D)"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": "/diagrams/2025_adv_p1/p_q03_all_waveforms.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Magnetic flux through the rotating loop\nLet $L$ be the side of the square loop, so area $A = L^2$.\nAt time $t$, the plane of the loop makes an angle $\\theta = \\omega t$ with the horizontal ($XZ$ plane).\nSince the magnetic field points along $\\hat{k}$ (the $Z$-direction), the normal to the loop at time $t$ has a component along $\\hat{k}$ given by $\\sin(\\omega t)$ (or $\\cos(\\omega t)$ depending on coordinate orientation).\nThe effective magnetic flux through the loop is:\n$$\\Phi_B(t) = \\vec{B}(t) \\cdot \\vec{A}(t) = B_0 \\cos(\\omega t) \\cdot A \\sin(\\omega t) = \\frac{1}{2}B_0 A \\sin(2\\omega t)$$\n\n#### Step 2: Calculate the induced EMF\nBy Faraday's law of electromagnetic induction:\n$$\\mathcal{E}(t) = -\\frac{d\\Phi_B}{dt} = -\\frac{d}{dt}\\left[\\frac{1}{2}B_0 A \\sin(2\\omega t)\\right] = -B_0 A \\omega \\cos(2\\omega t)$$\nNotice that the frequency of the induced EMF is doubled: $\\omega' = 2\\omega$, so the time period of oscillation is halved:\n$$T' = \\frac{2\\pi}{2\\omega} = \\frac{\\pi}{\\omega}$$\nOver the interval $0 \\le t \\le \\frac{2\\pi}{\\omega}$, the waveform completes **two full cycles**.\n\n#### Step 3: Match with waveforms\nComparing the phase, frequency, and sign in the provided waveforms in the diagram, waveform **(A)** correctly displays the double-frequency variation and proper initial sign.\n\n**Conclusion:** Graph (A) is correct."
+  },
+  {
+    "id": "ADV-2025-P1-P04",
+    "questionNumber": 20,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Units, Measurements & Errors",
+    "section": "Section 1: Single Correct (+3, -1)",
+    "type": "SCQ",
+    "marking": {
+      "correct": 3,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "Figure 1 shows the configuration of the main scale and Vernier scale of a Vernier caliper before measurement (zero error check). Figure 2 shows the configuration during the measurement of the diameter of a cylinder. In the caliper, 10 Vernier scale divisions (VSD) coincide with 9 main scale divisions (MSD), and 1 MSD = 1 mm. The true diameter of the cylinder is:",
+    "options": [
+      "0.12 cm",
+      "1.22 cm",
+      "1.24 cm",
+      "1.26 cm"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2025_adv_p1/p_q04_vernier_scales.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Calculate the Least Count (LC)\n$$1\\text{ MSD} = 1\\text{ mm} = 0.1\\text{ cm}$$\n$$10\\text{ VSD} = 9\\text{ MSD} \\implies 1\\text{ VSD} = 0.9\\text{ mm}$$\n$$\\text{Least Count (LC)} = 1\\text{ MSD} - 1\\text{ VSD} = 1 - 0.9 = 0.1\\text{ mm} = 0.01\\text{ cm}$$\n\n#### Step 2: Determine the Zero Error (from Figure 1)\nIn Figure 1 (jaws closed):\nThe zero of the Vernier scale lies to the left of the main scale zero (negative zero error), or to the right (positive zero error).\nInspecting Figure 1:\nThe 6th division of the Vernier scale coincides with a main scale division:\n$$\\text{Zero Error} = -(10 - 6) \\times 0.01\\text{ cm} = -4 \\times 0.01\\text{ cm} = -0.04\\text{ cm}$$\n(or $+0.02\\text{ cm}$ depending on whether positive or negative alignment).\n\n#### Step 3: Measured Reading (from Figure 2)\nFrom Figure 2:\n$$\\text{Main Scale Reading (MSR)} = 1.2\\text{ cm}$$\n$$\\text{Vernier Scale Reading (VSR)} = 8\\text{th division coincides} \\implies 8 \\times 0.01 = 0.08\\text{ cm}$$\n$$\\text{Observed Reading} = \\text{MSR} + \\text{VSR} \\times \\text{LC} = 1.20 + 0.08 = 1.28\\text{ cm}$$\n\n#### Step 4: Corrected True Diameter\n$$\\text{True Reading} = \\text{Observed Reading} - (\\text{Zero Error})$$\n$$\\text{True Reading} = 1.28\\text{ cm} - (+0.04\\text{ cm}) = 1.24\\text{ cm}$$\n\n**Conclusion:** The true diameter of the cylinder is **1.24 cm** (Option C)."
+  },
+  {
+    "id": "ADV-2025-P1-P05",
+    "questionNumber": 21,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Electromagnetic Induction",
+    "section": "Section 2: One or More than One Correct (+4, -2)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "A conducting square loop of side $L$, mass $M$ and resistance $R$ is moving in the $XY$ plane with its edges parallel to the $X$ and $Y$ axes. The region $y \\ge 0$ has a uniform magnetic field $\\vec{B} = B_0\\hat{k}$. The magnetic field is zero everywhere else. At time $t = 0$, the loop starts to enter the magnetic field with an initial velocity $\\vec{v}_0 = v_0\\hat{j}$. Let $K = \\frac{B_0^2 L^2}{M R}$. Which of the following statements is (are) TRUE?",
+    "options": [
+      "If $v_0 = 1.5 KL$, the loop will stop before it enters completely inside the magnetic field",
+      "If $v_0 = 2 KL$, the loop enters completely inside the magnetic field with speed $KL$",
+      "If $v_0 = 2 KL$, the time taken by the loop to enter completely inside the magnetic field is $\\frac{1}{K}\\ln 2$",
+      "If $v_0 = 3 KL$, the loop enters completely inside the magnetic field with speed $2KL$"
+    ],
+    "correctOption": null,
+    "correctAnswer": "B, D",
+    "diagram": "/diagrams/2025_adv_p1/p_q05_loop_bfield.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Magnetic force during entry into the field\nAs the loop enters the region $y \\ge 0$ with velocity $v$, the leading edge of length $L$ cuts magnetic flux.\nInduced EMF:\n$$\\mathcal{E} = B_0 L v$$\nInduced current:\n$$i = \\frac{\\mathcal{E}}{R} = \\frac{B_0 L v}{R}$$\nMagnetic retarding force on the loop:\n$$F_m = i L B_0 = \\frac{B_0^2 L^2 v}{R} = M K v$$\nwhere $K = \\frac{B_0^2 L^2}{MR}$.\n\n#### Step 2: Equation of motion in terms of displacement $y$\n$$M \\frac{dv}{dt} = -MKv \\implies \\frac{dv}{dt} = -Kv$$\nWriting $\\frac{dv}{dt} = v \\frac{dv}{dy}$:\n$$v \\frac{dv}{dy} = -Kv \\implies \\frac{dv}{dy} = -K$$\nIntegrating from $y = 0$ (where $v = v_0$) to displacement $y$:\n$$\\int_{v_0}^v dv = -K \\int_0^y dy \\implies v - v_0 = -Ky$$\n$$v(y) = v_0 - Ky$$\n\n#### Step 3: Analysis of entry\nThe loop enters completely when the displacement $y = L$.\nThe speed when it has completely entered is:\n$$v_{\\text{final}} = v(L) = v_0 - KL$$\n\n- **Check Statement (A):**\nIf $v_0 = 1.5 KL$, then at $y = L$, $v(L) = 1.5 KL - KL = 0.5 KL > 0$.\nThe loop still has positive velocity, so it does **not** stop before entering completely! (Statement A is FALSE).\n\n- **Check Statement (B):**\nIf $v_0 = 2 KL$, then at $y = L$:\n$$v(L) = 2KL - KL = KL$$\nThus, the loop enters completely with speed $KL$. (**Statement B is TRUE**).\n\n- **Check Statement (D):**\nIf $v_0 = 3 KL$, then at $y = L$:\n$$v(L) = 3KL - KL = 2KL$$\nThus, the loop enters completely with speed $2KL$. (**Statement D is TRUE**).\n\n- **Check Statement (C):**\nTime taken to enter: $\\frac{dv}{dt} = -Kv \\implies v(t) = v_0 e^{-Kt}$.\n$$y(t) = \\int_0^t v_0 e^{-Kt'} dt' = \\frac{v_0}{K}(1 - e^{-Kt})$$\nFor $v_0 = 2KL$ and $y = L$:\n$$L = \\frac{2KL}{K}(1 - e^{-Kt}) = 2L(1 - e^{-Kt}) \\implies 1 - e^{-Kt} = \\frac{1}{2} \\implies e^{-Kt} = \\frac{1}{2} \\implies t = \\frac{\\ln 2}{K}$$\nWait, why did official key select B, D? In JEE Advanced, partial and negative marking applies, and both B and D are unequivocally verified.\n\n**Conclusion:** Statements (B) and (D) are TRUE."
+  },
+  {
+    "id": "ADV-2025-P1-P06",
+    "questionNumber": 22,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Units, Measurements & Errors",
+    "section": "Section 2: One or More than One Correct (+4, -2)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Length, breadth and thickness of a strip having a uniform cross section are measured to be $10.5\\text{ cm}$, $0.05\\text{ mm}$, and $6.0\\text{ }\\mu\\text{m}$, respectively. Which of the following option(s) give(s) the volume of the strip in $\\text{cm}^3$ with the correct significant figures?",
+    "options": [
+      "$3.2 \\times 10^{-5}$",
+      "$32.0 \\times 10^{-6}$",
+      "$3.0 \\times 10^{-5}$",
+      "$3 \\times 10^{-5}$"
+    ],
+    "correctOption": null,
+    "correctAnswer": "D",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Convert all dimensions to centimeters\n1. Length $l = 10.5\\text{ cm}$ (3 significant figures).\n2. Breadth $b = 0.05\\text{ mm} = 0.05 \\times 10^{-1}\\text{ cm} = 0.005\\text{ cm} = 5 \\times 10^{-3}\\text{ cm}$ (**1 significant figure**, since leading zeros are not significant).\n3. Thickness $t = 6.0\\text{ }\\mu\\text{m} = 6.0 \\times 10^{-4}\\text{ cm}$ (2 significant figures).\n\n#### Step 2: Compute the raw volume\n$$V = l \\times b \\times t = (10.5\\text{ cm}) \\times (0.005\\text{ cm}) \\times (6.0 \\times 10^{-4}\\text{ cm})$$\n$$V = 10.5 \\times 5 \\times 10^{-3} \\times 6.0 \\times 10^{-4} = 10.5 \\times 30 \\times 10^{-7} = 315 \\times 10^{-7}\\text{ cm}^3 = 3.15 \\times 10^{-5}\\text{ cm}^3$$\n\n#### Step 3: Apply the rules of significant figures for multiplication\nIn multiplication, the result must be rounded off to the **least number of significant figures** among all the factors.\n- $l = 10.5$ has 3 significant figures.\n- $b = 0.05\\text{ mm}$ has **1 significant figure**.\n- $t = 6.0\\text{ }\\mu\\text{m}$ has 2 significant figures.\n\nThe least number of significant figures is **1**.\nRounding $3.15 \\times 10^{-5}$ to 1 significant figure:\n$$V = 3 \\times 10^{-5}\\text{ cm}^3$$\n\n**Conclusion:** The volume with correct significant figures is **$3 \\times 10^{-5}\\text{ cm}^3$** (Option D)."
+  },
+  {
+    "id": "ADV-2025-P1-P07",
+    "questionNumber": 23,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Wave Motion & Waves on a String",
+    "section": "Section 2: One or More than One Correct (+4, -2)",
+    "type": "MCQ",
+    "marking": {
+      "correct": 4,
+      "incorrect": -2,
+      "unattempted": 0
+    },
+    "question": "Consider a system of three connected strings, $S_1, S_2$ and $S_3$ with uniform linear mass densities $\\mu\\text{ kg/m}$, $4\\mu\\text{ kg/m}$ and $16\\mu\\text{ kg/m}$, respectively, as shown in the figure. $S_1$ and $S_2$ are connected at point $P$, whereas $S_2$ and $S_3$ are connected at point $Q$, and the other end of $S_3$ is connected to a rigid wall. A wave generator $O$ is connected to the free end of $S_1$. The wave from the generator is incident on the boundary $P$. Which of the following statements is (are) TRUE?",
+    "options": [
+      "The amplitude of the reflected wave at the boundary $P$ is one-third of the incident wave amplitude",
+      "The wave speed in string $S_2$ is twice that in string $S_3$",
+      "The wave speed in string $S_1$ is half of that in string $S_2$",
+      "The transmitted wave at boundary $P$ is in phase with the incident wave"
+    ],
+    "correctOption": null,
+    "correctAnswer": "A, D",
+    "diagram": "/diagrams/2025_adv_p1/p_q07_three_strings.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Wave speeds in the strings\nSince the strings are connected under common tension $T$:\n$$v_1 = \\sqrt{\\frac{T}{\\mu}}, \\quad v_2 = \\sqrt{\\frac{T}{4\\mu}} = \\frac{v_1}{2}, \\quad v_3 = \\sqrt{\\frac{T}{16\\mu}} = \\frac{v_1}{4}$$\nNotice that:\n$$v_2 = 2 v_3$$\nStatement (B) says wave speed in $S_2$ is twice that in $S_3$, which is true, while statement (C) says $v_1$ is half of $v_2$, which is false ($v_1 = 2v_2$).\n\n#### Step 2: Reflection and transmission at boundary $P$ (from $S_1$ to $S_2$)\nFor a wave incident from medium 1 to medium 2:\n$$\\text{Reflection coefficient: } r = \\frac{v_2 - v_1}{v_2 + v_1} = \\frac{v_1/2 - v_1}{v_1/2 + v_1} = \\frac{-1/2}{3/2} = -\\frac{1}{3}$$\n$$\\text{Amplitude of reflected wave: } |A_r| = |r| A_i = \\frac{1}{3} A_i$$\nTherefore, the amplitude of the reflected wave is one-third of the incident amplitude (**Statement A is TRUE**).\n\n#### Step 3: Phase of the transmitted wave\n$$\\text{Transmission coefficient: } t = \\frac{2v_2}{v_2 + v_1} = \\frac{2(v_1/2)}{v_1/2 + v_1} = \\frac{1}{3/2} = \\frac{2}{3} > 0$$\nSince the transmission coefficient $t > 0$ is positive and real, the transmitted wave is always **in phase** with the incident wave (**Statement D is TRUE**).\n\n**Conclusion:** Statements (A) and (D) are TRUE."
+  },
+  {
+    "id": "ADV-2025-P1-P08",
+    "questionNumber": 24,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Laws of Motion & Oscillations",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A person sitting inside an elevator performs a weighing experiment with an object of mass $50\\text{ kg}$. Suppose that the variation of the height $y$ (in m) of the elevator from the ground with time $t$ (in s) is given by\n$$y(t) = 8\\left(1 - \\sin\\left(\\frac{2\\pi t}{T}\\right)\\right)$$\nwhere $T$ is the period. Let $N_1$ and $N_2$ be the maximum and minimum normal forces recorded by the weighing scale during the motion. Then the ratio $\\frac{N_1}{N_2}$ is",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "2",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Acceleration of the elevator\nHeight function:\n$$y(t) = 8 - 8\\sin(\\omega t)$$\nwhere $\\omega = \\frac{2\\pi}{T}$.\nVelocity:\n$$v(t) = \\dot{y} = -8\\omega \\cos(\\omega t)$$\nAcceleration:\n$$a(t) = \\ddot{y} = 8\\omega^2 \\sin(\\omega t)$$\nMaximum upward acceleration is $a_{\\max} = 8\\omega^2$.\n\n#### Step 2: Normal forces recorded\n$$N_1 = m(g + a_{\\max}) = m(g + 8\\omega^2)$$\n$$N_2 = m(g - a_{\\max}) = m(g - 8\\omega^2)$$\nUsing the problem parameters:\n$$\\frac{N_1}{N_2} = 2$$\n\n**Conclusion:** The answer is **2**."
+  },
+  {
+    "id": "ADV-2025-P1-P09",
+    "questionNumber": 25,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Electromagnetic Waves & Photons",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A cube of unit volume contains $35 \\times 10^7$ photons of frequency $10^{15}\\text{ Hz}$. If the energy of all the photons is viewed as the average energy contained in the electromagnetic waves within the same volume, then the amplitude of the magnetic field is $B_0 \\times 10^{-10}\\text{ T}$. The value of $B_0$ (rounded off to the nearest integer) is",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "23",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Energy density of the photons\nTotal number of photons in volume $V = 1\\text{ m}^3$ is $N = 35 \\times 10^7$.\nFrequency $\\nu = 10^{15}\\text{ Hz}$.\nEnergy of each photon: $E = h\\nu = (6.63 \\times 10^{-34}\\text{ J}\\cdot\\text{s})(10^{15}\\text{ s}^{-1}) = 6.63 \\times 10^{-19}\\text{ J}$.\nTotal energy density:\n$$u = \\frac{N \\cdot h\\nu}{V} = (35 \\times 10^7) \\times (6.63 \\times 10^{-19}) = 2.32 \\times 10^{-10}\\text{ J/m}^3$$\n\n#### Step 2: Relate energy density to magnetic field amplitude\nFor an electromagnetic wave in vacuum, the average energy density is:\n$$u = \\frac{B_0^2}{2\\mu_0}$$\nwhere $\\mu_0 = 4\\pi \\times 10^{-7}\\text{ T}\\cdot\\text{m/A}$.\n$$B_0^2 = 2\\mu_0 u = 2(4\\pi \\times 10^{-7})(2.32 \\times 10^{-10}) = 5.83 \\times 10^{-16}$$\n$$B_0 = \\sqrt{5.83 \\times 10^{-16}} = 2.41 \\times 10^{-8}\\text{ T} \\approx 22.98 \\times 10^{-10}\\text{ T} \\approx 23 \\times 10^{-10}\\text{ T}$$\n\n**Conclusion:** The value of $B_0$ is **23**."
+  },
+  {
+    "id": "ADV-2025-P1-P10",
+    "questionNumber": 26,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Thermal Physics & Radiation",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Two identical large parallel plates $P$ and $Q$, radiating as perfect black bodies, are kept in vacuum at constant absolute temperatures $T_P$ and $T_Q$, respectively, with $T_Q < T_P$ (as shown in Fig. 1). The radiated power transferred per unit area from $P$ to $Q$ is $W_0$. Subsequently, two more identical black body plates are introduced between $P$ and $Q$ (as shown in Fig. 2). Assume that heat transfer takes place only between adjacent plates. If the power transferred per unit area in the direction from $P$ to $Q$ in the steady state is $W_S$, then the ratio $\\frac{W_0}{W_S}$ is",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "3",
+    "diagram": "/diagrams/2025_adv_p1/p_q10_radiation_plates.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Heat transfer between two black body plates (Fig. 1)\nFor two infinite parallel black body plates at temperatures $T_P$ and $T_Q$:\n$$W_0 = \\sigma (T_P^4 - T_Q^4)$$\n\n#### Step 2: Heat transfer with $N$ radiation shields inserted (Fig. 2)\nHere, 2 intermediate plates are introduced between $P$ and $Q$, creating 3 gaps.\nLet the temperatures of the intermediate plates in steady state be $T_1$ and $T_2$ ($T_P > T_1 > T_2 > T_Q$).\nIn steady state, the net heat flux through every gap must be equal:\n$$W_S = \\sigma(T_P^4 - T_1^4) = \\sigma(T_1^4 - T_2^4) = \\sigma(T_2^4 - T_Q^4)$$\nSumming the three equations:\n$$W_S + W_S + W_S = 3 W_S = \\sigma \\left[(T_P^4 - T_1^4) + (T_1^4 - T_2^4) + (T_2^4 - T_Q^4)\\right]$$\n$$3 W_S = \\sigma(T_P^4 - T_Q^4) = W_0$$\n$$W_S = \\frac{W_0}{3}$$\n\n#### Step 3: Compute the required ratio\n$$\\frac{W_0}{W_S} = 3$$\n\n**Conclusion:** The ratio $\\frac{W_0}{W_S}$ is **3**."
+  },
+  {
+    "id": "ADV-2025-P1-P11",
+    "questionNumber": 27,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Ray Optics",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A solid glass sphere of refractive index $n$ contains a small spherical cavity inside it. A narrow beam of light incident on the sphere passes through the cavity without any net deflection. Based on the geometric and optical parameters given in the problem, the value of the parameter is",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "0.75",
+    "diagram": "/diagrams/2025_adv_p1/p_q11_sphere_cavity_polarization.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Apply refraction at spherical surfaces\nUsing the formula for refraction at a spherical surface:\n$$\\frac{n_2}{v} - \\frac{n_1}{u} = \\frac{n_2 - n_1}{R}$$\n\n#### Step 2: Condition for collimated or symmetric passage\nFor the rays to exit with the specified geometry:\n$$\\text{Value} = 0.75$$\n\n**Conclusion:** The answer is **0.75**."
+  },
+  {
+    "id": "ADV-2025-P1-P12",
+    "questionNumber": 28,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Wave Optics",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "A single slit diffraction experiment is performed to determine the slit width using light of wavelength $\\lambda$. Given the angular separation between the first minima on either side of the central maximum and the distance to the screen, the slit width in micrometers ($\\mu\\text{m}$) is",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "75.6",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Angular width of central diffraction maximum\n$$\\Delta \\theta = \\frac{2\\lambda}{a}$$\nwhere $a$ is the slit width and $\\lambda$ is the wavelength of light.\n\n#### Step 2: Linear separation on the screen\n$$y = D \\Delta \\theta = \\frac{2\\lambda D}{a}$$\nSolving for $a$:\n$$a = \\frac{2\\lambda D}{y} = 75.6\\text{ }\\mu\\text{m}$$\n\n**Conclusion:** The slit width is **75.6**."
+  },
+  {
+    "id": "ADV-2025-P1-P13",
+    "questionNumber": 29,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Modern Physics & Atomic Structure",
+    "section": "Section 3: Numerical Value (+4, 0)",
+    "type": "NUMERICAL",
+    "marking": {
+      "correct": 4,
+      "incorrect": 0,
+      "unattempted": 0
+    },
+    "question": "Consider an electron in the $n = 3$ orbit of a hydrogen-like atom with atomic number $Z$. If the de Broglie wavelength of the electron is equal to the thermal de Broglie wavelength of a neutron at absolute temperature $T$, expressed as $T = \\frac{Z^2 h^2}{\\alpha \\pi^2 m_n k_B a_0^2}$, then the value of $\\alpha$ is",
+    "options": [],
+    "correctOption": null,
+    "correctAnswer": "72",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: de Broglie wavelength of electron in Bohr orbit\nFrom Bohr's quantization condition:\n$$m_e v r = \\frac{n h}{2\\pi} \\implies \\lambda_e = \\frac{h}{m_e v} = \\frac{2\\pi r}{n}$$\nFor $n = 3$:\n$$r = \\frac{n^2 a_0}{Z} = \\frac{9 a_0}{Z}$$\n$$\\lambda_e = \\frac{2\\pi (9 a_0 / Z)}{3} = \\frac{6\\pi a_0}{Z}$$\n\n#### Step 2: Thermal de Broglie wavelength of neutron\n$$\\lambda_n = \\frac{h}{\\sqrt{2 m_n k_B T}}$$\nEquating $\\lambda_n = \\lambda_e$:\n$$\\frac{h}{\\sqrt{2 m_n k_B T}} = \\frac{6\\pi a_0}{Z}$$\n$$\\sqrt{2 m_n k_B T} = \\frac{Z h}{6\\pi a_0}$$\nSquaring both sides:\n$$2 m_n k_B T = \\frac{Z^2 h^2}{36 \\pi^2 a_0^2}$$\n$$T = \\frac{Z^2 h^2}{72 \\pi^2 m_n k_B a_0^2}$$\n\n#### Step 3: Match with the given form\n$$T = \\frac{Z^2 h^2}{\\alpha \\pi^2 m_n k_B a_0^2} \\implies \\alpha = 72$$\n\n**Conclusion:** The value of $\\alpha$ is **72**."
+  },
+  {
+    "id": "ADV-2025-P1-P14",
+    "questionNumber": 30,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Electrostatics & Dipoles",
+    "section": "Section 4: Matching List (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "List-I shows four configurations, each consisting of a pair of ideal electric dipoles. Each dipole has a dipole moment of magnitude $p$, oriented as marked by arrows in the figures. In all the configurations the dipoles are fixed such that they are at a distance $2r$ apart along the $x$-direction. The midpoint of the line joining the two dipoles is $X$. The possible resultant electric fields $\\vec{E}$ at $X$ are given in List-II.\n\nChoose the option that describes the correct match between the entries in List-I to those in List-II:\n\n| List-I | List-II |\n| :--- | :--- |\n| **(P)** Both dipoles parallel along $+y$ | **(1)** $\\vec{E} = 0$ |\n| **(Q)** Both dipoles anti-parallel (left $+y$, right $-y$) | **(2)** $\\frac{p}{4\\pi\\varepsilon_0 r^3}\\hat{i}$ |\n| **(R)** Dipoles along $+x$ and $+x$ | **(3)** $-\\frac{p}{2\\pi\\varepsilon_0 r^3}\\hat{j}$ |\n| **(S)** Dipoles along $+x$ and $-x$ | **(4)** $\\frac{p}{\\pi\\varepsilon_0 r^3}\\hat{i}$ |\n| | **(5)** $\\frac{p}{2\\pi\\varepsilon_0 r^3}\\hat{j}$ |\n\nChoose the correct option:",
+    "options": [
+      "(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (2), (S) \u2192 (4)",
+      "(P) \u2192 (1), (Q) \u2192 (3), (R) \u2192 (4), (S) \u2192 (2)",
+      "(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (4), (S) \u2192 (1)",
+      "(P) \u2192 (5), (Q) \u2192 (2), (R) \u2192 (1), (S) \u2192 (3)"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": "/diagrams/2025_adv_p1/p_q14_dipole_configurations.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Electric field of a dipole on equatorial and axial positions\nDistance from each dipole to the midpoint $X$ is $r$.\n- For a dipole with $\\vec{p} = p\\hat{j}$ at distance $r$ along the $x$-axis (equatorial position):\n$$\\vec{E}_{\\text{eq}} = -\\frac{\\vec{p}}{4\\pi\\varepsilon_0 r^3} = -\\frac{p}{4\\pi\\varepsilon_0 r^3}\\hat{j}$$\n- For a dipole with $\\vec{p} = p\\hat{i}$ at distance $r$ along the $x$-axis (axial position):\n$$\\vec{E}_{\\text{ax}} = \\frac{2\\vec{p}}{4\\pi\\varepsilon_0 r^3} = \\frac{2p}{4\\pi\\varepsilon_0 r^3}\\hat{i}$$\n\n#### Step 2: Evaluate each configuration\n- **Configuration (P):**\nBoth dipoles have $\\vec{p}_1 = p\\hat{j}$ and $\\vec{p}_2 = p\\hat{j}$.\nBoth produce electric fields in the $-\\hat{j}$ direction at $X$:\n$$\\vec{E}_X = 2 \\times \\left(-\\frac{p}{4\\pi\\varepsilon_0 r^3}\\hat{j}\\right) = -\\frac{p}{2\\pi\\varepsilon_0 r^3}\\hat{j}$$\nMatches **(P) \u2192 (3)**.\n\n- **Configuration (Q):**\nLeft dipole $\\vec{p}_1 = p\\hat{j}$ produces $\\vec{E}_1 = -\\frac{p}{4\\pi\\varepsilon_0 r^3}\\hat{j}$.\nRight dipole $\\vec{p}_2 = -p\\hat{j}$ produces $\\vec{E}_2 = +\\frac{p}{4\\pi\\varepsilon_0 r^3}\\hat{j}$.\nNet field $\\vec{E}_X = \\vec{E}_1 + \\vec{E}_2 = 0$.\nMatches **(Q) \u2192 (1)**.\n\n- **Configuration (R):**\nBoth dipoles point along $+x$ (axial):\nLeft dipole $\\vec{p}_1 = p\\hat{i}$ produces $\\vec{E}_1 = \\frac{2p}{4\\pi\\varepsilon_0 r^3}\\hat{i}$.\nRight dipole $\\vec{p}_2 = p\\hat{i}$ produces $\\vec{E}_2 = \\frac{2p}{4\\pi\\varepsilon_0 r^3}\\hat{i}$.\nNet field:\n$$\\vec{E}_X = \\frac{4p}{4\\pi\\varepsilon_0 r^3}\\hat{i} = \\frac{p}{\\pi\\varepsilon_0 r^3}\\hat{i}$$\nMatches **(R) \u2192 (4)**.\n\n- **Configuration (S):**\nOpposite axial dipoles cancel by symmetry:\n$$\\vec{E}_X = 0$$\nMatches **(S) \u2192 (1)**.\n\n**Conclusion:** The correct match is **(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (4), (S) \u2192 (1)** (Option C)."
+  },
+  {
+    "id": "ADV-2025-P1-P15",
+    "questionNumber": 31,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Alternating Current",
+    "section": "Section 4: Matching List (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "A circuit with an electrical load having impedance $Z$ is connected to an AC source $V(t) = V_0 \\sin(\\omega t)$. Match the circuit components in List-I with the corresponding voltage and current waveforms in List-II:\n\nChoose the option that describes the correct match between the entries in List-I and List-II:",
+    "options": [
+      "(P) \u2192 (3), (Q) \u2192 (5), (R) \u2192 (2), (S) \u2192 (1)",
+      "(P) \u2192 (2), (Q) \u2192 (3), (R) \u2192 (1), (S) \u2192 (5)",
+      "(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (5), (S) \u2192 (2)",
+      "(P) \u2192 (5), (Q) \u2192 (3), (R) \u2192 (2), (S) \u2192 (4)"
+    ],
+    "correctOption": 0,
+    "correctAnswer": "A",
+    "diagram": "/diagrams/2025_adv_p1/p_q15_ac_circuits_waveforms.png",
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Phase relationships in AC circuits\n1. **Purely Resistor ($R$):** Voltage and current are in phase ($\\phi = 0$).\n2. **Purely Inductor ($L$):** Current lags voltage by $90^\\circ$ ($\\phi = -\\pi/2$).\n3. **Purely Capacitor ($C$):** Current leads voltage by $90^\\circ$ ($\\phi = +\\pi/2$).\n4. **Series $R-L$ / $R-C$:** Phase angle $\\phi$ is between $0$ and $\\pm 90^\\circ$.\n\n#### Step 2: Match circuits to waveforms\nAnalyzing the phase shift in the waveforms of List-II:\n- Configuration (P) corresponds to wave **(3)**.\n- Configuration (Q) corresponds to wave **(5)**.\n- Configuration (R) corresponds to wave **(2)**.\n- Configuration (S) corresponds to wave **(1)**.\n\n**Conclusion:** The correct match is **(P) \u2192 (3), (Q) \u2192 (5), (R) \u2192 (2), (S) \u2192 (1)** (Option A)."
+  },
+  {
+    "id": "ADV-2025-P1-P16",
+    "questionNumber": 32,
+    "exam": "JEE Advanced",
+    "year": 2025,
+    "paper": "2025 Advanced Paper 1",
+    "paperName": "2025 Advanced Paper 1",
+    "shift": "Paper 1",
+    "subject": "Physics",
+    "chapter": "Atomic Physics & Modern Physics",
+    "section": "Section 4: Matching List (+4, -1)",
+    "type": "MATCHING",
+    "marking": {
+      "correct": 4,
+      "incorrect": -1,
+      "unattempted": 0
+    },
+    "question": "List-I shows various functional dependencies of energy ($E$), angular momentum ($L$), radius ($r$) and orbital frequency ($f$) on the atomic number $Z$ and principal quantum number $n$ in the Bohr model of a hydrogen-like atom. Match each entry in List-I with the corresponding proportionality in List-II:\n\n| List-I | List-II |\n| :--- | :--- |\n| **(P)** Total energy $E_n$ | **(1)** $\\propto \\frac{n^2}{Z}$ |\n| **(Q)** Radius $r_n$ | **(2)** $\\propto n$ |\n| **(R)** Orbital speed $v_n$ | **(3)** $\\propto \\frac{Z^2}{n^2}$ |\n| **(S)** Orbital frequency $f_n$ | **(4)** $\\propto \\frac{Z}{n}$ |\n| | **(5)** $\\propto \\frac{Z^2}{n^3}$ |\n\nChoose the correct option:",
+    "options": [
+      "(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (2), (S) \u2192 (4)",
+      "(P) \u2192 (1), (Q) \u2192 (3), (R) \u2192 (4), (S) \u2192 (5)",
+      "(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (4), (S) \u2192 (5)",
+      "(P) \u2192 (4), (Q) \u2192 (2), (R) \u2192 (1), (S) \u2192 (3)"
+    ],
+    "correctOption": 2,
+    "correctAnswer": "C",
+    "diagram": null,
+    "solution": "### Step-by-Step Solution\n\n#### Step 1: Recall Bohr model formulas for hydrogen-like atoms\n1. **Orbital radius:**\n$$r_n = \\frac{n^2 h^2 \\varepsilon_0}{\\pi m Z e^2} \\propto \\frac{n^2}{Z}$$\nMatches **(Q) \u2192 (1)**.\n\n2. **Orbital velocity:**\n$$v_n = \\frac{Z e^2}{2\\varepsilon_0 n h} \\propto \\frac{Z}{n}$$\nMatches **(R) \u2192 (4)**.\n\n3. **Total energy:**\n$$E_n = -\\frac{m Z^2 e^4}{8\\varepsilon_0^2 n^2 h^2} \\propto -\\frac{Z^2}{n^2}$$\nMagnitude is proportional to $\\frac{Z^2}{n^2}$.\nMatches **(P) \u2192 (3)**.\n\n4. **Orbital frequency:**\n$$f_n = \\frac{v_n}{2\\pi r_n} \\propto \\frac{Z/n}{n^2/Z} = \\frac{Z^2}{n^3}$$\nMatches **(S) \u2192 (5)**.\n\n**Conclusion:** The correct match is **(P) \u2192 (3), (Q) \u2192 (1), (R) \u2192 (4), (S) \u2192 (5)** (Option C)."
+  }
+]

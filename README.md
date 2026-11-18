@@ -1,4 +1,4 @@
-# 🚀 ExamVerse – Smart Exam Preparation & Assessment Platform
+# 🚀 ExamVerse – Yor Gateway To Exam Excellence
 
 <p align="center">
   <strong>Learn. Practice. Assess. Improve. Succeed.</strong>
@@ -506,7 +506,9 @@ By bringing these capabilities together, it aims to help students prepare with g
 
 **GitHub:** [@chinnikavya123](https://github.com/chinnikavya123)
 
-**Repository:** [Examverse](https://github.com/chinnikavya123/Exam_verse)
+**Repository:** [ExamVerse](https://github.com/chinnikavya123/Exam_verse)
+
+**Website:** [Examverse](https://examverse-chinnikavya11.vercel.app/)
 
 ---
 
